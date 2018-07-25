@@ -1,2 +1,8 @@
+// Base styles
 @import "base/normalize";
 @import "base/variables";
+@import "base/extends";
+@import "base/defaults";
+
+// Sitewide Components
+@import "components/header";

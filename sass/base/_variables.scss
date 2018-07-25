@@ -37,8 +37,13 @@ $league: 'League Gothic';
 $color-black: rgba(0, 0, 0, 1);
 $color-white: rgba(255, 255, 255, 1);
 $color-lightblue: rgba(83, 158, 208, 1);
-$color-blue-button: rgba(0, 81, 145, 1)
-$orange: rgba(255, 179, 81, 1);
-$gray: rgba(38, 38, 38, 1);
+$color-blue-button: rgba(0, 81, 145, 1);
+$color-orange: rgba(255, 179, 81, 1);
+$color-gray: rgba(38, 38, 38, 1);
+$color-lightgray: rgba(237, 237, 237, 1);
 $color-graytext-footer: rgba(116, 116, 116, 1);
 $color-header-background: rgba (237, 237, 237, 1);
+
+// Fontsize Declarations
+$text-default: 16px;
+$text-medium-headers: 30px;
