@@ -1,3 +1,8 @@
-
+/*
+ * All variables that will be used and shared across views & coponents
+ */
+@font-face {
+  font-family: league;
+  src: url("fonts/league/leaguegothic-condensed-italic-webfont.woff"), url("fonts/league/leaguegothic-condensed-regular-webfont.woff"); }
 
 /*# sourceMappingURL=main.css.map */
