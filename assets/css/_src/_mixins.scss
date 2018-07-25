@@ -1,0 +1,42 @@
+/*
+ * All mixins that will be used and shared across views & coponents
+ */
+
+@import "variables";
+
+// iphone 5 & 5s < 375 | iphone 6+ >= 375 (portrait)
+@mixin break-xsm {
+  @media (max-width: $break-xsm) {
+    @content;
+  }
+}
+@mixin break-sm-xsm {
+  @media (max-width: $break-sm-xsm) {
+    @content;
+  }
+}
+@mixin break-sm {
+  @media (max-width: $break-sm) {
+    @content;
+  }
+}
+@mixin break-md-sm {
+  @media (max-width: $break-md-sm) {
+    @content;
+  }
+}
+@mixin break-md {
+  @media (max-width: $break-md) {
+    @content;
+  }
+}
+@mixin break-lg-md {
+  @media (max-width: $break-lg-md) {
+    @content;
+  }
+}
+@mixin break-lg {
+  @media (max-width: $break-lg) {
+    @content;
+  }
+}

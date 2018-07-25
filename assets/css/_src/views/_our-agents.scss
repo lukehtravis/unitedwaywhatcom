@@ -1,0 +1,17 @@
+/*
+ * Views are specific to templates. They should only contain the 
+ * the layout styles that are unique to them. Page IDs are assigned
+ * to the body tag and used to scope the style definitions for a 
+ * given template.
+ */
+#our-agents-page {
+  // styles go here
+
+  @include break-md {
+    // classes or overridden here for the given layout size
+  }
+
+  @include break-xsm {
+    // Further class overrides go here for even smaller screen
+  }
+}

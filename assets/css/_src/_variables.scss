@@ -1,0 +1,49 @@
+/*
+ * All variables that will be used and shared across views & coponents
+ */
+
+// Font stacks
+//$font-roboto:      'Roboto', sans-serif !default;
+//$font-roboto-slab: 'Roboto Slab', serif !default;
+
+// Font weights
+$weight-light:   300;
+$weight-regular: 400;
+$weight-normal:  $weight-regular;
+$weight-medium:  500;
+$weight-bold:    700;
+$weight-black:   900;
+
+// Font sizes
+// Example usage for 12px
+//   font-size: em(12);
+// Nested elelments must supply their parents value as base to render correctly,
+// Example using above line as parent, setting 9px
+//   font-size: em(9,12);
+$base-font-size: 16;
+@function em($pixels, $context: $base-font-size) {
+  @return #{$pixels/$context}em;
+}
+
+// Colors
+$color-black-text: #000000;
+$color-white-text: #ffffff;
+$color-green:      #78A22F;
+$color-brown-lite: #C49A6C;
+$color-brown:      #644A36;
+$color-blue:       #00AEEF;
+$color-orange:     #D25300;
+
+// Sizes
+$content-width: 940px;
+$content-pad:   20px;
+$content-pad-mobile: 15px;
+
+// Breaks
+$break-xsm:    374px;
+$break-sm-xsm: 390px;
+$break-sm:     480px;
+$break-md-sm:  640px;
+$break-md:     768px;
+$break-lg-md:  854px;
+$break-lg:     940px;

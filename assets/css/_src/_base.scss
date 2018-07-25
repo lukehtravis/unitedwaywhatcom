@@ -1,0 +1,30 @@
+/*
+ * Global styles such as fonts, font rendering, touch behavior, etc...
+ */
+
+//@import url('https://fonts.googleapis.com/css?family=...');
+
+//noinspection CssInvalidPropertyValue
+@-webkit-viewport { width: device-width; }
+//noinspection CssInvalidPropertyValue
+@-moz-viewport    { width: device-width; }
+//noinspection CssInvalidPropertyValue
+@-ms-viewport     { width: device-width; }
+//noinspection CssInvalidPropertyValue
+@-o-viewport      { width: device-width; }
+//noinspection CssInvalidPropertyValue
+@viewport         { width: device-width; }
+
+html {
+  touch-action: manipulation;
+}
+
+body,html {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: $base-font-size*1px;
+}

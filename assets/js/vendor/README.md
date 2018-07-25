@@ -1,0 +1,1 @@
+Vendor specific js files go here. They should contain a version number, URL and not be modified.
