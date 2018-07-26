@@ -30,20 +30,23 @@ nav.main-menu {
 .main-menu {
   width: 50%;
   ul {
-    list-style: none;
-    padding-left: 0px;
+    @include menuUl;
   }
   > ul {
     display: flex;
     justify-content: space-evenly;
     color: $color-lightblue;
     font-weight: bold;
-    margin: 0;
     > li {
       cursor: pointer;
       font-size: $text-default + 2px;
       position: relative;
       padding-bottom: 35px;
+      > div {
+        @include arrowUp($color-white);
+        @include centerer;
+        top: 35px;
+      }
     }
   }
 }
@@ -54,33 +57,28 @@ nav.main-menu {
   width: 180px;
   text-align: center;
   background-color: $color-white;
-  font-size: $text-default - 1px;
-  font-weight: initial;
-  color: $color-black;
   top: 55px;
   @include centerer;
   -webkit-box-shadow: 1px 5px 2px 2px $color-lightgray;
   -moz-box-shadow: 1px 5px 2px 2px $color-lightgray;
   box-shadow: 1px 5px 2px 2px $color-lightgray;
   transition: .7s ease;
-  li {
-    padding: 15px 0px;
-    transition: 0.5s ease;
-  }
-  li:hover {
-    background-color: $color-lightgray;
+  a {
+    font-size: $text-default - 1px;
+    font-weight: initial;
+    color: $color-black;
+    text-decoration: none;
+    li {
+      padding: 15px 0px;
+      transition: 0.5s ease;
+    }
+    li:hover {
+      background-color: $color-lightgray;
+    }
   }
 }
 
-.arrow-up {
-  @include arrowUp;
-  @include centerer;
-  display: none;
-  top: 35px;
-  transition: .7s ease;
-}
-
-.selected {
+.header-container .selected {
   display: block;
 }
 
@@ -103,8 +101,27 @@ nav.main-menu {
 
 .menu-right > .menu-hamburger {
   margin-left: 20px;
+  position: relative;
+  cursor: pointer;
+  .arrow-up {
+    @include centerer;
+    @include arrowUp($color-gray);
+    top: 45px;
+  }
 }
 
 .secondary-menu {
   display: none;
+  background-color: $color-gray;
+  min-width: 245px;
+  position: absolute;
+  right: -25px;
+  top: 65px;
+  @include menuUl;
+  li {
+    padding: 15px 30px;
+    a {
+      color: $color-white;
+    }
+  }
 }

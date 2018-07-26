@@ -373,18 +373,28 @@ nav.main-menu {
   width: 50%; }
   .main-menu ul {
     list-style: none;
-    padding-left: 0px; }
+    padding-left: 0px;
+    margin: 0; }
   .main-menu > ul {
     display: flex;
     justify-content: space-evenly;
     color: #539ed0;
-    font-weight: bold;
-    margin: 0; }
+    font-weight: bold; }
     .main-menu > ul > li {
       cursor: pointer;
       font-size: 18px;
       position: relative;
       padding-bottom: 35px; }
+      .main-menu > ul > li > div {
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        display: none;
+        transition: .7s ease;
+        border-bottom: 20px solid white;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        top: 35px; }
 
 .level-2 {
   display: none;
@@ -392,9 +402,6 @@ nav.main-menu {
   width: 180px;
   text-align: center;
   background-color: white;
-  font-size: 15px;
-  font-weight: initial;
-  color: black;
   top: 55px;
   position: absolute;
   left: 50%;
@@ -403,24 +410,18 @@ nav.main-menu {
   -moz-box-shadow: 1px 5px 2px 2px #ededed;
   box-shadow: 1px 5px 2px 2px #ededed;
   transition: .7s ease; }
-  .level-2 li {
-    padding: 15px 0px;
-    transition: 0.5s ease; }
-  .level-2 li:hover {
-    background-color: #ededed; }
+  .level-2 a {
+    font-size: 15px;
+    font-weight: initial;
+    color: black;
+    text-decoration: none; }
+    .level-2 a li {
+      padding: 15px 0px;
+      transition: 0.5s ease; }
+    .level-2 a li:hover {
+      background-color: #ededed; }
 
-.arrow-up {
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 20px solid #fff;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  display: none;
-  top: 35px;
-  transition: .7s ease; }
-
-.selected {
+.header-container .selected {
   display: block; }
 
 .menu-right {
@@ -439,9 +440,33 @@ nav.main-menu {
   border: none; }
 
 .menu-right > .menu-hamburger {
-  margin-left: 20px; }
+  margin-left: 20px;
+  position: relative;
+  cursor: pointer; }
+  .menu-right > .menu-hamburger .arrow-up {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    display: none;
+    transition: .7s ease;
+    border-bottom: 20px solid #262626;
+    top: 45px; }
 
 .secondary-menu {
-  display: none; }
+  display: none;
+  background-color: #262626;
+  min-width: 245px;
+  position: absolute;
+  right: -25px;
+  top: 65px;
+  list-style: none;
+  padding-left: 0px;
+  margin: 0; }
+  .secondary-menu li {
+    padding: 15px 30px; }
+    .secondary-menu li a {
+      color: white; }
 
 /*# sourceMappingURL=main.css.map */
