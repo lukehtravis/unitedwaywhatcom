@@ -347,7 +347,7 @@ p, button {
 
 header {
   background-color: #ededed;
-  padding: 40px 25px 35px 40px; }
+  padding: 40px 25px 0px 40px; }
 
 .header-container {
   display: grid;
@@ -357,7 +357,8 @@ header {
 
 .logo-container {
   display: flex;
-  align-items: flex-end; }
+  align-items: flex-end;
+  padding-bottom: 35px; }
 
 .logo-container > span {
   margin-left: 20px;
@@ -382,13 +383,11 @@ nav.main-menu {
     .main-menu > ul > li {
       cursor: pointer;
       font-size: 18px;
-      position: relative; }
-
-.secondary-menu {
-  display: none; }
+      position: relative;
+      padding-bottom: 35px; }
 
 .level-2 {
-  position: absolute;
+  display: none;
   padding: 10px 0;
   width: 180px;
   text-align: center;
@@ -400,19 +399,35 @@ nav.main-menu {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  -webkit-box-shadow: 1px 0px 9px 2px #ededed;
-  -moz-box-shadow: 1px 0px 9px 2px #ededed;
-  box-shadow: 1px 0px 9px 2px #ededed; }
+  -webkit-box-shadow: 1px 5px 2px 2px #ededed;
+  -moz-box-shadow: 1px 5px 2px 2px #ededed;
+  box-shadow: 1px 5px 2px 2px #ededed;
+  transition: .7s ease; }
   .level-2 li {
     padding: 15px 0px;
     transition: 0.5s ease; }
   .level-2 li:hover {
     background-color: #ededed; }
 
+.arrow-up {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #fff;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  display: none;
+  top: 35px;
+  transition: .7s ease; }
+
+.selected {
+  display: block; }
+
 .menu-right {
   justify-self: right;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  padding-bottom: 20px; }
 
 .menu-right button {
   padding: 18px 35px;
@@ -425,5 +440,8 @@ nav.main-menu {
 
 .menu-right > .menu-hamburger {
   margin-left: 20px; }
+
+.secondary-menu {
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */
