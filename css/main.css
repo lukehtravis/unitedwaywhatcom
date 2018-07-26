@@ -347,12 +347,83 @@ p, button {
 
 header {
   background-color: #ededed;
-  padding: 0px 25px 0px 40px; }
+  padding: 40px 25px 35px 40px; }
 
 .header-container {
   display: grid;
   grid-template-columns: 350px auto 350px;
-  align-items: center;
+  align-items: end;
   justify-items: center; }
+
+.logo-container {
+  display: flex;
+  align-items: flex-end; }
+
+.logo-container > span {
+  margin-left: 20px;
+  color: #005191;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold; }
+
+nav.main-menu {
+  width: 50%; }
+
+.main-menu {
+  width: 50%; }
+  .main-menu ul {
+    list-style: none;
+    padding-left: 0px; }
+  .main-menu > ul {
+    display: flex;
+    justify-content: space-evenly;
+    color: #539ed0;
+    font-weight: bold;
+    margin: 0; }
+    .main-menu > ul > li {
+      cursor: pointer;
+      font-size: 18px;
+      position: relative; }
+
+.secondary-menu {
+  display: none; }
+
+.level-2 {
+  position: absolute;
+  padding: 10px 0;
+  width: 180px;
+  text-align: center;
+  background-color: white;
+  font-size: 15px;
+  font-weight: initial;
+  color: black;
+  top: 55px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-box-shadow: 1px 0px 9px 2px #ededed;
+  -moz-box-shadow: 1px 0px 9px 2px #ededed;
+  box-shadow: 1px 0px 9px 2px #ededed; }
+  .level-2 li {
+    padding: 15px 0px;
+    transition: 0.5s ease; }
+  .level-2 li:hover {
+    background-color: #ededed; }
+
+.menu-right {
+  justify-self: right;
+  display: flex;
+  align-items: center; }
+
+.menu-right button {
+  padding: 18px 35px;
+  border-radius: 5px;
+  background-color: #539ed0;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border: none; }
+
+.menu-right > .menu-hamburger {
+  margin-left: 20px; }
 
 /*# sourceMappingURL=main.css.map */

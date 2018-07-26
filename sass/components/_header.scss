@@ -1,11 +1,94 @@
 header {
   background-color: $color-lightgray;
-  padding: 0px 25px 0px 40px;
+  padding: 40px 25px 35px 40px;
 }
 
 .header-container {
   display: grid;
   grid-template-columns: 350px auto 350px;
-  align-items: center;
+  align-items: end;
   justify-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.logo-container > span {
+  margin-left: 20px;
+  color: $color-darkblue;
+  font-family: $roboto;
+  font-weight: bold;
+}
+
+nav.main-menu {
+  width: 50%;
+}
+
+.main-menu {
+  width: 50%;
+  ul {
+    list-style: none;
+    padding-left: 0px;
+  }
+  > ul {
+    display: flex;
+    justify-content: space-evenly;
+    color: $color-lightblue;
+    font-weight: bold;
+    margin: 0;
+    > li {
+      cursor: pointer;
+      font-size: $text-default + 2px;
+      position: relative;
+    }
+  }
+}
+
+.secondary-menu {
+  display: none;
+}
+
+.level-2 {
+  position: absolute;
+  padding: 10px 0;
+  width: 180px;
+  text-align: center;
+  background-color: $color-white;
+  font-size: $text-default - 1px;
+  font-weight: initial;
+  color: $color-black;
+  top: 55px;
+  @include centerer;
+  -webkit-box-shadow: 1px 0px 9px 2px $color-lightgray;
+  -moz-box-shadow: 1px 0px 9px 2px $color-lightgray;
+  box-shadow: 1px 0px 9px 2px $color-lightgray;
+  li {
+    padding: 15px 0px;
+    transition: 0.5s ease;
+  }
+  li:hover {
+    background-color: $color-lightgray;
+  }
+}
+
+.menu-right {
+  justify-self: right;
+  display: flex;
+  align-items: center;
+}
+
+.menu-right button  {
+  padding: 18px 35px;
+  border-radius: 5px;
+  background-color: $color-lightblue;
+  color: $color-white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border: none;
+}
+
+.menu-right > .menu-hamburger {
+  margin-left: 20px;
 }
