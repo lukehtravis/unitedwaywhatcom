@@ -341,7 +341,7 @@ html {
 * {
   box-sizing: border-box; }
 
-p, button {
+p, button, li, a, input {
   font-size: 16px;
   font-family: "Roboto", sans-serif; }
 
@@ -351,7 +351,7 @@ header {
 
 .header-container {
   display: grid;
-  grid-template-columns: 350px auto 350px;
+  grid-template-columns: 306px auto 200px;
   align-items: end;
   justify-items: center; }
 
@@ -369,11 +369,8 @@ header {
   font-family: "Roboto", sans-serif;
   font-weight: bold; }
 
-nav.main-menu {
-  width: 50%; }
-
 .main-menu {
-  width: 50%; }
+  width: 100%; }
   .main-menu ul {
     list-style: none;
     padding-left: 0px;
@@ -489,5 +486,12 @@ nav.main-menu {
     padding-bottom: 25px; }
   .secondary-menu a:nth-of-type(6n+0) li {
     padding-top: 25px; }
+
+footer {
+  background-color: #262626; }
+
+.footer-container {
+  margin-left: 100px;
+  margin-right: 1000px; }
 
 /*# sourceMappingURL=main.css.map */

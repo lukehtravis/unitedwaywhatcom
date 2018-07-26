@@ -5,7 +5,7 @@ header {
 
 .header-container {
   display: grid;
-  grid-template-columns: 350px auto 350px;
+  grid-template-columns: 306px auto 200px;
   align-items: end;
   justify-items: center;
 }
@@ -27,12 +27,8 @@ header {
   font-weight: bold;
 }
 
-nav.main-menu {
-  width: 50%;
-}
-
 .main-menu {
-  width: 50%;
+  width: 100%;
   ul {
     @include menuUl;
   }
