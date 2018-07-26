@@ -11,6 +11,5 @@ $(document).ready(function(){
   // Shows hamburger menu on click desktop
   $('.menu-hamburger').on('click', function(){
     $(this).find('.secondary-menu, .arrow-up').slideToggle();
-
   })
 })
