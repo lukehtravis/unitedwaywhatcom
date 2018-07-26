@@ -387,7 +387,8 @@ nav.main-menu {
       cursor: pointer;
       font-size: 18px;
       position: relative;
-      padding-bottom: 35px; }
+      padding-bottom: 35px;
+      transition: 0.2s ease; }
       .main-menu > ul > li > div {
         border-left: 20px solid transparent;
         border-right: 20px solid transparent;
@@ -398,6 +399,8 @@ nav.main-menu {
         left: 50%;
         transform: translate(-50%);
         top: 35px; }
+    .main-menu > ul > li:hover {
+      color: #005191; }
 
 .level-2 {
   display: none;
@@ -441,7 +444,11 @@ nav.main-menu {
   text-transform: uppercase;
   letter-spacing: 3px;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: 0.7s ease; }
+
+.menu-right button:hover {
+  background-color: #005191; }
 
 .menu-right > .menu-hamburger {
   margin-left: 20px;
@@ -464,16 +471,19 @@ nav.main-menu {
   min-width: 245px;
   position: absolute;
   right: -25px;
-  top: 65px;
+  top: 59px;
   list-style: none;
   padding-left: 0px;
   margin: 0;
-  padding: 10px 25px 0 25px; }
+  padding: 10px 25px 0 20px; }
   .secondary-menu a {
     color: white;
     text-decoration: none; }
     .secondary-menu a li {
-      padding: 15px 0px; }
+      padding: 15px 10px;
+      transition: 0.7s ease; }
+    .secondary-menu a li:hover {
+      background-color: #747474; }
   .secondary-menu a:nth-of-type(5n+0) li {
     border-bottom: 1px solid #ededed;
     padding-bottom: 25px; }
