@@ -355,6 +355,9 @@ header {
   align-items: end;
   justify-items: center; }
 
+.header-container > a {
+  text-decoration: none; }
+
 .logo-container {
   display: flex;
   align-items: flex-end;
@@ -437,7 +440,8 @@ nav.main-menu {
   color: white;
   text-transform: uppercase;
   letter-spacing: 3px;
-  border: none; }
+  border: none;
+  cursor: pointer; }
 
 .menu-right > .menu-hamburger {
   margin-left: 20px;
@@ -463,10 +467,17 @@ nav.main-menu {
   top: 65px;
   list-style: none;
   padding-left: 0px;
-  margin: 0; }
-  .secondary-menu li {
-    padding: 15px 30px; }
-    .secondary-menu li a {
-      color: white; }
+  margin: 0;
+  padding: 10px 25px 0 25px; }
+  .secondary-menu a {
+    color: white;
+    text-decoration: none; }
+    .secondary-menu a li {
+      padding: 15px 0px; }
+  .secondary-menu a:nth-of-type(5n+0) li {
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 25px; }
+  .secondary-menu a:nth-of-type(6n+0) li {
+    padding-top: 25px; }
 
 /*# sourceMappingURL=main.css.map */

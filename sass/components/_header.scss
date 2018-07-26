@@ -10,6 +10,10 @@ header {
   justify-items: center;
 }
 
+.header-container > a {
+  text-decoration: none;
+}
+
 .logo-container {
   display: flex;
   align-items: flex-end;
@@ -80,6 +84,7 @@ nav.main-menu {
 
 .header-container .selected {
   display: block;
+  // .selected is class added by jquery for switching on and off hover of main menu sub ul's
 }
 
 .menu-right {
@@ -97,6 +102,7 @@ nav.main-menu {
   text-transform: uppercase;
   letter-spacing: 3px;
   border: none;
+  cursor: pointer;
 }
 
 .menu-right > .menu-hamburger {
@@ -118,10 +124,19 @@ nav.main-menu {
   right: -25px;
   top: 65px;
   @include menuUl;
-  li {
-    padding: 15px 30px;
-    a {
-      color: $color-white;
+  padding: 10px 25px 0 25px;
+  a {
+    color: $color-white;
+    text-decoration: none;
+    li {
+      padding: 15px 0px;
     }
+  }
+  a:nth-of-type(5n+0) li {
+    border-bottom: 1px solid $color-lightgray;
+    padding-bottom: 25px;
+  }
+  a:nth-of-type(6n+0) li {
+    padding-top: 25px;
   }
 }
