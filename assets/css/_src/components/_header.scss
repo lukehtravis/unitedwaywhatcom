@@ -34,7 +34,7 @@ header {
   }
   > ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     color: $color-lightblue;
     font-weight: bold;
     > li {
@@ -48,6 +48,9 @@ header {
         @include centerer;
         top: 35px;
       }
+    }
+    > li:nth-child(2) {
+      margin: 0px 40px;
     }
     > li:hover {
       color: $color-darkblue;
@@ -70,14 +73,15 @@ header {
   a {
     font-size: $text-default - 1px;
     font-weight: initial;
-    color: $color-black;
     text-decoration: none;
     li {
       padding: 15px 0px;
       transition: 0.5s ease;
+      color: $color-graytext-footer;
     }
     li:hover {
       background-color: $color-lightgray;
+      color: $color-black;
     }
   }
 }
@@ -95,7 +99,7 @@ header {
 }
 
 .menu-right button  {
-  padding: 18px 35px;
+  padding: 13px 35px;
   border-radius: 5px;
   background-color: $color-lightblue;
   color: $color-white;
