@@ -341,9 +341,15 @@ html {
 * {
   box-sizing: border-box; }
 
-p, button, li, a, input {
+h2, h3 {
+  font-family: "Roboto", sans-serif; }
+
+p, button, li, a, input, span {
   font-size: 16px;
   font-family: "Roboto", sans-serif; }
+
+a {
+  color: #539ed0; }
 
 header {
   background-color: #ededed;
@@ -496,14 +502,78 @@ footer {
 .footer-container {
   margin-left: 100px;
   margin-right: 100px;
-  margin-top: 90px; }
+  padding-top: 90px; }
 
 .top-footer {
   display: flex;
   justify-content: space-between; }
 
+.footer-title span {
+  font-size: 22px;
+  color: #747474;
+  font-weight: bold; }
+
 .footer-contact {
   display: flex;
   flex-direction: column; }
+  .footer-contact > div {
+    margin-bottom: 25px; }
+  .footer-contact span {
+    font-size: 26px;
+    color: #539ed0;
+    margin-left: 15px; }
+  .footer-contact div:first-of-type span {
+    color: white;
+    margin-bottom: 30px; }
+
+.bottom-footer {
+  display: flex;
+  height: 280px; }
+
+.footer-menus {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  width: 75%; }
+
+.footer-menu-container {
+  border-left: solid 1px #747474;
+  padding-left: 20px; }
+  .footer-menu-container h3 {
+    color: #747474;
+    font-size: 17px; }
+  .footer-menu-container li {
+    color: white;
+    font-size: 14px; }
+  .footer-menu-container .footer-menu {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0; }
+    .footer-menu-container .footer-menu > li {
+      margin-bottom: 10px; }
+    .footer-menu-container .footer-menu a {
+      text-decoration: none;
+      color: white; }
+    .footer-menu-container .footer-menu > li > a {
+      font-weight: bold; }
+    .footer-menu-container .footer-menu > li ul {
+      list-style: none;
+      padding-left: 0px;
+      margin-top: 5px;
+      margin-bottom: 10px; }
+      .footer-menu-container .footer-menu > li ul li {
+        margin-left: 25px; }
+      .footer-menu-container .footer-menu > li ul li::before {
+        content: "-";
+        margin-left: -15px; }
+      .footer-menu-container .footer-menu > li ul li a {
+        font-weight: normal; }
+
+.footer-credits {
+  width: 25%;
+  align-self: flex-end; }
+  .footer-credits p, .footer-credits a {
+    font-size: 13px; }
+  .footer-credits p {
+    color: #747474; }
 
 /*# sourceMappingURL=main.css.map */

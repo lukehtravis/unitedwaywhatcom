@@ -7,7 +7,15 @@ html {
   box-sizing: border-box;
 }
 
-p, button, li, a, input {
+h2, h3 {
+  font-family: $roboto;
+}
+
+p, button, li, a, input, span {
   font-size: $text-default;
   font-family: $roboto;
+}
+
+a {
+  color: $color-lightblue;
 }
