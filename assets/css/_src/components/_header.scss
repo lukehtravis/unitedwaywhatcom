@@ -1,0 +1,151 @@
+header {
+  background-color: $color-lightgray;
+  padding: 40px 25px 0px 40px;
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: 306px auto 200px;
+  align-items: end;
+  justify-items: center;
+}
+
+.header-container > a {
+  text-decoration: none;
+}
+
+.logo-container {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 35px;
+}
+
+.logo-container > span {
+  margin-left: 20px;
+  color: $color-darkblue;
+  font-family: $roboto;
+  font-weight: bold;
+}
+
+.main-menu {
+  width: 100%;
+  ul {
+    @include menuUl;
+  }
+  > ul {
+    display: flex;
+    justify-content: space-evenly;
+    color: $color-lightblue;
+    font-weight: bold;
+    > li {
+      cursor: pointer;
+      font-size: $text-default + 2px;
+      position: relative;
+      padding-bottom: 35px;
+      transition: 0.2s ease;
+      > div {
+        @include arrowUp($color-white);
+        @include centerer;
+        top: 35px;
+      }
+    }
+    > li:hover {
+      color: $color-darkblue;
+    }
+  }
+}
+
+.level-2 {
+  display: none; // keeps hover box hidden till user clicks
+  padding: 10px 0;
+  width: 180px;
+  text-align: center;
+  background-color: $color-white;
+  top: 55px;
+  @include centerer;
+  -webkit-box-shadow: 4px 4px 6px -2px rgba(0,0,0,.2);
+  -moz-box-shadow: 4px 4px 6px -2px rgba(0,0,0,.2);
+  box-shadow: 4px 4px 6px -2px rgba(0,0,0,.2);
+  transition: .7s ease;
+  a {
+    font-size: $text-default - 1px;
+    font-weight: initial;
+    color: $color-black;
+    text-decoration: none;
+    li {
+      padding: 15px 0px;
+      transition: 0.5s ease;
+    }
+    li:hover {
+      background-color: $color-lightgray;
+    }
+  }
+}
+
+.header-container .selected {
+  display: block;
+  // .selected is class added by jquery for switching on and off hover of main menu sub ul's
+}
+
+.menu-right {
+  justify-self: right;
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.menu-right button  {
+  padding: 18px 35px;
+  border-radius: 5px;
+  background-color: $color-lightblue;
+  color: $color-white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border: none;
+  cursor: pointer;
+  transition: 0.7s ease;
+}
+
+.menu-right button:hover {
+  background-color: $color-darkblue;
+}
+
+.menu-right > .menu-hamburger {
+  margin-left: 20px;
+  position: relative;
+  cursor: pointer;
+  .arrow-up {
+    @include centerer;
+    @include arrowUp($color-gray);
+    top: 45px;
+  }
+}
+
+.secondary-menu {
+  display: none;
+  background-color: $color-gray;
+  min-width: 245px;
+  position: absolute;
+  right: -25px;
+  top: 59px;
+  @include menuUl;
+  padding: 10px 25px 0 20px;
+  a {
+    color: $color-white;
+    text-decoration: none;
+    li {
+      padding: 15px 10px;
+      transition: 0.7s ease;
+    }
+    li:hover {
+      background-color: $color-graytext-footer;
+    }
+  }
+  a:nth-of-type(5n+0) li {
+    border-bottom: 1px solid $color-lightgray;
+    padding-bottom: 25px;
+  }
+  a:nth-of-type(6n+0) li {
+    padding-top: 25px;
+  }
+}
