@@ -492,6 +492,15 @@ footer {
 
 .footer-container {
   margin-left: 100px;
-  margin-right: 1000px; }
+  margin-right: 100px;
+  margin-top: 90px; }
+
+.top-footer {
+  display: flex;
+  justify-content: space-between; }
+
+.footer-contact {
+  display: flex;
+  flex-direction: column; }
 
 /*# sourceMappingURL=main.css.map */

@@ -4,8 +4,15 @@ footer {
 
 .footer-container {
   @include pageSideMargins;
+  margin-top: 90px;
 }
 
 .top-footer {
-  
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
 }
