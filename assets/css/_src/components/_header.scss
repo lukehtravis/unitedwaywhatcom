@@ -1,6 +1,9 @@
 header {
   background-color: $color-lightgray;
   padding: 40px 25px 0px 40px;
+  @include breakpoint(phonetablet) {
+    padding: 30px 20px 0px 20px;
+  }
 }
 
 .header-container {
@@ -8,6 +11,10 @@ header {
   grid-template-columns: 306px auto 200px;
   align-items: end;
   justify-items: center;
+  @include breakpoint(phonetablet) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .header-container > a {
@@ -20,6 +27,12 @@ header {
   padding-bottom: 35px;
 }
 
+.logo {
+  @include breakpoint(phonetablet) {
+    display: none;
+  }
+}
+
 .logo-container > span {
   margin-left: 20px;
   color: $color-darkblue;
@@ -28,6 +41,9 @@ header {
 }
 
 .main-menu {
+  @include breakpoint(phonetablet) {
+    display: none;
+  }
   width: 100%;
   ul {
     @include menuUl;
@@ -121,7 +137,11 @@ header {
   .arrow-up {
     @include centerer;
     @include arrowUp($color-gray);
-    top: 45px;
+    top: 35px;
+    @include breakpoint(phonetablet) {
+      @include arrowUp($color-mobile-header-menu-gray);
+      top: 40px;
+    }
   }
 }
 
@@ -151,5 +171,55 @@ header {
   }
   a:nth-of-type(6n+0) li {
     padding-top: 25px;
+  }
+}
+
+.secondary-menu-mobile {
+  display: none;
+  margin: 0px;
+  width: 100%;
+  ul {
+    @include menuUl;
+  }
+  ul.mobile-menu-top {
+    background-color: $color-mobile-header-menu-gray;
+    padding: 30px 0px 15px 30px;
+    > li > span {
+      font-size: 18px;
+      font-weight: bold;
+      color: $color-graytext-footer;
+      margin-bottom: 15px;
+    }
+    ul {
+      margin: 15px 0px 25px 0px;
+      li {
+        margin-bottom: 15px;
+        font-size: 14px;
+        transition: .07s ease;
+      }
+      a {
+        color: $color-white;
+        text-decoration: none;
+      }
+    }
+  }
+  ul.mobile-menu-bottom {
+    padding: 30px 0px 15px 30px;
+    background-color: $color-gray;
+    a {
+      color: $color-white;
+      text-decoration: none;
+      li {
+        margin-bottom: 10px;
+        width: 200px; // To prevent the line under every fifth element from stretching cross screen
+      }
+    }
+    a:nth-of-type(5n+0) li {
+      border-bottom: 1px solid $color-lightgray;
+      padding-bottom: 15px;
+    }
+    a:nth-of-type(6n+0) li {
+      padding-top: 7px;
+    }
   }
 }

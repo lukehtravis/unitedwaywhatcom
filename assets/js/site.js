@@ -10,6 +10,10 @@ $(document).ready(function(){
 
   // Shows hamburger menu on click desktop
   $('.menu-hamburger').on('click', function(){
-    $(this).find('.secondary-menu, .arrow-up').slideToggle();
+    if ($('.logo').is(":hidden")) {
+      $('.secondary-menu-mobile, .arrow-up').slideToggle();
+    } else {
+      $(this).find('.secondary-menu, .arrow-up').slideToggle();
+    }
   })
 })

@@ -4,18 +4,36 @@ footer {
 
 .footer-container {
   @include pageSideMargins;
+  @include breakpoint(phoneonly) {
+    @include mobilePageSideMargins;
+  }
   padding-top: 90px;
+  @include breakpoint(tabletonly) {
+    text-align: center;
+  }
+  @include breakpoint(phonetablet) {
+    padding-top: 60px;
+  }
 }
 
 .top-footer {
   display: flex;
   justify-content: space-between;
+  @include breakpoint(phonetablet) {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
-.footer-title span {
-  font-size: 22px;
-  color: $color-graytext-footer;
-  font-weight: bold;
+.footer-title {
+  span {
+    font-size: 22px;
+    color: $color-graytext-footer;
+    font-weight: bold;
+  }
+  @include breakpoint(phonetablet) {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-contact {
@@ -24,10 +42,16 @@ footer {
   > div {
     margin-bottom: 25px;
   }
-  span {
-    font-size: 26px;
-    color: $color-lightblue;
-    margin-left: 15px;
+  a {
+    text-decoration: none;
+    span {
+      font-size: 26px;
+      @include breakpoint(phoneonly) {
+        font-size: 24px;
+      }
+      color: $color-lightblue;
+      margin-left: 15px;
+    }
   }
   div:first-of-type span {
     color: $color-white;
@@ -38,12 +62,18 @@ footer {
 .bottom-footer {
   display: flex;
   height: 280px;
+  @include breakpoint(phonetablet) {
+    height: 200px;
+  }
 }
 
 .footer-menus {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   width: 75%;
+  @include breakpoint(phonetablet) {
+    display: none;
+  }
 }
 
 .footer-menu-container {
@@ -75,7 +105,8 @@ footer {
       margin-top: 5px;
       margin-bottom: 10px;
       li {
-        margin-left: 25px;
+        margin-left: 15px;
+        margin-bottom: 5px;
       }
       li::before {
         content: "-";
@@ -85,6 +116,9 @@ footer {
         font-weight: normal;
       }
     }
+  }
+  @include breakpoint(phonetablet) {
+    display: none;
   }
 }
 
@@ -96,5 +130,9 @@ footer {
   }
   p {
     color: $color-graytext-footer;
+    line-height: 1.5;
+  }
+  @include breakpoint(phonetablet) {
+    width: 100%;
   }
 }

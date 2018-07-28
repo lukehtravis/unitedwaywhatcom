@@ -5,10 +5,10 @@
         <span>United Way Of Whatcom County</span>
       </div>
       <div class="footer-contact">
-        <div class="contact"><img src="assets/img/Phone.png" /><span>32883288</span></div>
-        <div class="contact"><img src="assets/img/email.png" /><span>Email Us</span></div>
-        <div class="contact"><img src="assets/img/facebook.png" /><span>Connect With Us</span></div>
-        <div class="contact"><img src="assets/img/newspaper.png" /><span>Get Our Newsletter</span></div>
+        <div class="contact"><a href="#"><img src="assets/img/Phone.png" /></a><a href="#"><span>32883288</span></a></div>
+        <div class="contact"><a href="#"><img src="assets/img/email.png" /></a><a href="#"><span>Email Us</span></a></div>
+        <div class="contact"><a href="#"><img src="assets/img/facebook.png" /></a><a href="#"><span>Connect With Us</span></a></div>
+        <div class="contact"><a href="#"><img src="assets/img/newspaper.png" /></a><a href="#"><span>Get Our Newsletter</span></a></div>
       </div>
     </section>
     <section class="bottom-footer">
@@ -74,9 +74,9 @@
         <div class="address">
           <p>
             Part of the Whatcom Center for Philanthropy
-            (Top floor of the Washington Federal Building)
-            1500 Cornwall Ave Ste 203
-            Bellingham, WA 98225-4579
+            (Top floor of the Washington Federal Building)<br />
+            1500 Cornwall Ave Ste 203<br />
+            Bellingham, WA 98225-4579<br />
             <a href="#">See Map</a>
           </p>
         </div>
