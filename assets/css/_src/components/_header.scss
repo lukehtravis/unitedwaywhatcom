@@ -55,10 +55,12 @@ header {
     font-weight: bold;
     > li {
       cursor: pointer;
-      font-size: $text-default + 2px;
       position: relative;
       padding-bottom: 35px;
       transition: 0.2s ease;
+      > span {
+        font-size: $text-default + 2px;
+      }
       > div {
         @include arrowUp($color-white);
         @include centerer;
@@ -118,6 +120,7 @@ header {
   padding: 13px 35px;
   border-radius: 5px;
   background-color: $color-lightblue;
+  font-size: 14px;
   color: $color-white;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -160,6 +163,7 @@ header {
     li {
       padding: 15px 10px;
       transition: 0.7s ease;
+      font-size: 14px;
     }
     li:hover {
       background-color: $color-graytext-footer;
