@@ -95,9 +95,11 @@ footer {
     a {
       text-decoration: none;
       color: $color-white;
+      font-size: 13px;
     }
     > li > a {
       font-weight: bold;
+      font-size: 14px;
     }
     > li ul {
       list-style: none;
