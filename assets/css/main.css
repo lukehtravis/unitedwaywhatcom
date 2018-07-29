@@ -645,9 +645,11 @@ footer {
       margin-bottom: 10px; }
     .footer-menu-container .footer-menu a {
       text-decoration: none;
-      color: white; }
+      color: white;
+      font-size: 13px; }
     .footer-menu-container .footer-menu > li > a {
-      font-weight: bold; }
+      font-weight: bold;
+      font-size: 14px; }
     .footer-menu-container .footer-menu > li ul {
       list-style: none;
       padding-left: 0px;
