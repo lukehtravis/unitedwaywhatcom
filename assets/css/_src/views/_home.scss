@@ -1,12 +1,14 @@
 .banner.home {
   background: url(../../assets/img/oldmanfull.jpg) no-repeat center center;
-  min-height: 780px;
+  height: 780px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-
+.header-photos {
+  display: none;
+}
 .headline {
   padding-top: 100px;
   padding-left: 100px;
@@ -19,7 +21,7 @@
     text-transform: uppercase;
     float: left;
     clear: left;
-    padding: 10px 10px 0px 10px
+    padding: 10px 10px 0px 10px;
   }
   span.orange-header {
     background-color: $color-orange;
@@ -34,32 +36,56 @@
     justify-content: flex-end;
     display: flex;
     flex-direction: column;
+    transition: 0.9s ease;
     img {
       align-self: center;
       margin-bottom: 40px;
     }
-    span {
-      font-family: $league;
-      font-size: 42px;
-      text-transform: uppercase;
-      font-weight: bold;
+    a {
+      text-decoration: none;
+      span {
+        font-family: $league;
+        font-size: 42px;
+        text-transform: uppercase;
+        color: $color-white;
+        font-weight: bold;
+        text-decoration: none;
+      }
     }
     p {
       font-size: 18px;
+      color: $color-white;
       font-style: italic;
     }
   }
   .box-link.light-blue {
     background-color: $color-lightblue
   }
+  .box-link.light-blue:hover {
+    background-color: rgba(83, 158, 208, 0.8);
+  }
   .box-link.dark-blue {
     background-color: $color-darkblue;
   }
-  .box-link.backgroun-image {
-    background: url(../../assets/img/oldmanfull.jpg) no-repeat center center;
+  .box-link.dark-blue:hover {
+    background-color: rgba(0, 81, 145, 0.8);
+  }
+  .box-link.background-image {
+    background: url(../../assets/img/womanbackground.png) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-size: cover;
+  }
+  .box-link.background-image:hover {
+    background:
+    /* top, transparent red, faked with gradient */
+    linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.1)
+    ),
+    /* bottom, image */
+    url(../../assets/img/womanbackground.png) no-repeat center center;
     background-size: cover;
   }
 }

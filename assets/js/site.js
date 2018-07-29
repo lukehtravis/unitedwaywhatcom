@@ -16,4 +16,15 @@ $(document).ready(function(){
       $(this).find('.secondary-menu, .arrow-up').slideToggle();
     }
   })
+
+  var photos = $(".header-photos").toArray();
+  window.setInterval(changePhoto, 6000);
+
+  function changePhoto() {
+    photos.push(photos.shift());
+    var newBackground = photos[0];
+    newBackground = $(newBackground).attr("data-photoid");
+    $(".banner").css("background-image", "url(assets/img/" + newBackground +")");
+  }
+
 })
