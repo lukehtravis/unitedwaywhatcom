@@ -2,9 +2,12 @@
 @import "vendors/normalize";
 @import "variables";
 @import "extends";
-@import "defaults";
 @import "mixins";
+@import "defaults";
 
 // Sitewide Components
 @import "components/header";
 @import "components/footer";
+
+// Page Templates / Views
+@import "views/home";

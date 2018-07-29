@@ -1,0 +1,65 @@
+.banner.home {
+  background: url(../../assets/img/oldmanfull.jpg) no-repeat center center;
+  min-height: 780px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.headline {
+  padding-top: 100px;
+  padding-left: 100px;
+  span {
+    margin: 0;
+    font-size: 86px;
+    color: $color-white;
+    font-family: $league;
+    background-color: $color-lightblue;
+    text-transform: uppercase;
+    float: left;
+    clear: left;
+    padding: 10px 10px 0px 10px
+  }
+  span.orange-header {
+    background-color: $color-orange;
+  }
+}
+
+.box-links {
+  display: flex;
+  .box-link {
+    padding: 125px 80px;
+    text-align: center;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    img {
+      align-self: center;
+      margin-bottom: 40px;
+    }
+    span {
+      font-family: $league;
+      font-size: 42px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    p {
+      font-size: 18px;
+      font-style: italic;
+    }
+  }
+  .box-link.light-blue {
+    background-color: $color-lightblue
+  }
+  .box-link.dark-blue {
+    background-color: $color-darkblue;
+  }
+  .box-link.backgroun-image {
+    background: url(../../assets/img/oldmanfull.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}

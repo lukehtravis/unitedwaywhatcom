@@ -51,3 +51,15 @@
   margin-left: 30px;
   margin-right: 30px;
 }
+
+// General
+@mixin bannerHeader($color) {
+  margin: 0;
+  font-size: 86px;
+  color: $color-white;
+  font-family: $league;
+  background-color: $color;
+  text-transform: uppercase;
+  float: left;
+  clear: left;
+}

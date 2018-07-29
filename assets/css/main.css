@@ -341,6 +341,16 @@ html {
 * {
   box-sizing: border-box; }
 
+h1 {
+  display: table;
+  margin: 0;
+  font-size: 86px;
+  color: white;
+  font-family: "League Gothic";
+  background-color: #539ed0;
+  text-transform: uppercase;
+  padding: 5px 10px; }
+
 h2, h3 {
   font-family: "Roboto", sans-serif; }
 
@@ -678,5 +688,59 @@ footer {
   @media only screen and (min-width: 320px) and (max-width: 900px) {
     .footer-credits {
       width: 100%; } }
+
+.banner.home {
+  background: url(../../assets/img/oldmanfull.jpg) no-repeat center center;
+  min-height: 780px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.headline {
+  padding-top: 100px;
+  padding-left: 100px; }
+  .headline span {
+    margin: 0;
+    font-size: 86px;
+    color: white;
+    font-family: "League Gothic";
+    background-color: #539ed0;
+    text-transform: uppercase;
+    float: left;
+    clear: left;
+    padding: 10px 10px 0px 10px; }
+  .headline span.orange-header {
+    background-color: #ffb351; }
+
+.box-links {
+  display: flex; }
+  .box-links .box-link {
+    padding: 125px 80px;
+    text-align: center;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column; }
+    .box-links .box-link img {
+      align-self: center;
+      margin-bottom: 40px; }
+    .box-links .box-link span {
+      font-family: "League Gothic";
+      font-size: 42px;
+      text-transform: uppercase;
+      font-weight: bold; }
+    .box-links .box-link p {
+      font-size: 18px;
+      font-style: italic; }
+  .box-links .box-link.light-blue {
+    background-color: #539ed0; }
+  .box-links .box-link.dark-blue {
+    background-color: #005191; }
+  .box-links .box-link.backgroun-image {
+    background: url(../../assets/img/oldmanfull.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */

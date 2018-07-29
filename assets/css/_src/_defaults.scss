@@ -7,6 +7,17 @@ html {
   box-sizing: border-box;
 }
 
+h1 {
+  display: table;
+  margin: 0;
+  font-size: 86px;
+  color: $color-white;
+  font-family: $league;
+  background-color: $color-lightblue;
+  text-transform: uppercase;
+  padding: 5px 10px;
+}
+
 h2, h3 {
   font-family: $roboto;
 }
