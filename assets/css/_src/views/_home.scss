@@ -40,12 +40,13 @@
   a {
     display: flex;
     align-items: center;
+    text-decoration: none;
     p {
       margin-left: 20px;
       font-size: 42px;
       font-family: $league;
       text-transform: uppercase;
-      text-decoration: none;
+      color: $color-black;
     }
   }
 }

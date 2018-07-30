@@ -727,13 +727,14 @@ footer {
   margin: 50px 100px; }
   .video-section a {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    text-decoration: none; }
     .video-section a p {
       margin-left: 20px;
       font-size: 42px;
       font-family: "League Gothic";
       text-transform: uppercase;
-      text-decoration: none; }
+      color: black; }
 
 .box-links {
   display: flex; }
