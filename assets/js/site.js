@@ -20,7 +20,7 @@ $(document).ready(function(){
   // Sets url for initial photo on banner
   // Grab the image
   var initialPhoto = $(".banner>img").first().attr('src');
-  initialPhoto = "url('assets/img/" + initialPhoto + "')";
+  initialPhoto = "url('" + initialPhoto + "')";
   // Set the background
   $(".banner").css("background-image", initialPhoto);
 
@@ -41,8 +41,8 @@ $(document).ready(function(){
   function changePhoto() {
     photos.push(photos.shift());
     var newBackground = photos[0];
-    newBackground = $(newBackground).prop('currentSrc').split("/").pop();
-    $(".banner").css("background-image", "url(assets/img/" + newBackground +")");
+    newBackground = $(newBackground).prop('currentSrc');
+    $(".banner").css("background-image", "url("+ newBackground +")");
   }
 
 })

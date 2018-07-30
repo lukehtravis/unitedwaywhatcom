@@ -2,18 +2,19 @@
   <section class="banner home">
     <img
       srcset="
-        oldmanfull.jpg 1400w,
-        oldmantablet.jpg 893w,
-        oldmanphone.jpg 535w
+        /assets/img/oldmanfull.jpg 1400w,
+        /assets/img/oldmantablet.jpg 893w,
+        /assets/img/oldmanphone.jpg 535w
       "
-      src="oldmantablet.jpg" />
+      src="/assets/img/oldmantablet.jpg"
+    />
     <img
       srcset="
-        hatman.jpg 1400w,
-        hatmantablet.jpg 893w,
-        hatmanphone.jpg 535w
+        /assets/img/hatman.jpg 1400w,
+        /assets/img/hatmantablet.jpg 893w,
+        /assets/img/hatmanphone.jpg 535w
       "
-      src="hatmantablet.jpg" />
+      src="/assets/img/hatmantablet.jpg" />
     <div class="headline">
       <span class="blue-header">we have one life.</span>
       <span class="blue-header">to live better, we must</span>
