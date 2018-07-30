@@ -478,6 +478,9 @@ header {
   border: none;
   cursor: pointer;
   transition: 0.7s ease; }
+  @media only screen and (min-width: 320px) and (max-width: 515px) {
+    .menu-right button {
+      padding: 10px 20px; } }
 
 .menu-right button:hover {
   background-color: #005191; }
@@ -508,10 +511,10 @@ header {
 .secondary-menu {
   display: none;
   background-color: #262626;
-  min-width: 245px;
+  min-width: 260px;
   position: absolute;
   right: -25px;
-  top: 59px;
+  top: 53px;
   list-style: none;
   padding-left: 0px;
   margin: 0;

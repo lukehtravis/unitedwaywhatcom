@@ -127,6 +127,9 @@ header {
   border: none;
   cursor: pointer;
   transition: 0.7s ease;
+  @include breakpoint(phoneonly) {
+    padding: 10px 20px;
+  }
 }
 
 .menu-right button:hover {
@@ -151,10 +154,10 @@ header {
 .secondary-menu {
   display: none;
   background-color: $color-gray;
-  min-width: 245px;
+  min-width: 260px;
   position: absolute;
   right: -25px;
-  top: 59px;
+  top: 53px;
   @include menuUl;
   padding: 10px 25px 0 20px;
   a {
