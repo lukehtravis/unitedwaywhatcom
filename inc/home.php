@@ -1,11 +1,17 @@
 <div class="page-container">
   <section class="banner home">
-    <div class="header-photos" data-photoid="oldman.png"></div>
+    <div class="header-photos" data-photoid="oldmanfull.jpg"></div>
     <div class="header-photos" data-photoid="hatman.jpg"></div>
     <div class="headline">
       <span class="blue-header">we have one life.</span>
       <span class="blue-header">to live better, we must</span>
       <span class="orange-header">live united.</span>
+    </div>
+    <div class="video-section">
+      <a href="#">
+        <img src="assets/img/playbutton.png">
+        <p>United in whatcom county</p>
+      </a>
     </div>
   </section>
   <section class="box-links">

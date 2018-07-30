@@ -716,8 +716,30 @@ footer {
   .headline span.orange-header {
     background-color: #ffb351; }
 
+.headline:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
+.video-section {
+  margin: 50px 100px; }
+  .video-section a {
+    display: flex;
+    align-items: center; }
+    .video-section a p {
+      margin-left: 20px;
+      font-size: 42px;
+      font-family: "League Gothic";
+      text-transform: uppercase;
+      text-decoration: none; }
+
 .box-links {
   display: flex; }
+  @media only screen and (min-width: 320px) and (max-width: 900px) {
+    .box-links {
+      flex-direction: column; } }
   .box-links .box-link {
     padding: 125px 80px;
     text-align: center;
@@ -725,6 +747,9 @@ footer {
     display: flex;
     flex-direction: column;
     transition: 0.9s ease; }
+    @media only screen and (min-width: 320px) and (max-width: 515px) {
+      .box-links .box-link {
+        padding: 100px 60px; } }
     .box-links .box-link img {
       align-self: center;
       margin-bottom: 40px; }
@@ -737,10 +762,16 @@ footer {
         color: white;
         font-weight: bold;
         text-decoration: none; }
+        @media only screen and (min-width: 320px) and (max-width: 515px) {
+          .box-links .box-link a span {
+            font-size: 34px; } }
     .box-links .box-link p {
       font-size: 18px;
       color: white;
       font-style: italic; }
+      @media only screen and (min-width: 320px) and (max-width: 515px) {
+        .box-links .box-link p {
+          font-size: 14px; } }
   .box-links .box-link.light-blue {
     background-color: #539ed0; }
   .box-links .box-link.light-blue:hover {
