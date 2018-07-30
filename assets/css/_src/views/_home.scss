@@ -1,5 +1,5 @@
 .banner.home {
-  background: url(../../assets/img/oldmanfull.jpg) no-repeat center center;
+  background: no-repeat center center;
   height: 780px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -8,8 +8,8 @@
   @include breakpoint(tabletonly) {
     height:500px;
   }
-  @include breakpoint(phonetablet) {
-    background: url(../../assets/img/oldmantablet.jpg) no-repeat center center;
+  @include breakpoint(phoneonly) {
+    height:300px;
   }
   > img {
     display: none;
@@ -21,6 +21,10 @@
   @include breakpoint(tabletonly) {
     padding-top: 60px;
     padding-left: 60px;
+  }
+  @include breakpoint(phoneonly) {
+    padding-top: 20px;
+    padding-left: 20px;
   }
   span {
     margin: 0;
@@ -34,6 +38,9 @@
     padding: 10px 10px 0px 10px;
     @include breakpoint(tabletonly) {
       font-size: 60px;
+    }
+    @include breakpoint(phoneonly) {
+      font-size: 40px;
     }
   }
   span.orange-header {
@@ -50,8 +57,14 @@
 }
 .video-section {
   margin: 50px 100px;
+  margin-top: 50px;
+  margin-left: 100px;
   @include breakpoint(tabletonly) {
     margin-left: 60px;
+  }
+  @include breakpoint(phoneonly) {
+    margin-top: 20px;
+    margin-left: 20px;
   }
   a {
     display: flex;
@@ -63,12 +76,16 @@
       font-family: $league;
       text-transform: uppercase;
       color: $color-black;
+      @include breakpoint(phoneonly) {
+        display: none;
+      }
     }
   }
 }
 
 .box-links {
   display: flex;
+  clear: both;
   @include breakpoint(phonetablet) {
     flex-direction: column;
   }

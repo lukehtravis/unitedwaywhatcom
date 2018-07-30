@@ -1,39 +1,17 @@
 <div class="page-container">
   <section class="banner home">
-    <!--<div class="header-photos" data-photoid="oldmanfull.jpg"></div>
-    <div class="header-photos" data-photoid="hatman.jpg"></div>-->
-    <!-- <picture>
-      <source
-        media="(min-width: 901px)"
-        srcset="oldmanfull.jpg"
-      >
-      <source
-        media="( (min-width : 515px) and (max-width : 900px) )"
-        srcset="oldmantablet.jpg"
-      >
-      <img src="oldmantablet.jpg"
-    </picture>
-    <picture>
-      <source
-        media="(min-width: 901px)"
-        srcset="hatman.jpg"
-      >
-      <source
-        media="( (min-width : 515px) and (max-width : 900px) )"
-        srcset="hatmantablet.jpg"
-      >
-      <img src="hatmantablet.jpg" />
-    </picture>-->
     <img
       srcset="
         oldmanfull.jpg 1400w,
-        oldmantablet.jpg 893w
+        oldmantablet.jpg 893w,
+        oldmanphone.jpg 535w
       "
       src="oldmantablet.jpg" />
     <img
       srcset="
         hatman.jpg 1400w,
-        hatmantablet.jpg 893w
+        hatmantablet.jpg 893w,
+        hatmanphone.jpg 535w
       "
       src="hatmantablet.jpg" />
     <div class="headline">
