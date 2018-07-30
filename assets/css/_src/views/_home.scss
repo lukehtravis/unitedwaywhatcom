@@ -5,13 +5,23 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-.header-photos {
-  display: none;
+  @include breakpoint(tabletonly) {
+    height:500px;
+  }
+  @include breakpoint(phonetablet) {
+    background: url(../../assets/img/oldmantablet.jpg) no-repeat center center;
+  }
+  > img {
+    display: none;
+  }
 }
 .headline {
   padding-top: 100px;
   padding-left: 100px;
+  @include breakpoint(tabletonly) {
+    padding-top: 60px;
+    padding-left: 60px;
+  }
   span {
     margin: 0;
     font-size: 86px;
@@ -22,6 +32,9 @@
     float: left;
     clear: left;
     padding: 10px 10px 0px 10px;
+    @include breakpoint(tabletonly) {
+      font-size: 60px;
+    }
   }
   span.orange-header {
     background-color: $color-orange;
@@ -37,6 +50,9 @@
 }
 .video-section {
   margin: 50px 100px;
+  @include breakpoint(tabletonly) {
+    margin-left: 60px;
+  }
   a {
     display: flex;
     align-items: center;

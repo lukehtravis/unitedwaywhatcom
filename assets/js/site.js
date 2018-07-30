@@ -17,13 +17,22 @@ $(document).ready(function(){
     }
   })
 
-  var photos = $(".header-photos").toArray();
+  // Code for Carousel on Home page
+  // Images are input in cms or by devs as empty img elements right under .banner (.banner > img)
+  // Code below
+  // 1. creates and array of .banner > img elements
+  // 2. Shifts array to switch to next element
+  // 3. takes url of current element at top of array (1st in line)
+  // 4. inputs it into the css for the background images
+  // 5. Waits 6 seconds then does it again
+  // Code stays aware of browser size through scrset atttribute on img tags;
+  var photos = $(".banner>img").toArray();
   window.setInterval(changePhoto, 6000);
 
   function changePhoto() {
     photos.push(photos.shift());
     var newBackground = photos[0];
-    newBackground = $(newBackground).attr("data-photoid");
+    newBackground = $(newBackground).prop('currentSrc').split("/").pop();
     $(".banner").css("background-image", "url(assets/img/" + newBackground +")");
   }
 
