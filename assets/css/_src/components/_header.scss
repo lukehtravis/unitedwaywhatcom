@@ -128,6 +128,7 @@ header {
   border: none;
   cursor: pointer;
   transition: 0.7s ease;
+  font-weight: normal;
   @include breakpoint(phoneonly) {
     padding: 10px 20px;
   }

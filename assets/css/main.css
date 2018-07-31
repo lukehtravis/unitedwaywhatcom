@@ -491,7 +491,8 @@ header {
   letter-spacing: 3px;
   border: none;
   cursor: pointer;
-  transition: 0.7s ease; }
+  transition: 0.7s ease;
+  font-weight: normal; }
   @media only screen and (min-width: 1px) and (max-width: 515px) {
     .menu-right button {
       padding: 10px 20px; } }
