@@ -1,4 +1,3 @@
-<div class="page-container">
   <section class="banner home">
     <img
       srcset="
@@ -16,9 +15,9 @@
       "
       src="/assets/img/hatmantablet.jpg" />
     <div class="headline">
-      <span class="blue-header">we have one life.</span>
-      <span class="blue-header">to live better, we must</span>
-      <span class="orange-header">live united.</span>
+      <span class="lightblue-bg">we have one life.</span>
+      <span class="lightblue-bg">to live better, we must</span>
+      <span class="orange-bg">live united.</span>
     </div>
     <div class="video-section">
       <a href="#">
@@ -44,4 +43,3 @@
       <p>She used our funded services to get back on her feet. Now she’s paying it forward. See how Sheena broke the cycle.</p>
     </div>
   </section>
-</div>

@@ -19,10 +19,10 @@ $(document).ready(function(){
 
   // Sets url for initial photo on banner
   // Grab the image
-  var initialPhoto = $(".banner>img").first().attr('src');
+  var initialPhoto = $(".banner.home>img").first().attr('src');
   initialPhoto = "url('" + initialPhoto + "')";
   // Set the background
-  $(".banner").css("background-image", initialPhoto);
+  $(".banner.home").css("background-image", initialPhoto);
 
   // Code for Carousel on Home page
   // Images are input in cms or by devs as empty img elements right under .banner (.banner > img)
@@ -34,7 +34,7 @@ $(document).ready(function(){
   // 5. Waits 6 seconds then does it again
   // Code stays aware of browser size through scrset atttribute on img tags;
 
-  var photos = $(".banner>img").toArray();
+  var photos = $(".banner.home>img").toArray();
 
   window.setInterval(changePhoto, 6000);
 
@@ -42,7 +42,7 @@ $(document).ready(function(){
     photos.push(photos.shift());
     var newBackground = photos[0];
     newBackground = $(newBackground).prop('currentSrc');
-    $(".banner").css("background-image", "url("+ newBackground +")");
+    $(".banner.home").css("background-image", "url("+ newBackground +")");
   }
 
 })
