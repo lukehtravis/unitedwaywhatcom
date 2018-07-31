@@ -9,16 +9,16 @@ html {
 
 h1 {
   margin: 0;
-  font-size: 86px;
-  color: $color-white;
-  font-family: $league;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-family: $roboto-condensed;
   text-transform: uppercase;
-  padding: 5px 10px;
+  font-weight: bold;
+  letter-spacing: 3px;
 }
 
 h2, h3 {
   font-family: $roboto;
-  margin: 0;
 }
 
 p, button, li, a, input, span {
@@ -37,6 +37,7 @@ button {
   color: $color-white;
   border: none;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .orange-bg {
@@ -45,4 +46,12 @@ button {
 
 .darkblue-bg {
   background-color: $color-darkblue;
+}
+
+.lightblue-bg {
+  background-color: $color-lightblue;
+}
+
+.black-bg {
+  background-color: $color-black;
 }

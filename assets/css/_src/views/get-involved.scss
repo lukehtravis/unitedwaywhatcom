@@ -1,0 +1,52 @@
+.banner.get-involved {
+  background: url('/assets/img/getinvolved.jpg') no-repeat center center;
+  height: 1145px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.square-links {
+  display: flex;
+  margin-top: 150px;
+  @include pageSideMargins;
+  .square {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-align: center;
+    background-color: $color-white;
+    border: 1px solid $color-white;
+    color: $color-black;
+    padding: 25px 42px;
+    margin-right: 20px;
+    border-radius: 3px;
+    transition: .7s ease;
+    img {
+      align-self: center;
+      margin-bottom: 40px;
+    }
+    a {
+      span {
+        font-family: $roboto;
+        color: $color-lightblue;
+        font-size: 28px;
+        @include breakpoint(phoneonly) {
+          font-size: 34px;
+        }
+      }
+    }
+  }
+  .square:hover {
+    background-color: transparent;
+    a {
+      span {
+        color: $color-white;
+      }
+    }
+    p {
+      color: $color-white;
+    }
+  }
+}
