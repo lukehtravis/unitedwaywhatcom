@@ -5,12 +5,40 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  @include breakpoint(tabletonly) {
+    background: url('/assets/img/getinvolvedtablet.jpg') no-repeat center center;
+    height: 800px;
+  }
+  @include breakpoint(phoneonly) {
+    background-color: $color-lightblue;
+    background-image: none;
+    height: auto;
+  }
+}
+
+.headline {
+  @include breakpoint(tabletonly) {
+    padding-top: 40px;
+    padding-left: 10px;
+  }
+  @include breakpoint(phoneonly) {
+    padding-top: 50px;
+  }
 }
 
 .square-links {
   display: flex;
   margin-top: 150px;
   @include pageSideMargins;
+  @include breakpoint(tabletonly) {
+    margin-top: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  @include breakpoint(phoneonly) {
+    @include mobilePageSideMargins;
+    flex-direction: column;
+  }
   .square {
     display: flex;
     justify-content: flex-end;
@@ -21,22 +49,47 @@
     color: $color-black;
     padding: 25px 42px;
     margin-right: 20px;
-    border-radius: 3px;
+    border-radius: 6px;
     transition: .7s ease;
+    @include breakpoint(tabletonly) {
+      padding: 20px 10px;
+      margin-right: 10px;
+    }
+    @include breakpoint(phoneonly) {
+      background-color: transparent;
+      margin-right: 0px;
+      margin-left: 0px;
+      margin-bottom: 20px;
+    }
     img {
       align-self: center;
       margin-bottom: 40px;
+      @include breakpoint(tabletonly) {
+        margin-bottom: 15px;
+      }
     }
     a {
       span {
         font-family: $roboto;
         color: $color-lightblue;
         font-size: 28px;
+        @include breakpoint(tabletonly) {
+          font-size: 18px;
+        }
         @include breakpoint(phoneonly) {
-          font-size: 34px;
+          font-weight: bold;
         }
       }
     }
+    p {
+      @include breakpoint(tabletonly) {
+        font-size: 14px;
+      }
+    }
+  @include breakpoint(phoneonly) {
+    background-color: $color-white;
+    padding: 65px 20px 40px;
+  }
   }
   .square:hover {
     background-color: transparent;
