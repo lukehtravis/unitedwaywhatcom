@@ -749,7 +749,8 @@ footer {
     text-transform: uppercase;
     float: left;
     clear: left;
-    padding: 10px 10px 0px 10px; }
+    letter-spacing: 3px;
+    padding: 10px 15px 0px 15px; }
     @media only screen and (min-width: 515px) and (max-width: 900px) {
       .headline span {
         font-size: 60px; } }

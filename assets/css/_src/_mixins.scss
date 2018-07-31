@@ -61,16 +61,6 @@
 }
 
 // General
-@mixin bannerHeader($color) {
-  margin: 0;
-  font-size: 86px;
-  color: $color-white;
-  font-family: $league;
-  background-color: $color;
-  text-transform: uppercase;
-  float: left;
-  clear: left;
-}
 
 @mixin headerText() {
   margin: 0;
@@ -80,5 +70,6 @@
   text-transform: uppercase;
   float: left;
   clear: left;
-  padding: 10px 10px 0px 10px;
+  letter-spacing: 3px;
+  padding: 10px 15px 0px 15px;
 }
