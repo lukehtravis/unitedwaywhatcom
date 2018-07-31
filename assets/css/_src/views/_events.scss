@@ -1,0 +1,39 @@
+.page-container {
+  @include pageSideMargins;
+  @include breakpoint(phonetablet) {
+    @include mobilePageSideMargins;
+  }
+}
+
+.events {
+  margin: 110px 0 90px;
+  h1 {
+    font-size: 50px;
+    margin-bottom: 50px;
+    font-family: $roboto;
+    color: $color-darkblue;
+    text-transform: none;
+    padding-left: 0px;
+  }
+  .events-box {
+    background-color: $color-lightgray;
+    padding: 0px 45px;
+    @include breakpoint(phoneonly) {
+      padding: 0px 20px;
+    }
+    .event-box {
+      padding: 50px 0px;
+      border-bottom: 1px solid $color-graytext-footer;
+      h2 {
+        margin-bottom: 35px;
+        font-size: 30px;
+      }
+      .event-description {
+        margin-bottom: 40px;
+      }
+    }
+    .event-box:last-of-type {
+      border-bottom: none;
+    }
+  }
+}

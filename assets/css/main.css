@@ -342,29 +342,42 @@ html {
   box-sizing: border-box; }
 
 h1 {
-  display: table;
   margin: 0;
   font-size: 86px;
   color: white;
   font-family: "League Gothic";
-  background-color: #539ed0;
   text-transform: uppercase;
   padding: 5px 10px; }
 
 h2, h3 {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  margin: 0; }
 
 p, button, li, a, input, span {
   font-size: 16px;
   font-family: "Roboto", sans-serif; }
 
 a {
-  color: #539ed0; }
+  color: inherit;
+  text-decoration: none; }
+
+button {
+  padding: 12px 15px;
+  border-radius: 3px;
+  color: white;
+  border: none;
+  font-weight: bold; }
+
+.orange-bg {
+  background-color: #ffb351; }
+
+.darkblue-bg {
+  background-color: #005191; }
 
 header {
   background-color: #ededed;
   padding: 40px 25px 0px 40px; }
-  @media only screen and (min-width: 320px) and (max-width: 900px) {
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
     header {
       padding: 30px 20px 0px 20px; } }
 
@@ -373,7 +386,7 @@ header {
   grid-template-columns: 306px auto 200px;
   align-items: end;
   justify-items: center; }
-  @media only screen and (min-width: 320px) and (max-width: 900px) {
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
     .header-container {
       display: flex;
       justify-content: space-between; } }
@@ -386,7 +399,7 @@ header {
   align-items: flex-end;
   padding-bottom: 35px; }
 
-@media only screen and (min-width: 320px) and (max-width: 900px) {
+@media only screen and (min-width: 1px) and (max-width: 900px) {
   .logo {
     display: none; } }
 
@@ -399,7 +412,7 @@ header {
 
 .main-menu {
   width: 100%; }
-  @media only screen and (min-width: 320px) and (max-width: 900px) {
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
     .main-menu {
       display: none; } }
   .main-menu ul {
@@ -500,7 +513,7 @@ header {
     transition: .7s ease;
     border-bottom: 20px solid #262626;
     top: 35px; }
-    @media only screen and (min-width: 320px) and (max-width: 900px) {
+    @media only screen and (min-width: 1px) and (max-width: 900px) {
       .menu-right > .menu-hamburger .arrow-up {
         border-left: 20px solid transparent;
         border-right: 20px solid transparent;
@@ -584,19 +597,19 @@ footer {
   padding-top: 90px; }
   @media only screen and (min-width: 1px) and (max-width: 515px) {
     .footer-container {
-      margin-left: 30px;
-      margin-right: 30px; } }
+      margin-left: 20px;
+      margin-right: 20px; } }
   @media only screen and (min-width: 515px) and (max-width: 900px) {
     .footer-container {
       text-align: center; } }
-  @media only screen and (min-width: 320px) and (max-width: 900px) {
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
     .footer-container {
       padding-top: 60px; } }
 
 .top-footer {
   display: flex;
   justify-content: space-between; }
-  @media only screen and (min-width: 320px) and (max-width: 900px) {
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
     .top-footer {
       flex-direction: column;
       justify-content: center; } }
@@ -605,7 +618,7 @@ footer {
   font-size: 22px;
   color: #747474;
   font-weight: bold; }
-@media only screen and (min-width: 320px) and (max-width: 900px) {
+@media only screen and (min-width: 1px) and (max-width: 900px) {
   .footer-title {
     margin-bottom: 60px; } }
 
@@ -630,7 +643,7 @@ footer {
 .bottom-footer {
   display: flex;
   height: 280px; }
-  @media only screen and (min-width: 320px) and (max-width: 900px) {
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
     .bottom-footer {
       height: 200px; } }
 
@@ -638,7 +651,7 @@ footer {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   width: 75%; }
-  @media only screen and (min-width: 320px) and (max-width: 900px) {
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
     .footer-menus {
       display: none; } }
 
@@ -677,7 +690,7 @@ footer {
         margin-left: -15px; }
       .footer-menu-container .footer-menu > li ul li a {
         font-weight: normal; }
-  @media only screen and (min-width: 320px) and (max-width: 900px) {
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
     .footer-menu-container {
       display: none; } }
 
@@ -689,7 +702,7 @@ footer {
   .footer-credits p {
     color: #747474;
     line-height: 1.5; }
-  @media only screen and (min-width: 320px) and (max-width: 900px) {
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
     .footer-credits {
       width: 100%; } }
 
@@ -776,7 +789,7 @@ footer {
 .box-links {
   display: flex;
   clear: both; }
-  @media only screen and (min-width: 320px) and (max-width: 900px) {
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
     .box-links {
       flex-direction: column; } }
   .box-links .box-link {
@@ -828,5 +841,39 @@ footer {
   .box-links .box-link.background-image:hover {
     background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1)), url(../../assets/img/womanbackground.png) no-repeat center center;
     background-size: cover; }
+
+.page-container {
+  margin-left: 100px;
+  margin-right: 100px; }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    .page-container {
+      margin-left: 20px;
+      margin-right: 20px; } }
+
+.events {
+  margin: 110px 0 90px; }
+  .events h1 {
+    font-size: 50px;
+    margin-bottom: 50px;
+    font-family: "Roboto", sans-serif;
+    color: #005191;
+    text-transform: none;
+    padding-left: 0px; }
+  .events .events-box {
+    background-color: #ededed;
+    padding: 0px 45px; }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .events .events-box {
+        padding: 0px 20px; } }
+    .events .events-box .event-box {
+      padding: 50px 0px;
+      border-bottom: 1px solid #747474; }
+      .events .events-box .event-box h2 {
+        margin-bottom: 35px;
+        font-size: 30px; }
+      .events .events-box .event-box .event-description {
+        margin-bottom: 40px; }
+    .events .events-box .event-box:last-of-type {
+      border-bottom: none; }
 
 /*# sourceMappingURL=main.css.map */

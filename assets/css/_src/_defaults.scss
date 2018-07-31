@@ -8,18 +8,17 @@ html {
 }
 
 h1 {
-  display: table;
   margin: 0;
   font-size: 86px;
   color: $color-white;
   font-family: $league;
-  background-color: $color-lightblue;
   text-transform: uppercase;
   padding: 5px 10px;
 }
 
 h2, h3 {
   font-family: $roboto;
+  margin: 0;
 }
 
 p, button, li, a, input, span {
@@ -28,5 +27,22 @@ p, button, li, a, input, span {
 }
 
 a {
-  color: $color-lightblue;
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  padding: 12px 15px;
+  border-radius: 3px;
+  color: $color-white;
+  border: none;
+  font-weight: bold;
+}
+
+.orange-bg {
+  background-color: $color-orange;
+}
+
+.darkblue-bg {
+  background-color: $color-darkblue;
 }

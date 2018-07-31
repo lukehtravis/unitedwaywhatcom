@@ -13,7 +13,7 @@
     @media only screen and (min-width : 515px) and (max-width : 900px) { @content ; }
   }
   @else if $point == phonetablet {
-    @media only screen and (min-width : 320px) and (max-width : 900px) { @content ; }
+    @media only screen and (min-width : 1px) and (max-width : 900px) { @content ; }
   }
   @else if $point == phoneonly {
     @media only screen and (min-width : 1px) and (max-width : 515px)  { @content ; }
@@ -51,8 +51,13 @@
 }
 
 @mixin mobilePageSideMargins {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@mixin mobilePageSideMargins {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 // General

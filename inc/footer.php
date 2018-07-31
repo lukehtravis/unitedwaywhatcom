@@ -5,10 +5,10 @@
         <span>United Way Of Whatcom County</span>
       </div>
       <div class="footer-contact">
-        <div class="contact"><a href="#"><img src="assets/img/Phone.png" /></a><a href="#"><span>32883288</span></a></div>
-        <div class="contact"><a href="#"><img src="assets/img/email.png" /></a><a href="#"><span>Email Us</span></a></div>
-        <div class="contact"><a href="#"><img src="assets/img/facebook.png" /></a><a href="#"><span>Connect With Us</span></a></div>
-        <div class="contact"><a href="#"><img src="assets/img/newspaper.png" /></a><a href="#"><span>Get Our Newsletter</span></a></div>
+        <div class="contact"><a href="#"><img src="/assets/img/phone.png" /></a><a href="#"><span>32883288</span></a></div>
+        <div class="contact"><a href="#"><img src="/assets/img/email.png" /></a><a href="#"><span>Email Us</span></a></div>
+        <div class="contact"><a href="#"><img src="/assets/img/facebook.png" /></a><a href="#"><span>Connect With Us</span></a></div>
+        <div class="contact"><a href="#"><img src="/assets/img/newspaper.png" /></a><a href="#"><span>Get Our Newsletter</span></a></div>
       </div>
     </section>
     <section class="bottom-footer">
@@ -66,7 +66,7 @@
               </ul>
             </li>
             <li><a href="#">Menu Item</a></li>
-            <li><a href="#">Menu Item</a></li>
+            <li><a href="/unitedwaywhatcom/inc/events.php">events</a></li>
           </ul>
         </div>
       </div>
