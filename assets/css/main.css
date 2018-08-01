@@ -354,18 +354,22 @@ h1 {
       margin-bottom: 10px;
       font-size: 15px; } }
 
-h2, h3 {
+h2, h3, label {
   font-family: "Roboto", sans-serif; }
 
 p, button, li, a, input, span {
   font-size: 16px;
   font-family: "Roboto", sans-serif; }
 
+input[type="checkbox"] {
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
 a {
   color: inherit;
   text-decoration: none; }
 
-button {
+button, input[type="submit"] {
   padding: 12px 15px;
   border-radius: 3px;
   color: white;
@@ -1054,7 +1058,7 @@ footer {
     .donations .address-line label {
       min-width: 115px;
       margin-right: 15px; }
-    .donations .address-line input {
+    .donations .address-line input, .donations .address-line textarea {
       width: 100%;
       border-radius: 4px;
       border: 1px solid #747474;
@@ -1082,11 +1086,35 @@ footer {
     border-top: 1px solid #ededed; }
     .donations .contact-information > div.checkmark input.no-margin {
       margin-top: 0px; }
+  .donations .payment-details {
+    padding: 15px 0 30px;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    margin-bottom: 40px; }
+    .donations .payment-details h2 {
+      margin-bottom: 0px; }
+    .donations .payment-details p {
+      font-size: 15px;
+      font-style: italic; }
+  .donations .final-amount {
+    background-color: #ededed;
+    padding: 50px 140px;
+    text-align: center;
+    border-radius: 4px; }
+    .donations .final-amount .final-number {
+      font-size: 60px;
+      font-weight: bold; }
   .donations .checkmark * {
     display: inline;
     margin: 30px 0px;
     font-size: 15px; }
   .donations .checkmark input {
     margin-right: 10px; }
+  .donations .checkmark.no-bottom-margin input {
+    margin-bottom: 15px; }
+  .donations input[type="submit"] {
+    background-color: #ffb351;
+    width: 100%;
+    margin-top: 20px; }
 
 /*# sourceMappingURL=main.css.map */

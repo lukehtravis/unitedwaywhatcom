@@ -21,13 +21,18 @@ h1 {
   }
 }
 
-h2, h3 {
+h2, h3, label {
   font-family: $roboto;
 }
 
-p, button, li, a, input, span {
+p, button, li, a, input, span, {
   font-size: $text-default;
   font-family: $roboto;
+}
+
+input[type="checkbox"] {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 a {
@@ -35,7 +40,7 @@ a {
   text-decoration: none;
 }
 
-button {
+button, input[type="submit"] {
   padding: 12px 15px;
   border-radius: 3px;
   color: $color-white;
