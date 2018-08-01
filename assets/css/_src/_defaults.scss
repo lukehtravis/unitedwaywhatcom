@@ -44,6 +44,13 @@ button {
   cursor: pointer;
 }
 
+input[type="text"], textarea {
+  width: 100%;
+  border: 1px solid $color-lightgray;
+  padding: 0px;
+  border-radius: 4px;
+}
+
 .orange-bg {
   background-color: $color-orange;
 }
@@ -86,6 +93,9 @@ button {
   span:nth-of-type(2) {
     padding-top: 0px;
     margin-top: -10px;
+    @include breakpoint(phoneonly) {
+      margin-top: -4px;
+    }
   }
 }
 .headline:after {
