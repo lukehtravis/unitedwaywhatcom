@@ -34,11 +34,15 @@ header {
 }
 
 .logo-container > span {
-  margin-right: 20px;
+  margin-left: 20px;
   color: $color-darkblue;
   font-family: $roboto;
   font-weight: bold;
   white-space: nowrap;
+  @include breakpoint(phoneonly) {
+    margin-right: 20px;
+    margin-left: 0px;
+  }
 }
 
 .main-menu {

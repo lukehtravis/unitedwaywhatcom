@@ -125,9 +125,6 @@
       }
     }
     input, textarea {
-      width: 100%;
-      border-radius: 4px;
-      border: 1px solid $color-graytext-footer;
       padding: 10px;
     }
     .state-zip > input {
@@ -137,6 +134,16 @@
       width: 38%;
       margin-left: 2%;
     }
+    .expiry-date {
+      display: flex;
+      > select {
+        width: 60px;
+        padding: 5px;
+      }
+      > select:last-of-type {
+        margin-left: 10px;
+      }
+    }
     .name-entry > input {
       width: 48%;
     }
@@ -144,7 +151,7 @@
       margin-left: 2%;
     }
   }
-  .address {
+  .address, .payment-details {
     .address-line.amount {
       input {
         width: 100px;

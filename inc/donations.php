@@ -123,6 +123,45 @@
         <h2>Payment Details</h2>
         <div class="checkmark"><input type="checkbox" class="css-checkbox" class="no-margin" name="dedicate" checked="checked"><p>I'd prefer to pay by mail</p></div>
         <p>We'll send you mailing instructions once this form is submitted</p>
+        <div class="address-line">
+          <label>Name</label>
+          <div class="name-entry">
+            <input type="text" name="paymentfirst" placeholder="First">
+            <input type="text" name="paymentlast" placeholder="Last">
+          </div>
+        </div>
+        <div class="address-line">
+          <label>Card Number</label>
+          <input type="text" name="cardnumber">
+        </div>
+        <div class="address-line">
+          <label>Expiration Date</label>
+          <div class="expiry-date"><select name="month" placeholder="Month"></select><select type="select" name="year" placeholder="Year"></select></div>
+        </div>
+        <div class="address-line amount">
+          <label>Amount</label>
+          <input type="text" name="cvv">
+        </div>
+        <div class="address-line">
+          <label>Address</label>
+          <input type="text" name="cardaddress">
+        </div>
+        <div class="address-line">
+          <label>Address 2</label>
+          <input type="text" name="cardaddress2">
+        </div>
+        <div class="address-line">
+          <label>City</label>
+          <input type="text" name="cardcity">
+        </div>
+        <div class="address-line">
+          <label>State and Zip</label>
+          <div class="state-zip"><input type="text" name="cardstate" placeholder="State"><input type="input" name="cardzipcode" placeholder="Zip"></div>
+        </div>
+      </div>
+      <div class="checkmark">
+        <input type="checkbox" class="css-checkbox" name="restrict" checked="checked">
+        <p>I'd like to restrict a portion of my gift to a non-profit of my choice</p>
       </div>
       <div class="final-amount">
         <p>Your <span class="regularity">Monthly/One-time</span> will be</p>
