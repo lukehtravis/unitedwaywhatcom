@@ -1,6 +1,10 @@
 .donations {
   background-color: $color-lightblue;
   padding-top: 80px;
+  background: url('/assets/img/smilinggirl.jpg') no-repeat left top;
+  @include breakpoint(phonetablet) {
+    background-image: none;
+  }
   form {
     width: 650px;
     background-color: $color-white;

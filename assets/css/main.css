@@ -1014,7 +1014,11 @@ footer {
 
 .donations {
   background-color: #539ed0;
-  padding-top: 80px; }
+  padding-top: 80px;
+  background: url("/assets/img/smilinggirl.jpg") no-repeat left top; }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    .donations {
+      background-image: none; } }
   .donations form {
     width: 650px;
     background-color: white;
@@ -1186,6 +1190,120 @@ footer {
     margin-bottom: 0px; }
   .donations input[type="submit"] {
     background-color: #ffb351;
+    width: 100%;
+    margin-top: 20px; }
+
+form, .donation-form {
+  width: 650px;
+  background-color: white;
+  margin: auto;
+  padding: 60px 75px; }
+  @media only screen and (min-width: 515px) and (max-width: 900px) {
+    form, .donation-form {
+      width: 450px;
+      padding: 60px 35px; } }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    form, .donation-form {
+      padding: 20px 10px;
+      width: 98%;
+      margin: 0px 1%; } }
+  form .donate-buttons, form .donate-timeframe, .donation-form .donate-buttons, .donation-form .donate-timeframe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 45px; }
+    form .donate-buttons .donate-button, form .donate-timeframe .donate-button, .donation-form .donate-buttons .donate-button, .donation-form .donate-timeframe .donate-button {
+      width: 32%;
+      margin-right: 1.5%;
+      margin-bottom: 10px; }
+      form .donate-buttons .donate-button input, form .donate-timeframe .donate-button input, .donation-form .donate-buttons .donate-button input, .donation-form .donate-timeframe .donate-button input {
+        padding: 30px 0;
+        border: 1px solid #539ed0;
+        text-align: center; }
+    form .donate-buttons .donate-button:nth-child(3n+3), form .donate-timeframe .donate-button:nth-child(3n+3), .donation-form .donate-buttons .donate-button:nth-child(3n+3), .donation-form .donate-timeframe .donate-button:nth-child(3n+3) {
+      margin-right: 0; }
+
+.donate-timeframe > input {
+  width: 49%;
+  padding: 10px 0;
+  text-align: center;
+  border: 1px solid #539ed0; }
+
+.donate-timeframe > input:first-child {
+  margin-right: 2%; }
+
+.calculator {
+  padding: 40px 20px;
+  background-color: #ededed;
+  text-align: center; }
+  .calculator > p {
+    color: #747474; }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .calculator > p {
+        margin-bottom: 0px; } }
+  .calculator .calculator-results {
+    display: flex;
+    margin-top: 45px; }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .calculator .calculator-results {
+        flex-direction: column;
+        margin-top: 0px; } }
+    .calculator .calculator-results .calculation {
+      padding: 0 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      @media only screen and (min-width: 1px) and (max-width: 515px) {
+        .calculator .calculator-results .calculation {
+          flex-direction: row; } }
+      .calculator .calculator-results .calculation .big-number {
+        font-family: "League Gothic";
+        font-size: 70px;
+        margin: 20px 0; }
+      .calculator .calculator-results .calculation p {
+        font-size: 12px; }
+        @media only screen and (min-width: 1px) and (max-width: 515px) {
+          .calculator .calculator-results .calculation p {
+            width: 33%; } }
+      @media only screen and (min-width: 1px) and (max-width: 515px) {
+        .calculator .calculator-results .calculation img {
+          width: 45px; } }
+    .calculator .calculator-results .calculation:first-child, .calculator .calculator-results .calculation:nth-child(2) {
+      border-right: 1px solid #747474; }
+      @media only screen and (min-width: 1px) and (max-width: 515px) {
+        .calculator .calculator-results .calculation:first-child, .calculator .calculator-results .calculation:nth-child(2) {
+          border-right: 0px;
+          border-bottom: 1px solid white;
+          padding-top: 30px;
+          padding-bottom: 20px; } }
+
+.get-involved-calc {
+  background: url("/assets/img/smilinggirl.jpg") no-repeat left top;
+  background-color: #539ed0;
+  display: flex;
+  justify-content: space-between; }
+
+.headline {
+  padding-top: 30px; }
+  @media only screen and (min-width: 515px) and (max-width: 900px) {
+    .headline {
+      padding-top: 40px;
+      padding-left: 10px; } }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    .headline {
+      padding-top: 50px; } }
+  .headline h1 {
+    margin-bottom: 120px;
+    font-size: 14px; }
+  .headline span {
+    padding: 0px;
+    font-size: 60px; }
+
+.donation-form {
+  margin: 100px 0 115px 0;
+  padding: 45px 55px; }
+  .donation-form button {
     width: 100%;
     margin-top: 20px; }
 

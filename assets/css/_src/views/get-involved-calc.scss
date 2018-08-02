@@ -1,0 +1,36 @@
+@import "../components/calculator";
+
+.get-involved-calc {
+  background: url('/assets/img/smilinggirl.jpg') no-repeat left top;
+  background-color: $color-lightblue;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headline {
+  padding-top: 30px;
+  @include breakpoint(tabletonly) {
+    padding-top: 40px;
+    padding-left: 10px;
+  }
+  @include breakpoint(phoneonly) {
+    padding-top: 50px;
+  }
+  h1 {
+    margin-bottom: 120px;
+    font-size: 14px;
+  }
+  span {
+    padding: 0px;
+    font-size: 60px;
+  }
+}
+
+.donation-form {
+  margin: 100px 0 115px 0;
+  padding: 45px 55px;
+  button {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
