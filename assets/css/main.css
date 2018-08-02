@@ -440,6 +440,20 @@ input[type="text"], textarea {
   height: 0;
   clear: both; }
 
+input[type="checkbox"] {
+  display: none; }
+
+.checkbox label:before {
+  border-radius: 3px; }
+
+input[type="checkbox"]:checked {
+  content: "\2713";
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+  color: #f3f3f3;
+  text-align: center;
+  line-height: 15px; }
+
 header {
   background-color: #ededed;
   padding: 40px 25px 0px 40px; }
@@ -1006,6 +1020,15 @@ footer {
     background-color: white;
     margin: auto;
     padding: 60px 75px; }
+    @media only screen and (min-width: 515px) and (max-width: 900px) {
+      .donations form {
+        width: 450px;
+        padding: 60px 35px; } }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .donations form {
+        padding: 20px 10px;
+        width: 98%;
+        margin: 0px 1%; } }
     .donations form .donate-buttons, .donations form .donate-timeframe {
       display: flex;
       flex-wrap: wrap;
@@ -1034,19 +1057,45 @@ footer {
     text-align: center; }
     .donations .calculator > p {
       color: #747474; }
+      @media only screen and (min-width: 1px) and (max-width: 515px) {
+        .donations .calculator > p {
+          margin-bottom: 0px; } }
     .donations .calculator .calculator-results {
       display: flex;
       margin-top: 45px; }
+      @media only screen and (min-width: 1px) and (max-width: 515px) {
+        .donations .calculator .calculator-results {
+          flex-direction: column;
+          margin-top: 0px; } }
       .donations .calculator .calculator-results .calculation {
-        padding: 0 10px; }
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        @media only screen and (min-width: 1px) and (max-width: 515px) {
+          .donations .calculator .calculator-results .calculation {
+            flex-direction: row; } }
         .donations .calculator .calculator-results .calculation .big-number {
           font-family: "League Gothic";
           font-size: 70px;
           margin: 20px 0; }
         .donations .calculator .calculator-results .calculation p {
           font-size: 12px; }
+          @media only screen and (min-width: 1px) and (max-width: 515px) {
+            .donations .calculator .calculator-results .calculation p {
+              width: 33%; } }
+        @media only screen and (min-width: 1px) and (max-width: 515px) {
+          .donations .calculator .calculator-results .calculation img {
+            width: 45px; } }
       .donations .calculator .calculator-results .calculation:first-child, .donations .calculator .calculator-results .calculation:nth-child(2) {
         border-right: 1px solid #747474; }
+        @media only screen and (min-width: 1px) and (max-width: 515px) {
+          .donations .calculator .calculator-results .calculation:first-child, .donations .calculator .calculator-results .calculation:nth-child(2) {
+            border-right: 0px;
+            border-bottom: 1px solid white;
+            padding-top: 30px;
+            padding-bottom: 20px; } }
   .donations .restriction {
     margin-top: 8px;
     margin-bottom: 20px; }
@@ -1055,9 +1104,18 @@ footer {
     align-items: center;
     margin-bottom: 20px;
     font-size: 15px; }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .donations .address-line {
+        flex-direction: column;
+        align-items: flex-start; } }
     .donations .address-line label {
       min-width: 115px;
       margin-right: 15px; }
+      @media only screen and (min-width: 1px) and (max-width: 515px) {
+        .donations .address-line label {
+          min-width: 0px;
+          margin-right: 0px;
+          margin-bottom: 5px; } }
     .donations .address-line input, .donations .address-line textarea {
       width: 100%;
       border-radius: 4px;
@@ -1077,10 +1135,18 @@ footer {
   .donations .address .address-line.amount span {
     font-size: 15px;
     margin-left: 15px; }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .donations .address .address-line.amount span {
+        margin-top: 10px;
+        margin-left: 0px; } }
   .donations .address .admin-fees {
     font-size: 15px;
     margin-left: 130px;
-    padding-bottom: 40px; }
+    padding-bottom: 40px;
+    font-style: italic; }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .donations .address .admin-fees {
+        margin-left: 0px; } }
   .donations .contact-information {
     padding: 35px 0 20px;
     border-top: 1px solid #ededed; }
@@ -1101,6 +1167,12 @@ footer {
     padding: 50px 140px;
     text-align: center;
     border-radius: 4px; }
+    @media only screen and (min-width: 515px) and (max-width: 900px) {
+      .donations .final-amount {
+        padding: 50px 70px; } }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .donations .final-amount {
+        padding: 50px 45px; } }
     .donations .final-amount .final-number {
       font-size: 60px;
       font-weight: bold; }
@@ -1111,7 +1183,7 @@ footer {
   .donations .checkmark input {
     margin-right: 10px; }
   .donations .checkmark.no-bottom-margin input {
-    margin-bottom: 15px; }
+    margin-bottom: 0px; }
   .donations input[type="submit"] {
     background-color: #ffb351;
     width: 100%;

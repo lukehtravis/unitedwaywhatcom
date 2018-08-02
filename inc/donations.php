@@ -22,7 +22,7 @@
     </div>
     <div class="donate-timeframe">
       <input type="text" name="onetime" value="" placeholder="One-Time" readonly>
-      <input type="text" name="onetime" value="" placeholder="Monthly" readonly>
+      <input type="text" name="monthly" value="" placeholder="Monthly" readonly>
     </div>
     <div class="calculator">
       <p>A <span class="donation-amount">x100</span>donation provides:</p>
@@ -46,7 +46,7 @@
     </div>
     <div class="restriction">
       <div class="checkmark">
-        <input type="checkbox" name="restrict" value="restrict">
+        <input type="checkbox" class="css-checkbox" name="restrict" checked="checked">
         <p>I'd like to restrict a portion of my gift to a non-profit of my choice</p>
       </div>
     </div>
@@ -94,12 +94,12 @@
         <label>Phone<span class="parenthetical">Optional</span></label>
         <input type="text" name="phone">
       </div>
-      <div class="checkmark">
-        <input type="checkbox" name="newsletter" value="checked">
-        <p>Send me quarterly updates</p>
+      <div class="checkmark no-bottom-margin">
+        <input type="checkbox" name="newsletter" checked="checked">
+        <label for="newsletter" class="css-label">Send me quarterly updates</label>
       </div>
       <div class="checkmark">
-        <input type="checkbox" class="no-margin" name="dedicate" value="checked">
+        <input type="checkbox" class="css-checkbox" class="no-margin" name="dedicate" checked="checked">
         <p>Dedicate my gift</p>
       </div>
       <div class="address-line">
@@ -120,8 +120,13 @@
     </div>
     <div class="payment-details">
       <h2>Payment Details</h2>
-      <div class="checkmark"><input type="checkbox" class="no-margin" name="dedicate" value="checked"><p>I'd prefer to pay by mail</p></div>
+      <div class="checkmark"><input type="checkbox" class="css-checkbox" class="no-margin" name="dedicate" checked="checked"><p>I'd prefer to pay by mail</p></div>
       <p>We'll send you mailing instructions once this form is submitted</p>
     </div>
+    <div class="final-amount">
+      <p>Your <span class="regularity">Monthly/One-time</span> will be</p>
+      <span class="final-number">$100</span>
+    </div>
+    <input type="submit">
   </form>
 </section>
