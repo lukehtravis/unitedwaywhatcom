@@ -1292,7 +1292,7 @@ form, .donation-form {
           padding-bottom: 20px; } }
 
 .get-involved-calc {
-  background: url("/assets/img/smilinggirl.jpg") no-repeat left top;
+  background: url("/assets/img/smilinggirl.jpg") no-repeat left bottom;
   background-color: #539ed0;
   display: flex;
   justify-content: space-between; }
@@ -1301,27 +1301,26 @@ form, .donation-form {
       flex-direction: column;
       align-items: center;
       background-image: none; } }
-
-.headline {
-  padding-top: 30px; }
-  @media only screen and (min-width: 1px) and (max-width: 900px) {
-    .headline {
-      text-align: center; } }
-  @media only screen and (min-width: 515px) and (max-width: 900px) {
-    .headline {
-      padding-top: 40px;
-      padding-left: 10px; } }
-  @media only screen and (min-width: 1px) and (max-width: 515px) {
-    .headline {
-      padding-top: 50px; } }
-  .headline h1 {
-    margin-bottom: 120px;
-    font-size: 14px; }
+  .get-involved-calc .headline {
+    padding-top: 30px; }
+    @media only screen and (min-width: 1px) and (max-width: 900px) {
+      .get-involved-calc .headline {
+        text-align: center; } }
+    @media only screen and (min-width: 515px) and (max-width: 900px) {
+      .get-involved-calc .headline {
+        padding-top: 40px;
+        padding-left: 10px; } }
     @media only screen and (min-width: 1px) and (max-width: 515px) {
-      .headline h1 {
-        margin-bottom: 50px; } }
+      .get-involved-calc .headline {
+        padding-top: 50px; } }
+    .get-involved-calc .headline h1 {
+      margin-bottom: 120px;
+      font-size: 14px; }
+      @media only screen and (min-width: 1px) and (max-width: 515px) {
+        .get-involved-calc .headline h1 {
+          margin-bottom: 50px; } }
   @media only screen and (min-width: 901px) {
-    .headline span {
+    .get-involved-calc span {
       padding: 0px;
       font-size: 60px; } }
 
@@ -1335,5 +1334,56 @@ form, .donation-form {
   .donation-form button {
     width: 100%;
     margin-top: 20px; }
+
+.confirm-screen {
+  padding-top: 150px;
+  padding-bottom: 114px;
+  background: url("/assets/img/thumbup.jpg") no-repeat right center;
+  background-color: #539ed0;
+  color: white; }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    .confirm-screen {
+      background-image: none;
+      padding: 50px;
+      padding: 30px; } }
+  .confirm-screen .headline span {
+    padding-left: 0px; }
+  .confirm-screen .headline p {
+    clear: both; }
+    @media only screen and (min-width: 1px) and (max-width: 900px) {
+      .confirm-screen .headline p {
+        text-align: left; } }
+  .confirm-screen .address-box-container {
+    padding-left: 100px; }
+    @media only screen and (min-width: 515px) and (max-width: 900px) {
+      .confirm-screen .address-box-container {
+        padding-left: 15px; } }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .confirm-screen .address-box-container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+    .confirm-screen .address-box-container .address-box {
+      border: 1px solid white;
+      padding: 10px 30px;
+      width: 500px; }
+      @media only screen and (min-width: 1px) and (max-width: 515px) {
+        .confirm-screen .address-box-container .address-box {
+          width: 100%; } }
+      .confirm-screen .address-box-container .address-box .address-box-grouping > p:first-of-type {
+        color: black;
+        font-style: italic; }
+      .confirm-screen .address-box-container .address-box .address-box-grouping > p:last-of-type {
+        font-weight: bold; }
+    .confirm-screen .address-box-container > p {
+      color: black; }
+
+.confirm-screen.oops {
+  background: url("/assets/img/thumbdown.jpg") no-repeat right center;
+  background-color: #539ed0;
+  min-height: 650px; }
+  .confirm-screen.oops .headline {
+    max-width: 500px; }
+    .confirm-screen.oops .headline a {
+      color: black; }
 
 /*# sourceMappingURL=main.css.map */

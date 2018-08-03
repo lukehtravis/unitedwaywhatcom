@@ -1,0 +1,63 @@
+.confirm-screen {
+  padding-top: 150px;
+  padding-bottom: 114px;
+  background: url('/assets/img/thumbup.jpg') no-repeat right center;
+  background-color: $color-lightblue;
+  color: $color-white;
+  @include breakpoint(phoneonly) {
+    background-image: none;
+    padding: 50px;
+    padding: 30px;
+  }
+  .headline {
+    span {
+      padding-left: 0px;
+    }
+    p {
+      clear: both;
+      @include breakpoint(phonetablet) {
+        text-align: left;
+      }
+    }
+  }
+
+  .address-box-container {
+    padding-left: 100px;
+    @include breakpoint(tabletonly) {
+      padding-left: 15px;
+    }
+    @include breakpoint(phoneonly) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .address-box {
+      border: 1px solid $color-white;
+      padding: 10px 30px;
+      width: 500px;
+      @include breakpoint(phoneonly) {
+        width: 100%;
+      }
+      .address-box-grouping > p:first-of-type {
+        color: $color-black;
+        font-style: italic;
+      }
+      .address-box-grouping > p:last-of-type {
+        font-weight: bold;
+      }
+    }
+    > p {
+      color: $color-black;
+    }
+  }
+}
+.confirm-screen.oops {
+  background: url('/assets/img/thumbdown.jpg') no-repeat right center;
+  background-color: $color-lightblue;
+  min-height: 650px;
+  .headline {
+    max-width: 500px;
+    a {
+      color: $color-black;
+    }
+  }
+}

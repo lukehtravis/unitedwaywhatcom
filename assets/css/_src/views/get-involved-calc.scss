@@ -1,7 +1,7 @@
 @import "../components/calculator";
 
 .get-involved-calc {
-  background: url('/assets/img/smilinggirl.jpg') no-repeat left top;
+  background: url('/assets/img/smilinggirl.jpg') no-repeat left bottom;
   background-color: $color-lightblue;
   display: flex;
   justify-content: space-between;
@@ -10,27 +10,26 @@
     align-items: center;
     background-image: none;
   }
-}
-
-.headline {
-  padding-top: 30px;
-  @include breakpoint(phonetablet) {
-    text-align: center;
-  }
-  @include breakpoint(tabletonly) {
-    padding-top: 40px;
-    padding-left: 10px;
-  }
-  @include breakpoint(phoneonly) {
-    padding-top: 50px;
-  }
-  h1 {
-    margin-bottom: 120px;
-    font-size: 14px;
-    @include breakpoint(phoneonly) {
-      margin-bottom: 50px;
+  .headline {
+    padding-top: 30px;
+    @include breakpoint(phonetablet) {
+      text-align: center;
     }
-  }
+    @include breakpoint(tabletonly) {
+      padding-top: 40px;
+      padding-left: 10px;
+    }
+    @include breakpoint(phoneonly) {
+      padding-top: 50px;
+    }
+    h1 {
+      margin-bottom: 120px;
+      font-size: 14px;
+      @include breakpoint(phoneonly) {
+        margin-bottom: 50px;
+      }
+    }
+}
   span {
     @include breakpoint(desktopbeyond) {
       padding: 0px;
