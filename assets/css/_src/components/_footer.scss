@@ -88,6 +88,15 @@ footer {
     font-size: 14px;
   }
   .footer-menu {
+    &.other {
+      li {
+        margin-bottom: 5px;
+        a {
+          font-size: 13px;
+          font-weight: normal;
+        }
+      }
+    }
     @include menuUl;
     > li {
       margin-bottom: 10px;
