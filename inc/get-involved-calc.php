@@ -1,3 +1,8 @@
+<!doctype html>
+<?php
+  $root_path = $_SERVER['DOCUMENT_ROOT'] . "/unitedwaywhatcom";
+  include $root_path . '/inc/header.php';
+?>
 <div class="get-involved-calc">
   <div class="headline">
     <h1>Give <span class="breadcrumb">/ IMPACT CAlculator</span></h1>
@@ -52,3 +57,6 @@
     <a href="#"><button class="orange-bg">Lets Do This!</button>
   </div>
 </div>
+<?php
+  include $root_path . '/inc/footer.php';
+?>

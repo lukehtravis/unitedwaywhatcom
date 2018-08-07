@@ -1455,13 +1455,21 @@ form, .donation-form {
       background-image: none;
       padding: 50px;
       padding: 30px; } }
-  .confirm-screen .headline span {
-    padding-left: 0px; }
-  .confirm-screen .headline p {
-    clear: both; }
-    @media only screen and (min-width: 1px) and (max-width: 900px) {
-      .confirm-screen .headline p {
-        text-align: left; } }
+  .confirm-screen .headline {
+    padding-top: 0px; }
+    .confirm-screen .headline span {
+      padding-left: 0px;
+      font-family: "Roboto", sans-serif;
+      font-size: 75px;
+      text-transform: none;
+      margin-bottom: 20px; }
+    .confirm-screen .headline p {
+      clear: both;
+      font-style: italic;
+      font-size: 18px; }
+      @media only screen and (min-width: 1px) and (max-width: 900px) {
+        .confirm-screen .headline p {
+          text-align: left; } }
   .confirm-screen .address-box-container {
     padding-left: 100px; }
     @media only screen and (min-width: 515px) and (max-width: 900px) {
@@ -1491,7 +1499,8 @@ form, .donation-form {
   background-color: #539ed0;
   min-height: 650px; }
   .confirm-screen.oops .headline {
-    max-width: 500px; }
+    max-width: 500px;
+    padding-top: 0px; }
     .confirm-screen.oops .headline a {
       color: black; }
 

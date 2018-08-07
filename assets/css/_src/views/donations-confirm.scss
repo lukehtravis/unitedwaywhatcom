@@ -10,11 +10,18 @@
     padding: 30px;
   }
   .headline {
+    padding-top: 0px;
     span {
       padding-left: 0px;
+      font-family: $roboto;
+      font-size: 75px;
+      text-transform: none;
+      margin-bottom: 20px;
     }
     p {
       clear: both;
+      font-style: italic;
+      font-size: 18px;
       @include breakpoint(phonetablet) {
         text-align: left;
       }
@@ -56,6 +63,7 @@
   min-height: 650px;
   .headline {
     max-width: 500px;
+    padding-top: 0px;
     a {
       color: $color-black;
     }
