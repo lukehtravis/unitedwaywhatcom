@@ -29,11 +29,22 @@
         margin-bottom: 50px;
       }
     }
-}
+    > span {
+      font-weight: bold;
+      font-size: 60px;
+      font-family: $roboto;
+      text-transform: none;
+      @include breakpoint(tabletonly) {
+        font-size: 50px;
+      }
+      @include breakpoint(phoneonly) {
+        font-size: 26px;
+      }
+    }
+  }
   span {
     @include breakpoint(desktopbeyond) {
       padding: 0px;
-      font-size: 60px;
     }
   }
 }

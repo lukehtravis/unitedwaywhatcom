@@ -1341,7 +1341,10 @@ form, .donation-form {
       form .donate-buttons .donate-button input, form .donate-timeframe .donate-button input, .donation-form .donate-buttons .donate-button input, .donation-form .donate-timeframe .donate-button input {
         padding: 30px 0;
         border: 1px solid #539ed0;
-        text-align: center; }
+        text-align: center;
+        font-size: 22px; }
+      form .donate-buttons .donate-button input::placeholder, form .donate-timeframe .donate-button input::placeholder, .donation-form .donate-buttons .donate-button input::placeholder, .donation-form .donate-timeframe .donate-button input::placeholder {
+        color: black; }
     form .donate-buttons .donate-button:nth-child(3n+3), form .donate-timeframe .donate-button:nth-child(3n+3), .donation-form .donate-buttons .donate-button:nth-child(3n+3), .donation-form .donate-timeframe .donate-button:nth-child(3n+3) {
       margin-right: 0; }
 
@@ -1349,7 +1352,11 @@ form, .donation-form {
   width: 49%;
   padding: 10px 0;
   text-align: center;
-  border: 1px solid #539ed0; }
+  border: 1px solid #539ed0;
+  font-size: 22px; }
+
+.donate-timeframe > input::placeholder {
+  color: black; }
 
 .donate-timeframe > input:first-child {
   margin-right: 2%; }
@@ -1359,7 +1366,8 @@ form, .donation-form {
   background-color: #ededed;
   text-align: center; }
   .calculator > p {
-    color: #747474; }
+    color: #747474;
+    font-style: italic; }
     @media only screen and (min-width: 1px) and (max-width: 515px) {
       .calculator > p {
         margin-bottom: 0px; } }
@@ -1382,7 +1390,7 @@ form, .donation-form {
       .calculator .calculator-results .calculation .big-number {
         font-family: "League Gothic";
         font-size: 70px;
-        margin: 20px 0; }
+        margin: 20px 0 0; }
       .calculator .calculator-results .calculation p {
         font-size: 12px; }
         @media only screen and (min-width: 1px) and (max-width: 515px) {
@@ -1428,10 +1436,20 @@ form, .donation-form {
       @media only screen and (min-width: 1px) and (max-width: 515px) {
         .get-involved-calc .headline h1 {
           margin-bottom: 50px; } }
+    .get-involved-calc .headline > span {
+      font-weight: bold;
+      font-size: 60px;
+      font-family: "Roboto", sans-serif;
+      text-transform: none; }
+      @media only screen and (min-width: 515px) and (max-width: 900px) {
+        .get-involved-calc .headline > span {
+          font-size: 50px; } }
+      @media only screen and (min-width: 1px) and (max-width: 515px) {
+        .get-involved-calc .headline > span {
+          font-size: 26px; } }
   @media only screen and (min-width: 901px) {
     .get-involved-calc span {
-      padding: 0px;
-      font-size: 60px; } }
+      padding: 0px; } }
 
 .donation-form {
   margin: 100px 0 115px 0;
