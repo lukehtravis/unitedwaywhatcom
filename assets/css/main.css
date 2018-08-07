@@ -1488,7 +1488,9 @@ form, .donation-form {
       margin: 50px 1%; } }
   .donation-form button {
     width: 100%;
-    margin-top: 20px; }
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold; }
 
 .confirm-screen {
   padding-top: 150px;
