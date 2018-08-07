@@ -1,18 +1,22 @@
 .banner.get-involved {
-  background: url('/assets/img/getinvolved.jpg') no-repeat center center;
+  background: no-repeat center center;
+  background-color: $color-lightblue;
   height: 1145px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   @include breakpoint(tabletonly) {
-    background: url('/assets/img/getinvolvedtablet.jpg') no-repeat center center;
+    background: no-repeat center center;
     height: 800px;
   }
   @include breakpoint(phoneonly) {
     background-color: $color-lightblue;
     background-image: none;
     height: auto;
+  }
+  > img {
+    display: none;
   }
 }
 
