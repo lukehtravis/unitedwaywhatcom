@@ -1,4 +1,7 @@
 form, .donation-form {
+  [v-cloak] {
+    display:none;
+  }
   width: 650px;
   background-color: $color-white;
   margin: auto;
@@ -17,11 +20,27 @@ form, .donation-form {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 45px;
+    input {
+      &:hover,
+      &.active {
+        cursor:pointer;
+        background-color: $color-lightblue;
+        color:$color-white;
+        @include input-placeholder {
+          color: $color-white !important;
+        }
+        transition: .3s ease;
+      }
+      @include input-placeholder {
+        color: $color-black !important;
+      }
+    }
     .donate-button {
       width: 32%;
       margin-right: 1.5%;
       margin-bottom: 10px;
       input {
+        font-size: 22px;
         padding: 30px 0;
         border: 1px solid $color-lightblue;
         text-align: center;
