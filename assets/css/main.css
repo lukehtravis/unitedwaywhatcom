@@ -1033,6 +1033,8 @@ footer {
         margin-bottom: 35px;
         font-size: 30px;
         margin-top: 0; }
+      .events .events-box .event-box .event-details span {
+        line-height: 1.35; }
       .events .events-box .event-box .event-description {
         margin-bottom: 40px; }
     .events .events-box .event-box:last-of-type {
