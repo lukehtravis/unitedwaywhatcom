@@ -986,8 +986,8 @@ footer {
         font-size: 42px;
         text-transform: uppercase;
         color: white;
-        font-weight: bold;
-        text-decoration: none; }
+        text-decoration: none;
+        letter-spacing: 1.4px; }
         @media only screen and (min-width: 1px) and (max-width: 515px) {
           .box-links .box-link a span {
             font-size: 34px; } }
@@ -1007,7 +1007,7 @@ footer {
   .box-links .box-link.dark-blue:hover {
     background-color: rgba(0, 81, 145, 0.8); }
   .box-links .box-link.background-image {
-    background: url(../../assets/img/womanbackground.png) no-repeat center center;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(../../assets/img/womanbackground.png) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

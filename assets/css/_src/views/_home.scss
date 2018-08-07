@@ -72,8 +72,8 @@
         font-size: 42px;
         text-transform: uppercase;
         color: $color-white;
-        font-weight: bold;
         text-decoration: none;
+        letter-spacing: 1.4px;
         @include breakpoint(phoneonly) {
           font-size: 34px;
         }
@@ -101,7 +101,13 @@
     background-color: rgba(0, 81, 145, 0.8);
   }
   .box-link.background-image {
-    background: url(../../assets/img/womanbackground.png) no-repeat center center;
+    background:
+    /* invisible graient necessary to keep image from moving on mouseleave */
+    linear-gradient(
+      rgba(255, 255, 255, 0.0),
+      rgba(255, 255, 255, 0.0)
+    ),
+    url(../../assets/img/womanbackground.png) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
