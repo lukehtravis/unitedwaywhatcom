@@ -1,7 +1,10 @@
+@import "../components/calculator";
+
 .donations {
   background-color: $color-lightblue;
   padding-top: 80px;
-  background: url('/assets/img/smilinggirl.jpg') no-repeat left top;
+  padding-bottom: 150px;
+  background: url('/assets/img/smilinggirl.jpg') no-repeat left bottom;
   @include breakpoint(phonetablet) {
     background-image: none;
   }
@@ -48,60 +51,7 @@
   .donate-timeframe > input:first-child {
     margin-right: 2%;
   }
-  .calculator {
-    padding: 40px 20px;
-    background-color: $color-lightgray;
-    text-align: center;
-    > p {
-      color: $color-graytext-footer;
-      @include breakpoint(phoneonly) {
-        margin-bottom: 0px;
-      }
-    }
-    .calculator-results {
-      display: flex;
-      margin-top: 45px;
-      @include breakpoint(phoneonly) {
-        flex-direction: column;
-        margin-top: 0px;
-      }
-      .calculation {
-        padding: 0 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        @include breakpoint(phoneonly) {
-          flex-direction: row;
-        }
-        .big-number {
-          font-family: $league;
-          font-size: 70px;
-          margin: 20px 0;
-        }
-        p {
-          font-size: 12px;
-          @include breakpoint(phoneonly) {
-            width: 33%;
-          }
-        }
-        img {
-          @include breakpoint(phoneonly) {
-            width: 45px;
-          }
-        }
-      }
-      .calculation:first-child, .calculation:nth-child(2) {
-        border-right: 1px solid $color-graytext-footer;
-        @include breakpoint(phoneonly) {
-          border-right: 0px;
-          border-bottom: 1px solid $color-white;
-          padding-top: 30px;
-          padding-bottom: 20px;
-        }
-      }
-    }
-  }
+
   .restriction {
     margin-top: 8px;
     margin-bottom: 20px;
@@ -123,6 +73,9 @@
         margin-right: 0px;
         margin-bottom: 5px;
       }
+    }
+    .email-sent {
+      width: 100%;
     }
     input, textarea {
       padding: 10px;
@@ -166,27 +119,52 @@
       }
     }
     .admin-fees {
-      font-size: 15px;
+      font-size: 14px;
       margin-left: 130px;
       padding-bottom: 40px;
       font-style: italic;
       @include breakpoint(phoneonly) {
         margin-left: 0px;
       }
+      a {
+        font-size: 14px;
+        text-decoration: underline;
+      }
     }
   }
   .contact-information {
     padding: 35px 0 20px;
-    border-top: 1px solid $color-lightgray;
+    border-top: 1px solid $color-graytext-footer;
     > div.checkmark input.no-margin {
       margin-top: 0px;
+    }
+    .doner-name-box {
+      .radio-line {
+        input[type="text"] {
+          padding: 10px;
+        }
+        > div {
+          width: 70%;
+        }
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+      }
+      > input {
+        margin: 15px 0 30px;
+        padding: 10px;
+      }
     }
   }
   .payment-details {
     padding: 15px 0 30px;
-    border-top: 1px solid $color-lightgray;
-    border-bottom: 1px solid $color-lightgray;
+    border-top: 1px solid $color-graytext-footer;
+    border-bottom: 1px solid $color-graytext-footer;
     margin-bottom: 40px;
+    .h-2-check {
+      display: flex;
+      justify-content: space-between;
+    }
     h2 {
       margin-bottom: 0px;
     }
@@ -231,4 +209,8 @@
     width: 100%;
     margin-top: 20px;
   }
+}
+span.parenthetical {
+    font-size: 14px;
+    color: rgba(116, 116, 116, 1);
 }

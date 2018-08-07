@@ -43,6 +43,8 @@ a {
 button, input[type="submit"] {
   padding: 12px 15px;
   border-radius: 3px;
+  font-weight: bold;
+  font-size: 24px;
   color: $color-white;
   border: none;
   font-weight: bold;
@@ -51,9 +53,15 @@ button, input[type="submit"] {
 
 input[type="text"], textarea, select {
   width: 100%;
-  border: 1px solid $color-lightgray;
+  border: 1px solid $color-graytext-footer;
   padding: 0px;
   border-radius: 4px;
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder,
+select::placeholder {
+  font-size: 15px;
 }
 
 .orange-bg {
