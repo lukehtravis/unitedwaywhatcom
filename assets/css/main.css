@@ -1320,6 +1320,8 @@ form, .donation-form {
   background-color: white;
   margin: auto;
   padding: 60px 75px; }
+  form [v-cloak], .donation-form [v-cloak] {
+    display: none; }
   @media only screen and (min-width: 515px) and (max-width: 900px) {
     form, .donation-form {
       width: 450px;
@@ -1334,11 +1336,37 @@ form, .donation-form {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 45px; }
+    form .donate-buttons input:hover, form .donate-buttons input.active, form .donate-timeframe input:hover, form .donate-timeframe input.active, .donation-form .donate-buttons input:hover, .donation-form .donate-buttons input.active, .donation-form .donate-timeframe input:hover, .donation-form .donate-timeframe input.active {
+      cursor: pointer;
+      background-color: #539ed0;
+      color: white;
+      transition: .3s ease; }
+      form .donate-buttons input:hover.placeholder, form .donate-buttons input.active.placeholder, form .donate-timeframe input:hover.placeholder, form .donate-timeframe input.active.placeholder, .donation-form .donate-buttons input:hover.placeholder, .donation-form .donate-buttons input.active.placeholder, .donation-form .donate-timeframe input:hover.placeholder, .donation-form .donate-timeframe input.active.placeholder {
+        color: white !important; }
+      form .donate-buttons input:hover:-moz-placeholder, form .donate-buttons input.active:-moz-placeholder, form .donate-timeframe input:hover:-moz-placeholder, form .donate-timeframe input.active:-moz-placeholder, .donation-form .donate-buttons input:hover:-moz-placeholder, .donation-form .donate-buttons input.active:-moz-placeholder, .donation-form .donate-timeframe input:hover:-moz-placeholder, .donation-form .donate-timeframe input.active:-moz-placeholder {
+        color: white !important; }
+      form .donate-buttons input:hover::-moz-placeholder, form .donate-buttons input.active::-moz-placeholder, form .donate-timeframe input:hover::-moz-placeholder, form .donate-timeframe input.active::-moz-placeholder, .donation-form .donate-buttons input:hover::-moz-placeholder, .donation-form .donate-buttons input.active::-moz-placeholder, .donation-form .donate-timeframe input:hover::-moz-placeholder, .donation-form .donate-timeframe input.active::-moz-placeholder {
+        color: white !important; }
+      form .donate-buttons input:hover:-ms-input-placeholder, form .donate-buttons input.active:-ms-input-placeholder, form .donate-timeframe input:hover:-ms-input-placeholder, form .donate-timeframe input.active:-ms-input-placeholder, .donation-form .donate-buttons input:hover:-ms-input-placeholder, .donation-form .donate-buttons input.active:-ms-input-placeholder, .donation-form .donate-timeframe input:hover:-ms-input-placeholder, .donation-form .donate-timeframe input.active:-ms-input-placeholder {
+        color: white !important; }
+      form .donate-buttons input:hover::-webkit-input-placeholder, form .donate-buttons input.active::-webkit-input-placeholder, form .donate-timeframe input:hover::-webkit-input-placeholder, form .donate-timeframe input.active::-webkit-input-placeholder, .donation-form .donate-buttons input:hover::-webkit-input-placeholder, .donation-form .donate-buttons input.active::-webkit-input-placeholder, .donation-form .donate-timeframe input:hover::-webkit-input-placeholder, .donation-form .donate-timeframe input.active::-webkit-input-placeholder {
+        color: white !important; }
+    form .donate-buttons input.placeholder, form .donate-timeframe input.placeholder, .donation-form .donate-buttons input.placeholder, .donation-form .donate-timeframe input.placeholder {
+      color: black !important; }
+    form .donate-buttons input:-moz-placeholder, form .donate-timeframe input:-moz-placeholder, .donation-form .donate-buttons input:-moz-placeholder, .donation-form .donate-timeframe input:-moz-placeholder {
+      color: black !important; }
+    form .donate-buttons input::-moz-placeholder, form .donate-timeframe input::-moz-placeholder, .donation-form .donate-buttons input::-moz-placeholder, .donation-form .donate-timeframe input::-moz-placeholder {
+      color: black !important; }
+    form .donate-buttons input:-ms-input-placeholder, form .donate-timeframe input:-ms-input-placeholder, .donation-form .donate-buttons input:-ms-input-placeholder, .donation-form .donate-timeframe input:-ms-input-placeholder {
+      color: black !important; }
+    form .donate-buttons input::-webkit-input-placeholder, form .donate-timeframe input::-webkit-input-placeholder, .donation-form .donate-buttons input::-webkit-input-placeholder, .donation-form .donate-timeframe input::-webkit-input-placeholder {
+      color: black !important; }
     form .donate-buttons .donate-button, form .donate-timeframe .donate-button, .donation-form .donate-buttons .donate-button, .donation-form .donate-timeframe .donate-button {
       width: 32%;
       margin-right: 1.5%;
       margin-bottom: 10px; }
       form .donate-buttons .donate-button input, form .donate-timeframe .donate-button input, .donation-form .donate-buttons .donate-button input, .donation-form .donate-timeframe .donate-button input {
+        font-size: 22px;
         padding: 30px 0;
         border: 1px solid #539ed0;
         text-align: center;

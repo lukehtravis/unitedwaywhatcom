@@ -74,3 +74,12 @@
   white-space: nowrap;
   padding: 10px 25px 0px 25px;
 }
+
+
+@mixin input-placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
