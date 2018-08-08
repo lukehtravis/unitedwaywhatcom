@@ -8,7 +8,7 @@
     <div class="video-section">
       <a href="#">
         <img src="assets/img/playbutton.png">
-        <p>United in whatcom county</p>
+        <p>Hear Sheena's Story</p>
       </a>
     </div>
   </section>
