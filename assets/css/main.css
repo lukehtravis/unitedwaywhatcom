@@ -1727,7 +1727,11 @@ form, .donation-form {
   margin-right: 100px;
   margin-top: -120px;
   padding-top: 80px;
-  padding-bottom: 105px; }
+  padding-bottom: 105px;
+  position: relative; }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    .body-overlap {
+      margin-top: 0px; } }
   @media only screen and (min-width: 515px) and (max-width: 900px) {
     .body-overlap {
       margin-left: 60px;
@@ -1735,7 +1739,18 @@ form, .donation-form {
   @media only screen and (min-width: 1px) and (max-width: 515px) {
     .body-overlap {
       margin-left: 20px;
-      margin-right: 20px; } }
+      margin-right: 20px;
+      padding-top: 20px; } }
+  .body-overlap .banner-caption {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    font-style: italic;
+    font-size: 14px;
+    color: white; }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .body-overlap .banner-caption {
+        display: none; } }
   .body-overlap .top-text {
     text-align: center;
     width: 70%;

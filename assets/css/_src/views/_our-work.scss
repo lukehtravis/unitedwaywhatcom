@@ -29,12 +29,28 @@
   margin-top: -120px;
   padding-top: 80px;
   padding-bottom: 105px;
+  position: relative;
+  @include breakpoint(phonetablet) {
+    margin-top: 0px;
+  }
   @include breakpoint(tabletonly) {
     margin-left: 60px;
     margin-right: 60px;
   }
   @include breakpoint(phoneonly) {
     @include mobilePageSideMargins;
+    padding-top: 20px;
+  }
+  .banner-caption {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    font-style: italic;
+    font-size: 14px;
+    color: $color-white;
+    @include breakpoint(phoneonly) {
+      display: none;
+    }
   }
   .top-text {
     text-align: center;
