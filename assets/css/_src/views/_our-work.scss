@@ -1,4 +1,8 @@
 @import "../components/video";
+.color-container {
+  padding-bottom: 115px;
+}
+
 .banner.our-work {
   // See site js for background img url
   background: url('/assets/img/smilingwoman.jpg') no-repeat center center;
@@ -18,9 +22,15 @@
 
 .body-overlap {
   background-color: $color-white;
+  border-radius: 4px;
   @include pageSideMargins;
   margin-top: -120px;
   padding-top: 80px;
+  padding-bottom: 105px;
+  @include breakpoint(tabletonly) {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
   .top-text {
     text-align: center;
     width: 70%;
@@ -35,32 +45,53 @@
   .icon-grid {
     display: flex;
     margin: 0 4%;
+    @include breakpoint(tabletonly) {
+      flex-wrap: wrap;
+    }
     h3 {
       font-size: 26px;
     }
     p {
       font-size: 15px;
     }
+    a {
+      margin-top: 10px;
+      color: $color-lightblue;
+      font-size: 15px;
+      text-align: left;
+      width: 100%;
+    }
     .icon-column {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 22%;
+      @include breakpoint(tabletonly) {
+        width: 48%;
+        margin-top: 40px;
+      }
     }
     .icon-column:nth-child(-n+3) {
-      margin-right: 4%;
+      @include breakpoint(desktopbeyond) {
+        margin-right: 4%;
+      }
+    }
+    .icon-column:nth-child(odd) {
+      @include breakpoint(tabletonly) {
+        margin-right: 4%;
+      }
     }
     .icon-column:nth-child(1) img {
-      margin-bottom: 83px;
+      margin-bottom: 63px;
     }
     .icon-column:nth-child(2) img {
-      margin-bottom: 65px;
+      margin-bottom: 45px;
     }
     .icon-column:nth-child(3) img {
-      margin-bottom: 103px;
+      margin-bottom: 83px;
     }
     .icon-column:nth-child(4) img {
-      margin-bottom: 110px;
+      margin-bottom: 90px;
     }
   }
 }

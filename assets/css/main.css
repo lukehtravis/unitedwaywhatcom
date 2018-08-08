@@ -1700,6 +1700,9 @@ form, .donation-form {
         .video-section a p {
           display: none; } }
 
+.color-container {
+  padding-bottom: 115px; }
+
 .banner.our-work {
   background: url("/assets/img/smilingwoman.jpg") no-repeat center center;
   height: 780px;
@@ -1717,10 +1720,16 @@ form, .donation-form {
 
 .body-overlap {
   background-color: white;
+  border-radius: 4px;
   margin-left: 100px;
   margin-right: 100px;
   margin-top: -120px;
-  padding-top: 80px; }
+  padding-top: 80px;
+  padding-bottom: 105px; }
+  @media only screen and (min-width: 515px) and (max-width: 900px) {
+    .body-overlap {
+      margin-left: 60px;
+      margin-right: 60px; } }
   .body-overlap .top-text {
     text-align: center;
     width: 70%;
@@ -1732,24 +1741,41 @@ form, .donation-form {
   .body-overlap .icon-grid {
     display: flex;
     margin: 0 4%; }
+    @media only screen and (min-width: 515px) and (max-width: 900px) {
+      .body-overlap .icon-grid {
+        flex-wrap: wrap; } }
     .body-overlap .icon-grid h3 {
       font-size: 26px; }
     .body-overlap .icon-grid p {
       font-size: 15px; }
+    .body-overlap .icon-grid a {
+      margin-top: 10px;
+      color: #539ed0;
+      font-size: 15px;
+      text-align: left;
+      width: 100%; }
     .body-overlap .icon-grid .icon-column {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 22%; }
-    .body-overlap .icon-grid .icon-column:nth-child(-n+3) {
-      margin-right: 4%; }
+      @media only screen and (min-width: 515px) and (max-width: 900px) {
+        .body-overlap .icon-grid .icon-column {
+          width: 48%;
+          margin-top: 40px; } }
+    @media only screen and (min-width: 901px) {
+      .body-overlap .icon-grid .icon-column:nth-child(-n+3) {
+        margin-right: 4%; } }
+    @media only screen and (min-width: 515px) and (max-width: 900px) {
+      .body-overlap .icon-grid .icon-column:nth-child(odd) {
+        margin-right: 4%; } }
     .body-overlap .icon-grid .icon-column:nth-child(1) img {
-      margin-bottom: 83px; }
+      margin-bottom: 63px; }
     .body-overlap .icon-grid .icon-column:nth-child(2) img {
-      margin-bottom: 65px; }
+      margin-bottom: 45px; }
     .body-overlap .icon-grid .icon-column:nth-child(3) img {
-      margin-bottom: 103px; }
+      margin-bottom: 83px; }
     .body-overlap .icon-grid .icon-column:nth-child(4) img {
-      margin-bottom: 110px; }
+      margin-bottom: 90px; }
 
 /*# sourceMappingURL=main.css.map */
