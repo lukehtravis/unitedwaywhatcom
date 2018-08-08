@@ -1792,7 +1792,7 @@ form, .donation-form {
       @media only screen and (min-width: 1px) and (max-width: 515px) {
         .body-overlap .icon-grid .icon-column {
           width: 100%;
-          margin-top: 30px; } }
+          margin-top: 40px; } }
     @media only screen and (min-width: 901px) {
       .body-overlap .icon-grid .icon-column:nth-child(-n+3) {
         margin-right: 4%; } }
