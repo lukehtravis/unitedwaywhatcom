@@ -1675,4 +1675,44 @@ form, .donation-form {
     .confirm-screen.oops .headline a {
       color: black; }
 
+.video-section {
+  margin: 50px 100px;
+  margin-top: 50px;
+  margin-left: 100px; }
+  @media only screen and (min-width: 515px) and (max-width: 900px) {
+    .video-section {
+      margin-left: 60px; } }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    .video-section {
+      margin-top: 20px;
+      margin-left: 20px; } }
+  .video-section a {
+    display: flex;
+    align-items: center;
+    text-decoration: none; }
+    .video-section a p {
+      margin-left: 20px;
+      font-size: 36px;
+      font-family: "League Gothic";
+      text-transform: uppercase;
+      color: black; }
+      @media only screen and (min-width: 1px) and (max-width: 515px) {
+        .video-section a p {
+          display: none; } }
+
+.banner.our-work {
+  background: url("/assets/img/smilingwoman.jpg") no-repeat center center;
+  height: 780px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #ffb351; }
+  @media only screen and (min-width: 515px) and (max-width: 900px) {
+    .banner.our-work {
+      height: 500px; } }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    .banner.our-work {
+      height: 300px; } }
+
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,17 @@
+@import "../components/video";
+.banner.our-work {
+  // See site js for background img url
+  background: url('/assets/img/smilingwoman.jpg') no-repeat center center;
+  height: 780px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: $color-orange;
+  @include breakpoint(tabletonly) {
+    height:500px;
+  }
+  @include breakpoint(phoneonly) {
+    height:300px;
+  }
+}
