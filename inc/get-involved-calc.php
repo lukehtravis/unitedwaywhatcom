@@ -1,13 +1,8 @@
-<!doctype html>
-<?php
-  $root_path = $_SERVER['DOCUMENT_ROOT'] . "/unitedwaywhatcom";
-  include $root_path . '/inc/header.php';
-?>
 <div class="get-involved-calc">
   <div class="headline">
     <h1>Give <span class="breadcrumb">/ IMPACT CAlculator</span></h1>
-    <span>You decided to Join</span>
-    <span>Us in the fight.</span>
+    <span>Select an amount</span>
+    <span>See the impact.</span>
   </div>
   <div class="donation-form">
     <div class="donate-buttons">
@@ -35,7 +30,7 @@
       <input type="text" name="monthly" value="" placeholder="Monthly" readonly>
     </div>
     <div class="calculator">
-      <p>A <span class="donation-amount">x100</span>donation provides:</p>
+      <p>A $<span class="donation-amount">100</span> donation provides:</p>
       <div class="calculator-results">
         <div class="calculation apple">
           <img src="/assets/img/apple.png" />
@@ -57,6 +52,3 @@
     <a href="#"><button class="orange-bg">Lets Do This!</button>
   </div>
 </div>
-<?php
-  include $root_path . '/inc/footer.php';
-?>

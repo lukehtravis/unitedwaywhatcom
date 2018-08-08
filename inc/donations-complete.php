@@ -1,9 +1,9 @@
 <div class="confirm-screen">
   <div class="headline">
-    <span>Thank You!</span>
-    <p>Your donation was successfully processed.
-      Your confirmation number is 123-456.
-      An email receipt has been sent to: johndoe@gmail.com</p>
+    <span><b>Thank you!</b></span>
+    <p>Your donation was successfully processed.<br / >
+    Your confirmation number is 123-456.<br / >
+    An email receipt has been sent to: johndoe@gmail.com</p>
   </div>
   <div class="address-box-container">
     <h3>Sending your check</h3>

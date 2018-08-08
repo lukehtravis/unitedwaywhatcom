@@ -1,9 +1,25 @@
 <section class="banner get-involved">
+  <img
+    srcset="
+      /assets/img/getinvolved.jpg 1400w,
+      /assets/img/getinvolved.jpg 893w,
+      /assets/img/getinvolved.jpg 535w
+    "
+    src="/assets/img/getinvolved.jpg"
+  />
+  <img
+    srcset="
+      /assets/img/getinvolvednohat.jpg 1400w,
+      /assets/img/getinvolvednohat.jpg 893w,
+      /assets/img/getinvolvednohat.jpg 535w
+    "
+    src="/assets/img/getinvolved.jpg"
+  />
   <div class="headline">
     <h1>Give</h1>
     <span class="black-bg">You decided to Join</span>
     <span class="black-bg">Us in the fight.</span>
-    <span class="orange-bg">Thank You.</span>
+    <span class="darkorange-bg">Thank You.</span>
   </div>
   <div class="square-links">
     <div class="square">

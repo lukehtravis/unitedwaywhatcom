@@ -4,7 +4,7 @@
     <div class="events-box">
       <div class="event-box">
         <h2>Annual Campaign Celebration</h2>
-        <div class="event details">
+        <div class="event-details">
           <div class="event-row"><span class="event-date">Thursday, March 22, 2018</span> | <span class="event-time">5:30 - 7:00pm</span></div>
           <div class="event-row"><span class="event-venue">Bellingham Technical College - Settlemyer Family Hall</span></div>
           <div class="event-row"><span class="event-address">3028 Lindbergh Avenue, Bellingham, WA 98225</span></div>
@@ -16,7 +16,7 @@
       </div>
       <div class="event-box">
         <h2>Annual Campaign Celebration</h2>
-        <div class="event details">
+        <div class="event-details">
           <div class="event-row"><span class="event-date">Thursday, March 22, 2018</span> | <span class="event-time">5:30 - 7:00pm</span></div>
           <div class="event-row"><span class="event-venue">Bellingham Technical College - Settlemyer Family Hall</span></div>
           <div class="event-row"><span class="event-address">3028 Lindbergh Avenue, Bellingham, WA 98225</span></div>

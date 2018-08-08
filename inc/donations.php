@@ -26,7 +26,7 @@
         <input type="text" name="monthly" value="" placeholder="Monthly" readonly>
       </div>
       <div class="calculator">
-        <p>A <span class="donation-amount">x100</span>donation provides:</p>
+        <p>A $<span class="donation-amount">100</span> donation provides:</p>
         <div class="calculator-results">
           <div class="calculation apple">
             <img src="/assets/img/apple.png" />
@@ -70,11 +70,11 @@
         </div>
         <div class="address-line">
           <label>State and Zip</label>
-          <div class="state-zip"><input type="text" name="state" placeholder="State"><input type="input" name="zipcode" placeholder="Zip"></div>
+          <div class="state-zip"><input type="text" name="state" placeholder="State"><input type="text" name="zipcode" placeholder="Zip"></div>
         </div>
         <div class="address-line amount">
           <label>Amount</label>
-          <input type="text" name="amount"><span class="amount-sidetext">Out of 100</span>
+          <input type="text" name="amount" placeholder="$"><span class="amount-sidetext">Out of $100</span>
         </div>
         <p class="admin-fees">Administrative Fees Apply. <a href="#">Learn More</a></p>
       </div>
@@ -89,19 +89,36 @@
         </div>
         <div class="address-line">
           <label>Email</label>
-          <input type="text" name="email">
+          <div class="email-sent">
+            <input type="text" name="email">
+            <span class="parenthetical">Your email will be sent here</span>
+          </div>
         </div>
         <div class="address-line">
-          <label>Phone<span class="parenthetical">Optional</span></label>
+          <label>Phone <span class="parenthetical">(Optional)</span></label>
           <input type="text" name="phone">
         </div>
         <div class="checkmark no-bottom-margin">
           <input type="checkbox" name="newsletter" checked="checked">
           <label for="newsletter" class="css-label">Send me quarterly updates</label>
         </div>
-        <div class="checkmark">
-          <input type="checkbox" class="css-checkbox" class="no-margin" name="dedicate" checked="checked">
-          <p>Dedicate my gift</p>
+        <div class="doner-name-box">
+          <div class="radio-line">
+            <div>
+              <input type="radio" class="css-radio" id="donor" name="donor">
+              <label for="leavename">It's fine to use my name</label>
+            </div>
+            <input type="text" name="donorname">
+          </div>
+          <div class="radio-line">
+            <input type="radio" class="css-radio" id="ananymous" name="donor">
+            <label for="anonymous">I'd like to remain anonymous</label>
+          </div>
+          <div class="radio-line">
+            <input type="radio" class="dedicated" id="dedicate" name="donor">
+            <label for="dedicate">Dedicate my gify to the memory of someone</label>
+          </div>
+          <input type="text" name="dedicatedto">
         </div>
         <div class="address-line">
           <label>Honorees' Name</label>
@@ -120,8 +137,13 @@
         </div>
       </div>
       <div class="payment-details">
-        <h2>Payment Details</h2>
-        <div class="checkmark"><input type="checkbox" class="css-checkbox" class="no-margin" name="dedicate" checked="checked"><p>I'd prefer to pay by mail</p></div>
+        <div class="h-2-check">
+          <h2>Payment Details</h2>
+          <div class="checkmark">
+            <input type="checkbox" class="css-checkbox" name="mailpay">
+            <p>I'd prefer to pay by mail</p>
+          </div>
+        </div>
         <p>We'll send you mailing instructions once this form is submitted</p>
         <div class="address-line">
           <label>Name</label>
@@ -156,7 +178,7 @@
         </div>
         <div class="address-line">
           <label>State and Zip</label>
-          <div class="state-zip"><input type="text" name="cardstate" placeholder="State"><input type="input" name="cardzipcode" placeholder="Zip"></div>
+          <div class="state-zip"><input type="text" name="cardstate" placeholder="State"><input type="text" name="cardzipcode" placeholder="Zip"></div>
         </div>
       </div>
       <div class="checkmark">

@@ -5,7 +5,7 @@
         /assets/img/oldmantablet.jpg 893w,
         /assets/img/oldmanphone.jpg 535w
       "
-      src="/assets/img/oldmantablet.jpg"
+      src="/assets/img/oldmanfull.jpg"
     />
     <img
       srcset="
@@ -13,7 +13,24 @@
         /assets/img/hatmantablet.jpg 893w,
         /assets/img/hatmanphone.jpg 535w
       "
-      src="/assets/img/hatmantablet.jpg" />
+      src="/assets/img/hatman.jpg"
+    />
+    <img
+      srcset="
+        /assets/img/kidsmile.jpg 1400w,
+        /assets/img/kidsmiletablet.jpg 893w,
+        /assets/img/kidsmilephone.jpg 535w
+      "
+      src="/assets/img/hatman.jpg"
+    />
+    <img
+      srcset="
+        /assets/img/womancook.jpg 1400w,
+        /assets/img/womancooktablet.jpg 893w,
+        /assets/img/womancookphone.jpg 535w
+      "
+      src="/assets/img/womancook.jpg"
+    />
     <div class="headline">
       <span class="lightblue-bg">we have one life.</span>
       <span class="lightblue-bg">to live better, we must</span>
