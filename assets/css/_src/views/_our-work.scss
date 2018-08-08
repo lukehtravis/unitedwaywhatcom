@@ -14,9 +14,11 @@
   background-color: $color-orange;
   @include breakpoint(tabletonly) {
     height:500px;
+    background-image:  url('/assets/img/smilingwomantablet.jpg');
   }
   @include breakpoint(phoneonly) {
     height:300px;
+    background-image:  url('/assets/img/smilingwomanmobile.jpg');
   }
 }
 
@@ -31,10 +33,17 @@
     margin-left: 60px;
     margin-right: 60px;
   }
+  @include breakpoint(phoneonly) {
+    @include mobilePageSideMargins;
+  }
   .top-text {
     text-align: center;
     width: 70%;
     margin: 0 auto 130px;
+    @include breakpoint(phoneonly) {
+      margin-bottom: 50px;
+      width: 90%;
+    }
     h2 {
       font-size: 30px;
     }
@@ -45,11 +54,12 @@
   .icon-grid {
     display: flex;
     margin: 0 4%;
-    @include breakpoint(tabletonly) {
+    @include breakpoint(phonetablet) {
       flex-wrap: wrap;
     }
     h3 {
       font-size: 26px;
+      margin: 0px;
     }
     p {
       font-size: 15px;
@@ -70,6 +80,10 @@
         width: 48%;
         margin-top: 40px;
       }
+      @include breakpoint(phoneonly) {
+        width: 100%;
+        margin-top: 30px;
+      }
     }
     .icon-column:nth-child(-n+3) {
       @include breakpoint(desktopbeyond) {
@@ -83,15 +97,27 @@
     }
     .icon-column:nth-child(1) img {
       margin-bottom: 63px;
+      @include breakpoint(phoneonly) {
+        margin-bottom: 30px;
+      }
     }
     .icon-column:nth-child(2) img {
       margin-bottom: 45px;
+      @include breakpoint(phoneonly) {
+        margin-bottom: 30px;
+      }
     }
     .icon-column:nth-child(3) img {
       margin-bottom: 83px;
+      @include breakpoint(phoneonly) {
+        margin-bottom: 30px;
+      }
     }
     .icon-column:nth-child(4) img {
       margin-bottom: 90px;
+      @include breakpoint(phoneonly) {
+        margin-bottom: 30px;
+      }
     }
   }
 }

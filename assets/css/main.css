@@ -1713,10 +1713,12 @@ form, .donation-form {
   background-color: #ffb351; }
   @media only screen and (min-width: 515px) and (max-width: 900px) {
     .banner.our-work {
-      height: 500px; } }
+      height: 500px;
+      background-image: url("/assets/img/smilingwomantablet.jpg"); } }
   @media only screen and (min-width: 1px) and (max-width: 515px) {
     .banner.our-work {
-      height: 300px; } }
+      height: 300px;
+      background-image: url("/assets/img/smilingwomanmobile.jpg"); } }
 
 .body-overlap {
   background-color: white;
@@ -1730,10 +1732,18 @@ form, .donation-form {
     .body-overlap {
       margin-left: 60px;
       margin-right: 60px; } }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    .body-overlap {
+      margin-left: 20px;
+      margin-right: 20px; } }
   .body-overlap .top-text {
     text-align: center;
     width: 70%;
     margin: 0 auto 130px; }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .body-overlap .top-text {
+        margin-bottom: 50px;
+        width: 90%; } }
     .body-overlap .top-text h2 {
       font-size: 30px; }
     .body-overlap .top-text p {
@@ -1741,11 +1751,12 @@ form, .donation-form {
   .body-overlap .icon-grid {
     display: flex;
     margin: 0 4%; }
-    @media only screen and (min-width: 515px) and (max-width: 900px) {
+    @media only screen and (min-width: 1px) and (max-width: 900px) {
       .body-overlap .icon-grid {
         flex-wrap: wrap; } }
     .body-overlap .icon-grid h3 {
-      font-size: 26px; }
+      font-size: 26px;
+      margin: 0px; }
     .body-overlap .icon-grid p {
       font-size: 15px; }
     .body-overlap .icon-grid a {
@@ -1763,6 +1774,10 @@ form, .donation-form {
         .body-overlap .icon-grid .icon-column {
           width: 48%;
           margin-top: 40px; } }
+      @media only screen and (min-width: 1px) and (max-width: 515px) {
+        .body-overlap .icon-grid .icon-column {
+          width: 100%;
+          margin-top: 30px; } }
     @media only screen and (min-width: 901px) {
       .body-overlap .icon-grid .icon-column:nth-child(-n+3) {
         margin-right: 4%; } }
@@ -1771,11 +1786,23 @@ form, .donation-form {
         margin-right: 4%; } }
     .body-overlap .icon-grid .icon-column:nth-child(1) img {
       margin-bottom: 63px; }
+      @media only screen and (min-width: 1px) and (max-width: 515px) {
+        .body-overlap .icon-grid .icon-column:nth-child(1) img {
+          margin-bottom: 30px; } }
     .body-overlap .icon-grid .icon-column:nth-child(2) img {
       margin-bottom: 45px; }
+      @media only screen and (min-width: 1px) and (max-width: 515px) {
+        .body-overlap .icon-grid .icon-column:nth-child(2) img {
+          margin-bottom: 30px; } }
     .body-overlap .icon-grid .icon-column:nth-child(3) img {
       margin-bottom: 83px; }
+      @media only screen and (min-width: 1px) and (max-width: 515px) {
+        .body-overlap .icon-grid .icon-column:nth-child(3) img {
+          margin-bottom: 30px; } }
     .body-overlap .icon-grid .icon-column:nth-child(4) img {
       margin-bottom: 90px; }
+      @media only screen and (min-width: 1px) and (max-width: 515px) {
+        .body-overlap .icon-grid .icon-column:nth-child(4) img {
+          margin-bottom: 30px; } }
 
 /*# sourceMappingURL=main.css.map */
