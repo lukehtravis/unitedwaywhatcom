@@ -15,3 +15,52 @@
     height:300px;
   }
 }
+
+.body-overlap {
+  background-color: $color-white;
+  @include pageSideMargins;
+  margin-top: -120px;
+  padding-top: 80px;
+  .top-text {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto 130px;
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  .icon-grid {
+    display: flex;
+    margin: 0 4%;
+    h3 {
+      font-size: 26px;
+    }
+    p {
+      font-size: 15px;
+    }
+    .icon-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 22%;
+    }
+    .icon-column:nth-child(-n+3) {
+      margin-right: 4%;
+    }
+    .icon-column:nth-child(1) img {
+      margin-bottom: 83px;
+    }
+    .icon-column:nth-child(2) img {
+      margin-bottom: 65px;
+    }
+    .icon-column:nth-child(3) img {
+      margin-bottom: 103px;
+    }
+    .icon-column:nth-child(4) img {
+      margin-bottom: 110px;
+    }
+  }
+}

@@ -1715,4 +1715,41 @@ form, .donation-form {
     .banner.our-work {
       height: 300px; } }
 
+.body-overlap {
+  background-color: white;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: -120px;
+  padding-top: 80px; }
+  .body-overlap .top-text {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto 130px; }
+    .body-overlap .top-text h2 {
+      font-size: 30px; }
+    .body-overlap .top-text p {
+      font-size: 18px; }
+  .body-overlap .icon-grid {
+    display: flex;
+    margin: 0 4%; }
+    .body-overlap .icon-grid h3 {
+      font-size: 26px; }
+    .body-overlap .icon-grid p {
+      font-size: 15px; }
+    .body-overlap .icon-grid .icon-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 22%; }
+    .body-overlap .icon-grid .icon-column:nth-child(-n+3) {
+      margin-right: 4%; }
+    .body-overlap .icon-grid .icon-column:nth-child(1) img {
+      margin-bottom: 83px; }
+    .body-overlap .icon-grid .icon-column:nth-child(2) img {
+      margin-bottom: 65px; }
+    .body-overlap .icon-grid .icon-column:nth-child(3) img {
+      margin-bottom: 103px; }
+    .body-overlap .icon-grid .icon-column:nth-child(4) img {
+      margin-bottom: 110px; }
+
 /*# sourceMappingURL=main.css.map */
