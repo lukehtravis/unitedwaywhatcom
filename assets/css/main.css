@@ -980,7 +980,7 @@ footer {
     .box-links {
       flex-direction: column; } }
   .box-links .box-link {
-    padding: 125px 80px;
+    padding: 125px 75px;
     text-align: center;
     justify-content: flex-end;
     display: flex;

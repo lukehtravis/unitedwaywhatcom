@@ -51,12 +51,12 @@
     </div>
     <div class="box-link light-blue">
       <img src="assets/img/impactcalcicon.png" />
-      <a href ="#"><span>HEAR SHEENA’S STORY</span></a>
-      <p>She used our funded services to get back on her feet. Now she’s paying it forward. See how Sheena broke the cycle.</p>
+      <a href ="#"><span>IMPACT CALCULATOR</span></a>
+      <p>A hot meal. A warm shower. A cozy blanket on a cold night. See the real-life impact of your donation.</p>
     </div>
     <div class="box-link dark-blue">
       <img src="assets/img/soupicon.png" />
-      <a href="#"><span>HEAR SHEENA’S STORY</span></a>
-      <p>She used our funded services to get back on her feet. Now she’s paying it forward. See how Sheena broke the cycle.</p>
+      <a href="#"><span>PARTNER AGENCIES</span></a>
+      <p>We fund a strategic network of non-profits in Whatcom County for maximum impact.</p>
     </div>
   </section>
