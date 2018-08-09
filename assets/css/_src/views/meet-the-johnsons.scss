@@ -1,0 +1,17 @@
+.meet-the-johnsons {
+  background: url('/assets/img/hands.jpg') no-repeat right bottom;
+  background-color: $color-orange;
+  height: 680px;
+  .headline {
+    padding-top: 20px;
+    width: 45%;
+    p {
+      font-size: 18px;
+      color: $color-white;
+    }
+  }
+}
+.johnsons-timeline {
+  padding-top: 20px;
+  text-align: center;
+}

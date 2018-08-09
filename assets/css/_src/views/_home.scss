@@ -1,3 +1,4 @@
+@import "../components/video";
 .banner.home {
   // See site js for background img url
   background: no-repeat center center;
@@ -14,34 +15,6 @@
   }
   > img {
     display: none;
-  }
-}
-
-.video-section {
-  margin: 50px 100px;
-  margin-top: 50px;
-  margin-left: 100px;
-  @include breakpoint(tabletonly) {
-    margin-left: 60px;
-  }
-  @include breakpoint(phoneonly) {
-    margin-top: 20px;
-    margin-left: 20px;
-  }
-  a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    p {
-      margin-left: 20px;
-      font-size: 36px;
-      font-family: $league;
-      text-transform: uppercase;
-      color: $color-black;
-      @include breakpoint(phoneonly) {
-        display: none;
-      }
-    }
   }
 }
 

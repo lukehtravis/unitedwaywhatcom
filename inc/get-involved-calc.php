@@ -1,6 +1,6 @@
 <div class="get-involved-calc">
   <div class="headline">
-    <h1>Give <span class="breadcrumb">/ IMPACT CAlculator</span></h1>
+    <h1 class="small-breadcrumb">Give <span class="breadcrumb">/ IMPACT CAlculator</span></h1>
     <span>Select an amount</span>
     <span>See the impact.</span>
   </div>

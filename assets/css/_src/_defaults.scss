@@ -113,6 +113,11 @@ select::placeholder {
       padding-right: 7px;
     }
   }
+  span.bland-header {
+    text-transform: none;
+    float: none;
+    padding: 0px;
+  }
   span.darkorange-bg {
     @include breakpoint(desktopbeyond) {
       font-size: 62.5px;
@@ -123,6 +128,13 @@ select::placeholder {
     margin-top: -10px;
     @include breakpoint(phoneonly) {
       margin-top: -4px;
+    }
+  }
+  .small-breadcrumb {
+    margin-bottom: 120px;
+    font-size: 14px;
+    @include breakpoint(phoneonly) {
+      margin-bottom: 50px;
     }
   }
 }

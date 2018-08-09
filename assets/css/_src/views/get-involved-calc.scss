@@ -22,13 +22,6 @@
     @include breakpoint(phoneonly) {
       padding-top: 50px;
     }
-    h1 {
-      margin-bottom: 120px;
-      font-size: 14px;
-      @include breakpoint(phoneonly) {
-        margin-bottom: 50px;
-      }
-    }
     > span {
       font-weight: bold;
       font-size: 60px;
