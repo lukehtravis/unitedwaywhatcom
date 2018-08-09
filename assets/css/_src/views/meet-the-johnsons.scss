@@ -50,9 +50,22 @@
   text-align: center;
   margin-bottom: 140px;
   border-radius: 4px;
+  @include breakpoint(tabletonly) {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  @include breakpoint(phoneonly) {
+    @include mobilePageSideMargins;
+  }
   .break-link-container {
     width: 48%;
     margin: 0 auto;
+    @include breakpoint(tabletonly) {
+      width: 60%;
+    }
+    @include breakpoint(phoneonly) {
+      width: 92%;
+    }
     span {
       margin-top: 35px;
       display: block;
@@ -65,11 +78,15 @@
       margin-top: 25px;
       color: $color-white;
       font-size: 22px;
+      font-weight: bold;
     }
     button {
       margin-top: 55px;
       color: $color-white;
       font-weight: bold;
+      @include breakpoint(phoneonly) {
+        margin-top: 35px;
+      }
     }
   }
 }

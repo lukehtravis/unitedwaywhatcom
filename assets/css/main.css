@@ -1870,9 +1870,23 @@ form, .donation-form {
   text-align: center;
   margin-bottom: 140px;
   border-radius: 4px; }
+  @media only screen and (min-width: 515px) and (max-width: 900px) {
+    .break-the-link {
+      margin-left: 60px;
+      margin-right: 60px; } }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    .break-the-link {
+      margin-left: 20px;
+      margin-right: 20px; } }
   .break-the-link .break-link-container {
     width: 48%;
     margin: 0 auto; }
+    @media only screen and (min-width: 515px) and (max-width: 900px) {
+      .break-the-link .break-link-container {
+        width: 60%; } }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .break-the-link .break-link-container {
+        width: 92%; } }
     .break-the-link .break-link-container span {
       margin-top: 35px;
       display: block;
@@ -1883,10 +1897,14 @@ form, .donation-form {
     .break-the-link .break-link-container p {
       margin-top: 25px;
       color: white;
-      font-size: 22px; }
+      font-size: 22px;
+      font-weight: bold; }
     .break-the-link .break-link-container button {
       margin-top: 55px;
       color: white;
       font-weight: bold; }
+      @media only screen and (min-width: 1px) and (max-width: 515px) {
+        .break-the-link .break-link-container button {
+          margin-top: 35px; } }
 
 /*# sourceMappingURL=main.css.map */
