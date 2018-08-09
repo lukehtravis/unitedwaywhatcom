@@ -7,12 +7,22 @@
   </div>
 </div>
 <section class="johnsons-timeline">
-  <img
+  <img class="timeline-big"
     srcset="
       /assets/img/johnsons-timeline.png 1400w,
       /assets/img/timeline.png 901w,
       /assets/img/timelinetablet.png 515w,
     "
-    src="/assets/img/johnsons-timeline.png"
   />
+  <img class="timeline-small" src="/assets/img/timelinemobile.png">
+</section>
+<section class="break-the-link lightblue-bg">
+  <div class="break-link-container">
+    <img src="/assets/img/Chain.png" alt="chainlink" />
+    <span>BREAKING THE CYCLE</span>
+    <p> After graduating, the kids get good jobs and become United Way donors, giving back to their community so others can get the chance for a good future, just like they did.</p>
+    <a href="#">
+      <button class="orange-bg">Help Break The Cycle</button>
+    </a>
+  </div>
 </section>

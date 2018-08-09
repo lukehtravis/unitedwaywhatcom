@@ -1834,9 +1834,59 @@ form, .donation-form {
     .meet-the-johnsons .headline p {
       font-size: 18px;
       color: white; }
+    @media only screen and (min-width: 515px) and (max-width: 900px) {
+      .meet-the-johnsons .headline {
+        width: 70%; } }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .meet-the-johnsons .headline {
+        width: 100%; } }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    .meet-the-johnsons {
+      background-image: none; } }
+  @media only screen and (min-width: 515px) and (max-width: 900px) {
+    .meet-the-johnsons {
+      height: 500px; } }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    .meet-the-johnsons {
+      height: 400px; } }
 
 .johnsons-timeline {
   padding-top: 20px;
   text-align: center; }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    .johnsons-timeline .timeline-big {
+      display: none; } }
+  @media only screen and (min-width: 515px) and (max-width: 900px) {
+    .johnsons-timeline .timeline-small {
+      display: none; } }
+  @media only screen and (min-width: 901px) {
+    .johnsons-timeline .timeline-small {
+      display: none; } }
+
+.break-the-link {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 60px 0 80px;
+  text-align: center;
+  margin-bottom: 140px;
+  border-radius: 4px; }
+  .break-the-link .break-link-container {
+    width: 48%;
+    margin: 0 auto; }
+    .break-the-link .break-link-container span {
+      margin-top: 35px;
+      display: block;
+      font-size: 13px;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 3px; }
+    .break-the-link .break-link-container p {
+      margin-top: 25px;
+      color: white;
+      font-size: 22px; }
+    .break-the-link .break-link-container button {
+      margin-top: 55px;
+      color: white;
+      font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */
