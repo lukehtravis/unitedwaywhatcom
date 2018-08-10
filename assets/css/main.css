@@ -2104,5 +2104,39 @@ form, .donation-form {
     .get-involved-volunteer .banner {
       height: 300px;
       background-image: url("/assets/img/youngboyphone.jpg"); } }
+.get-involved-volunteer .volunteer-section {
+  margin-left: 100px;
+  margin-right: 100px; }
+  .get-involved-volunteer .volunteer-section .volunteer-row {
+    border-top: 2px solid #ededed;
+    padding-bottom: 95px; }
+    .get-involved-volunteer .volunteer-section .volunteer-row > span {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 14px;
+      display: inline-block;
+      background-color: #ffb351; }
+    .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content {
+      display: flex; }
+      .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content > p {
+        width: 48%;
+        margin-right: 4%; }
+      .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details .volunteer-detail {
+        margin-bottom: 15px; }
+        .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details .volunteer-detail span {
+          width: 120px;
+          font-weight: bold;
+          font-size: 12px;
+          text-transform: uppercase;
+          display: inline-block; }
+        .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details .volunteer-detail p {
+          display: inline;
+          margin-left: 18px;
+          font-size: 15px; }
+      .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details > p {
+        margin-top: 30px; }
+      .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details a {
+        color: #539ed0; }
 
 /*# sourceMappingURL=main.css.map */
