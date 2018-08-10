@@ -17,9 +17,15 @@
   }
   .volunteer-section {
     @include pageSideMargins;
+    @include breakpoint(phonetablet) {
+      @include mobilePageSideMargins;
+    }
     .volunteer-row {
       border-top: 2px solid $color-lightgray;
       padding-bottom: 95px;
+      @include breakpoint(phoneonly) {
+        padding-bottom: 30px;
+      }
       > span {
         color: $color-white;
         font-size: 20px;
@@ -30,13 +36,24 @@
       }
       .volunteer-content {
         display: flex;
+        @include breakpoint(phonetablet) {
+          flex-direction: column;
+        }
         > p {
           width: 48%;
           margin-right: 4%;
+          @include breakpoint(phonetablet) {
+            width: 100%;
+            margin-right: 0%;
+          }
         }
         .volunteer-details {
+          margin-top: 15px;
           .volunteer-detail {
             margin-bottom: 15px;
+            @include breakpoint(phoneonly) {
+              display: flex;
+            }
             span {
               width: 120px;
               font-weight: bold;
@@ -48,6 +65,9 @@
               display: inline;
               margin-left: 18px;
               font-size: 15px;
+              @include breakpoint(phoneonly) {
+                margin-top: 0px;
+              }
             }
           }
           > p {

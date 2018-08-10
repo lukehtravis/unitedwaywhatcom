@@ -2107,9 +2107,16 @@ form, .donation-form {
 .get-involved-volunteer .volunteer-section {
   margin-left: 100px;
   margin-right: 100px; }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    .get-involved-volunteer .volunteer-section {
+      margin-left: 20px;
+      margin-right: 20px; } }
   .get-involved-volunteer .volunteer-section .volunteer-row {
     border-top: 2px solid #ededed;
     padding-bottom: 95px; }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .get-involved-volunteer .volunteer-section .volunteer-row {
+        padding-bottom: 30px; } }
     .get-involved-volunteer .volunteer-section .volunteer-row > span {
       color: white;
       font-size: 20px;
@@ -2119,24 +2126,39 @@ form, .donation-form {
       background-color: #ffb351; }
     .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content {
       display: flex; }
+      @media only screen and (min-width: 1px) and (max-width: 900px) {
+        .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content {
+          flex-direction: column; } }
       .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content > p {
         width: 48%;
         margin-right: 4%; }
-      .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details .volunteer-detail {
-        margin-bottom: 15px; }
-        .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details .volunteer-detail span {
-          width: 120px;
-          font-weight: bold;
-          font-size: 12px;
-          text-transform: uppercase;
-          display: inline-block; }
-        .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details .volunteer-detail p {
-          display: inline;
-          margin-left: 18px;
-          font-size: 15px; }
-      .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details > p {
-        margin-top: 30px; }
-      .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details a {
-        color: #539ed0; }
+        @media only screen and (min-width: 1px) and (max-width: 900px) {
+          .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content > p {
+            width: 100%;
+            margin-right: 0%; } }
+      .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details {
+        margin-top: 15px; }
+        .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details .volunteer-detail {
+          margin-bottom: 15px; }
+          @media only screen and (min-width: 1px) and (max-width: 515px) {
+            .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details .volunteer-detail {
+              display: flex; } }
+          .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details .volunteer-detail span {
+            width: 120px;
+            font-weight: bold;
+            font-size: 12px;
+            text-transform: uppercase;
+            display: inline-block; }
+          .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details .volunteer-detail p {
+            display: inline;
+            margin-left: 18px;
+            font-size: 15px; }
+            @media only screen and (min-width: 1px) and (max-width: 515px) {
+              .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details .volunteer-detail p {
+                margin-top: 0px; } }
+        .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details > p {
+          margin-top: 30px; }
+        .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details a {
+          color: #539ed0; }
 
 /*# sourceMappingURL=main.css.map */
