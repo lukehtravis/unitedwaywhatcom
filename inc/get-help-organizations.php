@@ -1,4 +1,4 @@
-<div class="color-container darkblue-bg get-help-organizations">
+<div class="color-container darkblue-bg color-container-padding get-help-organizations">
   <section class="banner get-help">
     <div class="headline">
       <h1>Help For Organizations</h1>

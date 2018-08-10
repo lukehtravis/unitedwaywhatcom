@@ -1,4 +1,4 @@
-<div class="color-container darkblue-bg get-help">
+<div class="color-container color-container-padding darkblue-bg get-help">
   <section class="banner get-help">
     <div class="headline">
       <h1>How We Do It</h1>

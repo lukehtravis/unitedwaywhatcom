@@ -1,4 +1,4 @@
-<div class="color-container orange-bg">
+<div class="color-container color-container-padding orange-bg">
   <section class="banner our-work">
     <div class="headline">
       <h1>How We Do It</h1>

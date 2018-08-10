@@ -1,0 +1,53 @@
+.get-involved-advocate {
+  .banner {
+    background: url('/assets/img/girlbullhorn.jpg') no-repeat center center;
+    height: 881px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    @include breakpoint(tabletonly) {
+      height:750px;
+      background-image: url('/assets/img/girlbullhorntablet.jpg');
+    }
+    @include breakpoint(phoneonly) {
+      height:300px;
+      background-image: url('/assets/img/girlbullhornphone.jpg');
+    }
+  }
+  .headline {
+    p {
+      color: $color-white;
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+    > div {
+      margin-top: 40px;
+      margin-bottom: 60px;
+      max-width: 500px;
+      @include breakpoint(phoneonly) {
+        display: none;
+      }
+    }
+    a {
+      @include breakpoint(phoneonly) {
+        display: none;
+      }
+    }
+  }
+  .headline-text-group-mobile {
+    display: none;
+    @include breakpoint(phoneonly) {
+      display: inline-block;
+      @include mobilePageSideMargins;
+    }
+    p {
+      color: $color-white;
+      font-size: 18px;
+    }
+    button {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+  }
+}

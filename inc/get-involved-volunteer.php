@@ -1,4 +1,4 @@
-<div class="color-container lightblue-bg get-involved-volunteer">
+<div class="color-container lightblue-bg color-container-padding get-involved-volunteer">
   <section class="banner">
     <div class="headline">
       <h1>volunteer</h1>

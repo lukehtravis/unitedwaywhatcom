@@ -497,7 +497,7 @@ textarea::placeholder,
 select::placeholder {
   font-size: 15px; }
 
-.color-container {
+.color-container.color-container-padding {
   padding-bottom: 115px; }
 
 .orange-bg {
@@ -2160,5 +2160,48 @@ form, .donation-form {
           margin-top: 30px; }
         .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details a {
           color: #539ed0; }
+
+.get-involved-advocate .banner {
+  background: url("/assets/img/girlbullhorn.jpg") no-repeat center center;
+  height: 881px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media only screen and (min-width: 515px) and (max-width: 900px) {
+    .get-involved-advocate .banner {
+      height: 750px;
+      background-image: url("/assets/img/girlbullhorntablet.jpg"); } }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    .get-involved-advocate .banner {
+      height: 300px;
+      background-image: url("/assets/img/girlbullhornphone.jpg"); } }
+.get-involved-advocate .headline p {
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px; }
+.get-involved-advocate .headline > div {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  max-width: 500px; }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    .get-involved-advocate .headline > div {
+      display: none; } }
+@media only screen and (min-width: 1px) and (max-width: 515px) {
+  .get-involved-advocate .headline a {
+    display: none; } }
+.get-involved-advocate .headline-text-group-mobile {
+  display: none; }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    .get-involved-advocate .headline-text-group-mobile {
+      display: inline-block;
+      margin-left: 20px;
+      margin-right: 20px; } }
+  .get-involved-advocate .headline-text-group-mobile p {
+    color: white;
+    font-size: 18px; }
+  .get-involved-advocate .headline-text-group-mobile button {
+    margin-top: 20px;
+    margin-bottom: 30px; }
 
 /*# sourceMappingURL=main.css.map */
