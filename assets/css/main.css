@@ -558,15 +558,22 @@ select::placeholder {
     @media only screen and (min-width: 515px) and (max-width: 900px) {
       .headline span {
         font-size: 60px;
-        padding-left: 10px;
-        padding-right: 10px; } }
+        padding-left: 15px;
+        padding-right: 15px; } }
     @media only screen and (min-width: 1px) and (max-width: 515px) {
       .headline span {
         font-size: 40px;
-        padding-left: 7px;
-        padding-right: 7px; } }
+        padding-left: 15px;
+        padding-right: 15px; } }
   .headline span.small-headline {
-    font-size: 62px; }
+    font-size: 62px;
+    padding-bottom: 5px; }
+    @media only screen and (min-width: 515px) and (max-width: 900px) {
+      .headline span.small-headline {
+        font-size: 60px; } }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .headline span.small-headline {
+        font-size: 40px; } }
   .headline span.bland-header {
     text-transform: none;
     float: none;
@@ -575,10 +582,8 @@ select::placeholder {
     .headline span.darkorange-bg {
       font-size: 62.5px; } }
   .headline span:nth-of-type(2) {
-    padding-top: 0px; }
-    @media only screen and (min-width: 1px) and (max-width: 515px) {
-      .headline span:nth-of-type(2) {
-        margin-top: -4px; } }
+    padding-top: 5px;
+    padding-bottom: 5px; }
   .headline .small-breadcrumb {
     margin-bottom: 120px;
     font-size: 14px; }
@@ -1972,7 +1977,7 @@ form, .donation-form {
   @media only screen and (min-width: 515px) and (max-width: 900px) {
     .get-help-organizations .banner {
       height: 500px;
-      background-image: none; } }
+      background-image: url("/assets/img/bluewomancooktablet.jpg"); } }
   @media only screen and (min-width: 1px) and (max-width: 515px) {
     .get-help-organizations .banner {
       height: 300px;
@@ -1985,6 +1990,9 @@ form, .donation-form {
 
 .get-help-organizations .small-box.lowered {
   margin-top: 70px; }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    .get-help-organizations .small-box.lowered {
+      margin-top: 0px; } }
   .get-help-organizations .small-box.lowered h3 {
     margin-top: 0px; }
 .get-help-organizations a {
@@ -1993,20 +2001,36 @@ form, .donation-form {
 .get-help-organizations .request-table {
   list-style: none;
   counter-reset: item;
-  padding-left: 0px; }
+  padding-left: 0px;
+  width: 100%; }
   .get-help-organizations .request-table li {
     counter-increment: item;
     display: flex;
     border-top: 2px solid #ededed; }
+    @media only screen and (min-width: 1px) and (max-width: 900px) {
+      .get-help-organizations .request-table li {
+        display: inherit; } }
     .get-help-organizations .request-table li > div {
       margin: 10px 3.5% 25px 0;
       width: 31%; }
+      @media only screen and (min-width: 1px) and (max-width: 900px) {
+        .get-help-organizations .request-table li > div {
+          display: block;
+          margin-left: 50px;
+          width: auto; } }
     .get-help-organizations .request-table li > div:last-of-type {
       margin-right: 0; }
     .get-help-organizations .request-table li h3 {
-      margin: 0px; }
+      margin: 0px;
+      font-size: 16px; }
+      @media only screen and (min-width: 1px) and (max-width: 900px) {
+        .get-help-organizations .request-table li h3 {
+          margin: 10px 0; } }
     .get-help-organizations .request-table li p {
-      margin-top: 0px; }
+      margin-top: 0px;
+      font-size: 14px; }
+      .get-help-organizations .request-table li p a {
+        font-size: 14px; }
   .get-help-organizations .request-table li:before {
     margin-right: 30px;
     content: counter(item);
@@ -2014,6 +2038,12 @@ form, .donation-form {
     font-size: 60px;
     font-family: "League Gothic";
     display: inline-block; }
+    @media only screen and (min-width: 1px) and (max-width: 900px) {
+      .get-help-organizations .request-table li:before {
+        margin-right: 15px;
+        float: left; } }
+.get-help-organizations .body-section img {
+  margin-top: 30px; }
 
 .get-help .banner {
   background: url("/assets/img/manonstreet.jpg") no-repeat center center;

@@ -27,6 +27,7 @@
     </div>
     <div class="column-half">
       <ol class="request-table">
+        <p><b>THE PROCESS LOOKS LIKE THIS:</b></p>
         <li class="table-row">
           <div>
             <h3>Request for Qualifications (RFQ)</h3>
