@@ -26,6 +26,72 @@
       </div>
     </div>
     <div class="column-half">
+      <ol class="request-table">
+        <li class="table-row">
+          <div>
+            <h3>Request for Qualifications (RFQ)</h3>
+          </div>
+          <div>
+            <p><b>January:</b> RFQ process opens</p>
+            <p><b>February:</b> RFQ applications due</p>
+            <p><b>March:</b> Qualifying applicants invited to submit a detailed proposal</p>
+          </div>
+          <div>
+            <p><a href="#">RFQ Instructions</a></p>
+            <p><a href="#">RFQ Application Form</a></p>
+          </div>
+        </li>
+        <li class="table-row">
+          <div>
+            <h3>Detailed Proposal</h3>
+          </div>
+          <div>
+            <p><b>April:</b> Proposals due</p>
+          </div>
+          <div>
+            <p><a href="#">1 Year Funding Proposal Form</a></p>
+            <p><a href="#">Program Budget Form</a></p>
+            <p><a href="#">1 Year Funding Proposal Instructions</a></p>
+          </div>
+        </li>
+        <li class="table-row">
+          <div>
+            <h3>Fund Distribution Comittee Review</h3>
+          </div>
+          <div>
+            <p><b>April - May:</b> Site visits and presentations</p>
+          </div>
+          <div>
+          </div>
+        </li>
+        <li class="table-row">
+          <div>
+            <h3>Grant Determinations</h3>
+          </div>
+          <div>
+            <p><b>June 30th:</b> Grant recipients and grant amounts finalized</p>
+            <p><b>July - June:</b> Monthly disbursements of funds to grant recipients</p>
+          </div>
+          <div>
+            <p><a href="#">Memorandum Of Understanding</a></p>
+            <p><a href="#">Agency Relations Policy</a></p>
+          </div>
+        </li>
+        <li class="table-row">
+          <div>
+            <h3>Year End Report</h3>
+          </div>
+          <div>
+            <p><b>April:</b> Programs receiving funding submit year-end reports</p>
+            <p><b>April - May:</b> Programs receiving funding present year end reports to Fund Distribution Committee</p>
+          </div>
+          <div>
+            <p><a href="#">Year End Report</a></p>
+          </div>
+        </li>
+      </ol>
+    </div>
+    <div class="column-half">
       <div class="body-section">
         <h2>Emergency Food And Shelter Programs</h2>
         <p>We want long-term solutions for our community. But emergencies happen. We’re grateful for the $100,000+ in federal funds Whatcom County receives annually to supplement local emergency food and shelter programs. We serve as the fiscal agent for these funds and work with local government and non-profit organizations to determine allocations to local programs.</p>
@@ -50,6 +116,9 @@
           <a href="#">Stuff</a>
           <a href="#">Stuff</a>
         </div>
+      </div>
+      <div class="body-section">
+        <img src="/assets/img/soup.jpg" />
       </div>
     </div>
   </section>

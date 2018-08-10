@@ -1990,6 +1990,30 @@ form, .donation-form {
 .get-help-organizations a {
   display: block;
   color: #539ed0; }
+.get-help-organizations .request-table {
+  list-style: none;
+  counter-reset: item;
+  padding-left: 0px; }
+  .get-help-organizations .request-table li {
+    counter-increment: item;
+    display: flex;
+    border-top: 2px solid #ededed; }
+    .get-help-organizations .request-table li > div {
+      margin: 10px 3.5% 25px 0;
+      width: 31%; }
+    .get-help-organizations .request-table li > div:last-of-type {
+      margin-right: 0; }
+    .get-help-organizations .request-table li h3 {
+      margin: 0px; }
+    .get-help-organizations .request-table li p {
+      margin-top: 0px; }
+  .get-help-organizations .request-table li:before {
+    margin-right: 30px;
+    content: counter(item);
+    color: #ffb351;
+    font-size: 60px;
+    font-family: "League Gothic";
+    display: inline-block; }
 
 .get-help .banner {
   background: url("/assets/img/manonstreet.jpg") no-repeat center center;

@@ -35,4 +35,35 @@
     display: block;
     color: $color-lightblue;
   }
+  .request-table {
+    list-style: none;
+    counter-reset: item;
+    padding-left: 0px;
+    li {
+      counter-increment: item;
+      display: flex;
+      border-top: 2px solid $color-lightgray;
+      > div {
+        margin: 10px 3.5% 25px 0;
+        width: 31%;
+      }
+      > div:last-of-type {
+        margin-right: 0;
+      }
+      h3 {
+        margin: 0px;
+      }
+      p {
+        margin-top: 0px;
+      }
+    }
+    li:before {
+      margin-right: 30px;
+      content: counter(item);
+      color: $color-orange;
+      font-size: 60px;
+      font-family: $league;
+      display: inline-block;
+    }
+  }
 }
