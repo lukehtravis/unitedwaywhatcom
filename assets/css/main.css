@@ -2089,4 +2089,20 @@ form, .donation-form {
       .bottom-cta .bottom-cta-button {
         width: auto; } }
 
+.get-involved-volunteer .banner {
+  background: url("/assets/img/youngboy.jpg") no-repeat center center;
+  height: 780px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media only screen and (min-width: 515px) and (max-width: 900px) {
+    .get-involved-volunteer .banner {
+      height: 500px;
+      background-image: url("/assets/img/youngboytablet.jpg"); } }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    .get-involved-volunteer .banner {
+      height: 300px;
+      background-image: url("/assets/img/youngboyphone.jpg"); } }
+
 /*# sourceMappingURL=main.css.map */
