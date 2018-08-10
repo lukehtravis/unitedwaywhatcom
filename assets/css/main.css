@@ -465,6 +465,9 @@ p, button, li, a, input, span, select {
   font-size: 16px;
   font-family: "Roboto", sans-serif; }
 
+ul {
+  padding-left: 20px; }
+
 input[type="checkbox"] {
   margin-top: 0px;
   margin-bottom: 0px; }
@@ -511,6 +514,9 @@ select::placeholder {
 
 .black-bg {
   background-color: black; }
+
+.lightgray-bg {
+  background-color: #ededed; }
 
 .headline {
   padding-top: 100px;
@@ -645,8 +651,13 @@ select::placeholder {
 .embed-graphic {
   background-color: #ededed;
   width: 100%;
-  height: 400px;
+  min-height: 300px;
   text-align: center; }
+
+.small-box {
+  padding: 40px 30px;
+  width: 100%;
+  border-radius: 4px; }
 
 input[type="checkbox"] {
   display: none; }
@@ -1972,6 +1983,14 @@ form, .donation-form {
     color: white;
     font-size: 18px; }
 
+.get-help-organizations .small-box.lowered {
+  margin-top: 70px; }
+  .get-help-organizations .small-box.lowered h3 {
+    margin-top: 0px; }
+.get-help-organizations a {
+  display: block;
+  color: #539ed0; }
+
 .get-help .banner {
   background: url("/assets/img/manonstreet.jpg") no-repeat center center;
   height: 780px;
@@ -1995,11 +2014,14 @@ form, .donation-form {
 
 .bottom-cta {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  background-color: #ededed;
+  padding: 65px 70px; }
   @media only screen and (min-width: 1px) and (max-width: 900px) {
     .bottom-cta {
       flex-direction: column;
-      text-align: center; } }
+      text-align: center;
+      padding: 35px 20px; } }
   .bottom-cta .bottom-cta-text {
     width: 60%;
     margin-right: 5%; }

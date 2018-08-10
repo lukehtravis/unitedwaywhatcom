@@ -27,9 +27,12 @@
 .bottom-cta {
   display: flex;
   align-items: center;
+  background-color: $color-lightgray;
+  padding: 65px 70px;
   @include breakpoint(phonetablet) {
     flex-direction: column;
     text-align: center;
+    padding: 35px 20px;
   }
   .bottom-cta-text {
     width: 60%;

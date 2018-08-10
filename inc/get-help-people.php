@@ -18,7 +18,7 @@
         <p>You’ll get the lowest price possible. The card provides pharmacy discounts (up to 75%) on all FDA approved prescription medicine not covered by insurance, Medicaid, Medicare, or other benefit plans.  You pay either the discounted price or the pharmacy's retail price, whichever is lower.</p>
         <a href="#"><button class="orange-bg">Download Prescription Card</button></a>
       </div>
-      <div class="body-section embed-graphic">
+      <div class="body-section lightgray-bg small-box">
         <h3>People Helped. Money Saved</h3>
         <embed />
       </div>

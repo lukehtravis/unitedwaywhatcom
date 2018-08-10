@@ -30,6 +30,10 @@ p, button, li, a, input, span, select {
   font-family: $roboto;
 }
 
+ul {
+  padding-left: 20px;
+}
+
 input[type="checkbox"] {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -86,6 +90,10 @@ select::placeholder {
 
 .black-bg {
   background-color: $color-black;
+}
+
+.lightgray-bg {
+  background-color: $color-lightgray;
 }
 
 .headline {
@@ -224,8 +232,14 @@ select::placeholder {
 .embed-graphic {
   background-color: $color-lightgray;
   width: 100%;
-  height: 400px;
+  min-height: 300px; // temporary
   text-align: center;
+}
+
+.small-box {
+  padding: 40px 30px;
+  width: 100%;
+  border-radius: 4px;
 }
 
 // For custom checkboxes
