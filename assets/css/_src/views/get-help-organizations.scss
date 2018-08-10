@@ -27,7 +27,7 @@
 .get-help-organizations {
   .small-box.lowered {
     margin-top: 70px;
-    @include breakpoint(phoneonly) {
+    @include breakpoint(phonetablet) {
       margin-top: 0px;
     }
     h3 {
