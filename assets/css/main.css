@@ -1951,6 +1951,27 @@ form, .donation-form {
         .break-the-link .break-link-container button {
           margin-top: 35px; } }
 
+.get-help-organizations .banner {
+  background: url("/assets/img/bluewomancook.jpg") no-repeat center center;
+  height: 780px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media only screen and (min-width: 515px) and (max-width: 900px) {
+    .get-help-organizations .banner {
+      height: 500px;
+      background-image: none; } }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    .get-help-organizations .banner {
+      height: 300px;
+      background-image: none; } }
+  .get-help-organizations .banner .headline h1 {
+    color: white; }
+  .get-help-organizations .banner .headline p {
+    color: white;
+    font-size: 18px; }
+
 .get-help .banner {
   background: url("/assets/img/manonstreet.jpg") no-repeat center center;
   height: 780px;
@@ -1990,26 +2011,5 @@ form, .donation-form {
     @media only screen and (min-width: 1px) and (max-width: 900px) {
       .bottom-cta .bottom-cta-button {
         width: auto; } }
-
-.get-help-people .banner {
-  background: url("/assets/img/bluewomancook.jpg") no-repeat center center;
-  height: 780px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-  @media only screen and (min-width: 515px) and (max-width: 900px) {
-    .get-help-people .banner {
-      height: 500px;
-      background-image: none; } }
-  @media only screen and (min-width: 1px) and (max-width: 515px) {
-    .get-help-people .banner {
-      height: 300px;
-      background-image: none; } }
-  .get-help-people .banner .headline h1 {
-    color: white; }
-  .get-help-people .banner .headline p {
-    color: white;
-    font-size: 18px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,6 @@
-.get-help .banner {
+.get-help-organizations .banner {
   // See site js for background img url
-  background: url('/assets/img/manonstreet.jpg') no-repeat center center;
+  background: url('/assets/img/bluewomancook.jpg') no-repeat center center;
   height: 780px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -8,7 +8,7 @@
   background-size: cover;
   @include breakpoint(tabletonly) {
     height:500px;
-    background-image:  url('/assets/img/manonstreettablet.jpg');
+    background-image: none;
   }
   @include breakpoint(phoneonly) {
     height:300px;
@@ -21,27 +21,6 @@
     p {
       color: $color-white;
       font-size: 18px;
-    }
-  }
-}
-.bottom-cta {
-  display: flex;
-  align-items: center;
-  @include breakpoint(phonetablet) {
-    flex-direction: column;
-    text-align: center;
-  }
-  .bottom-cta-text {
-    width: 60%;
-    margin-right: 5%;
-    @include breakpoint(phonetablet) {
-      width: 100%;
-    }
-  }
-  .bottom-cta-button {
-    width: 35%;
-    @include breakpoint(phonetablet) {
-      width: auto;
     }
   }
 }
