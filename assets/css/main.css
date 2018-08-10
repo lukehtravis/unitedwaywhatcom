@@ -609,7 +609,8 @@ select::placeholder {
   position: relative; }
   @media only screen and (min-width: 1px) and (max-width: 900px) {
     .body-overlap {
-      margin-top: 0px; } }
+      margin-top: 0px;
+      padding-top: 15px; } }
   @media only screen and (min-width: 515px) and (max-width: 900px) {
     .body-overlap {
       margin-left: 60px;
@@ -1990,7 +1991,7 @@ form, .donation-form {
 
 .get-help-organizations .small-box.lowered {
   margin-top: 70px; }
-  @media only screen and (min-width: 1px) and (max-width: 515px) {
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
     .get-help-organizations .small-box.lowered {
       margin-top: 0px; } }
   .get-help-organizations .small-box.lowered h3 {

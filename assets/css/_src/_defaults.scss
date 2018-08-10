@@ -187,6 +187,7 @@ select::placeholder {
   position: relative;
   @include breakpoint(phonetablet) {
     margin-top: 0px;
+    padding-top: 15px;
   }
   @include breakpoint(tabletonly) {
     margin-left: 60px;
