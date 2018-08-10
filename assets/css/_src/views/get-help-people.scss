@@ -1,0 +1,26 @@
+.get-help-people .banner {
+  // See site js for background img url
+  background: url('/assets/img/bluewomancook.jpg') no-repeat center center;
+  height: 780px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  @include breakpoint(tabletonly) {
+    height:500px;
+    background-image: none;
+  }
+  @include breakpoint(phoneonly) {
+    height:300px;
+    background-image: none;
+  }
+  .headline {
+    h1 {
+      color: $color-white;
+    }
+    p {
+      color: $color-white;
+      font-size: 18px;
+    }
+  }
+}

@@ -19,8 +19,8 @@
         <li>2.3 Get Involved / Give / Personal Donations</li>
         <li>2.4 Get Involved / Advocate</li>
         <li>2.5 Get Involved / Volunteer</li>
-        <li>3.0 Get Help / Help for Organizations</li>
-        <li>3.1 Get Help / Help for People</li>
+        <li><a href="/3.0-get-help-help-for-organizations.php">3.0 Get Help / Help for Organizations</a></li>
+        <li><a href="/3.1-get-help-help-for-people.php">3.1 Get Help / Help for People</a></li>
         <li><a href="/4.0-donate.php">4.0 Donate</a></li>
         <li><a href="/4.1-donate-complete.php">4.1 Donate / Complete</a></li>
         <li><a href="/5.0-other-events.php">5.0 Other / Events</a></li>

@@ -477,7 +477,7 @@ button, input[type="submit"] {
   padding: 12px 15px;
   border-radius: 3px;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 16px;
   color: white;
   border: none;
   font-weight: bold;
@@ -493,6 +493,9 @@ input[type="text"]::placeholder,
 textarea::placeholder,
 select::placeholder {
   font-size: 15px; }
+
+.color-container {
+  padding-bottom: 115px; }
 
 .orange-bg {
   background-color: #ffb351; }
@@ -521,11 +524,19 @@ select::placeholder {
       padding-top: 20px;
       padding-left: 20px;
       padding-right: 20px; } }
+  .headline p:first-of-type {
+    clear: both;
+    padding-top: 60px;
+    max-width: 600px; }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .headline p:first-of-type {
+        padding-top: 30px; } }
   .headline .breadcrumb {
     color: white;
     font-size: inherit;
     float: none;
-    font-family: "Roboto", sans-serif; }
+    font-family: "Roboto", sans-serif;
+    padding-left: 0px; }
   .headline span {
     margin: 0;
     font-size: 86px;
@@ -534,17 +545,22 @@ select::placeholder {
     text-transform: uppercase;
     float: left;
     clear: left;
+    line-height: 0.96;
     letter-spacing: 3px;
     white-space: nowrap;
     padding: 10px 25px 0px 25px; }
     @media only screen and (min-width: 515px) and (max-width: 900px) {
       .headline span {
-        font-size: 60px; } }
+        font-size: 60px;
+        padding-left: 10px;
+        padding-right: 10px; } }
     @media only screen and (min-width: 1px) and (max-width: 515px) {
       .headline span {
         font-size: 40px;
         padding-left: 7px;
         padding-right: 7px; } }
+  .headline span.small-headline {
+    font-size: 62px; }
   .headline span.bland-header {
     text-transform: none;
     float: none;
@@ -553,8 +569,7 @@ select::placeholder {
     .headline span.darkorange-bg {
       font-size: 62.5px; } }
   .headline span:nth-of-type(2) {
-    padding-top: 0px;
-    margin-top: -10px; }
+    padding-top: 0px; }
     @media only screen and (min-width: 1px) and (max-width: 515px) {
       .headline span:nth-of-type(2) {
         margin-top: -4px; } }
@@ -571,6 +586,67 @@ select::placeholder {
   display: block;
   height: 0;
   clear: both; }
+
+.body-overlap {
+  background-color: white;
+  border-radius: 4px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: -120px;
+  padding-top: 80px;
+  padding-bottom: 105px;
+  position: relative; }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    .body-overlap {
+      margin-top: 0px; } }
+  @media only screen and (min-width: 515px) and (max-width: 900px) {
+    .body-overlap {
+      margin-left: 60px;
+      margin-right: 60px; } }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    .body-overlap {
+      margin-left: 20px;
+      margin-right: 20px;
+      padding-top: 20px;
+      padding-bottom: 50px; } }
+  .body-overlap .banner-caption {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    font-style: italic;
+    font-size: 14px;
+    color: white; }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .body-overlap .banner-caption {
+        display: none; } }
+
+.column-half {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 70px;
+  margin-right: 70px; }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    .column-half {
+      flex-direction: column;
+      margin-left: 20px;
+      margin-right: 20px; } }
+  .column-half .body-section {
+    width: 46%;
+    margin-bottom: 60px; }
+    @media only screen and (min-width: 1px) and (max-width: 900px) {
+      .column-half .body-section {
+        width: 100%;
+        margin-bottom: 30px; } }
+    .column-half .body-section img {
+      width: 100%; }
+  .column-half .body-section:first-of-type {
+    margin-right: 4%; }
+
+.embed-graphic {
+  background-color: #ededed;
+  width: 100%;
+  height: 400px;
+  text-align: center; }
 
 input[type="checkbox"] {
   display: none; }
@@ -1704,9 +1780,6 @@ form, .donation-form {
         .video-section a p {
           display: none; } }
 
-.color-container {
-  padding-bottom: 115px; }
-
 .banner.our-work {
   background: url("/assets/img/smilingwoman.jpg") no-repeat center center;
   height: 780px;
@@ -1724,105 +1797,76 @@ form, .donation-form {
       height: 300px;
       background-image: url("/assets/img/smilingwomanmobile.jpg"); } }
 
-.body-overlap {
-  background-color: white;
-  border-radius: 4px;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: -120px;
-  padding-top: 80px;
-  padding-bottom: 105px;
-  position: relative; }
-  @media only screen and (min-width: 1px) and (max-width: 900px) {
-    .body-overlap {
-      margin-top: 0px; } }
-  @media only screen and (min-width: 515px) and (max-width: 900px) {
-    .body-overlap {
-      margin-left: 60px;
-      margin-right: 60px; } }
+.body-overlap .top-text {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto 130px; }
   @media only screen and (min-width: 1px) and (max-width: 515px) {
-    .body-overlap {
-      margin-left: 20px;
-      margin-right: 20px;
-      padding-top: 20px; } }
-  .body-overlap .banner-caption {
-    position: absolute;
-    top: -40px;
-    right: 0;
-    font-style: italic;
-    font-size: 14px;
-    color: white; }
-    @media only screen and (min-width: 1px) and (max-width: 515px) {
-      .body-overlap .banner-caption {
-        display: none; } }
-  .body-overlap .top-text {
-    text-align: center;
-    width: 70%;
-    margin: 0 auto 130px; }
-    @media only screen and (min-width: 1px) and (max-width: 515px) {
-      .body-overlap .top-text {
-        margin-bottom: 50px;
-        width: 90%; } }
-    .body-overlap .top-text h2 {
-      font-size: 30px; }
-    .body-overlap .top-text p {
-      font-size: 18px; }
-  .body-overlap .icon-grid {
+    .body-overlap .top-text {
+      margin-bottom: 50px;
+      width: 90%; } }
+  .body-overlap .top-text h2 {
+    font-size: 30px; }
+  .body-overlap .top-text p {
+    font-size: 18px; }
+.body-overlap .icon-grid {
+  display: flex;
+  margin: 0 4%; }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    .body-overlap .icon-grid {
+      flex-wrap: wrap; } }
+  .body-overlap .icon-grid h3 {
+    font-size: 26px;
+    margin: 0px; }
+  .body-overlap .icon-grid p {
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 1.2; }
+  .body-overlap .icon-grid a {
+    margin-top: 10px;
+    color: #539ed0;
+    font-size: 15px;
+    text-align: left;
+    width: 100%; }
+  .body-overlap .icon-grid .icon-column {
     display: flex;
-    margin: 0 4%; }
-    @media only screen and (min-width: 1px) and (max-width: 900px) {
-      .body-overlap .icon-grid {
-        flex-wrap: wrap; } }
-    .body-overlap .icon-grid h3 {
-      font-size: 26px;
-      margin: 0px; }
-    .body-overlap .icon-grid p {
-      font-size: 15px; }
-    .body-overlap .icon-grid a {
-      margin-top: 10px;
-      color: #539ed0;
-      font-size: 15px;
-      text-align: left;
-      width: 100%; }
-    .body-overlap .icon-grid .icon-column {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 22%; }
-      @media only screen and (min-width: 515px) and (max-width: 900px) {
-        .body-overlap .icon-grid .icon-column {
-          width: 48%;
-          margin-top: 40px; } }
-      @media only screen and (min-width: 1px) and (max-width: 515px) {
-        .body-overlap .icon-grid .icon-column {
-          width: 100%;
-          margin-top: 40px; } }
-    @media only screen and (min-width: 901px) {
-      .body-overlap .icon-grid .icon-column:nth-child(-n+3) {
-        margin-right: 4%; } }
+    flex-direction: column;
+    align-items: center;
+    width: 22%; }
     @media only screen and (min-width: 515px) and (max-width: 900px) {
-      .body-overlap .icon-grid .icon-column:nth-child(odd) {
-        margin-right: 4%; } }
-    .body-overlap .icon-grid .icon-column:nth-child(1) img {
-      margin-bottom: 63px; }
-      @media only screen and (min-width: 1px) and (max-width: 515px) {
-        .body-overlap .icon-grid .icon-column:nth-child(1) img {
-          margin-bottom: 30px; } }
-    .body-overlap .icon-grid .icon-column:nth-child(2) img {
-      margin-bottom: 45px; }
-      @media only screen and (min-width: 1px) and (max-width: 515px) {
-        .body-overlap .icon-grid .icon-column:nth-child(2) img {
-          margin-bottom: 30px; } }
-    .body-overlap .icon-grid .icon-column:nth-child(3) img {
-      margin-bottom: 83px; }
-      @media only screen and (min-width: 1px) and (max-width: 515px) {
-        .body-overlap .icon-grid .icon-column:nth-child(3) img {
-          margin-bottom: 30px; } }
-    .body-overlap .icon-grid .icon-column:nth-child(4) img {
-      margin-bottom: 90px; }
-      @media only screen and (min-width: 1px) and (max-width: 515px) {
-        .body-overlap .icon-grid .icon-column:nth-child(4) img {
-          margin-bottom: 30px; } }
+      .body-overlap .icon-grid .icon-column {
+        width: 48%;
+        margin-top: 40px; } }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .body-overlap .icon-grid .icon-column {
+        width: 100%;
+        margin-top: 40px; } }
+  @media only screen and (min-width: 901px) {
+    .body-overlap .icon-grid .icon-column:nth-child(-n+3) {
+      margin-right: 4%; } }
+  @media only screen and (min-width: 515px) and (max-width: 900px) {
+    .body-overlap .icon-grid .icon-column:nth-child(odd) {
+      margin-right: 4%; } }
+  .body-overlap .icon-grid .icon-column:nth-child(1) img {
+    margin-bottom: 63px; }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .body-overlap .icon-grid .icon-column:nth-child(1) img {
+        margin-bottom: 30px; } }
+  .body-overlap .icon-grid .icon-column:nth-child(2) img {
+    margin-bottom: 45px; }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .body-overlap .icon-grid .icon-column:nth-child(2) img {
+        margin-bottom: 30px; } }
+  .body-overlap .icon-grid .icon-column:nth-child(3) img {
+    margin-bottom: 83px; }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .body-overlap .icon-grid .icon-column:nth-child(3) img {
+        margin-bottom: 30px; } }
+  .body-overlap .icon-grid .icon-column:nth-child(4) img {
+    margin-bottom: 90px; }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .body-overlap .icon-grid .icon-column:nth-child(4) img {
+        margin-bottom: 30px; } }
 
 .meet-the-johnsons {
   background: url("/assets/img/hands.jpg") no-repeat right bottom;
@@ -1906,5 +1950,66 @@ form, .donation-form {
       @media only screen and (min-width: 1px) and (max-width: 515px) {
         .break-the-link .break-link-container button {
           margin-top: 35px; } }
+
+.get-help .banner {
+  background: url("/assets/img/manonstreet.jpg") no-repeat center center;
+  height: 780px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media only screen and (min-width: 515px) and (max-width: 900px) {
+    .get-help .banner {
+      height: 500px;
+      background-image: url("/assets/img/manonstreettablet.jpg"); } }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    .get-help .banner {
+      height: 300px;
+      background-image: none; } }
+  .get-help .banner .headline h1 {
+    color: white; }
+  .get-help .banner .headline p {
+    color: white;
+    font-size: 18px; }
+
+.bottom-cta {
+  display: flex;
+  align-items: center; }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    .bottom-cta {
+      flex-direction: column;
+      text-align: center; } }
+  .bottom-cta .bottom-cta-text {
+    width: 60%;
+    margin-right: 5%; }
+    @media only screen and (min-width: 1px) and (max-width: 900px) {
+      .bottom-cta .bottom-cta-text {
+        width: 100%; } }
+  .bottom-cta .bottom-cta-button {
+    width: 35%; }
+    @media only screen and (min-width: 1px) and (max-width: 900px) {
+      .bottom-cta .bottom-cta-button {
+        width: auto; } }
+
+.get-help-people .banner {
+  background: url("/assets/img/bluewomancook.jpg") no-repeat center center;
+  height: 780px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media only screen and (min-width: 515px) and (max-width: 900px) {
+    .get-help-people .banner {
+      height: 500px;
+      background-image: none; } }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    .get-help-people .banner {
+      height: 300px;
+      background-image: none; } }
+  .get-help-people .banner .headline h1 {
+    color: white; }
+  .get-help-people .banner .headline p {
+    color: white;
+    font-size: 18px; }
 
 /*# sourceMappingURL=main.css.map */
