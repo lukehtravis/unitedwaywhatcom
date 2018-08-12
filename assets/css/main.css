@@ -577,7 +577,12 @@ select::placeholder {
   .headline span.bland-header {
     text-transform: none;
     float: none;
-    padding: 0px; }
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+    font-size: 60px; }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .headline span.bland-header {
+        font-size: 30px; } }
   @media only screen and (min-width: 901px) {
     .headline span.darkorange-bg {
       font-size: 62.5px; } }
@@ -1894,7 +1899,10 @@ form, .donation-form {
     width: 45%; }
     .meet-the-johnsons .headline p {
       font-size: 18px;
-      color: white; }
+      color: white;
+      line-height: 1.3; }
+    .meet-the-johnsons .headline p:first-of-type {
+      padding-top: 20px; }
     @media only screen and (min-width: 515px) and (max-width: 900px) {
       .meet-the-johnsons .headline {
         width: 70%; } }
@@ -1906,10 +1914,10 @@ form, .donation-form {
       background-image: none; } }
   @media only screen and (min-width: 515px) and (max-width: 900px) {
     .meet-the-johnsons {
-      height: 500px; } }
+      height: 480px; } }
   @media only screen and (min-width: 1px) and (max-width: 515px) {
     .meet-the-johnsons {
-      height: 400px; } }
+      height: 450px; } }
 
 .johnsons-timeline {
   padding-top: 20px;

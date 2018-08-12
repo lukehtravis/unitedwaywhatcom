@@ -150,6 +150,11 @@ select::placeholder {
     text-transform: none;
     float: none;
     padding: 0px;
+    font-family: $roboto;
+    font-size: 60px;
+    @include breakpoint(phoneonly) {
+      font-size: 30px;
+    }
   }
   span.darkorange-bg {
     @include breakpoint(desktopbeyond) {

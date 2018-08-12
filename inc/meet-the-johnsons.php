@@ -9,7 +9,7 @@
 <section class="johnsons-timeline">
   <img class="timeline-big"
     srcset="
-      /assets/img/johnsons-timeline.png 1400w,
+      /assets/img/timeline.jpg 1400w,
       /assets/img/timeline.png 901w,
       /assets/img/timelinetablet.png 515w,
     "
