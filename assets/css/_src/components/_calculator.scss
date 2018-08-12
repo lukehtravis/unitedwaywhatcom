@@ -1,3 +1,320 @@
+#calculator-widget {
+  [v-cloak] {
+    display:none;
+  }
+  width: 650px;
+  background-color: $color-white;
+  margin: auto;
+  padding: 60px 75px;
+  .donate-buttons, .donate-timeframe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    input,
+    .timeframe-btn {
+      &:disabled,
+      &[disabled] {
+        border-color:$color-lightgray;
+        color: darken($color-lightgray,20%);
+      }
+      &:hover,
+      &.active {
+        &:disabled,
+        &[disabled] {
+          cursor: not-allowed;
+          background: $color-white;
+          border-color:$color-lightgray;
+          color: darken($color-lightgray,20%);
+        }
+        cursor:pointer;
+        background-color: $color-lightblue;
+        color:$color-white;
+        @include input-placeholder {
+          color: $color-white !important;
+        }
+        transition: .3s ease;
+      }
+      @include input-placeholder {
+        color: $color-black !important;
+      }
+    }
+    .donate-button {
+      width: 32%;
+      margin-right: 1.5%;
+      margin-bottom: 10px;
+      input {
+        font-size: 22px;
+        padding: 24px 0;
+        border: 1px solid $color-lightblue;
+        text-align: center;
+      }
+      input::placeholder {
+        color: $color-black;
+      }
+    }
+    .donate-button:nth-child(3n+3) {
+      margin-right: 0;
+    }
+  }
+  .donate-timeframe {
+    margin-bottom: 59px !important;
+    > input,
+    > .timeframe-btn {
+      &:focus {
+        outline:0 none;
+      }
+      width: 49%;
+      padding: 12px 0;
+      text-align: center;
+      border: 1px solid $color-lightblue;
+      font-size: 17px;
+      background-color: $color-white;
+      color: $color-black;
+      font-weight: normal;
+    }
+  }
+
+  .donate-timeframe >input::placeholder {
+    color: $color-black;
+  }
+  .donate-timeframe > input:first-child {
+    margin-right: 2%;
+  }
+  .calculator {
+    padding: 45px 0 34px;
+    background-color: $color-lightgray;
+    text-align: center;
+    border-radius: 4px;
+
+    .leadin {
+      margin:0;
+      font-family: $roboto;
+      color: $color-graytext-footer;
+      font-size: 20px;
+      font-style: italic;
+      .donation-amount {
+        font-size: 20px;
+      }
+    }
+    .calculator-results {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content:space-evenly;
+      align-items: stretch;
+      margin-top: 14px;
+      .calculation {
+        font-size: 0;
+        //outline:1px solid blue;
+        flex: 0 0 33.33%;
+
+        padding: 0 10px 19px;
+        &:nth-child(even) {
+          position: relative;
+          &:before,
+          &:after {
+            background-color: $color-lightgray;
+            color: #808080;
+            content: '- or -';
+            display:block;
+            width:29px;
+            height:23px;
+            white-space: nowrap;
+            overflow:visible;
+
+            position: absolute;
+            top:0;
+            left:-14px;
+            padding:26px 0 0;
+
+            text-align: center;
+            font-family: $roboto;
+            font-size: 14px;
+            font-style: italic;
+            line-height: 1em;
+          }
+          &:after {
+            left: auto;
+            right:-14px;
+          }
+
+          border-left:1px solid $color-white;
+          border-right:1px solid $color-white;
+        }
+
+        img {
+          display: block;
+          margin: 0 auto 0;
+          width:100px;
+        }
+        .big-number {
+          margin: -1px 0 0;
+          font-family: $league;
+          font-size: 70px;
+          line-height: 1em;
+
+          max-width: 146px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .description {
+          padding:0 5px 0;
+          margin: 6px 0 0;
+          font-family: $roboto;
+          color: $color-black;
+          font-size: 12px;
+          line-height: 1.2em;
+        }
+      }
+    }
+  }
+
+  button {
+    margin-top: 20px;
+    &.donate-btn {
+      $height: 60px;
+      margin-top: 46px;
+      padding:0;
+      line-height:$height;
+      height:$height;
+      font-weight: bold;
+      font-size:24px;
+      margin-bottom:50px;
+      width:100%;
+    }
+  }
+
+  @include breakpoint(phonetablet) {
+    width:100%;
+    .calculator {
+      padding-bottom: 15px;
+      .calculator-results {
+        //outline:1px solid red;
+        flex-flow: column nowrap;
+        margin-top: 10px;
+        .calculation {
+          //outline:1px solid green;
+          min-height: 128px;
+          text-align: left;
+          padding: 0 0 0;
+          margin:0 15px 0;
+          display: flex;
+          align-items: center;
+
+          &:nth-child(even) {
+            position: relative;
+            &:before,
+            &:after {
+              width:46px;
+              height:auto;
+              top:-8px;
+              left:50%;
+              margin-left:-23px;
+              padding:0;
+            }
+            &:after {
+              right:auto;
+              top:auto;
+              bottom: -7px;
+            }
+            border: 0 none;
+            border-top:1px solid $color-white;
+            border-bottom:1px solid $color-white;
+          }
+
+          img {
+            //outline:1px solid blue;
+            margin: 0 0 0 -15px;
+            flex:0 0 100px;
+          }
+          .big-number {
+            //outline:1px solid orange;
+            text-align: center;
+
+            margin: 0;
+            flex:1 1 50%;
+            line-height: 1em;
+          }
+          .description {
+            //outline:1px solid hotpink;
+            text-align: center;
+            margin: 0;
+            padding:10px 0;
+            flex:1 1 50%;
+          }
+        }
+      }
+    }
+
+    button {
+      &.donate-btn {
+        margin-top: 37px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  //@include breakpoint(phoneonly) {
+  //  .calculator {
+  //    .calculator-results {
+  //      .calculation {
+  //        .big-number {
+  //          flex:1 1 50%;
+  //        }
+  //        .description {
+  //          flex:1 1 50%;
+  //        }
+  //      }
+  //    }
+  //  }
+  //}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// DEPRECATED
 form, .donation-form {
   [v-cloak] {
     display:none;
@@ -19,10 +336,23 @@ form, .donation-form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 45px;
-    input {
+    margin-bottom: 16px;
+    input,
+    .timeframe-btn {
+      &:disabled,
+      &[disabled] {
+        border-color:$color-lightgray;
+        color: darken($color-lightgray,20%);
+      }
       &:hover,
       &.active {
+        &:disabled,
+        &[disabled] {
+          cursor: not-allowed;
+          background: $color-white;
+          border-color:$color-lightgray;
+          color: darken($color-lightgray,20%);
+        }
         cursor:pointer;
         background-color: $color-lightblue;
         color:$color-white;
@@ -41,10 +371,9 @@ form, .donation-form {
       margin-bottom: 10px;
       input {
         font-size: 22px;
-        padding: 30px 0;
+        padding: 24px 0;
         border: 1px solid $color-lightblue;
         text-align: center;
-        font-size: 22px;
       }
       input::placeholder {
         color: $color-black;
@@ -55,13 +384,24 @@ form, .donation-form {
     }
   }
 }
-.donate-timeframe > input {
-  width: 49%;
-  padding: 10px 0;
-  text-align: center;
-  border: 1px solid $color-lightblue;
-  font-size: 22px;
+.donate-timeframe {
+  margin-bottom: 59px !important;
+  > input,
+  > .timeframe-btn {
+    &:focus {
+      outline:0 none;
+    }
+    width: 49%;
+    padding: 12px 0;
+    text-align: center;
+    border: 1px solid $color-lightblue;
+    font-size: 17px;
+    background-color: $color-white;
+    color: $color-black;
+    font-weight: normal;
+  }
 }
+
 .donate-timeframe >input::placeholder {
   color: $color-black;
 }
@@ -69,57 +409,100 @@ form, .donation-form {
   margin-right: 2%;
 }
 .calculator {
-  padding: 40px 20px;
+  padding: 45px 0 34px;
   background-color: $color-lightgray;
   text-align: center;
   border-radius: 4px;
-  > p {
+
+  .leadin {
+    margin:0;
+    font-family: $roboto;
     color: $color-graytext-footer;
+    font-size: 20px;
     font-style: italic;
-    @include breakpoint(phoneonly) {
-      margin-bottom: 0px;
+    .donation-amount {
+      font-size: 20px;
     }
   }
   .calculator-results {
     display: flex;
-    margin-top: 45px;
+    flex-flow: row nowrap;
+    justify-content:space-evenly;
+    align-items: stretch;
+    margin-top: 14px;
     @include breakpoint(phoneonly) {
       flex-direction: column;
       margin-top: 0px;
     }
     .calculation {
-      padding: 0 10px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      //outline:1px solid blue;
+      flex: 0 0 33.33%;
+
+      padding: 0 10px 19px;
+      &:nth-child(even) {
+        position: relative;
+        &:before,
+        &:after {
+          background-color: $color-lightgray;
+          color: #808080;
+          content: '- or -';
+          display:block;
+          width:29px;
+          height:23px;
+          white-space: nowrap;
+          overflow:visible;
+
+          position: absolute;
+          top:0;
+          left:-14px;
+          padding:26px 0 0;
+
+          text-align: center;
+          font-family: $roboto;
+          font-size: 13px;
+          font-style: italic;
+        }
+        &:after {
+          left: auto;
+          right:-14px;
+        }
+
+        border-left:1px solid $color-white;
+        border-right:1px solid $color-white;
+      }
       @include breakpoint(phoneonly) {
         flex-direction: row;
       }
-      .big-number {
-        font-family: $league;
-        font-size: 70px;
-        margin: 20px 0 0;
-      }
-      p {
-        font-size: 12px;
-        @include breakpoint(phoneonly) {
-          width: 33%;
-        }
-      }
+
       img {
+        display: block;
+        margin: 0 auto 0;
+        width:100px;
         @include breakpoint(phoneonly) {
           width: 45px;
         }
       }
-    }
-    .calculation:first-child, .calculation:nth-child(2) {
-      border-right: 1px solid $color-graytext-footer;
-      @include breakpoint(phoneonly) {
-        border-right: 0px;
-        border-bottom: 1px solid $color-white;
-        padding-top: 30px;
-        padding-bottom: 20px;
+      .big-number {
+        margin: -1px 0 0;
+        font-family: $league;
+        font-size: 70px;
+        line-height: 1em;
+
+        max-width: 146px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .description {
+        padding:0 5px 0;
+        margin: 6px 0 0;
+        font-family: $roboto;
+        color: $color-black;
+        font-size: 12px;
+        line-height: 1.2em;
+        @include breakpoint(phoneonly) {
+          width: 33%;
+        }
       }
     }
   }

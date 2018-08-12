@@ -1,3 +1,4 @@
+$nav-trans-speed: 0.45s;
 header {
   background-color: $color-lightgray;
   padding: 40px 25px 0px 40px;
@@ -66,7 +67,7 @@ header {
       cursor: pointer;
       position: relative;
       padding-bottom: 35px;
-      transition: 0.2s ease;
+      transition: $nav-trans-speed ease;
       > span {
         font-size: $text-default + 2px;
       }
@@ -74,6 +75,7 @@ header {
         @include arrowUp($color-white);
         @include centerer;
         top: 35px;
+        z-index: 2 !important;
       }
     }
     > li:nth-child(2) {
@@ -99,14 +101,14 @@ header {
   -webkit-box-shadow: 1px 2px 4px 0px rgba(0,0,0,.2);
   -moz-box-shadow: 1px 2px 4px 0px rgba(0,0,0,.2);
   box-shadow: 1px 2px 4px 0px rgba(0,0,0,.2);
-  transition: .7s ease;
+  transition: $nav-trans-speed ease;
   a {
     font-size: $text-default - 1px;
     font-weight: initial;
     text-decoration: none;
     li {
       padding: 15px 0px;
-      transition: 0.5s ease;
+      transition: $nav-trans-speed ease;
       color: $color-graytext-footer;
     }
     li:hover {
@@ -118,6 +120,7 @@ header {
 
 .header-container .selected {
   display: block;
+  z-index: 1;
   // .selected is class added by jquery for switching on and off hover of main menu sub ul's
 }
 
@@ -138,7 +141,7 @@ header {
   letter-spacing: 3px;
   border: none;
   cursor: pointer;
-  transition: 0.7s ease;
+  transition: $nav-trans-speed ease;
   font-weight: normal;
   @include breakpoint(phoneonly) {
     padding: 10px 20px;
@@ -172,26 +175,33 @@ header {
   right: -25px;
   top: 53px;
   @include menuUl;
-  padding: 10px 25px 0 20px;
+  padding: 10px 0 10px;
+  z-index:1;
+  .divider {
+    height:0;
+    border-top: 1px solid $color-graytext-footer;
+    padding: 0 0 10px;
+    margin:10px 26px 0;
+  }
   a {
     color: $color-white;
     text-decoration: none;
     li {
-      padding: 15px 10px;
-      transition: 0.7s ease;
+      padding: 8px 26px;
+      transition: $nav-trans-speed ease;
       font-size: 14px;
     }
     li:hover {
       background-color: $color-graytext-footer;
     }
   }
-  a:nth-of-type(5n+0) li {
-    border-bottom: 1px solid $color-lightgray;
-    padding-bottom: 25px;
-  }
-  a:nth-of-type(6n+0) li {
-    padding-top: 25px;
-  }
+  //a:nth-of-type(5n+0) li {
+  //  border-bottom: 1px solid $color-lightgray;
+  //  padding-bottom: 25px;
+  //}
+  //a:nth-of-type(6n+0) li {
+  //  padding-top: 25px;
+  //}
 }
 
 .secondary-menu-mobile {
@@ -215,7 +225,7 @@ header {
       li {
         margin-bottom: 15px;
         font-size: 14px;
-        transition: .07s ease;
+        transition: $nav-trans-speed ease;
       }
       a {
         color: $color-white;

@@ -5,6 +5,8 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,700");
 html {
   line-height: 1.15;
   /* 1 */
@@ -440,7 +442,12 @@ template {
   font-style: italic; }
 /* Default CSS For Various Elements on the Site */
 html {
-  font-size: 100%; }
+  font-size: 100%;
+  /* Smoothing */
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased; }
 
 * {
   box-sizing: border-box; }
@@ -497,7 +504,7 @@ textarea::placeholder,
 select::placeholder {
   font-size: 15px; }
 
-.color-container.color-container-padding {
+.color-container {
   padding-bottom: 115px; }
 
 .orange-bg {
@@ -558,37 +565,27 @@ select::placeholder {
     @media only screen and (min-width: 515px) and (max-width: 900px) {
       .headline span {
         font-size: 60px;
-        padding-left: 15px;
-        padding-right: 15px; } }
+        padding-left: 10px;
+        padding-right: 10px; } }
     @media only screen and (min-width: 1px) and (max-width: 515px) {
       .headline span {
         font-size: 40px;
-        padding-left: 15px;
-        padding-right: 15px; } }
+        padding-left: 7px;
+        padding-right: 7px; } }
   .headline span.small-headline {
-    font-size: 62px;
-    padding-bottom: 5px; }
-    @media only screen and (min-width: 515px) and (max-width: 900px) {
-      .headline span.small-headline {
-        font-size: 60px; } }
-    @media only screen and (min-width: 1px) and (max-width: 515px) {
-      .headline span.small-headline {
-        font-size: 40px; } }
+    font-size: 62px; }
   .headline span.bland-header {
     text-transform: none;
     float: none;
-    padding: 0px;
-    font-family: "Roboto", sans-serif;
-    font-size: 60px; }
-    @media only screen and (min-width: 1px) and (max-width: 515px) {
-      .headline span.bland-header {
-        font-size: 30px; } }
+    padding: 0px; }
   @media only screen and (min-width: 901px) {
     .headline span.darkorange-bg {
       font-size: 62.5px; } }
   .headline span:nth-of-type(2) {
-    padding-top: 5px;
-    padding-bottom: 5px; }
+    padding-top: 0px; }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .headline span:nth-of-type(2) {
+        margin-top: -4px; } }
   .headline .small-breadcrumb {
     margin-bottom: 120px;
     font-size: 14px; }
@@ -614,8 +611,7 @@ select::placeholder {
   position: relative; }
   @media only screen and (min-width: 1px) and (max-width: 900px) {
     .body-overlap {
-      margin-top: 0px;
-      padding-top: 15px; } }
+      margin-top: 0px; } }
   @media only screen and (min-width: 515px) and (max-width: 900px) {
     .body-overlap {
       margin-left: 60px;
@@ -746,7 +742,7 @@ header {
       cursor: pointer;
       position: relative;
       padding-bottom: 35px;
-      transition: 0.2s ease; }
+      transition: 0.45s ease; }
       .main-menu > ul > li > span {
         font-size: 18px; }
       .main-menu > ul > li > div {
@@ -755,10 +751,12 @@ header {
         display: none;
         transition: .7s ease;
         border-bottom: 20px solid white;
+        z-index: 2;
         position: absolute;
         left: 50%;
         transform: translate(-50%);
-        top: 35px; }
+        top: 35px;
+        z-index: 2 !important; }
     .main-menu > ul > li:nth-child(2) {
       margin: 0px 40px; }
     .main-menu > ul > li:hover {
@@ -780,21 +778,22 @@ header {
   -webkit-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.2);
-  transition: .7s ease; }
+  transition: 0.45s ease; }
   .level-2 a {
     font-size: 15px;
     font-weight: initial;
     text-decoration: none; }
     .level-2 a li {
       padding: 15px 0px;
-      transition: 0.5s ease;
+      transition: 0.45s ease;
       color: #747474; }
     .level-2 a li:hover {
       background-color: #ededed;
       color: black; }
 
 .header-container .selected {
-  display: block; }
+  display: block;
+  z-index: 1; }
 
 .menu-right {
   justify-self: right;
@@ -812,7 +811,7 @@ header {
   letter-spacing: 3px;
   border: none;
   cursor: pointer;
-  transition: 0.7s ease;
+  transition: 0.45s ease;
   font-weight: normal; }
   @media only screen and (min-width: 1px) and (max-width: 515px) {
     .menu-right button {
@@ -834,6 +833,7 @@ header {
     display: none;
     transition: .7s ease;
     border-bottom: 20px solid #262626;
+    z-index: 2;
     top: 35px; }
     @media only screen and (min-width: 1px) and (max-width: 900px) {
       .menu-right > .menu-hamburger .arrow-up {
@@ -842,6 +842,7 @@ header {
         display: none;
         transition: .7s ease;
         border-bottom: 20px solid #4d4d4d;
+        z-index: 2;
         top: 45px; } }
 
 .secondary-menu {
@@ -854,21 +855,22 @@ header {
   list-style: none;
   padding-left: 0px;
   margin: 0;
-  padding: 10px 25px 0 20px; }
+  padding: 10px 0 10px;
+  z-index: 1; }
+  .secondary-menu .divider {
+    height: 0;
+    border-top: 1px solid #747474;
+    padding: 0 0 10px;
+    margin: 10px 26px 0; }
   .secondary-menu a {
     color: white;
     text-decoration: none; }
     .secondary-menu a li {
-      padding: 15px 10px;
-      transition: 0.7s ease;
+      padding: 8px 26px;
+      transition: 0.45s ease;
       font-size: 14px; }
     .secondary-menu a li:hover {
       background-color: #747474; }
-  .secondary-menu a:nth-of-type(5n+0) li {
-    border-bottom: 1px solid #ededed;
-    padding-bottom: 25px; }
-  .secondary-menu a:nth-of-type(6n+0) li {
-    padding-top: 25px; }
 
 .secondary-menu-mobile {
   display: none;
@@ -891,7 +893,7 @@ header {
       .secondary-menu-mobile ul.mobile-menu-top ul li {
         margin-bottom: 15px;
         font-size: 14px;
-        transition: .07s ease; }
+        transition: 0.45s ease; }
       .secondary-menu-mobile ul.mobile-menu-top ul a {
         color: white;
         text-decoration: none; }
@@ -1275,6 +1277,256 @@ footer {
     .square-links .square:hover p {
       color: white; }
 
+#calculator-widget {
+  width: 650px;
+  background-color: white;
+  margin: auto;
+  padding: 60px 75px; }
+  #calculator-widget [v-cloak] {
+    display: none; }
+  #calculator-widget .donate-buttons, #calculator-widget .donate-timeframe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 16px; }
+    #calculator-widget .donate-buttons input:disabled, #calculator-widget .donate-buttons input[disabled],
+    #calculator-widget .donate-buttons .timeframe-btn:disabled,
+    #calculator-widget .donate-buttons .timeframe-btn[disabled], #calculator-widget .donate-timeframe input:disabled, #calculator-widget .donate-timeframe input[disabled],
+    #calculator-widget .donate-timeframe .timeframe-btn:disabled,
+    #calculator-widget .donate-timeframe .timeframe-btn[disabled] {
+      border-color: #ededed;
+      color: #bababa; }
+    #calculator-widget .donate-buttons input:hover, #calculator-widget .donate-buttons input.active,
+    #calculator-widget .donate-buttons .timeframe-btn:hover,
+    #calculator-widget .donate-buttons .timeframe-btn.active, #calculator-widget .donate-timeframe input:hover, #calculator-widget .donate-timeframe input.active,
+    #calculator-widget .donate-timeframe .timeframe-btn:hover,
+    #calculator-widget .donate-timeframe .timeframe-btn.active {
+      cursor: pointer;
+      background-color: #539ed0;
+      color: white;
+      transition: .3s ease; }
+      #calculator-widget .donate-buttons input:hover:disabled, #calculator-widget .donate-buttons input:hover[disabled], #calculator-widget .donate-buttons input.active:disabled, #calculator-widget .donate-buttons input.active[disabled],
+      #calculator-widget .donate-buttons .timeframe-btn:hover:disabled,
+      #calculator-widget .donate-buttons .timeframe-btn:hover[disabled],
+      #calculator-widget .donate-buttons .timeframe-btn.active:disabled,
+      #calculator-widget .donate-buttons .timeframe-btn.active[disabled], #calculator-widget .donate-timeframe input:hover:disabled, #calculator-widget .donate-timeframe input:hover[disabled], #calculator-widget .donate-timeframe input.active:disabled, #calculator-widget .donate-timeframe input.active[disabled],
+      #calculator-widget .donate-timeframe .timeframe-btn:hover:disabled,
+      #calculator-widget .donate-timeframe .timeframe-btn:hover[disabled],
+      #calculator-widget .donate-timeframe .timeframe-btn.active:disabled,
+      #calculator-widget .donate-timeframe .timeframe-btn.active[disabled] {
+        cursor: not-allowed;
+        background: white;
+        border-color: #ededed;
+        color: #bababa; }
+      #calculator-widget .donate-buttons input:hover.placeholder, #calculator-widget .donate-buttons input.active.placeholder,
+      #calculator-widget .donate-buttons .timeframe-btn:hover.placeholder,
+      #calculator-widget .donate-buttons .timeframe-btn.active.placeholder, #calculator-widget .donate-timeframe input:hover.placeholder, #calculator-widget .donate-timeframe input.active.placeholder,
+      #calculator-widget .donate-timeframe .timeframe-btn:hover.placeholder,
+      #calculator-widget .donate-timeframe .timeframe-btn.active.placeholder {
+        color: white !important; }
+      #calculator-widget .donate-buttons input:hover:-moz-placeholder, #calculator-widget .donate-buttons input.active:-moz-placeholder,
+      #calculator-widget .donate-buttons .timeframe-btn:hover:-moz-placeholder,
+      #calculator-widget .donate-buttons .timeframe-btn.active:-moz-placeholder, #calculator-widget .donate-timeframe input:hover:-moz-placeholder, #calculator-widget .donate-timeframe input.active:-moz-placeholder,
+      #calculator-widget .donate-timeframe .timeframe-btn:hover:-moz-placeholder,
+      #calculator-widget .donate-timeframe .timeframe-btn.active:-moz-placeholder {
+        color: white !important; }
+      #calculator-widget .donate-buttons input:hover::-moz-placeholder, #calculator-widget .donate-buttons input.active::-moz-placeholder,
+      #calculator-widget .donate-buttons .timeframe-btn:hover::-moz-placeholder,
+      #calculator-widget .donate-buttons .timeframe-btn.active::-moz-placeholder, #calculator-widget .donate-timeframe input:hover::-moz-placeholder, #calculator-widget .donate-timeframe input.active::-moz-placeholder,
+      #calculator-widget .donate-timeframe .timeframe-btn:hover::-moz-placeholder,
+      #calculator-widget .donate-timeframe .timeframe-btn.active::-moz-placeholder {
+        color: white !important; }
+      #calculator-widget .donate-buttons input:hover:-ms-input-placeholder, #calculator-widget .donate-buttons input.active:-ms-input-placeholder,
+      #calculator-widget .donate-buttons .timeframe-btn:hover:-ms-input-placeholder,
+      #calculator-widget .donate-buttons .timeframe-btn.active:-ms-input-placeholder, #calculator-widget .donate-timeframe input:hover:-ms-input-placeholder, #calculator-widget .donate-timeframe input.active:-ms-input-placeholder,
+      #calculator-widget .donate-timeframe .timeframe-btn:hover:-ms-input-placeholder,
+      #calculator-widget .donate-timeframe .timeframe-btn.active:-ms-input-placeholder {
+        color: white !important; }
+      #calculator-widget .donate-buttons input:hover::-webkit-input-placeholder, #calculator-widget .donate-buttons input.active::-webkit-input-placeholder,
+      #calculator-widget .donate-buttons .timeframe-btn:hover::-webkit-input-placeholder,
+      #calculator-widget .donate-buttons .timeframe-btn.active::-webkit-input-placeholder, #calculator-widget .donate-timeframe input:hover::-webkit-input-placeholder, #calculator-widget .donate-timeframe input.active::-webkit-input-placeholder,
+      #calculator-widget .donate-timeframe .timeframe-btn:hover::-webkit-input-placeholder,
+      #calculator-widget .donate-timeframe .timeframe-btn.active::-webkit-input-placeholder {
+        color: white !important; }
+    #calculator-widget .donate-buttons input.placeholder,
+    #calculator-widget .donate-buttons .timeframe-btn.placeholder, #calculator-widget .donate-timeframe input.placeholder,
+    #calculator-widget .donate-timeframe .timeframe-btn.placeholder {
+      color: black !important; }
+    #calculator-widget .donate-buttons input:-moz-placeholder,
+    #calculator-widget .donate-buttons .timeframe-btn:-moz-placeholder, #calculator-widget .donate-timeframe input:-moz-placeholder,
+    #calculator-widget .donate-timeframe .timeframe-btn:-moz-placeholder {
+      color: black !important; }
+    #calculator-widget .donate-buttons input::-moz-placeholder,
+    #calculator-widget .donate-buttons .timeframe-btn::-moz-placeholder, #calculator-widget .donate-timeframe input::-moz-placeholder,
+    #calculator-widget .donate-timeframe .timeframe-btn::-moz-placeholder {
+      color: black !important; }
+    #calculator-widget .donate-buttons input:-ms-input-placeholder,
+    #calculator-widget .donate-buttons .timeframe-btn:-ms-input-placeholder, #calculator-widget .donate-timeframe input:-ms-input-placeholder,
+    #calculator-widget .donate-timeframe .timeframe-btn:-ms-input-placeholder {
+      color: black !important; }
+    #calculator-widget .donate-buttons input::-webkit-input-placeholder,
+    #calculator-widget .donate-buttons .timeframe-btn::-webkit-input-placeholder, #calculator-widget .donate-timeframe input::-webkit-input-placeholder,
+    #calculator-widget .donate-timeframe .timeframe-btn::-webkit-input-placeholder {
+      color: black !important; }
+    #calculator-widget .donate-buttons .donate-button, #calculator-widget .donate-timeframe .donate-button {
+      width: 32%;
+      margin-right: 1.5%;
+      margin-bottom: 10px; }
+      #calculator-widget .donate-buttons .donate-button input, #calculator-widget .donate-timeframe .donate-button input {
+        font-size: 22px;
+        padding: 24px 0;
+        border: 1px solid #539ed0;
+        text-align: center; }
+      #calculator-widget .donate-buttons .donate-button input::placeholder, #calculator-widget .donate-timeframe .donate-button input::placeholder {
+        color: black; }
+    #calculator-widget .donate-buttons .donate-button:nth-child(3n+3), #calculator-widget .donate-timeframe .donate-button:nth-child(3n+3) {
+      margin-right: 0; }
+  #calculator-widget .donate-timeframe {
+    margin-bottom: 59px !important; }
+    #calculator-widget .donate-timeframe > input,
+    #calculator-widget .donate-timeframe > .timeframe-btn {
+      width: 49%;
+      padding: 12px 0;
+      text-align: center;
+      border: 1px solid #539ed0;
+      font-size: 17px;
+      background-color: white;
+      color: black;
+      font-weight: normal; }
+      #calculator-widget .donate-timeframe > input:focus,
+      #calculator-widget .donate-timeframe > .timeframe-btn:focus {
+        outline: 0 none; }
+  #calculator-widget .donate-timeframe > input::placeholder {
+    color: black; }
+  #calculator-widget .donate-timeframe > input:first-child {
+    margin-right: 2%; }
+  #calculator-widget .calculator {
+    padding: 45px 0 34px;
+    background-color: #ededed;
+    text-align: center;
+    border-radius: 4px; }
+    #calculator-widget .calculator .leadin {
+      margin: 0;
+      font-family: "Roboto", sans-serif;
+      color: #747474;
+      font-size: 20px;
+      font-style: italic; }
+      #calculator-widget .calculator .leadin .donation-amount {
+        font-size: 20px; }
+    #calculator-widget .calculator .calculator-results {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+      align-items: stretch;
+      margin-top: 14px; }
+      #calculator-widget .calculator .calculator-results .calculation {
+        font-size: 0;
+        flex: 0 0 33.33%;
+        padding: 0 10px 19px; }
+        #calculator-widget .calculator .calculator-results .calculation:nth-child(even) {
+          position: relative;
+          border-left: 1px solid white;
+          border-right: 1px solid white; }
+          #calculator-widget .calculator .calculator-results .calculation:nth-child(even):before, #calculator-widget .calculator .calculator-results .calculation:nth-child(even):after {
+            background-color: #ededed;
+            color: #808080;
+            content: '- or -';
+            display: block;
+            width: 29px;
+            height: 23px;
+            white-space: nowrap;
+            overflow: visible;
+            position: absolute;
+            top: 0;
+            left: -14px;
+            padding: 26px 0 0;
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            font-size: 14px;
+            font-style: italic;
+            line-height: 1em; }
+          #calculator-widget .calculator .calculator-results .calculation:nth-child(even):after {
+            left: auto;
+            right: -14px; }
+        #calculator-widget .calculator .calculator-results .calculation img {
+          display: block;
+          margin: 0 auto 0;
+          width: 100px; }
+        #calculator-widget .calculator .calculator-results .calculation .big-number {
+          margin: -1px 0 0;
+          font-family: "League Gothic";
+          font-size: 70px;
+          line-height: 1em;
+          max-width: 146px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+        #calculator-widget .calculator .calculator-results .calculation .description {
+          padding: 0 5px 0;
+          margin: 6px 0 0;
+          font-family: "Roboto", sans-serif;
+          color: black;
+          font-size: 12px;
+          line-height: 1.2em; }
+  #calculator-widget button {
+    margin-top: 20px; }
+    #calculator-widget button.donate-btn {
+      margin-top: 46px;
+      padding: 0;
+      line-height: 60px;
+      height: 60px;
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 50px;
+      width: 100%; }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    #calculator-widget {
+      width: 100%; }
+      #calculator-widget .calculator {
+        padding-bottom: 15px; }
+        #calculator-widget .calculator .calculator-results {
+          flex-flow: column nowrap;
+          margin-top: 10px; }
+          #calculator-widget .calculator .calculator-results .calculation {
+            min-height: 128px;
+            text-align: left;
+            padding: 0 0 0;
+            margin: 0 15px 0;
+            display: flex;
+            align-items: center; }
+            #calculator-widget .calculator .calculator-results .calculation:nth-child(even) {
+              position: relative;
+              border: 0 none;
+              border-top: 1px solid white;
+              border-bottom: 1px solid white; }
+              #calculator-widget .calculator .calculator-results .calculation:nth-child(even):before, #calculator-widget .calculator .calculator-results .calculation:nth-child(even):after {
+                width: 46px;
+                height: auto;
+                top: -8px;
+                left: 50%;
+                margin-left: -23px;
+                padding: 0; }
+              #calculator-widget .calculator .calculator-results .calculation:nth-child(even):after {
+                right: auto;
+                top: auto;
+                bottom: -7px; }
+            #calculator-widget .calculator .calculator-results .calculation img {
+              margin: 0 0 0 -15px;
+              flex: 0 0 100px; }
+            #calculator-widget .calculator .calculator-results .calculation .big-number {
+              text-align: center;
+              margin: 0;
+              flex: 1 1 50%;
+              line-height: 1em; }
+            #calculator-widget .calculator .calculator-results .calculation .description {
+              text-align: center;
+              margin: 0;
+              padding: 10px 0;
+              flex: 1 1 50%; }
+      #calculator-widget button.donate-btn {
+        margin-top: 37px;
+        margin-bottom: 0; } }
+
 form, .donation-form {
   width: 650px;
   background-color: white;
@@ -1295,31 +1547,131 @@ form, .donation-form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 45px; }
-    form .donate-buttons input:hover, form .donate-buttons input.active, form .donate-timeframe input:hover, form .donate-timeframe input.active, .donation-form .donate-buttons input:hover, .donation-form .donate-buttons input.active, .donation-form .donate-timeframe input:hover, .donation-form .donate-timeframe input.active {
+    margin-bottom: 16px; }
+    form .donate-buttons input:disabled, form .donate-buttons input[disabled],
+    form .donate-buttons .timeframe-btn:disabled,
+    form .donate-buttons .timeframe-btn[disabled], form .donate-timeframe input:disabled, form .donate-timeframe input[disabled],
+    form .donate-timeframe .timeframe-btn:disabled,
+    form .donate-timeframe .timeframe-btn[disabled], .donation-form .donate-buttons input:disabled, .donation-form .donate-buttons input[disabled],
+    .donation-form .donate-buttons .timeframe-btn:disabled,
+    .donation-form .donate-buttons .timeframe-btn[disabled], .donation-form .donate-timeframe input:disabled, .donation-form .donate-timeframe input[disabled],
+    .donation-form .donate-timeframe .timeframe-btn:disabled,
+    .donation-form .donate-timeframe .timeframe-btn[disabled] {
+      border-color: #ededed;
+      color: #bababa; }
+    form .donate-buttons input:hover, form .donate-buttons input.active,
+    form .donate-buttons .timeframe-btn:hover,
+    form .donate-buttons .timeframe-btn.active, form .donate-timeframe input:hover, form .donate-timeframe input.active,
+    form .donate-timeframe .timeframe-btn:hover,
+    form .donate-timeframe .timeframe-btn.active, .donation-form .donate-buttons input:hover, .donation-form .donate-buttons input.active,
+    .donation-form .donate-buttons .timeframe-btn:hover,
+    .donation-form .donate-buttons .timeframe-btn.active, .donation-form .donate-timeframe input:hover, .donation-form .donate-timeframe input.active,
+    .donation-form .donate-timeframe .timeframe-btn:hover,
+    .donation-form .donate-timeframe .timeframe-btn.active {
       cursor: pointer;
       background-color: #539ed0;
       color: white;
       transition: .3s ease; }
-      form .donate-buttons input:hover.placeholder, form .donate-buttons input.active.placeholder, form .donate-timeframe input:hover.placeholder, form .donate-timeframe input.active.placeholder, .donation-form .donate-buttons input:hover.placeholder, .donation-form .donate-buttons input.active.placeholder, .donation-form .donate-timeframe input:hover.placeholder, .donation-form .donate-timeframe input.active.placeholder {
+      form .donate-buttons input:hover:disabled, form .donate-buttons input:hover[disabled], form .donate-buttons input.active:disabled, form .donate-buttons input.active[disabled],
+      form .donate-buttons .timeframe-btn:hover:disabled,
+      form .donate-buttons .timeframe-btn:hover[disabled],
+      form .donate-buttons .timeframe-btn.active:disabled,
+      form .donate-buttons .timeframe-btn.active[disabled], form .donate-timeframe input:hover:disabled, form .donate-timeframe input:hover[disabled], form .donate-timeframe input.active:disabled, form .donate-timeframe input.active[disabled],
+      form .donate-timeframe .timeframe-btn:hover:disabled,
+      form .donate-timeframe .timeframe-btn:hover[disabled],
+      form .donate-timeframe .timeframe-btn.active:disabled,
+      form .donate-timeframe .timeframe-btn.active[disabled], .donation-form .donate-buttons input:hover:disabled, .donation-form .donate-buttons input:hover[disabled], .donation-form .donate-buttons input.active:disabled, .donation-form .donate-buttons input.active[disabled],
+      .donation-form .donate-buttons .timeframe-btn:hover:disabled,
+      .donation-form .donate-buttons .timeframe-btn:hover[disabled],
+      .donation-form .donate-buttons .timeframe-btn.active:disabled,
+      .donation-form .donate-buttons .timeframe-btn.active[disabled], .donation-form .donate-timeframe input:hover:disabled, .donation-form .donate-timeframe input:hover[disabled], .donation-form .donate-timeframe input.active:disabled, .donation-form .donate-timeframe input.active[disabled],
+      .donation-form .donate-timeframe .timeframe-btn:hover:disabled,
+      .donation-form .donate-timeframe .timeframe-btn:hover[disabled],
+      .donation-form .donate-timeframe .timeframe-btn.active:disabled,
+      .donation-form .donate-timeframe .timeframe-btn.active[disabled] {
+        cursor: not-allowed;
+        background: white;
+        border-color: #ededed;
+        color: #bababa; }
+      form .donate-buttons input:hover.placeholder, form .donate-buttons input.active.placeholder,
+      form .donate-buttons .timeframe-btn:hover.placeholder,
+      form .donate-buttons .timeframe-btn.active.placeholder, form .donate-timeframe input:hover.placeholder, form .donate-timeframe input.active.placeholder,
+      form .donate-timeframe .timeframe-btn:hover.placeholder,
+      form .donate-timeframe .timeframe-btn.active.placeholder, .donation-form .donate-buttons input:hover.placeholder, .donation-form .donate-buttons input.active.placeholder,
+      .donation-form .donate-buttons .timeframe-btn:hover.placeholder,
+      .donation-form .donate-buttons .timeframe-btn.active.placeholder, .donation-form .donate-timeframe input:hover.placeholder, .donation-form .donate-timeframe input.active.placeholder,
+      .donation-form .donate-timeframe .timeframe-btn:hover.placeholder,
+      .donation-form .donate-timeframe .timeframe-btn.active.placeholder {
         color: white !important; }
-      form .donate-buttons input:hover:-moz-placeholder, form .donate-buttons input.active:-moz-placeholder, form .donate-timeframe input:hover:-moz-placeholder, form .donate-timeframe input.active:-moz-placeholder, .donation-form .donate-buttons input:hover:-moz-placeholder, .donation-form .donate-buttons input.active:-moz-placeholder, .donation-form .donate-timeframe input:hover:-moz-placeholder, .donation-form .donate-timeframe input.active:-moz-placeholder {
+      form .donate-buttons input:hover:-moz-placeholder, form .donate-buttons input.active:-moz-placeholder,
+      form .donate-buttons .timeframe-btn:hover:-moz-placeholder,
+      form .donate-buttons .timeframe-btn.active:-moz-placeholder, form .donate-timeframe input:hover:-moz-placeholder, form .donate-timeframe input.active:-moz-placeholder,
+      form .donate-timeframe .timeframe-btn:hover:-moz-placeholder,
+      form .donate-timeframe .timeframe-btn.active:-moz-placeholder, .donation-form .donate-buttons input:hover:-moz-placeholder, .donation-form .donate-buttons input.active:-moz-placeholder,
+      .donation-form .donate-buttons .timeframe-btn:hover:-moz-placeholder,
+      .donation-form .donate-buttons .timeframe-btn.active:-moz-placeholder, .donation-form .donate-timeframe input:hover:-moz-placeholder, .donation-form .donate-timeframe input.active:-moz-placeholder,
+      .donation-form .donate-timeframe .timeframe-btn:hover:-moz-placeholder,
+      .donation-form .donate-timeframe .timeframe-btn.active:-moz-placeholder {
         color: white !important; }
-      form .donate-buttons input:hover::-moz-placeholder, form .donate-buttons input.active::-moz-placeholder, form .donate-timeframe input:hover::-moz-placeholder, form .donate-timeframe input.active::-moz-placeholder, .donation-form .donate-buttons input:hover::-moz-placeholder, .donation-form .donate-buttons input.active::-moz-placeholder, .donation-form .donate-timeframe input:hover::-moz-placeholder, .donation-form .donate-timeframe input.active::-moz-placeholder {
+      form .donate-buttons input:hover::-moz-placeholder, form .donate-buttons input.active::-moz-placeholder,
+      form .donate-buttons .timeframe-btn:hover::-moz-placeholder,
+      form .donate-buttons .timeframe-btn.active::-moz-placeholder, form .donate-timeframe input:hover::-moz-placeholder, form .donate-timeframe input.active::-moz-placeholder,
+      form .donate-timeframe .timeframe-btn:hover::-moz-placeholder,
+      form .donate-timeframe .timeframe-btn.active::-moz-placeholder, .donation-form .donate-buttons input:hover::-moz-placeholder, .donation-form .donate-buttons input.active::-moz-placeholder,
+      .donation-form .donate-buttons .timeframe-btn:hover::-moz-placeholder,
+      .donation-form .donate-buttons .timeframe-btn.active::-moz-placeholder, .donation-form .donate-timeframe input:hover::-moz-placeholder, .donation-form .donate-timeframe input.active::-moz-placeholder,
+      .donation-form .donate-timeframe .timeframe-btn:hover::-moz-placeholder,
+      .donation-form .donate-timeframe .timeframe-btn.active::-moz-placeholder {
         color: white !important; }
-      form .donate-buttons input:hover:-ms-input-placeholder, form .donate-buttons input.active:-ms-input-placeholder, form .donate-timeframe input:hover:-ms-input-placeholder, form .donate-timeframe input.active:-ms-input-placeholder, .donation-form .donate-buttons input:hover:-ms-input-placeholder, .donation-form .donate-buttons input.active:-ms-input-placeholder, .donation-form .donate-timeframe input:hover:-ms-input-placeholder, .donation-form .donate-timeframe input.active:-ms-input-placeholder {
+      form .donate-buttons input:hover:-ms-input-placeholder, form .donate-buttons input.active:-ms-input-placeholder,
+      form .donate-buttons .timeframe-btn:hover:-ms-input-placeholder,
+      form .donate-buttons .timeframe-btn.active:-ms-input-placeholder, form .donate-timeframe input:hover:-ms-input-placeholder, form .donate-timeframe input.active:-ms-input-placeholder,
+      form .donate-timeframe .timeframe-btn:hover:-ms-input-placeholder,
+      form .donate-timeframe .timeframe-btn.active:-ms-input-placeholder, .donation-form .donate-buttons input:hover:-ms-input-placeholder, .donation-form .donate-buttons input.active:-ms-input-placeholder,
+      .donation-form .donate-buttons .timeframe-btn:hover:-ms-input-placeholder,
+      .donation-form .donate-buttons .timeframe-btn.active:-ms-input-placeholder, .donation-form .donate-timeframe input:hover:-ms-input-placeholder, .donation-form .donate-timeframe input.active:-ms-input-placeholder,
+      .donation-form .donate-timeframe .timeframe-btn:hover:-ms-input-placeholder,
+      .donation-form .donate-timeframe .timeframe-btn.active:-ms-input-placeholder {
         color: white !important; }
-      form .donate-buttons input:hover::-webkit-input-placeholder, form .donate-buttons input.active::-webkit-input-placeholder, form .donate-timeframe input:hover::-webkit-input-placeholder, form .donate-timeframe input.active::-webkit-input-placeholder, .donation-form .donate-buttons input:hover::-webkit-input-placeholder, .donation-form .donate-buttons input.active::-webkit-input-placeholder, .donation-form .donate-timeframe input:hover::-webkit-input-placeholder, .donation-form .donate-timeframe input.active::-webkit-input-placeholder {
+      form .donate-buttons input:hover::-webkit-input-placeholder, form .donate-buttons input.active::-webkit-input-placeholder,
+      form .donate-buttons .timeframe-btn:hover::-webkit-input-placeholder,
+      form .donate-buttons .timeframe-btn.active::-webkit-input-placeholder, form .donate-timeframe input:hover::-webkit-input-placeholder, form .donate-timeframe input.active::-webkit-input-placeholder,
+      form .donate-timeframe .timeframe-btn:hover::-webkit-input-placeholder,
+      form .donate-timeframe .timeframe-btn.active::-webkit-input-placeholder, .donation-form .donate-buttons input:hover::-webkit-input-placeholder, .donation-form .donate-buttons input.active::-webkit-input-placeholder,
+      .donation-form .donate-buttons .timeframe-btn:hover::-webkit-input-placeholder,
+      .donation-form .donate-buttons .timeframe-btn.active::-webkit-input-placeholder, .donation-form .donate-timeframe input:hover::-webkit-input-placeholder, .donation-form .donate-timeframe input.active::-webkit-input-placeholder,
+      .donation-form .donate-timeframe .timeframe-btn:hover::-webkit-input-placeholder,
+      .donation-form .donate-timeframe .timeframe-btn.active::-webkit-input-placeholder {
         color: white !important; }
-    form .donate-buttons input.placeholder, form .donate-timeframe input.placeholder, .donation-form .donate-buttons input.placeholder, .donation-form .donate-timeframe input.placeholder {
+    form .donate-buttons input.placeholder,
+    form .donate-buttons .timeframe-btn.placeholder, form .donate-timeframe input.placeholder,
+    form .donate-timeframe .timeframe-btn.placeholder, .donation-form .donate-buttons input.placeholder,
+    .donation-form .donate-buttons .timeframe-btn.placeholder, .donation-form .donate-timeframe input.placeholder,
+    .donation-form .donate-timeframe .timeframe-btn.placeholder {
       color: black !important; }
-    form .donate-buttons input:-moz-placeholder, form .donate-timeframe input:-moz-placeholder, .donation-form .donate-buttons input:-moz-placeholder, .donation-form .donate-timeframe input:-moz-placeholder {
+    form .donate-buttons input:-moz-placeholder,
+    form .donate-buttons .timeframe-btn:-moz-placeholder, form .donate-timeframe input:-moz-placeholder,
+    form .donate-timeframe .timeframe-btn:-moz-placeholder, .donation-form .donate-buttons input:-moz-placeholder,
+    .donation-form .donate-buttons .timeframe-btn:-moz-placeholder, .donation-form .donate-timeframe input:-moz-placeholder,
+    .donation-form .donate-timeframe .timeframe-btn:-moz-placeholder {
       color: black !important; }
-    form .donate-buttons input::-moz-placeholder, form .donate-timeframe input::-moz-placeholder, .donation-form .donate-buttons input::-moz-placeholder, .donation-form .donate-timeframe input::-moz-placeholder {
+    form .donate-buttons input::-moz-placeholder,
+    form .donate-buttons .timeframe-btn::-moz-placeholder, form .donate-timeframe input::-moz-placeholder,
+    form .donate-timeframe .timeframe-btn::-moz-placeholder, .donation-form .donate-buttons input::-moz-placeholder,
+    .donation-form .donate-buttons .timeframe-btn::-moz-placeholder, .donation-form .donate-timeframe input::-moz-placeholder,
+    .donation-form .donate-timeframe .timeframe-btn::-moz-placeholder {
       color: black !important; }
-    form .donate-buttons input:-ms-input-placeholder, form .donate-timeframe input:-ms-input-placeholder, .donation-form .donate-buttons input:-ms-input-placeholder, .donation-form .donate-timeframe input:-ms-input-placeholder {
+    form .donate-buttons input:-ms-input-placeholder,
+    form .donate-buttons .timeframe-btn:-ms-input-placeholder, form .donate-timeframe input:-ms-input-placeholder,
+    form .donate-timeframe .timeframe-btn:-ms-input-placeholder, .donation-form .donate-buttons input:-ms-input-placeholder,
+    .donation-form .donate-buttons .timeframe-btn:-ms-input-placeholder, .donation-form .donate-timeframe input:-ms-input-placeholder,
+    .donation-form .donate-timeframe .timeframe-btn:-ms-input-placeholder {
       color: black !important; }
-    form .donate-buttons input::-webkit-input-placeholder, form .donate-timeframe input::-webkit-input-placeholder, .donation-form .donate-buttons input::-webkit-input-placeholder, .donation-form .donate-timeframe input::-webkit-input-placeholder {
+    form .donate-buttons input::-webkit-input-placeholder,
+    form .donate-buttons .timeframe-btn::-webkit-input-placeholder, form .donate-timeframe input::-webkit-input-placeholder,
+    form .donate-timeframe .timeframe-btn::-webkit-input-placeholder, .donation-form .donate-buttons input::-webkit-input-placeholder,
+    .donation-form .donate-buttons .timeframe-btn::-webkit-input-placeholder, .donation-form .donate-timeframe input::-webkit-input-placeholder,
+    .donation-form .donate-timeframe .timeframe-btn::-webkit-input-placeholder {
       color: black !important; }
     form .donate-buttons .donate-button, form .donate-timeframe .donate-button, .donation-form .donate-buttons .donate-button, .donation-form .donate-timeframe .donate-button {
       width: 32%;
@@ -1327,21 +1679,29 @@ form, .donation-form {
       margin-bottom: 10px; }
       form .donate-buttons .donate-button input, form .donate-timeframe .donate-button input, .donation-form .donate-buttons .donate-button input, .donation-form .donate-timeframe .donate-button input {
         font-size: 22px;
-        padding: 30px 0;
+        padding: 24px 0;
         border: 1px solid #539ed0;
-        text-align: center;
-        font-size: 22px; }
+        text-align: center; }
       form .donate-buttons .donate-button input::placeholder, form .donate-timeframe .donate-button input::placeholder, .donation-form .donate-buttons .donate-button input::placeholder, .donation-form .donate-timeframe .donate-button input::placeholder {
         color: black; }
     form .donate-buttons .donate-button:nth-child(3n+3), form .donate-timeframe .donate-button:nth-child(3n+3), .donation-form .donate-buttons .donate-button:nth-child(3n+3), .donation-form .donate-timeframe .donate-button:nth-child(3n+3) {
       margin-right: 0; }
 
-.donate-timeframe > input {
-  width: 49%;
-  padding: 10px 0;
-  text-align: center;
-  border: 1px solid #539ed0;
-  font-size: 22px; }
+.donate-timeframe {
+  margin-bottom: 59px !important; }
+  .donate-timeframe > input,
+  .donate-timeframe > .timeframe-btn {
+    width: 49%;
+    padding: 12px 0;
+    text-align: center;
+    border: 1px solid #539ed0;
+    font-size: 17px;
+    background-color: white;
+    color: black;
+    font-weight: normal; }
+    .donate-timeframe > input:focus,
+    .donate-timeframe > .timeframe-btn:focus {
+      outline: 0 none; }
 
 .donate-timeframe > input::placeholder {
   color: black; }
@@ -1350,52 +1710,84 @@ form, .donation-form {
   margin-right: 2%; }
 
 .calculator {
-  padding: 40px 20px;
+  padding: 45px 0 34px;
   background-color: #ededed;
   text-align: center;
   border-radius: 4px; }
-  .calculator > p {
+  .calculator .leadin {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
     color: #747474;
+    font-size: 20px;
     font-style: italic; }
-    @media only screen and (min-width: 1px) and (max-width: 515px) {
-      .calculator > p {
-        margin-bottom: 0px; } }
+    .calculator .leadin .donation-amount {
+      font-size: 20px; }
   .calculator .calculator-results {
     display: flex;
-    margin-top: 45px; }
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin-top: 14px; }
     @media only screen and (min-width: 1px) and (max-width: 515px) {
       .calculator .calculator-results {
         flex-direction: column;
         margin-top: 0px; } }
     .calculator .calculator-results .calculation {
-      padding: 0 10px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
+      flex: 0 0 33.33%;
+      padding: 0 10px 19px; }
+      .calculator .calculator-results .calculation:nth-child(even) {
+        position: relative;
+        border-left: 1px solid white;
+        border-right: 1px solid white; }
+        .calculator .calculator-results .calculation:nth-child(even):before, .calculator .calculator-results .calculation:nth-child(even):after {
+          background-color: #ededed;
+          color: #808080;
+          content: '- or -';
+          display: block;
+          width: 29px;
+          height: 23px;
+          white-space: nowrap;
+          overflow: visible;
+          position: absolute;
+          top: 0;
+          left: -14px;
+          padding: 26px 0 0;
+          text-align: center;
+          font-family: "Roboto", sans-serif;
+          font-size: 13px;
+          font-style: italic; }
+        .calculator .calculator-results .calculation:nth-child(even):after {
+          left: auto;
+          right: -14px; }
       @media only screen and (min-width: 1px) and (max-width: 515px) {
         .calculator .calculator-results .calculation {
           flex-direction: row; } }
+      .calculator .calculator-results .calculation img {
+        display: block;
+        margin: 0 auto 0;
+        width: 100px; }
+        @media only screen and (min-width: 1px) and (max-width: 515px) {
+          .calculator .calculator-results .calculation img {
+            width: 45px; } }
       .calculator .calculator-results .calculation .big-number {
+        margin: -1px 0 0;
         font-family: "League Gothic";
         font-size: 70px;
-        margin: 20px 0 0; }
-      .calculator .calculator-results .calculation p {
-        font-size: 12px; }
+        line-height: 1em;
+        max-width: 146px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      .calculator .calculator-results .calculation .description {
+        padding: 0 5px 0;
+        margin: 6px 0 0;
+        font-family: "Roboto", sans-serif;
+        color: black;
+        font-size: 12px;
+        line-height: 1.2em; }
         @media only screen and (min-width: 1px) and (max-width: 515px) {
-          .calculator .calculator-results .calculation p {
+          .calculator .calculator-results .calculation .description {
             width: 33%; } }
-      @media only screen and (min-width: 1px) and (max-width: 515px) {
-        .calculator .calculator-results .calculation img {
-          width: 45px; } }
-    .calculator .calculator-results .calculation:first-child, .calculator .calculator-results .calculation:nth-child(2) {
-      border-right: 1px solid #747474; }
-      @media only screen and (min-width: 1px) and (max-width: 515px) {
-        .calculator .calculator-results .calculation:first-child, .calculator .calculator-results .calculation:nth-child(2) {
-          border-right: 0px;
-          border-bottom: 1px solid white;
-          padding-top: 30px;
-          padding-bottom: 20px; } }
 
 .donations {
   background-color: #539ed0;
@@ -1561,6 +1953,256 @@ span.parenthetical {
   font-size: 14px;
   color: #747474; }
 
+#calculator-widget {
+  width: 650px;
+  background-color: white;
+  margin: auto;
+  padding: 60px 75px; }
+  #calculator-widget [v-cloak] {
+    display: none; }
+  #calculator-widget .donate-buttons, #calculator-widget .donate-timeframe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 16px; }
+    #calculator-widget .donate-buttons input:disabled, #calculator-widget .donate-buttons input[disabled],
+    #calculator-widget .donate-buttons .timeframe-btn:disabled,
+    #calculator-widget .donate-buttons .timeframe-btn[disabled], #calculator-widget .donate-timeframe input:disabled, #calculator-widget .donate-timeframe input[disabled],
+    #calculator-widget .donate-timeframe .timeframe-btn:disabled,
+    #calculator-widget .donate-timeframe .timeframe-btn[disabled] {
+      border-color: #ededed;
+      color: #bababa; }
+    #calculator-widget .donate-buttons input:hover, #calculator-widget .donate-buttons input.active,
+    #calculator-widget .donate-buttons .timeframe-btn:hover,
+    #calculator-widget .donate-buttons .timeframe-btn.active, #calculator-widget .donate-timeframe input:hover, #calculator-widget .donate-timeframe input.active,
+    #calculator-widget .donate-timeframe .timeframe-btn:hover,
+    #calculator-widget .donate-timeframe .timeframe-btn.active {
+      cursor: pointer;
+      background-color: #539ed0;
+      color: white;
+      transition: .3s ease; }
+      #calculator-widget .donate-buttons input:hover:disabled, #calculator-widget .donate-buttons input:hover[disabled], #calculator-widget .donate-buttons input.active:disabled, #calculator-widget .donate-buttons input.active[disabled],
+      #calculator-widget .donate-buttons .timeframe-btn:hover:disabled,
+      #calculator-widget .donate-buttons .timeframe-btn:hover[disabled],
+      #calculator-widget .donate-buttons .timeframe-btn.active:disabled,
+      #calculator-widget .donate-buttons .timeframe-btn.active[disabled], #calculator-widget .donate-timeframe input:hover:disabled, #calculator-widget .donate-timeframe input:hover[disabled], #calculator-widget .donate-timeframe input.active:disabled, #calculator-widget .donate-timeframe input.active[disabled],
+      #calculator-widget .donate-timeframe .timeframe-btn:hover:disabled,
+      #calculator-widget .donate-timeframe .timeframe-btn:hover[disabled],
+      #calculator-widget .donate-timeframe .timeframe-btn.active:disabled,
+      #calculator-widget .donate-timeframe .timeframe-btn.active[disabled] {
+        cursor: not-allowed;
+        background: white;
+        border-color: #ededed;
+        color: #bababa; }
+      #calculator-widget .donate-buttons input:hover.placeholder, #calculator-widget .donate-buttons input.active.placeholder,
+      #calculator-widget .donate-buttons .timeframe-btn:hover.placeholder,
+      #calculator-widget .donate-buttons .timeframe-btn.active.placeholder, #calculator-widget .donate-timeframe input:hover.placeholder, #calculator-widget .donate-timeframe input.active.placeholder,
+      #calculator-widget .donate-timeframe .timeframe-btn:hover.placeholder,
+      #calculator-widget .donate-timeframe .timeframe-btn.active.placeholder {
+        color: white !important; }
+      #calculator-widget .donate-buttons input:hover:-moz-placeholder, #calculator-widget .donate-buttons input.active:-moz-placeholder,
+      #calculator-widget .donate-buttons .timeframe-btn:hover:-moz-placeholder,
+      #calculator-widget .donate-buttons .timeframe-btn.active:-moz-placeholder, #calculator-widget .donate-timeframe input:hover:-moz-placeholder, #calculator-widget .donate-timeframe input.active:-moz-placeholder,
+      #calculator-widget .donate-timeframe .timeframe-btn:hover:-moz-placeholder,
+      #calculator-widget .donate-timeframe .timeframe-btn.active:-moz-placeholder {
+        color: white !important; }
+      #calculator-widget .donate-buttons input:hover::-moz-placeholder, #calculator-widget .donate-buttons input.active::-moz-placeholder,
+      #calculator-widget .donate-buttons .timeframe-btn:hover::-moz-placeholder,
+      #calculator-widget .donate-buttons .timeframe-btn.active::-moz-placeholder, #calculator-widget .donate-timeframe input:hover::-moz-placeholder, #calculator-widget .donate-timeframe input.active::-moz-placeholder,
+      #calculator-widget .donate-timeframe .timeframe-btn:hover::-moz-placeholder,
+      #calculator-widget .donate-timeframe .timeframe-btn.active::-moz-placeholder {
+        color: white !important; }
+      #calculator-widget .donate-buttons input:hover:-ms-input-placeholder, #calculator-widget .donate-buttons input.active:-ms-input-placeholder,
+      #calculator-widget .donate-buttons .timeframe-btn:hover:-ms-input-placeholder,
+      #calculator-widget .donate-buttons .timeframe-btn.active:-ms-input-placeholder, #calculator-widget .donate-timeframe input:hover:-ms-input-placeholder, #calculator-widget .donate-timeframe input.active:-ms-input-placeholder,
+      #calculator-widget .donate-timeframe .timeframe-btn:hover:-ms-input-placeholder,
+      #calculator-widget .donate-timeframe .timeframe-btn.active:-ms-input-placeholder {
+        color: white !important; }
+      #calculator-widget .donate-buttons input:hover::-webkit-input-placeholder, #calculator-widget .donate-buttons input.active::-webkit-input-placeholder,
+      #calculator-widget .donate-buttons .timeframe-btn:hover::-webkit-input-placeholder,
+      #calculator-widget .donate-buttons .timeframe-btn.active::-webkit-input-placeholder, #calculator-widget .donate-timeframe input:hover::-webkit-input-placeholder, #calculator-widget .donate-timeframe input.active::-webkit-input-placeholder,
+      #calculator-widget .donate-timeframe .timeframe-btn:hover::-webkit-input-placeholder,
+      #calculator-widget .donate-timeframe .timeframe-btn.active::-webkit-input-placeholder {
+        color: white !important; }
+    #calculator-widget .donate-buttons input.placeholder,
+    #calculator-widget .donate-buttons .timeframe-btn.placeholder, #calculator-widget .donate-timeframe input.placeholder,
+    #calculator-widget .donate-timeframe .timeframe-btn.placeholder {
+      color: black !important; }
+    #calculator-widget .donate-buttons input:-moz-placeholder,
+    #calculator-widget .donate-buttons .timeframe-btn:-moz-placeholder, #calculator-widget .donate-timeframe input:-moz-placeholder,
+    #calculator-widget .donate-timeframe .timeframe-btn:-moz-placeholder {
+      color: black !important; }
+    #calculator-widget .donate-buttons input::-moz-placeholder,
+    #calculator-widget .donate-buttons .timeframe-btn::-moz-placeholder, #calculator-widget .donate-timeframe input::-moz-placeholder,
+    #calculator-widget .donate-timeframe .timeframe-btn::-moz-placeholder {
+      color: black !important; }
+    #calculator-widget .donate-buttons input:-ms-input-placeholder,
+    #calculator-widget .donate-buttons .timeframe-btn:-ms-input-placeholder, #calculator-widget .donate-timeframe input:-ms-input-placeholder,
+    #calculator-widget .donate-timeframe .timeframe-btn:-ms-input-placeholder {
+      color: black !important; }
+    #calculator-widget .donate-buttons input::-webkit-input-placeholder,
+    #calculator-widget .donate-buttons .timeframe-btn::-webkit-input-placeholder, #calculator-widget .donate-timeframe input::-webkit-input-placeholder,
+    #calculator-widget .donate-timeframe .timeframe-btn::-webkit-input-placeholder {
+      color: black !important; }
+    #calculator-widget .donate-buttons .donate-button, #calculator-widget .donate-timeframe .donate-button {
+      width: 32%;
+      margin-right: 1.5%;
+      margin-bottom: 10px; }
+      #calculator-widget .donate-buttons .donate-button input, #calculator-widget .donate-timeframe .donate-button input {
+        font-size: 22px;
+        padding: 24px 0;
+        border: 1px solid #539ed0;
+        text-align: center; }
+      #calculator-widget .donate-buttons .donate-button input::placeholder, #calculator-widget .donate-timeframe .donate-button input::placeholder {
+        color: black; }
+    #calculator-widget .donate-buttons .donate-button:nth-child(3n+3), #calculator-widget .donate-timeframe .donate-button:nth-child(3n+3) {
+      margin-right: 0; }
+  #calculator-widget .donate-timeframe {
+    margin-bottom: 59px !important; }
+    #calculator-widget .donate-timeframe > input,
+    #calculator-widget .donate-timeframe > .timeframe-btn {
+      width: 49%;
+      padding: 12px 0;
+      text-align: center;
+      border: 1px solid #539ed0;
+      font-size: 17px;
+      background-color: white;
+      color: black;
+      font-weight: normal; }
+      #calculator-widget .donate-timeframe > input:focus,
+      #calculator-widget .donate-timeframe > .timeframe-btn:focus {
+        outline: 0 none; }
+  #calculator-widget .donate-timeframe > input::placeholder {
+    color: black; }
+  #calculator-widget .donate-timeframe > input:first-child {
+    margin-right: 2%; }
+  #calculator-widget .calculator {
+    padding: 45px 0 34px;
+    background-color: #ededed;
+    text-align: center;
+    border-radius: 4px; }
+    #calculator-widget .calculator .leadin {
+      margin: 0;
+      font-family: "Roboto", sans-serif;
+      color: #747474;
+      font-size: 20px;
+      font-style: italic; }
+      #calculator-widget .calculator .leadin .donation-amount {
+        font-size: 20px; }
+    #calculator-widget .calculator .calculator-results {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+      align-items: stretch;
+      margin-top: 14px; }
+      #calculator-widget .calculator .calculator-results .calculation {
+        font-size: 0;
+        flex: 0 0 33.33%;
+        padding: 0 10px 19px; }
+        #calculator-widget .calculator .calculator-results .calculation:nth-child(even) {
+          position: relative;
+          border-left: 1px solid white;
+          border-right: 1px solid white; }
+          #calculator-widget .calculator .calculator-results .calculation:nth-child(even):before, #calculator-widget .calculator .calculator-results .calculation:nth-child(even):after {
+            background-color: #ededed;
+            color: #808080;
+            content: '- or -';
+            display: block;
+            width: 29px;
+            height: 23px;
+            white-space: nowrap;
+            overflow: visible;
+            position: absolute;
+            top: 0;
+            left: -14px;
+            padding: 26px 0 0;
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            font-size: 14px;
+            font-style: italic;
+            line-height: 1em; }
+          #calculator-widget .calculator .calculator-results .calculation:nth-child(even):after {
+            left: auto;
+            right: -14px; }
+        #calculator-widget .calculator .calculator-results .calculation img {
+          display: block;
+          margin: 0 auto 0;
+          width: 100px; }
+        #calculator-widget .calculator .calculator-results .calculation .big-number {
+          margin: -1px 0 0;
+          font-family: "League Gothic";
+          font-size: 70px;
+          line-height: 1em;
+          max-width: 146px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+        #calculator-widget .calculator .calculator-results .calculation .description {
+          padding: 0 5px 0;
+          margin: 6px 0 0;
+          font-family: "Roboto", sans-serif;
+          color: black;
+          font-size: 12px;
+          line-height: 1.2em; }
+  #calculator-widget button {
+    margin-top: 20px; }
+    #calculator-widget button.donate-btn {
+      margin-top: 46px;
+      padding: 0;
+      line-height: 60px;
+      height: 60px;
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 50px;
+      width: 100%; }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    #calculator-widget {
+      width: 100%; }
+      #calculator-widget .calculator {
+        padding-bottom: 15px; }
+        #calculator-widget .calculator .calculator-results {
+          flex-flow: column nowrap;
+          margin-top: 10px; }
+          #calculator-widget .calculator .calculator-results .calculation {
+            min-height: 128px;
+            text-align: left;
+            padding: 0 0 0;
+            margin: 0 15px 0;
+            display: flex;
+            align-items: center; }
+            #calculator-widget .calculator .calculator-results .calculation:nth-child(even) {
+              position: relative;
+              border: 0 none;
+              border-top: 1px solid white;
+              border-bottom: 1px solid white; }
+              #calculator-widget .calculator .calculator-results .calculation:nth-child(even):before, #calculator-widget .calculator .calculator-results .calculation:nth-child(even):after {
+                width: 46px;
+                height: auto;
+                top: -8px;
+                left: 50%;
+                margin-left: -23px;
+                padding: 0; }
+              #calculator-widget .calculator .calculator-results .calculation:nth-child(even):after {
+                right: auto;
+                top: auto;
+                bottom: -7px; }
+            #calculator-widget .calculator .calculator-results .calculation img {
+              margin: 0 0 0 -15px;
+              flex: 0 0 100px; }
+            #calculator-widget .calculator .calculator-results .calculation .big-number {
+              text-align: center;
+              margin: 0;
+              flex: 1 1 50%;
+              line-height: 1em; }
+            #calculator-widget .calculator .calculator-results .calculation .description {
+              text-align: center;
+              margin: 0;
+              padding: 10px 0;
+              flex: 1 1 50%; }
+      #calculator-widget button.donate-btn {
+        margin-top: 37px;
+        margin-bottom: 0; } }
+
 form, .donation-form {
   width: 650px;
   background-color: white;
@@ -1581,31 +2223,131 @@ form, .donation-form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 45px; }
-    form .donate-buttons input:hover, form .donate-buttons input.active, form .donate-timeframe input:hover, form .donate-timeframe input.active, .donation-form .donate-buttons input:hover, .donation-form .donate-buttons input.active, .donation-form .donate-timeframe input:hover, .donation-form .donate-timeframe input.active {
+    margin-bottom: 16px; }
+    form .donate-buttons input:disabled, form .donate-buttons input[disabled],
+    form .donate-buttons .timeframe-btn:disabled,
+    form .donate-buttons .timeframe-btn[disabled], form .donate-timeframe input:disabled, form .donate-timeframe input[disabled],
+    form .donate-timeframe .timeframe-btn:disabled,
+    form .donate-timeframe .timeframe-btn[disabled], .donation-form .donate-buttons input:disabled, .donation-form .donate-buttons input[disabled],
+    .donation-form .donate-buttons .timeframe-btn:disabled,
+    .donation-form .donate-buttons .timeframe-btn[disabled], .donation-form .donate-timeframe input:disabled, .donation-form .donate-timeframe input[disabled],
+    .donation-form .donate-timeframe .timeframe-btn:disabled,
+    .donation-form .donate-timeframe .timeframe-btn[disabled] {
+      border-color: #ededed;
+      color: #bababa; }
+    form .donate-buttons input:hover, form .donate-buttons input.active,
+    form .donate-buttons .timeframe-btn:hover,
+    form .donate-buttons .timeframe-btn.active, form .donate-timeframe input:hover, form .donate-timeframe input.active,
+    form .donate-timeframe .timeframe-btn:hover,
+    form .donate-timeframe .timeframe-btn.active, .donation-form .donate-buttons input:hover, .donation-form .donate-buttons input.active,
+    .donation-form .donate-buttons .timeframe-btn:hover,
+    .donation-form .donate-buttons .timeframe-btn.active, .donation-form .donate-timeframe input:hover, .donation-form .donate-timeframe input.active,
+    .donation-form .donate-timeframe .timeframe-btn:hover,
+    .donation-form .donate-timeframe .timeframe-btn.active {
       cursor: pointer;
       background-color: #539ed0;
       color: white;
       transition: .3s ease; }
-      form .donate-buttons input:hover.placeholder, form .donate-buttons input.active.placeholder, form .donate-timeframe input:hover.placeholder, form .donate-timeframe input.active.placeholder, .donation-form .donate-buttons input:hover.placeholder, .donation-form .donate-buttons input.active.placeholder, .donation-form .donate-timeframe input:hover.placeholder, .donation-form .donate-timeframe input.active.placeholder {
+      form .donate-buttons input:hover:disabled, form .donate-buttons input:hover[disabled], form .donate-buttons input.active:disabled, form .donate-buttons input.active[disabled],
+      form .donate-buttons .timeframe-btn:hover:disabled,
+      form .donate-buttons .timeframe-btn:hover[disabled],
+      form .donate-buttons .timeframe-btn.active:disabled,
+      form .donate-buttons .timeframe-btn.active[disabled], form .donate-timeframe input:hover:disabled, form .donate-timeframe input:hover[disabled], form .donate-timeframe input.active:disabled, form .donate-timeframe input.active[disabled],
+      form .donate-timeframe .timeframe-btn:hover:disabled,
+      form .donate-timeframe .timeframe-btn:hover[disabled],
+      form .donate-timeframe .timeframe-btn.active:disabled,
+      form .donate-timeframe .timeframe-btn.active[disabled], .donation-form .donate-buttons input:hover:disabled, .donation-form .donate-buttons input:hover[disabled], .donation-form .donate-buttons input.active:disabled, .donation-form .donate-buttons input.active[disabled],
+      .donation-form .donate-buttons .timeframe-btn:hover:disabled,
+      .donation-form .donate-buttons .timeframe-btn:hover[disabled],
+      .donation-form .donate-buttons .timeframe-btn.active:disabled,
+      .donation-form .donate-buttons .timeframe-btn.active[disabled], .donation-form .donate-timeframe input:hover:disabled, .donation-form .donate-timeframe input:hover[disabled], .donation-form .donate-timeframe input.active:disabled, .donation-form .donate-timeframe input.active[disabled],
+      .donation-form .donate-timeframe .timeframe-btn:hover:disabled,
+      .donation-form .donate-timeframe .timeframe-btn:hover[disabled],
+      .donation-form .donate-timeframe .timeframe-btn.active:disabled,
+      .donation-form .donate-timeframe .timeframe-btn.active[disabled] {
+        cursor: not-allowed;
+        background: white;
+        border-color: #ededed;
+        color: #bababa; }
+      form .donate-buttons input:hover.placeholder, form .donate-buttons input.active.placeholder,
+      form .donate-buttons .timeframe-btn:hover.placeholder,
+      form .donate-buttons .timeframe-btn.active.placeholder, form .donate-timeframe input:hover.placeholder, form .donate-timeframe input.active.placeholder,
+      form .donate-timeframe .timeframe-btn:hover.placeholder,
+      form .donate-timeframe .timeframe-btn.active.placeholder, .donation-form .donate-buttons input:hover.placeholder, .donation-form .donate-buttons input.active.placeholder,
+      .donation-form .donate-buttons .timeframe-btn:hover.placeholder,
+      .donation-form .donate-buttons .timeframe-btn.active.placeholder, .donation-form .donate-timeframe input:hover.placeholder, .donation-form .donate-timeframe input.active.placeholder,
+      .donation-form .donate-timeframe .timeframe-btn:hover.placeholder,
+      .donation-form .donate-timeframe .timeframe-btn.active.placeholder {
         color: white !important; }
-      form .donate-buttons input:hover:-moz-placeholder, form .donate-buttons input.active:-moz-placeholder, form .donate-timeframe input:hover:-moz-placeholder, form .donate-timeframe input.active:-moz-placeholder, .donation-form .donate-buttons input:hover:-moz-placeholder, .donation-form .donate-buttons input.active:-moz-placeholder, .donation-form .donate-timeframe input:hover:-moz-placeholder, .donation-form .donate-timeframe input.active:-moz-placeholder {
+      form .donate-buttons input:hover:-moz-placeholder, form .donate-buttons input.active:-moz-placeholder,
+      form .donate-buttons .timeframe-btn:hover:-moz-placeholder,
+      form .donate-buttons .timeframe-btn.active:-moz-placeholder, form .donate-timeframe input:hover:-moz-placeholder, form .donate-timeframe input.active:-moz-placeholder,
+      form .donate-timeframe .timeframe-btn:hover:-moz-placeholder,
+      form .donate-timeframe .timeframe-btn.active:-moz-placeholder, .donation-form .donate-buttons input:hover:-moz-placeholder, .donation-form .donate-buttons input.active:-moz-placeholder,
+      .donation-form .donate-buttons .timeframe-btn:hover:-moz-placeholder,
+      .donation-form .donate-buttons .timeframe-btn.active:-moz-placeholder, .donation-form .donate-timeframe input:hover:-moz-placeholder, .donation-form .donate-timeframe input.active:-moz-placeholder,
+      .donation-form .donate-timeframe .timeframe-btn:hover:-moz-placeholder,
+      .donation-form .donate-timeframe .timeframe-btn.active:-moz-placeholder {
         color: white !important; }
-      form .donate-buttons input:hover::-moz-placeholder, form .donate-buttons input.active::-moz-placeholder, form .donate-timeframe input:hover::-moz-placeholder, form .donate-timeframe input.active::-moz-placeholder, .donation-form .donate-buttons input:hover::-moz-placeholder, .donation-form .donate-buttons input.active::-moz-placeholder, .donation-form .donate-timeframe input:hover::-moz-placeholder, .donation-form .donate-timeframe input.active::-moz-placeholder {
+      form .donate-buttons input:hover::-moz-placeholder, form .donate-buttons input.active::-moz-placeholder,
+      form .donate-buttons .timeframe-btn:hover::-moz-placeholder,
+      form .donate-buttons .timeframe-btn.active::-moz-placeholder, form .donate-timeframe input:hover::-moz-placeholder, form .donate-timeframe input.active::-moz-placeholder,
+      form .donate-timeframe .timeframe-btn:hover::-moz-placeholder,
+      form .donate-timeframe .timeframe-btn.active::-moz-placeholder, .donation-form .donate-buttons input:hover::-moz-placeholder, .donation-form .donate-buttons input.active::-moz-placeholder,
+      .donation-form .donate-buttons .timeframe-btn:hover::-moz-placeholder,
+      .donation-form .donate-buttons .timeframe-btn.active::-moz-placeholder, .donation-form .donate-timeframe input:hover::-moz-placeholder, .donation-form .donate-timeframe input.active::-moz-placeholder,
+      .donation-form .donate-timeframe .timeframe-btn:hover::-moz-placeholder,
+      .donation-form .donate-timeframe .timeframe-btn.active::-moz-placeholder {
         color: white !important; }
-      form .donate-buttons input:hover:-ms-input-placeholder, form .donate-buttons input.active:-ms-input-placeholder, form .donate-timeframe input:hover:-ms-input-placeholder, form .donate-timeframe input.active:-ms-input-placeholder, .donation-form .donate-buttons input:hover:-ms-input-placeholder, .donation-form .donate-buttons input.active:-ms-input-placeholder, .donation-form .donate-timeframe input:hover:-ms-input-placeholder, .donation-form .donate-timeframe input.active:-ms-input-placeholder {
+      form .donate-buttons input:hover:-ms-input-placeholder, form .donate-buttons input.active:-ms-input-placeholder,
+      form .donate-buttons .timeframe-btn:hover:-ms-input-placeholder,
+      form .donate-buttons .timeframe-btn.active:-ms-input-placeholder, form .donate-timeframe input:hover:-ms-input-placeholder, form .donate-timeframe input.active:-ms-input-placeholder,
+      form .donate-timeframe .timeframe-btn:hover:-ms-input-placeholder,
+      form .donate-timeframe .timeframe-btn.active:-ms-input-placeholder, .donation-form .donate-buttons input:hover:-ms-input-placeholder, .donation-form .donate-buttons input.active:-ms-input-placeholder,
+      .donation-form .donate-buttons .timeframe-btn:hover:-ms-input-placeholder,
+      .donation-form .donate-buttons .timeframe-btn.active:-ms-input-placeholder, .donation-form .donate-timeframe input:hover:-ms-input-placeholder, .donation-form .donate-timeframe input.active:-ms-input-placeholder,
+      .donation-form .donate-timeframe .timeframe-btn:hover:-ms-input-placeholder,
+      .donation-form .donate-timeframe .timeframe-btn.active:-ms-input-placeholder {
         color: white !important; }
-      form .donate-buttons input:hover::-webkit-input-placeholder, form .donate-buttons input.active::-webkit-input-placeholder, form .donate-timeframe input:hover::-webkit-input-placeholder, form .donate-timeframe input.active::-webkit-input-placeholder, .donation-form .donate-buttons input:hover::-webkit-input-placeholder, .donation-form .donate-buttons input.active::-webkit-input-placeholder, .donation-form .donate-timeframe input:hover::-webkit-input-placeholder, .donation-form .donate-timeframe input.active::-webkit-input-placeholder {
+      form .donate-buttons input:hover::-webkit-input-placeholder, form .donate-buttons input.active::-webkit-input-placeholder,
+      form .donate-buttons .timeframe-btn:hover::-webkit-input-placeholder,
+      form .donate-buttons .timeframe-btn.active::-webkit-input-placeholder, form .donate-timeframe input:hover::-webkit-input-placeholder, form .donate-timeframe input.active::-webkit-input-placeholder,
+      form .donate-timeframe .timeframe-btn:hover::-webkit-input-placeholder,
+      form .donate-timeframe .timeframe-btn.active::-webkit-input-placeholder, .donation-form .donate-buttons input:hover::-webkit-input-placeholder, .donation-form .donate-buttons input.active::-webkit-input-placeholder,
+      .donation-form .donate-buttons .timeframe-btn:hover::-webkit-input-placeholder,
+      .donation-form .donate-buttons .timeframe-btn.active::-webkit-input-placeholder, .donation-form .donate-timeframe input:hover::-webkit-input-placeholder, .donation-form .donate-timeframe input.active::-webkit-input-placeholder,
+      .donation-form .donate-timeframe .timeframe-btn:hover::-webkit-input-placeholder,
+      .donation-form .donate-timeframe .timeframe-btn.active::-webkit-input-placeholder {
         color: white !important; }
-    form .donate-buttons input.placeholder, form .donate-timeframe input.placeholder, .donation-form .donate-buttons input.placeholder, .donation-form .donate-timeframe input.placeholder {
+    form .donate-buttons input.placeholder,
+    form .donate-buttons .timeframe-btn.placeholder, form .donate-timeframe input.placeholder,
+    form .donate-timeframe .timeframe-btn.placeholder, .donation-form .donate-buttons input.placeholder,
+    .donation-form .donate-buttons .timeframe-btn.placeholder, .donation-form .donate-timeframe input.placeholder,
+    .donation-form .donate-timeframe .timeframe-btn.placeholder {
       color: black !important; }
-    form .donate-buttons input:-moz-placeholder, form .donate-timeframe input:-moz-placeholder, .donation-form .donate-buttons input:-moz-placeholder, .donation-form .donate-timeframe input:-moz-placeholder {
+    form .donate-buttons input:-moz-placeholder,
+    form .donate-buttons .timeframe-btn:-moz-placeholder, form .donate-timeframe input:-moz-placeholder,
+    form .donate-timeframe .timeframe-btn:-moz-placeholder, .donation-form .donate-buttons input:-moz-placeholder,
+    .donation-form .donate-buttons .timeframe-btn:-moz-placeholder, .donation-form .donate-timeframe input:-moz-placeholder,
+    .donation-form .donate-timeframe .timeframe-btn:-moz-placeholder {
       color: black !important; }
-    form .donate-buttons input::-moz-placeholder, form .donate-timeframe input::-moz-placeholder, .donation-form .donate-buttons input::-moz-placeholder, .donation-form .donate-timeframe input::-moz-placeholder {
+    form .donate-buttons input::-moz-placeholder,
+    form .donate-buttons .timeframe-btn::-moz-placeholder, form .donate-timeframe input::-moz-placeholder,
+    form .donate-timeframe .timeframe-btn::-moz-placeholder, .donation-form .donate-buttons input::-moz-placeholder,
+    .donation-form .donate-buttons .timeframe-btn::-moz-placeholder, .donation-form .donate-timeframe input::-moz-placeholder,
+    .donation-form .donate-timeframe .timeframe-btn::-moz-placeholder {
       color: black !important; }
-    form .donate-buttons input:-ms-input-placeholder, form .donate-timeframe input:-ms-input-placeholder, .donation-form .donate-buttons input:-ms-input-placeholder, .donation-form .donate-timeframe input:-ms-input-placeholder {
+    form .donate-buttons input:-ms-input-placeholder,
+    form .donate-buttons .timeframe-btn:-ms-input-placeholder, form .donate-timeframe input:-ms-input-placeholder,
+    form .donate-timeframe .timeframe-btn:-ms-input-placeholder, .donation-form .donate-buttons input:-ms-input-placeholder,
+    .donation-form .donate-buttons .timeframe-btn:-ms-input-placeholder, .donation-form .donate-timeframe input:-ms-input-placeholder,
+    .donation-form .donate-timeframe .timeframe-btn:-ms-input-placeholder {
       color: black !important; }
-    form .donate-buttons input::-webkit-input-placeholder, form .donate-timeframe input::-webkit-input-placeholder, .donation-form .donate-buttons input::-webkit-input-placeholder, .donation-form .donate-timeframe input::-webkit-input-placeholder {
+    form .donate-buttons input::-webkit-input-placeholder,
+    form .donate-buttons .timeframe-btn::-webkit-input-placeholder, form .donate-timeframe input::-webkit-input-placeholder,
+    form .donate-timeframe .timeframe-btn::-webkit-input-placeholder, .donation-form .donate-buttons input::-webkit-input-placeholder,
+    .donation-form .donate-buttons .timeframe-btn::-webkit-input-placeholder, .donation-form .donate-timeframe input::-webkit-input-placeholder,
+    .donation-form .donate-timeframe .timeframe-btn::-webkit-input-placeholder {
       color: black !important; }
     form .donate-buttons .donate-button, form .donate-timeframe .donate-button, .donation-form .donate-buttons .donate-button, .donation-form .donate-timeframe .donate-button {
       width: 32%;
@@ -1613,21 +2355,29 @@ form, .donation-form {
       margin-bottom: 10px; }
       form .donate-buttons .donate-button input, form .donate-timeframe .donate-button input, .donation-form .donate-buttons .donate-button input, .donation-form .donate-timeframe .donate-button input {
         font-size: 22px;
-        padding: 30px 0;
+        padding: 24px 0;
         border: 1px solid #539ed0;
-        text-align: center;
-        font-size: 22px; }
+        text-align: center; }
       form .donate-buttons .donate-button input::placeholder, form .donate-timeframe .donate-button input::placeholder, .donation-form .donate-buttons .donate-button input::placeholder, .donation-form .donate-timeframe .donate-button input::placeholder {
         color: black; }
     form .donate-buttons .donate-button:nth-child(3n+3), form .donate-timeframe .donate-button:nth-child(3n+3), .donation-form .donate-buttons .donate-button:nth-child(3n+3), .donation-form .donate-timeframe .donate-button:nth-child(3n+3) {
       margin-right: 0; }
 
-.donate-timeframe > input {
-  width: 49%;
-  padding: 10px 0;
-  text-align: center;
-  border: 1px solid #539ed0;
-  font-size: 22px; }
+.donate-timeframe {
+  margin-bottom: 59px !important; }
+  .donate-timeframe > input,
+  .donate-timeframe > .timeframe-btn {
+    width: 49%;
+    padding: 12px 0;
+    text-align: center;
+    border: 1px solid #539ed0;
+    font-size: 17px;
+    background-color: white;
+    color: black;
+    font-weight: normal; }
+    .donate-timeframe > input:focus,
+    .donate-timeframe > .timeframe-btn:focus {
+      outline: 0 none; }
 
 .donate-timeframe > input::placeholder {
   color: black; }
@@ -1636,102 +2386,179 @@ form, .donation-form {
   margin-right: 2%; }
 
 .calculator {
-  padding: 40px 20px;
+  padding: 45px 0 34px;
   background-color: #ededed;
   text-align: center;
   border-radius: 4px; }
-  .calculator > p {
+  .calculator .leadin {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
     color: #747474;
+    font-size: 20px;
     font-style: italic; }
-    @media only screen and (min-width: 1px) and (max-width: 515px) {
-      .calculator > p {
-        margin-bottom: 0px; } }
+    .calculator .leadin .donation-amount {
+      font-size: 20px; }
   .calculator .calculator-results {
     display: flex;
-    margin-top: 45px; }
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin-top: 14px; }
     @media only screen and (min-width: 1px) and (max-width: 515px) {
       .calculator .calculator-results {
         flex-direction: column;
         margin-top: 0px; } }
     .calculator .calculator-results .calculation {
-      padding: 0 10px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
+      flex: 0 0 33.33%;
+      padding: 0 10px 19px; }
+      .calculator .calculator-results .calculation:nth-child(even) {
+        position: relative;
+        border-left: 1px solid white;
+        border-right: 1px solid white; }
+        .calculator .calculator-results .calculation:nth-child(even):before, .calculator .calculator-results .calculation:nth-child(even):after {
+          background-color: #ededed;
+          color: #808080;
+          content: '- or -';
+          display: block;
+          width: 29px;
+          height: 23px;
+          white-space: nowrap;
+          overflow: visible;
+          position: absolute;
+          top: 0;
+          left: -14px;
+          padding: 26px 0 0;
+          text-align: center;
+          font-family: "Roboto", sans-serif;
+          font-size: 13px;
+          font-style: italic; }
+        .calculator .calculator-results .calculation:nth-child(even):after {
+          left: auto;
+          right: -14px; }
       @media only screen and (min-width: 1px) and (max-width: 515px) {
         .calculator .calculator-results .calculation {
           flex-direction: row; } }
+      .calculator .calculator-results .calculation img {
+        display: block;
+        margin: 0 auto 0;
+        width: 100px; }
+        @media only screen and (min-width: 1px) and (max-width: 515px) {
+          .calculator .calculator-results .calculation img {
+            width: 45px; } }
       .calculator .calculator-results .calculation .big-number {
+        margin: -1px 0 0;
         font-family: "League Gothic";
         font-size: 70px;
-        margin: 20px 0 0; }
-      .calculator .calculator-results .calculation p {
-        font-size: 12px; }
+        line-height: 1em;
+        max-width: 146px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      .calculator .calculator-results .calculation .description {
+        padding: 0 5px 0;
+        margin: 6px 0 0;
+        font-family: "Roboto", sans-serif;
+        color: black;
+        font-size: 12px;
+        line-height: 1.2em; }
         @media only screen and (min-width: 1px) and (max-width: 515px) {
-          .calculator .calculator-results .calculation p {
+          .calculator .calculator-results .calculation .description {
             width: 33%; } }
-      @media only screen and (min-width: 1px) and (max-width: 515px) {
-        .calculator .calculator-results .calculation img {
-          width: 45px; } }
-    .calculator .calculator-results .calculation:first-child, .calculator .calculator-results .calculation:nth-child(2) {
-      border-right: 1px solid #747474; }
-      @media only screen and (min-width: 1px) and (max-width: 515px) {
-        .calculator .calculator-results .calculation:first-child, .calculator .calculator-results .calculation:nth-child(2) {
-          border-right: 0px;
-          border-bottom: 1px solid white;
-          padding-top: 30px;
-          padding-bottom: 20px; } }
 
-.get-involved-calc {
-  background: url("/assets/img/smilinggirl.jpg") no-repeat left bottom;
+#impact-calc-page .get-involved-calc {
+  background: url("/assets/img/smilinggirl.jpg") no-repeat calc(50% + -290px) 26px;
   background-color: #539ed0;
-  display: flex;
-  justify-content: space-between; }
-  @media only screen and (min-width: 1px) and (max-width: 900px) {
-    .get-involved-calc {
-      flex-direction: column;
-      align-items: center;
-      background-image: none; } }
-  .get-involved-calc .headline {
-    padding-top: 30px; }
-    @media only screen and (min-width: 1px) and (max-width: 900px) {
-      .get-involved-calc .headline {
-        text-align: center; } }
-    @media only screen and (min-width: 515px) and (max-width: 900px) {
-      .get-involved-calc .headline {
-        padding-top: 40px;
-        padding-left: 10px; } }
-    @media only screen and (min-width: 1px) and (max-width: 515px) {
-      .get-involved-calc .headline {
-        padding-top: 50px; } }
-    .get-involved-calc .headline > span {
+  display: block;
+  min-height: 500px;
+  position: relative; }
+  #impact-calc-page .get-involved-calc .wrap {
+    position: relative;
+    max-width: 1241px;
+    padding: 90px 20px 0;
+    margin: 0 auto;
+    min-height: 770px; }
+    #impact-calc-page .get-involved-calc .wrap:after {
+      content: "";
+      display: table;
+      clear: both; }
+  #impact-calc-page .get-involved-calc .headline {
+    position: absolute;
+    top: 0;
+    left: 22px;
+    width: calc(100% - 692px);
+    padding: 0 0 0; }
+    #impact-calc-page .get-involved-calc .headline h1 {
+      white-space: nowrap;
+      overflow: visible;
+      position: absolute;
+      top: 29px;
+      left: 0;
+      font-family: "Roboto Condensed", "Roboto", sans-serif;
+      font-weight: bold;
+      font-size: 14px; }
+      #impact-calc-page .get-involved-calc .headline h1 .breadcrumb {
+        font-family: "Roboto Condensed", "Roboto", sans-serif;
+        font-weight: bold;
+        font-size: 14px; }
+    #impact-calc-page .get-involved-calc .headline > span {
+      white-space: normal;
+      display: block;
+      margin: 217px 0 0;
       font-weight: bold;
       font-size: 60px;
       font-family: "Roboto", sans-serif;
-      text-transform: none; }
+      text-transform: none;
+      letter-spacing: 0;
+      line-height: 1em; }
+      #impact-calc-page .get-involved-calc .headline > span br {
+        display: none; }
       @media only screen and (min-width: 515px) and (max-width: 900px) {
-        .get-involved-calc .headline > span {
+        #impact-calc-page .get-involved-calc .headline > span {
           font-size: 50px; } }
       @media only screen and (min-width: 1px) and (max-width: 515px) {
-        .get-involved-calc .headline > span {
+        #impact-calc-page .get-involved-calc .headline > span {
           font-size: 26px; } }
-  @media only screen and (min-width: 901px) {
-    .get-involved-calc span {
-      padding: 0px; } }
-
-.donation-form {
-  margin: 100px 0 115px 0;
-  padding: 45px 55px; }
-  @media only screen and (min-width: 1px) and (max-width: 515px) {
-    .donation-form {
-      padding: 20px 10px;
-      margin: 50px 1%; } }
-  .donation-form button {
-    width: 100%;
-    margin-top: 20px;
-    font-size: 24px;
-    font-weight: bold; }
+#impact-calc-page #calculator-widget {
+  background-image: linear-gradient(135deg, #539ed0 50%, transparent 50%), linear-gradient(225deg, #539ed0 50%, transparent 50%), linear-gradient(45deg, #539ed0 50%, transparent 50%), linear-gradient(-45deg, #539ed0 50%, transparent 50%);
+  background-position: top left, top left, bottom left, bottom left;
+  background-size: 9px 9px;
+  background-repeat: repeat-x;
+  margin: 0 0 110px;
+  float: right;
+  padding: 110px 75px 45px; }
+@media only screen and (min-width: 1px) and (max-width: 900px) {
+  #impact-calc-page .get-involved-calc {
+    background-image: none; }
+    #impact-calc-page .get-involved-calc .wrap {
+      padding: 0 14px 0; }
+    #impact-calc-page .get-involved-calc .headline {
+      position: relative;
+      top: unset;
+      left: unset;
+      width: 100%;
+      padding: 24px 0 50px 6px; }
+      #impact-calc-page .get-involved-calc .headline h1 {
+        font-size: 13px;
+        position: relative;
+        top: unset;
+        left: unset;
+        margin: 0 0 26px;
+        padding: 0 0 0;
+        letter-spacing: 0.16em; }
+        #impact-calc-page .get-involved-calc .headline h1 .breadcrumb {
+          letter-spacing: 0.16em; }
+      #impact-calc-page .get-involved-calc .headline > span {
+        position: relative;
+        top: unset;
+        left: unset;
+        font-size: 30px;
+        margin: 0 0 0;
+        padding: 0 0 0;
+        line-height: 1.2em; }
+        #impact-calc-page .get-involved-calc .headline > span br {
+          display: block; }
+  #impact-calc-page #calculator-widget {
+    padding: 63px 18px 40px; } }
 
 .confirm-screen {
   padding-top: 150px;
@@ -1915,10 +2742,7 @@ form, .donation-form {
     width: 45%; }
     .meet-the-johnsons .headline p {
       font-size: 18px;
-      color: white;
-      line-height: 1.3; }
-    .meet-the-johnsons .headline p:first-of-type {
-      padding-top: 20px; }
+      color: white; }
     @media only screen and (min-width: 515px) and (max-width: 900px) {
       .meet-the-johnsons .headline {
         width: 70%; } }
@@ -1930,10 +2754,10 @@ form, .donation-form {
       background-image: none; } }
   @media only screen and (min-width: 515px) and (max-width: 900px) {
     .meet-the-johnsons {
-      height: 480px; } }
+      height: 500px; } }
   @media only screen and (min-width: 1px) and (max-width: 515px) {
     .meet-the-johnsons {
-      height: 450px; } }
+      height: 400px; } }
 
 .johnsons-timeline {
   padding-top: 20px;
@@ -2002,7 +2826,7 @@ form, .donation-form {
   @media only screen and (min-width: 515px) and (max-width: 900px) {
     .get-help-organizations .banner {
       height: 500px;
-      background-image: url("/assets/img/bluewomancooktablet.jpg"); } }
+      background-image: none; } }
   @media only screen and (min-width: 1px) and (max-width: 515px) {
     .get-help-organizations .banner {
       height: 300px;
@@ -2015,60 +2839,11 @@ form, .donation-form {
 
 .get-help-organizations .small-box.lowered {
   margin-top: 70px; }
-  @media only screen and (min-width: 1px) and (max-width: 900px) {
-    .get-help-organizations .small-box.lowered {
-      margin-top: 0px; } }
   .get-help-organizations .small-box.lowered h3 {
     margin-top: 0px; }
 .get-help-organizations a {
   display: block;
   color: #539ed0; }
-.get-help-organizations .request-table {
-  list-style: none;
-  counter-reset: item;
-  padding-left: 0px;
-  width: 100%; }
-  .get-help-organizations .request-table li {
-    counter-increment: item;
-    display: flex;
-    border-top: 2px solid #ededed; }
-    @media only screen and (min-width: 1px) and (max-width: 900px) {
-      .get-help-organizations .request-table li {
-        display: inherit; } }
-    .get-help-organizations .request-table li > div {
-      margin: 10px 3.5% 25px 0;
-      width: 31%; }
-      @media only screen and (min-width: 1px) and (max-width: 900px) {
-        .get-help-organizations .request-table li > div {
-          display: block;
-          margin-left: 50px;
-          width: auto; } }
-    .get-help-organizations .request-table li > div:last-of-type {
-      margin-right: 0; }
-    .get-help-organizations .request-table li h3 {
-      margin: 0px;
-      font-size: 16px; }
-      @media only screen and (min-width: 1px) and (max-width: 900px) {
-        .get-help-organizations .request-table li h3 {
-          margin: 10px 0; } }
-    .get-help-organizations .request-table li p {
-      margin-top: 0px;
-      font-size: 14px; }
-      .get-help-organizations .request-table li p a {
-        font-size: 14px; }
-  .get-help-organizations .request-table li:before {
-    margin-right: 30px;
-    content: counter(item);
-    color: #ffb351;
-    font-size: 60px;
-    font-family: "League Gothic";
-    display: inline-block; }
-    @media only screen and (min-width: 1px) and (max-width: 900px) {
-      .get-help-organizations .request-table li:before {
-        margin-right: 15px;
-        float: left; } }
-.get-help-organizations .body-section img {
-  margin-top: 30px; }
 
 .get-help .banner {
   background: url("/assets/img/manonstreet.jpg") no-repeat center center;
@@ -2112,120 +2887,5 @@ form, .donation-form {
     @media only screen and (min-width: 1px) and (max-width: 900px) {
       .bottom-cta .bottom-cta-button {
         width: auto; } }
-
-.get-involved-volunteer .banner {
-  background: url("/assets/img/youngboy.jpg") no-repeat center center;
-  height: 780px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-  @media only screen and (min-width: 515px) and (max-width: 900px) {
-    .get-involved-volunteer .banner {
-      height: 500px;
-      background-image: url("/assets/img/youngboytablet.jpg"); } }
-  @media only screen and (min-width: 1px) and (max-width: 515px) {
-    .get-involved-volunteer .banner {
-      height: 300px;
-      background-image: url("/assets/img/youngboyphone.jpg"); } }
-.get-involved-volunteer .volunteer-section {
-  margin-left: 100px;
-  margin-right: 100px; }
-  @media only screen and (min-width: 1px) and (max-width: 900px) {
-    .get-involved-volunteer .volunteer-section {
-      margin-left: 20px;
-      margin-right: 20px; } }
-  .get-involved-volunteer .volunteer-section .volunteer-row {
-    border-top: 2px solid #ededed;
-    padding-bottom: 95px; }
-    @media only screen and (min-width: 1px) and (max-width: 515px) {
-      .get-involved-volunteer .volunteer-section .volunteer-row {
-        padding-bottom: 30px; } }
-    .get-involved-volunteer .volunteer-section .volunteer-row > span {
-      color: white;
-      font-size: 20px;
-      font-weight: bold;
-      padding: 14px;
-      display: inline-block;
-      background-color: #ffb351; }
-    .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content {
-      display: flex; }
-      @media only screen and (min-width: 1px) and (max-width: 900px) {
-        .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content {
-          flex-direction: column; } }
-      .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content > p {
-        width: 48%;
-        margin-right: 4%; }
-        @media only screen and (min-width: 1px) and (max-width: 900px) {
-          .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content > p {
-            width: 100%;
-            margin-right: 0%; } }
-      .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details {
-        margin-top: 15px; }
-        .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details .volunteer-detail {
-          margin-bottom: 15px; }
-          @media only screen and (min-width: 1px) and (max-width: 515px) {
-            .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details .volunteer-detail {
-              display: flex; } }
-          .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details .volunteer-detail span {
-            width: 120px;
-            font-weight: bold;
-            font-size: 12px;
-            text-transform: uppercase;
-            display: inline-block; }
-          .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details .volunteer-detail p {
-            display: inline;
-            margin-left: 18px;
-            font-size: 15px; }
-            @media only screen and (min-width: 1px) and (max-width: 515px) {
-              .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details .volunteer-detail p {
-                margin-top: 0px; } }
-        .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details > p {
-          margin-top: 30px; }
-        .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details a {
-          color: #539ed0; }
-
-.get-involved-advocate .banner {
-  background: url("/assets/img/girlbullhorn.jpg") no-repeat center center;
-  height: 881px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-  @media only screen and (min-width: 515px) and (max-width: 900px) {
-    .get-involved-advocate .banner {
-      height: 750px;
-      background-image: url("/assets/img/girlbullhorntablet.jpg"); } }
-  @media only screen and (min-width: 1px) and (max-width: 515px) {
-    .get-involved-advocate .banner {
-      height: 300px;
-      background-image: url("/assets/img/girlbullhornphone.jpg"); } }
-.get-involved-advocate .headline p {
-  color: white;
-  font-size: 18px;
-  letter-spacing: 1px; }
-.get-involved-advocate .headline > div {
-  margin-top: 40px;
-  margin-bottom: 60px;
-  max-width: 500px; }
-  @media only screen and (min-width: 1px) and (max-width: 515px) {
-    .get-involved-advocate .headline > div {
-      display: none; } }
-@media only screen and (min-width: 1px) and (max-width: 515px) {
-  .get-involved-advocate .headline a {
-    display: none; } }
-.get-involved-advocate .headline-text-group-mobile {
-  display: none; }
-  @media only screen and (min-width: 1px) and (max-width: 515px) {
-    .get-involved-advocate .headline-text-group-mobile {
-      display: inline-block;
-      margin-left: 20px;
-      margin-right: 20px; } }
-  .get-involved-advocate .headline-text-group-mobile p {
-    color: white;
-    font-size: 18px; }
-  .get-involved-advocate .headline-text-group-mobile button {
-    margin-top: 20px;
-    margin-bottom: 30px; }
 
 /*# sourceMappingURL=main.css.map */
