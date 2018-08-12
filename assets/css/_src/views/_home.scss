@@ -7,6 +7,10 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  @include breakpoint(hugeness) {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
   @include breakpoint(tabletonly) {
     height:500px;
   }
@@ -21,6 +25,10 @@
 .box-links {
   display: flex;
   clear: both;
+  @include breakpoint(hugeness) {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
   @include breakpoint(phonetablet) {
     flex-direction: column;
   }

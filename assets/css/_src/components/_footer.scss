@@ -14,6 +14,10 @@ footer {
   @include breakpoint(phonetablet) {
     padding-top: 60px;
   }
+  @include breakpoint(hugeness) {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
 }
 
 .top-footer {

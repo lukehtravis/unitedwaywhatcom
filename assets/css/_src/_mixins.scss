@@ -1,7 +1,7 @@
 // Breakpoints
 @mixin breakpoint($point) {
   @if $point == hugeness {
-    @media only screen and (min-width : 1701px) { @content ; }
+    @media only screen and (min-width : 1400px) { @content ; }
   }
   @else if $point == desktopbeyond {
     @media only screen and (min-width : 901px) { @content ; }

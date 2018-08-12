@@ -700,6 +700,10 @@ header {
     .header-container {
       display: flex;
       justify-content: space-between; } }
+  @media only screen and (min-width: 1400px) {
+    .header-container {
+      max-width: 1400px;
+      margin: 0 auto; } }
 
 .header-container > a {
   text-decoration: none; }
@@ -924,6 +928,10 @@ footer {
   @media only screen and (min-width: 1px) and (max-width: 900px) {
     .footer-container {
       padding-top: 60px; } }
+  @media only screen and (min-width: 1400px) {
+    .footer-container {
+      max-width: 1400px;
+      margin: 0 auto; } }
 
 .top-footer {
   display: flex;
@@ -1062,6 +1070,10 @@ footer {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  @media only screen and (min-width: 1400px) {
+    .banner.home {
+      max-width: 1400px;
+      margin: 0 auto; } }
   @media only screen and (min-width: 515px) and (max-width: 900px) {
     .banner.home {
       height: 500px; } }
@@ -1074,6 +1086,10 @@ footer {
 .box-links {
   display: flex;
   clear: both; }
+  @media only screen and (min-width: 1400px) {
+    .box-links {
+      max-width: 1400px;
+      margin: 0 auto; } }
   @media only screen and (min-width: 1px) and (max-width: 900px) {
     .box-links {
       flex-direction: column; } }
