@@ -50,11 +50,13 @@
               <a href=""><li>Blog</li></a>
               <a href=""><li>Financial Information</li></a>
               <a href=""><li>FAQ's</li></a>
+                <li class="divider"></li>
               <a href=""><li>Staff Information</li></a>
               <a href=""><li>Board</li></a>
               <a href=""><li>Fund Distribution Committee</li></a>
               <a href=""><li>Partner Agencies</li></a>
               <a href=""><li>Job Openings</li></a>
+                <li class="divider"></li>
               <a href=""><li>Log In</li></a>
             </ul>
           </span>
