@@ -1,0 +1,74 @@
+.get-involved-personal-donations {
+  padding-bottom: 0px;
+  .banner {
+    background: url('/assets/img/oldladysmile.jpg') no-repeat center center;
+    height: 780px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    @include breakpoint(hugeness) {
+      @include hugeness-container;
+    }
+    @include breakpoint(tabletonly) {
+      height:500px;
+      background-image: url('/assets/img/youngboytablet.jpg');
+    }
+    @include breakpoint(phoneonly) {
+      height:300px;
+      background-image: url('/assets/img/youngboyphone.jpg');
+    }
+    .headline {
+      padding-top: 20px;
+      p {
+        color: $color-white;
+        line-height: 1.3;
+        padding-top: 30px;
+      }
+      button {
+        margin-top: 35px;
+      }
+    }
+  }
+  .normal-body {
+    .content-row {
+      .leadership-details-table {
+        display: flex;
+        .table-column {
+          width: 50%;
+          h4 {
+            border-top: 2px solid $color-lightgray;
+            padding: 8px 0;
+            margin: 0px;
+          }
+          p.table-top-paragraph {
+
+          }
+          p {
+            font-size: 15px;
+            margin: 0px;
+            padding: 8px 0;
+          }
+          ul {
+            border-top: 2px solid $color-lightgray;
+            border-bottom: 2px solid $color-lightgray;
+            margin: 0px;
+            padding-bottom: 8px;
+            list-style: none;
+            padding-left: 0px;
+            li {
+              font-size: 15px;
+              padding: 8px 0;
+            }
+          }
+        }
+        .table-column.table-column-2 ul {
+          padding: 34px 0px 8px;
+        }
+      }
+    }
+  }
+  .small-text-graybox {
+    font-size: 13px;
+  }
+}

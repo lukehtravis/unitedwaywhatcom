@@ -249,6 +249,21 @@ select::placeholder {
   border-radius: 4px;
 }
 
+.normal-body {
+  background-color: $color-white;
+  .content-row {
+    @include pageSideMargins;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    .large-side {
+      width: 56%;
+    }
+    .small-side {
+      width: 42%;
+    }
+  }
+}
 // For custom checkboxes
 
 input[type="checkbox"] {

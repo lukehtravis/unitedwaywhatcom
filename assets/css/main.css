@@ -666,6 +666,19 @@ select::placeholder {
   width: 100%;
   border-radius: 4px; }
 
+.normal-body {
+  background-color: white; }
+  .normal-body .content-row {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between; }
+    .normal-body .content-row .large-side {
+      width: 56%; }
+    .normal-body .content-row .small-side {
+      width: 42%; }
+
 input[type="checkbox"] {
   display: none; }
 
@@ -3058,5 +3071,61 @@ form, .donation-form {
     @media only screen and (min-width: 1px) and (max-width: 900px) {
       .bottom-cta .bottom-cta-button {
         width: auto; } }
+
+.get-involved-personal-donations {
+  padding-bottom: 0px; }
+  .get-involved-personal-donations .banner {
+    background: url("/assets/img/oldladysmile.jpg") no-repeat center center;
+    height: 780px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    @media only screen and (min-width: 1400px) {
+      .get-involved-personal-donations .banner {
+        max-width: 1400px;
+        margin: 0 auto; } }
+    @media only screen and (min-width: 515px) and (max-width: 900px) {
+      .get-involved-personal-donations .banner {
+        height: 500px;
+        background-image: url("/assets/img/youngboytablet.jpg"); } }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .get-involved-personal-donations .banner {
+        height: 300px;
+        background-image: url("/assets/img/youngboyphone.jpg"); } }
+    .get-involved-personal-donations .banner .headline {
+      padding-top: 20px; }
+      .get-involved-personal-donations .banner .headline p {
+        color: white;
+        line-height: 1.3;
+        padding-top: 30px; }
+      .get-involved-personal-donations .banner .headline button {
+        margin-top: 35px; }
+  .get-involved-personal-donations .normal-body .content-row .leadership-details-table {
+    display: flex; }
+    .get-involved-personal-donations .normal-body .content-row .leadership-details-table .table-column {
+      width: 50%; }
+      .get-involved-personal-donations .normal-body .content-row .leadership-details-table .table-column h4 {
+        border-top: 2px solid #ededed;
+        padding: 8px 0;
+        margin: 0px; }
+      .get-involved-personal-donations .normal-body .content-row .leadership-details-table .table-column p {
+        font-size: 15px;
+        margin: 0px;
+        padding: 8px 0; }
+      .get-involved-personal-donations .normal-body .content-row .leadership-details-table .table-column ul {
+        border-top: 2px solid #ededed;
+        border-bottom: 2px solid #ededed;
+        margin: 0px;
+        padding-bottom: 8px;
+        list-style: none;
+        padding-left: 0px; }
+        .get-involved-personal-donations .normal-body .content-row .leadership-details-table .table-column ul li {
+          font-size: 15px;
+          padding: 8px 0; }
+    .get-involved-personal-donations .normal-body .content-row .leadership-details-table .table-column.table-column-2 ul {
+      padding: 34px 0px 8px; }
+  .get-involved-personal-donations .small-text-graybox {
+    font-size: 13px; }
 
 /*# sourceMappingURL=main.css.map */
