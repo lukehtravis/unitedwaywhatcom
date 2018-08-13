@@ -52,13 +52,15 @@
       }
       .leadership-details-table {
         display: flex;
+        h3 {
+          text-transform: uppercase;
+        }
         .table-column {
           width: 50%;
           h4 {
             border-top: 2px solid $color-lightgray;
             padding: 8px 0;
             margin: 0px;
-            text-transform: uppercase;
             @include breakpoint(phoneonly) {
               font-size: 14px;
             }
