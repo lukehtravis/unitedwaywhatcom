@@ -10,7 +10,7 @@
 <nav>
     <ul>
         <li><a href="/0.0-home.php">0.0 Home</a></li>
-        <li>1.0 Our Work / What We Do</li>
+        <li><a href="/1.0-our-work-what-we-do.php">1.0 Our Work / What We Do</a></li>
         <li><a href="/1.1-our-work-our-network.php">1.1 Our Work/ What We Do / Our Network</a></li>
         <li><a href="/1.2-our-work.php">1.2 Our Work / How We Do It</a></li>
         <li><a href="/2.0-get-involved-give.php">2.0 Get Involved / Give</a></li>

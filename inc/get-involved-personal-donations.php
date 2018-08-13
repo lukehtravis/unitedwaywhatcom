@@ -1,7 +1,7 @@
 <div class="color-container lightblue-bg get-involved-personal-donations">
   <section class="banner">
     <div class="headline">
-      <h1 class="small-breadcrumb">volunteer / <span class="breadcrumb">Personal Donations</span></h1>
+      <h1 class="small-breadcrumb">Give / <span class="breadcrumb">Personal Donations</span></h1>
       <span class="bland-header">Giving Feels Good</span>
       <p>Bask in those feel-good fuzzies you get when you give. (Yes, they’re real. Just ask Science). United Way of Whatcom County fights for the financial stability of every person in our community, so rest assured, your donation will provide good feelings all around.</p>
       <a href="#"><button class="orange-bg">Donate Today</button></a>
@@ -40,7 +40,8 @@
       </div>
       <div class="small-side">
         <div class="lightgray-bg old-photo small-box">
-          <img src="/assets/img/ancientphoto.png"/>
+          <img src="/assets/img/ancientphoto.jpg"/>
+          <span class="photo-subtitle">Alexis de Tocqueville, 1805 - 1869</span>
           <p class="small-text-graybox">United Way of Whatcom County’s Tocqueville Society is the foundation of leadership in our community. The Society is named for Alexis de Tocqueville, a Frenchman who, in the early 1800’s, traveled throughout America and wrote extensively of his admiration for America’s spirit of giving. Reflecting this spirit, members of our Tocqueville Society demonstrate the highest level of individual support for United Way of Whatcom County, contributing an annual gift of $10,000 or more. </p>
         </div>
       </div>
