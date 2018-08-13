@@ -685,6 +685,10 @@ select::placeholder {
 .normal-body {
   background-color: white;
   padding-top: 100px; }
+  @media only screen and (min-width: 1400px) {
+    .normal-body {
+      max-width: 1400px;
+      margin: 0 auto; } }
   @media only screen and (min-width: 1px) and (max-width: 515px) {
     .normal-body {
       padding-top: 30px; } }
@@ -697,7 +701,9 @@ select::placeholder {
     @media only screen and (min-width: 1px) and (max-width: 900px) {
       .normal-body .content-row {
         flex-direction: column;
-        align-items: center; } }
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px; } }
     @media only screen and (min-width: 1px) and (max-width: 515px) {
       .normal-body .content-row {
         margin-left: 20px;
