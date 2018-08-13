@@ -8,7 +8,7 @@
   background-size: cover;
   @include breakpoint(tabletonly) {
     height:500px;
-    background-image: none;
+    background-image: url('/assets/img/bluewomancooktablet.jpg');
   }
   @include breakpoint(phoneonly) {
     height:300px;
@@ -27,6 +27,9 @@
 .get-help-organizations {
   .small-box.lowered {
     margin-top: 70px;
+    @include breakpoint(phonetablet) {
+      margin-top: 0px;
+    }
     h3 {
       margin-top: 0px;
     }
@@ -34,5 +37,60 @@
   a {
     display: block;
     color: $color-lightblue;
+  }
+  .request-table {
+    list-style: none;
+    counter-reset: item;
+    padding-left: 0px;
+    width: 100%;
+    li {
+      counter-increment: item;
+      display: flex;
+      border-top: 2px solid $color-lightgray;
+      @include breakpoint(phonetablet) {
+        display: inherit;
+      }
+      > div {
+        margin: 10px 3.5% 25px 0;
+        width: 31%;
+        @include breakpoint(phonetablet) {
+          display: block;
+          margin-left: 50px;
+          width: auto;
+        }
+      }
+      > div:last-of-type {
+        margin-right: 0;
+      }
+      h3 {
+        margin: 0px;
+        font-size: 16px;
+        @include breakpoint(phonetablet) {
+          margin: 10px 0;
+        }
+      }
+      p {
+        margin-top: 0px;
+        font-size: 14px;
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+    li:before {
+      margin-right: 30px;
+      content: counter(item);
+      color: $color-orange;
+      font-size: 60px;
+      font-family: $league;
+      display: inline-block;
+      @include breakpoint(phonetablet) {
+        margin-right: 15px;
+        float: left;
+      }
+    }
+  }
+  .body-section img {
+    margin-top: 30px;
   }
 }
