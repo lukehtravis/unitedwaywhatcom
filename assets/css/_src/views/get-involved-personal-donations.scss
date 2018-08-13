@@ -12,21 +12,32 @@
     }
     @include breakpoint(tabletonly) {
       height:500px;
-      background-image: url('/assets/img/youngboytablet.jpg');
+      background-image: url('/assets/img/oldladysmiletablet.jpg');
     }
     @include breakpoint(phoneonly) {
       height:300px;
-      background-image: url('/assets/img/youngboyphone.jpg');
+      background-image: url('/assets/img/oldladysmilephone.jpg');
     }
     .headline {
       padding-top: 20px;
+      .small-breadcrumb {
+        padding-bottom: 15px;
+        margin: 0;
+      }
       p {
         color: $color-white;
         line-height: 1.3;
         padding-top: 30px;
+        @include breakpoint(phoneonly) {
+          padding-top: 10px;
+          margin: 0;
+        }
       }
       button {
         margin-top: 35px;
+        @include breakpoint(phoneonly) {
+          margin-top: 15px;
+        }
       }
     }
   }
@@ -45,6 +56,9 @@
             border-top: 2px solid $color-lightgray;
             padding: 8px 0;
             margin: 0px;
+            @include breakpoint(phoneonly) {
+              font-size: 14px;
+            }
           }
           > p {
             border-bottom: 2px solid $color-lightgray;

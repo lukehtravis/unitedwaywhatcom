@@ -667,16 +667,33 @@ select::placeholder {
 .normal-body {
   background-color: white;
   padding-top: 100px; }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    .normal-body {
+      padding-top: 30px; } }
   .normal-body .content-row {
     margin-left: 100px;
     margin-right: 100px;
     margin-bottom: 100px;
     display: flex;
     justify-content: space-between; }
+    @media only screen and (min-width: 1px) and (max-width: 900px) {
+      .normal-body .content-row {
+        flex-direction: column;
+        align-items: center; } }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .normal-body .content-row {
+        margin-left: 20px;
+        margin-right: 20px; } }
     .normal-body .content-row .large-side {
       width: 56%; }
+      @media only screen and (min-width: 1px) and (max-width: 900px) {
+        .normal-body .content-row .large-side {
+          width: 100%; } }
     .normal-body .content-row .small-side {
       width: 42%; }
+      @media only screen and (min-width: 1px) and (max-width: 900px) {
+        .normal-body .content-row .small-side {
+          width: 100%; } }
 
 input[type="checkbox"] {
   display: none; }
@@ -3087,19 +3104,29 @@ form, .donation-form {
     @media only screen and (min-width: 515px) and (max-width: 900px) {
       .get-involved-personal-donations .banner {
         height: 500px;
-        background-image: url("/assets/img/youngboytablet.jpg"); } }
+        background-image: url("/assets/img/oldladysmiletablet.jpg"); } }
     @media only screen and (min-width: 1px) and (max-width: 515px) {
       .get-involved-personal-donations .banner {
         height: 300px;
-        background-image: url("/assets/img/youngboyphone.jpg"); } }
+        background-image: url("/assets/img/oldladysmilephone.jpg"); } }
     .get-involved-personal-donations .banner .headline {
       padding-top: 20px; }
+      .get-involved-personal-donations .banner .headline .small-breadcrumb {
+        padding-bottom: 15px;
+        margin: 0; }
       .get-involved-personal-donations .banner .headline p {
         color: white;
         line-height: 1.3;
         padding-top: 30px; }
+        @media only screen and (min-width: 1px) and (max-width: 515px) {
+          .get-involved-personal-donations .banner .headline p {
+            padding-top: 10px;
+            margin: 0; } }
       .get-involved-personal-donations .banner .headline button {
         margin-top: 35px; }
+        @media only screen and (min-width: 1px) and (max-width: 515px) {
+          .get-involved-personal-donations .banner .headline button {
+            margin-top: 15px; } }
   .get-involved-personal-donations .normal-body .content-row .large-side button {
     margin-top: 50px; }
   .get-involved-personal-donations .normal-body .content-row .leadership-details-table {
@@ -3110,6 +3137,9 @@ form, .donation-form {
         border-top: 2px solid #ededed;
         padding: 8px 0;
         margin: 0px; }
+        @media only screen and (min-width: 1px) and (max-width: 515px) {
+          .get-involved-personal-donations .normal-body .content-row .leadership-details-table .table-column h4 {
+            font-size: 14px; } }
       .get-involved-personal-donations .normal-body .content-row .leadership-details-table .table-column > p {
         border-bottom: 2px solid #ededed; }
       .get-involved-personal-donations .normal-body .content-row .leadership-details-table .table-column p {

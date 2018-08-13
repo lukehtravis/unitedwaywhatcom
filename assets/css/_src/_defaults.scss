@@ -250,16 +250,32 @@ select::placeholder {
 .normal-body {
   background-color: $color-white;
   padding-top: 100px;
+  @include breakpoint(phoneonly) {
+    padding-top: 30px;
+  }
   .content-row {
     @include pageSideMargins;
     margin-bottom: 100px;
     display: flex;
     justify-content: space-between;
+    @include breakpoint(phonetablet) {
+      flex-direction: column;
+      align-items: center;
+    }
+    @include breakpoint(phoneonly) {
+      @include mobilePageSideMargins;
+    }
     .large-side {
       width: 56%;
+      @include breakpoint(phonetablet) {
+        width: 100%;
+      }
     }
     .small-side {
       width: 42%;
+      @include breakpoint(phonetablet) {
+        width: 100%;
+      }
     }
   }
 }
