@@ -75,7 +75,7 @@ select::placeholder {
   font-size: 15px;
 }
 
-.color-container {
+.color-container.color-container-padding {
   padding-bottom: 115px;
 }
 
@@ -145,11 +145,23 @@ select::placeholder {
   }
   span.small-headline {
     font-size: 62px;
+    padding-bottom: 5px;
+    @include breakpoint(tabletonly) {
+      font-size: 60px;
+    }
+    @include breakpoint(phoneonly) {
+      font-size: 40px;
+    }
   }
   span.bland-header {
     text-transform: none;
     float: none;
     padding: 0px;
+    font-family: $roboto;
+    font-size: 60px;
+    @include breakpoint(phoneonly) {
+      font-size: 30px;
+    }
   }
   span.darkorange-bg {
     @include breakpoint(desktopbeyond) {
@@ -189,6 +201,7 @@ select::placeholder {
   position: relative;
   @include breakpoint(phonetablet) {
     margin-top: 0px;
+    padding-top: 15px;
   }
   @include breakpoint(tabletonly) {
     margin-left: 60px;
