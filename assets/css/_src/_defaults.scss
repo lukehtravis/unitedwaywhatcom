@@ -258,6 +258,12 @@ select::placeholder {
 
 .small-box {
   border-radius: 4px;
+  padding: 25px;
+  img {
+    @include breakpoint(phoneonly) {
+      max-width: 100%;
+    }
+  }
 }
 
 .normal-body {
@@ -277,6 +283,7 @@ select::placeholder {
     }
     @include breakpoint(phoneonly) {
       @include mobilePageSideMargins;
+      margin-bottom: 30px;
     }
     .large-side {
       width: 56%;

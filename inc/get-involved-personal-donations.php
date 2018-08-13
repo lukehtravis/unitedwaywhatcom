@@ -1,4 +1,4 @@
-<div class="color-container lightblue-bg color-container-padding get-involved-personal-donations">
+<div class="color-container lightblue-bg get-involved-personal-donations">
   <section class="banner">
     <div class="headline">
       <h1 class="small-breadcrumb">volunteer / <span class="breadcrumb">Personal Donations</span></h1>
