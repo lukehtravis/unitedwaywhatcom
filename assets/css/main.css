@@ -1148,6 +1148,10 @@ footer {
 .page-container {
   margin-left: 100px;
   margin-right: 100px; }
+  @media only screen and (min-width: 1400px) {
+    .page-container {
+      max-width: 1400px;
+      margin: 0 auto; } }
   @media only screen and (min-width: 1px) and (max-width: 900px) {
     .page-container {
       margin-left: 20px;
@@ -1182,6 +1186,9 @@ footer {
     .events .events-box .event-box:last-of-type {
       border-bottom: none; }
 
+.color-container.get-involved {
+  padding-bottom: 0px; }
+
 .banner.get-involved {
   background: no-repeat center center;
   background-color: #539ed0;
@@ -1190,6 +1197,10 @@ footer {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  @media only screen and (min-width: 1400px) {
+    .banner.get-involved {
+      max-width: 1400px;
+      margin: 0 auto; } }
   @media only screen and (min-width: 515px) and (max-width: 900px) {
     .banner.get-involved {
       background: no-repeat center center;
@@ -2573,6 +2584,10 @@ form, .donation-form {
       padding: 30px; } }
   .confirm-screen .headline {
     padding-top: 0px; }
+    @media only screen and (min-width: 1400px) {
+      .confirm-screen .headline {
+        max-width: 1400px;
+        margin: 0 auto; } }
     .confirm-screen .headline span {
       padding-left: 0px;
       font-family: "Roboto", sans-serif;
@@ -2588,6 +2603,10 @@ form, .donation-form {
           text-align: left; } }
   .confirm-screen .address-box-container {
     padding-left: 100px; }
+    @media only screen and (min-width: 1400px) {
+      .confirm-screen .address-box-container {
+        max-width: 1400px;
+        margin: 0 auto; } }
     @media only screen and (min-width: 515px) and (max-width: 900px) {
       .confirm-screen .address-box-container {
         padding-left: 15px; } }
@@ -2614,6 +2633,10 @@ form, .donation-form {
   background: url("/assets/img/thumbdown.jpg") no-repeat right center;
   background-color: #539ed0;
   min-height: 650px; }
+  @media only screen and (min-width: 1400px) {
+    .confirm-screen.oops {
+      max-width: 1400px;
+      margin: 0 auto; } }
   .confirm-screen.oops .headline {
     max-width: 500px;
     padding-top: 0px; }
@@ -2653,6 +2676,10 @@ form, .donation-form {
   -o-background-size: cover;
   background-size: cover;
   background-color: #ffb351; }
+  @media only screen and (min-width: 1400px) {
+    .banner.our-work {
+      max-width: 1400px;
+      margin: 0 auto; } }
   @media only screen and (min-width: 515px) and (max-width: 900px) {
     .banner.our-work {
       height: 500px;
@@ -2662,6 +2689,10 @@ form, .donation-form {
       height: 300px;
       background-image: url("/assets/img/smilingwomanmobile.jpg"); } }
 
+@media only screen and (min-width: 1400px) {
+  .body-overlap {
+    max-width: 1400px;
+    margin: 0 auto; } }
 .body-overlap .top-text {
   text-align: center;
   width: 70%;
@@ -2737,6 +2768,10 @@ form, .donation-form {
   background: url("/assets/img/hands.jpg") no-repeat right bottom;
   background-color: #ffb351;
   height: 680px; }
+  @media only screen and (min-width: 1400px) {
+    .meet-the-johnsons {
+      max-width: 1400px;
+      margin: 0 auto; } }
   .meet-the-johnsons .headline {
     padding-top: 20px;
     width: 45%; }
@@ -2762,6 +2797,13 @@ form, .donation-form {
 .johnsons-timeline {
   padding-top: 20px;
   text-align: center; }
+  @media only screen and (min-width: 1400px) {
+    .johnsons-timeline {
+      max-width: 1400px;
+      margin: 0 auto; } }
+  @media only screen and (min-width: 1400px) {
+    .johnsons-timeline .timeline-big {
+      width: 1400px; } }
   @media only screen and (min-width: 1px) and (max-width: 515px) {
     .johnsons-timeline .timeline-big {
       display: none; } }
@@ -2816,6 +2858,131 @@ form, .donation-form {
         .break-the-link .break-link-container button {
           margin-top: 35px; } }
 
+.get-involved-advocate {
+  padding-bottom: 0px; }
+  .get-involved-advocate .banner {
+    background: url("/assets/img/girlbullhorn.jpg") no-repeat center center;
+    height: 881px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    @media only screen and (min-width: 515px) and (max-width: 900px) {
+      .get-involved-advocate .banner {
+        height: 750px;
+        background-image: url("/assets/img/girlbullhorntablet.jpg"); } }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .get-involved-advocate .banner {
+        height: 300px;
+        background-image: url("/assets/img/girlbullhornphone.jpg"); } }
+    @media only screen and (min-width: 1400px) {
+      .get-involved-advocate .banner {
+        max-width: 1400px;
+        margin: 0 auto; } }
+  .get-involved-advocate .headline p {
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px; }
+  .get-involved-advocate .headline > div {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    max-width: 500px; }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .get-involved-advocate .headline > div {
+        display: none; } }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    .get-involved-advocate .headline a {
+      display: none; } }
+  .get-involved-advocate .headline-text-group-mobile {
+    display: none; }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .get-involved-advocate .headline-text-group-mobile {
+        display: inline-block;
+        margin-left: 20px;
+        margin-right: 20px; } }
+    .get-involved-advocate .headline-text-group-mobile p {
+      color: white;
+      font-size: 18px; }
+    .get-involved-advocate .headline-text-group-mobile button {
+      margin-top: 20px;
+      margin-bottom: 30px; }
+
+.get-involved-volunteer .banner {
+  background: url("/assets/img/youngboy.jpg") no-repeat center center;
+  height: 780px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media only screen and (min-width: 1400px) {
+    .get-involved-volunteer .banner {
+      max-width: 1400px;
+      margin: 0 auto; } }
+  @media only screen and (min-width: 515px) and (max-width: 900px) {
+    .get-involved-volunteer .banner {
+      height: 500px;
+      background-image: url("/assets/img/youngboytablet.jpg"); } }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    .get-involved-volunteer .banner {
+      height: 300px;
+      background-image: url("/assets/img/youngboyphone.jpg"); } }
+.get-involved-volunteer .volunteer-section {
+  margin-left: 100px;
+  margin-right: 100px; }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    .get-involved-volunteer .volunteer-section {
+      margin-left: 20px;
+      margin-right: 20px; } }
+  .get-involved-volunteer .volunteer-section .volunteer-row {
+    border-top: 2px solid #ededed;
+    padding-bottom: 95px; }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .get-involved-volunteer .volunteer-section .volunteer-row {
+        padding-bottom: 30px; } }
+    .get-involved-volunteer .volunteer-section .volunteer-row > span {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 14px;
+      display: inline-block;
+      background-color: #ffb351; }
+    .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content {
+      display: flex; }
+      @media only screen and (min-width: 1px) and (max-width: 900px) {
+        .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content {
+          flex-direction: column; } }
+      .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content > p {
+        width: 48%;
+        margin-right: 4%; }
+        @media only screen and (min-width: 1px) and (max-width: 900px) {
+          .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content > p {
+            width: 100%;
+            margin-right: 0%; } }
+      .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details {
+        margin-top: 15px; }
+        .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details .volunteer-detail {
+          margin-bottom: 15px; }
+          @media only screen and (min-width: 1px) and (max-width: 515px) {
+            .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details .volunteer-detail {
+              display: flex; } }
+          .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details .volunteer-detail span {
+            width: 120px;
+            font-weight: bold;
+            font-size: 12px;
+            text-transform: uppercase;
+            display: inline-block; }
+          .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details .volunteer-detail p {
+            display: inline;
+            margin-left: 18px;
+            font-size: 15px; }
+            @media only screen and (min-width: 1px) and (max-width: 515px) {
+              .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details .volunteer-detail p {
+                margin-top: 0px; } }
+        .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details > p {
+          margin-top: 30px; }
+        .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details a {
+          color: #539ed0; }
+
 .get-help-organizations .banner {
   background: url("/assets/img/bluewomancook.jpg") no-repeat center center;
   height: 780px;
@@ -2852,6 +3019,10 @@ form, .donation-form {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  @media only screen and (min-width: 1400px) {
+    .get-help .banner {
+      max-width: 1400px;
+      margin: 0 auto; } }
   @media only screen and (min-width: 515px) and (max-width: 900px) {
     .get-help .banner {
       height: 500px;

@@ -1,5 +1,8 @@
 .page-container {
   @include pageSideMargins;
+  @include breakpoint(hugeness) {
+    @include hugeness-container;
+  }
   @include breakpoint(phonetablet) {
     @include mobilePageSideMargins;
   }

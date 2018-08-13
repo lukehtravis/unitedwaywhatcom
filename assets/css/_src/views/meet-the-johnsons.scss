@@ -2,6 +2,9 @@
   background: url('/assets/img/hands.jpg') no-repeat right bottom;
   background-color: $color-orange;
   height: 680px;
+  @include breakpoint(hugeness) {
+    @include hugeness-container;
+  }
   .headline {
     padding-top: 20px;
     width: 45%;
@@ -29,7 +32,13 @@
 .johnsons-timeline {
   padding-top: 20px;
   text-align: center;
+  @include breakpoint(hugeness) {
+    @include hugeness-container;
+  }
   .timeline-big {
+    @include breakpoint(hugeness) {
+      width: 1400px;
+    }
     @include breakpoint(phoneonly) {
       display: none;
     }

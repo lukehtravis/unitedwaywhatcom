@@ -6,6 +6,9 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  @include breakpoint(hugeness) {
+    @include hugeness-container;
+  }
   @include breakpoint(tabletonly) {
     height:500px;
     background-image:  url('/assets/img/manonstreettablet.jpg');

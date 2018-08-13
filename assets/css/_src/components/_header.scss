@@ -17,8 +17,7 @@ header {
     justify-content: space-between;
   }
   @include breakpoint(hugeness) {
-    max-width: 1400px;
-    margin: 0 auto;
+    @include hugeness-container;
   }
 }
 

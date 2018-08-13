@@ -11,6 +11,9 @@
   }
   .headline {
     padding-top: 0px;
+    @include breakpoint(hugeness) {
+      @include hugeness-container;
+    }
     span {
       padding-left: 0px;
       font-family: $roboto;
@@ -30,6 +33,9 @@
 
   .address-box-container {
     padding-left: 100px;
+    @include breakpoint(hugeness) {
+      @include hugeness-container;
+    }
     @include breakpoint(tabletonly) {
       padding-left: 15px;
     }
@@ -61,6 +67,9 @@
   background: url('/assets/img/thumbdown.jpg') no-repeat right center;
   background-color: $color-lightblue;
   min-height: 650px;
+  @include breakpoint(hugeness) {
+    @include hugeness-container;
+  }
   .headline {
     max-width: 500px;
     padding-top: 0px;
