@@ -32,6 +32,11 @@
   }
   .normal-body {
     .content-row {
+      .large-side {
+        button {
+          margin-top: 50px;
+        }
+      }
       .leadership-details-table {
         display: flex;
         .table-column {
@@ -41,8 +46,8 @@
             padding: 8px 0;
             margin: 0px;
           }
-          p.table-top-paragraph {
-
+          > p {
+            border-bottom: 2px solid $color-lightgray;
           }
           p {
             font-size: 15px;
@@ -64,6 +69,19 @@
         }
         .table-column.table-column-2 ul {
           padding: 34px 0px 8px;
+        }
+      }
+      .small-box.old-photo {
+        margin-top: 25px;
+        text-align: center;
+        padding: 20px;
+        img {
+          width: 256px;
+        }
+        p {
+          margin: 0 auto;
+          width: 256px;
+          margin-top: -77px;
         }
       }
     }
