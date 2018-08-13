@@ -12,7 +12,7 @@
       <div class="large-side">
         <h2>Be Bold. Invest Like You Mean It.</h2>
         <p>For over 60 years, United Way of Whatcom County has been helping mobilize community leaders, donors, and public and private agencies to address issues to build a stronger community for all. Our distinguished leadership givers understand how generosity today impacts the generations of tomorrow. As like-minded leaders of progress, they invest in our community now to ensure a financially resilient future.</p>
-        <h3>Leadership Details</h3>
+        <h3>Leadership Levels</h3>
         <div class="leadership-details-table">
           <div class="table-column">
             <h4>Tocqueville Society</h4>
@@ -48,7 +48,7 @@
     </div>
     <div class="content-row">
       <div class="small-side">
-        <div class="small-box">
+        <div class="small-box small-box-centered">
           <img src="/assets/img/present.jpg"/>
         </div>
       </div>
