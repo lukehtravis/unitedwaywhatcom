@@ -589,7 +589,8 @@ select::placeholder {
     font-size: 60px; }
     @media only screen and (min-width: 1px) and (max-width: 515px) {
       .headline span.bland-header {
-        font-size: 30px; } }
+        font-size: 30px;
+        white-space: initial; } }
   @media only screen and (min-width: 901px) {
     .headline span.darkorange-bg {
       font-size: 62.5px; } }

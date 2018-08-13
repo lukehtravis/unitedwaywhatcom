@@ -161,6 +161,7 @@ select::placeholder {
     font-size: 60px;
     @include breakpoint(phoneonly) {
       font-size: 30px;
+      white-space: initial;
     }
   }
   span.darkorange-bg {
