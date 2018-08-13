@@ -50,11 +50,11 @@
           margin-top: 50px;
         }
       }
+      h3 {
+        text-transform: uppercase;
+      }
       .leadership-details-table {
         display: flex;
-        h3 {
-          text-transform: uppercase;
-        }
         .table-column {
           width: 50%;
           h4 {

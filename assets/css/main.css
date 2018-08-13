@@ -3208,10 +3208,10 @@ form, .donation-form {
             margin-top: 25px; } }
   .get-involved-personal-donations .normal-body .content-row .large-side button {
     margin-top: 50px; }
+  .get-involved-personal-donations .normal-body .content-row h3 {
+    text-transform: uppercase; }
   .get-involved-personal-donations .normal-body .content-row .leadership-details-table {
     display: flex; }
-    .get-involved-personal-donations .normal-body .content-row .leadership-details-table h3 {
-      text-transform: uppercase; }
     .get-involved-personal-donations .normal-body .content-row .leadership-details-table .table-column {
       width: 50%; }
       .get-involved-personal-donations .normal-body .content-row .leadership-details-table .table-column h4 {
