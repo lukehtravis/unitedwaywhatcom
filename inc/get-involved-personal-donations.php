@@ -36,14 +36,26 @@
             <p>$1,000-$2,499</p>
           </div>
         </div>
+        <a href="#"><button class="orange-bg">See the 2016-2017 Leadership Givers</button></a>
       </div>
       <div class="small-side">
-        <div class="lightgray-bg small-box">
-          <img />
+        <div class="lightgray-bg old-photo small-box">
+          <img src="/assets/img/ancientphoto.png"/>
           <p class="small-text-graybox">United Way of Whatcom County’s Tocqueville Society is the foundation of leadership in our community. The Society is named for Alexis de Tocqueville, a Frenchman who, in the early 1800’s, traveled throughout America and wrote extensively of his admiration for America’s spirit of giving. Reflecting this spirit, members of our Tocqueville Society demonstrate the highest level of individual support for United Way of Whatcom County, contributing an annual gift of $10,000 or more. </p>
         </div>
       </div>
     </div>
-    <a href="#"><button class="orange-bg">See the 2016-2017 Leadership Givers</button></a>
+    <div class="content-row">
+      <div class="small-side">
+        <div class="small-box">
+          <img src="/assets/img/present.jpg"/>
+        </div>
+      </div>
+      <div class="large-side">
+        <h2>Planned Giving</h2>
+        <p>A planned gift to United Way of Whatcom County can provide long-term support for United Way’s mission to find solutions to the most difficult problems facing our community. Whether through a bequest or a life-time gift, these legacy contributions are commitments above and beyond the annual campaign and will touch the lives of generations to come. These gifts vary in size and type, but all represent a commitment to helping keep Whatcom County strong. </p>
+        <a href="#">Contact us to learn more.</a>
+      </div>
+    </div>
   </div>
 </div>
