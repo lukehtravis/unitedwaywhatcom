@@ -4,6 +4,7 @@
       <h1>What We Do</h1>
       <span class="black-bg">Financial Stability</span>
       <span class="black-bg">For Every PErson</span>
+      <span class="darkorange-bg">Live United<sup class="trademark">®</sup></span>
     </div>
   </section>
   <section class="body-overlap">
@@ -15,7 +16,7 @@
             United, we break the cycle of poverty.</h2>
           </h2>
           <p>United Way of Whatcom County fights for the financial stability of every person in our community. No matter the obstacles. No matter the odds. We surround Whatcom County’s most critical problems. And we fight. </p>
-          <img src="/assets/img/pennies.jpg" />
+          <img src="/assets/img/pennies.jpg" class="pennies" />
         </div>
         <div class="left-content-area">
           <h2>We’re on a new track.</h2>
@@ -41,10 +42,11 @@
             <div>
               <h2>Your money stays local.</h2>
               <p>When you donate to United Way of Whatcom County, your donation stays local. We work with area non-profit programs – we call them Partner Agencies –  to turn your money into valuable services that move individuals and families from poverty to possibility. We do this by convening idea-makers and action-takers. We help local non-profit workers, government officials, and everyday citizens get things done.</p>
+              <a href="#"><button class="orange-bg mobile-button">See Where Your Money Goes</button></a>
             </div>
-            <img src="/assets/img/washington-map.jpg" />
+            <img src="/assets/img/washington-map.jpg" class="circle-photo" />
           </div>
-          <a href="#"><button class="orange-bg">See Where Your Money Goes</button></a>
+          <a href="#"><button class="orange-bg hide-me">See Where Your Money Goes</button></a>
         </div>
         <div class="left-content-area high-bottom-margin">
           <h2>We vet non-profits and allocate funds for you.</h2>
@@ -53,10 +55,14 @@
           <p>By making one gift to United Way of Whatcom County, you’ll be giving to 30+ non-profit programs. Each program has been carefully vetted. They’re the best of the best. They report back to us on a formal basis annually and engage with us throughout the year.</p>
           <a href="#"><button class="orange-bg">See Where Your Money Goes</button></a>
         </div>
+        <div class="lightgray-bg sidebar-top">
+          <img src="/assets/img/brochure.jpg" />
+          <a href="#"><button class="darkblue-bg">Download Our Annual Report</button></a>
+        </div>
       </div>
       <div class="small-side">
         <div class="lightgray-bg sidebar-top">
-          <p>YOUR IMPACT IN 2017</p>
+          <p class="bolder-text">YOUR IMPACT IN 2017</p>
           <p class="sidebar-text">individuals and families achieved safe, stable, and affordable housing + Donations from community-minded folks like you provided the following services to those in need last year:</p>
         </div>
         <div class="sidebar-number">

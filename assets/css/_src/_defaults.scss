@@ -38,6 +38,12 @@ p, button, li, a, input, span, select {
   line-height: 1.3;
 }
 
+sup {
+  font-size: 20%;
+  top: -1em;
+  vertical-align: super;
+}
+
 ul {
   padding-left: 20px;
 }

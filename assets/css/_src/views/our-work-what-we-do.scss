@@ -13,66 +13,136 @@
     }
     @include breakpoint(tabletonly) {
       height:500px;
-      background-image:  url('/assets/img/smilingwomantablet.jpg');
+      background-image:  url('/assets/img/yellowoldmantablet.jpg');
     }
     @include breakpoint(phoneonly) {
       height:300px;
-      background-image:  url('/assets/img/smilingwomanmobile.jpg');
+      background-image:  none;
     }
   }
-  .content-row {
-    margin-left: 70px;
-    margin-right: 20px;
-    display: flex;
-    justify-content: space-between;
-    h2 {
-      margin-bottom: 40px;
+  .body-overlap {
+    @include breakpoint(phoneonly) {
+      margin-left: 0px;
+      margin-right: 0px;
     }
-    .large-side {
-      width: 60%;
-      .left-content-area {
-        margin-bottom: 115px;
+    .content-row {
+      margin-left: 70px;
+      margin-right: 20px;
+      display: flex;
+      justify-content: space-between;
+      @include breakpoint(tabletonly) {
+        margin-left: 50px;
+        margin-right: 50px;
       }
-      .dual-view {
-        display: flex;
+      @include breakpoint(phoneonly) {
+        @include mobilePageSideMargins;
       }
-      button {
-        margin-top: 40px;
+      h2 {
+        margin-bottom: 40px;
       }
-    }
-    .low-bottom-margin {
-      margin-bottom: 60px;
-    }
-    .mid-bottom-margin {
-      margin-bottom: 94px;
-    }
-    .high-bottom-margin {
-      margin-bottom: 130px;
-    }
-    .small-side {
-      width: 33%;
-      p {
-        color: $color-graytext-footer;
-        font-size: 13px;
-        font-style: italic;
-        text-align: center;
+      img {
+        max-width: 100%;
       }
-      .sidebar-top {
-        padding: 50px 20%;
+      .large-side {
+        width: 60%;
+        @media only screen and (max-width: 1150px) {
+          width: 100%;
+        }
+        .left-content-area {
+          margin-bottom: 115px;
+          img.pennies {
+            padding-top: 30px;
+            max-width: 100%;
+          }
+        }
+        .dual-view {
+          display: flex;
+          @include breakpoint(phonetablet) {
+            display: block;
+          }
+          .circle-photo {
+            margin: 0 auto;
+            width: 274px;
+            display: block;
+          }
+        }
+        button {
+          margin-top: 40px;
+        }
+        button.hide-me {
+          @include breakpoint(phonetablet) {
+            display: none;
+          }
+        }
+        button.mobile-button {
+          display: none;
+          @include breakpoint(phonetablet) {
+            display: block;
+            margin-bottom: 40px;
+          }
+        }
+        .sidebar-top {
+          display: none;
+          @include breakpoint(phonetablet) {
+            display: block;
+            text-align: center;
+            padding: 30px 0;
+            img {
+              display: block;
+              margin: 0 auto;
+            }
+          }
+        }
       }
-      .sidebar-number {
-        font-size: 100px;
-        font-family: $league;
-        color: $color-lightblue;
-        border-bottom: 2px solid $color-lightgray;
-        text-align: center;
-        padding-top: 45px;
-        padding-bottom: 45px;
+      .small-side {
+        width: 350px;
+        @media only screen and (max-width: 1150px) {
+          display: none;
+        }
         p {
-          width: 200px;
-          margin: 0 auto;
+          color: $color-graytext-footer;
+          font-size: 13px;
+          font-style: italic;
+          text-align: center;
+        }
+        p.bolder-text {
+          font-style: initial;
+          font-size: 16px;
+          font-weight: bold;
+          color: $color-black;
+        }
+        .sidebar-top {
+          padding: 50px 47px;
+          border-radius: 5px;
+          text-align: center;
+          img {
+            width: 100%;
+            margin-bottom: 35px;
+          }
+        }
+        .sidebar-number {
+          font-size: 100px;
+          font-family: $league;
+          color: $color-lightblue;
+          border-bottom: 2px solid $color-lightgray;
+          text-align: center;
+          padding-top: 45px;
+          padding-bottom: 45px;
+          p {
+            width: 200px;
+            margin: 0 auto;
+          }
         }
       }
     }
+  }
+  .low-bottom-margin {
+    margin-bottom: 60px;
+  }
+  .mid-bottom-margin {
+    margin-bottom: 94px;
+  }
+  .high-bottom-margin {
+    margin-bottom: 130px;
   }
 }
