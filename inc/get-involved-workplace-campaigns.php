@@ -32,6 +32,81 @@
     </div>
     <div class="content-row">
       <div class="small-side">
+        <img src="/assets/img/stickpeoplelarge.jpg" />
+        <p class="small-text">Employees who give, and who see their employers give, feel good about their jobs. Employees who feel good about their jobs stick around.</p>
+      </div>
+      <div class="large-side">
+        <h3>STRENGTHEN WHATCOM COUNTY</h3>
+        <p>United Way of Whatcom County bands together the business, public, and social service sectors to achieve a common goal: financial stability for every person in our community.</p>
+        <h3>MAKE THINGS EASIER</h3>
+        <p>We help fund more than 30 local programs at over 25 non-profits. When we do the fundraising for them, their staff are freed up to provide direct services. We make fundraising easier for non-profits. We make giving easier for you. Why write 30 checks, when you can write one?</p>
+        <h3>BOOST YOUR REPUTATION</h3>
+        <p>When a company exhibits strong corporate social responsibility, the impact* on consumers is big:</p>
+        <div class="percent-strip">
+          <div class="percent-section">
+            <p class="percent-number">92%</p>
+            <p>have a more positive image of the company</p>
+          </div>
+          <div class="percent-section">
+            <p class="percent-number">87%</p>
+            <p>are more likely to support the company</p>
+          </div>
+          <div class="percent-section">
+            <p class="percent-number">88%</p>
+            <p>are more loyal to the company</p>
+          </div>
+          <div class="percent-section">
+            <p class="percent-number">89%</p>
+            <p>switch to brands associated with good causes, given similar price and quality</p>
+          </div>
+        </div>
+        <div>
+          <h3>GET GOOD PEOPLE – AND KEEP THEM HAPPY</h3>
+          <p>Millenials will soon make up 50% of the workforce. Here’s how they feel** about corporate social responsibility (CSR):</p>
+          <ul class="bordered-list">
+            <li>76% consider a company's CSR committments when deciding where to work</li>
+            <li>64% won’t take a job from a company that doesn’t exhibit strong CSR</li>
+            <li>88% say their job is more fulfilling when they have opportunities to make a positive impact on important issues</li>
+            <li>83% would be more loyal to a company that exhibits strong CSR</li>
+            <li>75% would take a pay cut to work for a socially responsible company</li>
+          </ul>
+          <div class="asterisk-section">
+            <p>*2017 Cone Communications CSR Study</p>
+            <p>**2016 Cone Communications Millenial Employee Management Study</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-row">
+      <div>
+        <p>2017</p>
+        <div>
+          <img src="/assets/img/blue-medal.png" />
+          <div class="ribbon">
+            <p>Spirit of United Way Award</p>
+          </div>
+          <p>his award is given to businesses who are true champions of giving back. Their workplace campaigns show top-notch creativity, spirit, and engagement levels. They know how to raise the bar.</p>
+          <div class="white-box">
+            <img src="/assets/img/company-logos.jpg" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <p>2017</p>
+        <div>
+          <img src="/assets/img/blue-medal.png" />
+          <div class="ribbon">
+            <p>Spirit of United Way Award</p>
+          </div>
+          <p>his award is given to businesses who are true champions of giving back. Their workplace campaigns show top-notch creativity, spirit, and engagement levels. They know how to raise the bar.</p>
+          <div class="white-box">
+            <img src="/assets/img/good-worker.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-row">
+      <div class="small-side">
         <h2>Sponsors</h2>
         <p>Our Community Builder Sponsors underwrite our annual campaign. They provide the support we need for events, temporary staff, advertisements, and campaign collateral. This ensures donations are preserved to be reinvested into service programs and projects that benefit local residents.</p>
         <p>Being a sponsor makes good business sense. Studies show consumers are more likely to support organizations that are involved in the local community. Your brand matters. Build a brand based on philanthropy and we all win.</p>
@@ -60,11 +135,13 @@
           </div>
           <div class="sponsor-name-column">
             <div class="sponsor-row">
-              <img src="/assets/img/samson-logo.jpg" />
+              <img src="/assets/img/sampson-logo.jpg" />
               <a href="#">Samson Rope</a>
             </div>
             <div class="sponsor-row">
-
+              <a href="#">BP Cherry Point Refinery</a>
+              <a href="#">PeaceHealth St. Joseph Medical Center</a>
+              <a href="#">Whatcom Educational Credit Union</a>
             </div>
             <div class="sponsor-row">
               <a href="#">Boeing Corporation</a>
@@ -74,6 +151,19 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="content-row">
+      <div>
+        <h2>Loaned Executives</h2>
+        <p>Our Loaned Executive Program provides a unique opportunity for the professional development of emerging leaders. Here’s how it works:</p>
+        <p><b>Give something.</b> Lend us an employee who is an emerging leader within your company. The individual works half-time for us and half-time for you from mid-September through mid-November. You continue to furnish all of their wages.</p>
+        <p><b>Get something.</b> As part of our campaign team, your staff member receives more than just education about United Way and the impact we make. We’ll provide your executive with training on local community issues, public speaking, sales, and account management.</p>
+        <p><b>Get a little more.</b> As a loaned executive, your employee will be responsible for 15-25 accounts. Each of these accounts represents a business conducting a United Way workplace campaign. By way of your colleague, you’ll get your name out to dozens of businesses and be seen as a true philanthropic leader across our community.</p>
+        <p><b>And even more.</b> We’ll issue you a $10,000 sponsorship credit for each loaned executive you provide. This means you’ll get all of the benefits we give to our Mt. Baker sponsors. Add in a cash sponsorship or an additional loaned executive to receive title sponsor perks as a Cascade sponsor.</p>
+      </div>
+      <div>
+        <img src="/assets/img/happy-volunteers.jpg" />
       </div>
     </div>
   </div>
