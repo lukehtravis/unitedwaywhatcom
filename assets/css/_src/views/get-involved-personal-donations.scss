@@ -20,7 +20,11 @@
     }
     .headline {
       padding-top: 20px;
+      @include breakpoint(phoneonly) {
+        text-align: left;
+      }
       .small-breadcrumb {
+        text-align: left;
         @include breakpoint(phoneonly) {
           margin-bottom: 25px;
         }

@@ -1,7 +1,7 @@
 .our-work-what-we-do {
-  .banner.our-work {
+  .banner {
     // See site js for background img url
-    background: url('/assets/img/smilingwoman.jpg') no-repeat center center;
+    background: url('/assets/img/yellowoldman.jpg') no-repeat center center;
     height: 780px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -19,5 +19,60 @@
       height:300px;
       background-image:  url('/assets/img/smilingwomanmobile.jpg');
     }
-  }  
+  }
+  .content-row {
+    margin-left: 70px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    h2 {
+      margin-bottom: 40px;
+    }
+    .large-side {
+      width: 60%;
+      .left-content-area {
+        margin-bottom: 115px;
+      }
+      .dual-view {
+        display: flex;
+      }
+      button {
+        margin-top: 40px;
+      }
+    }
+    .low-bottom-margin {
+      margin-bottom: 60px;
+    }
+    .mid-bottom-margin {
+      margin-bottom: 94px;
+    }
+    .high-bottom-margin {
+      margin-bottom: 130px;
+    }
+    .small-side {
+      width: 33%;
+      p {
+        color: $color-graytext-footer;
+        font-size: 13px;
+        font-style: italic;
+        text-align: center;
+      }
+      .sidebar-top {
+        padding: 50px 20%;
+      }
+      .sidebar-number {
+        font-size: 100px;
+        font-family: $league;
+        color: $color-lightblue;
+        border-bottom: 2px solid $color-lightgray;
+        text-align: center;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        p {
+          width: 200px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
 }

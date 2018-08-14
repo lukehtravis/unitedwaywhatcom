@@ -1,7 +1,7 @@
 <div class="color-container lightblue-bg get-involved-personal-donations">
   <section class="banner">
     <div class="headline">
-      <h1 class="small-breadcrumb">Give / <span class="breadcrumb">Personal Donations</span></h1>
+      <h1 class="small-breadcrumb">Give <span class="breadcrumb">/ Personal Donations</span></h1>
       <span class="bland-header">Giving Feels Good</span>
       <p>Bask in those feel-good fuzzies you get when you give. (Yes, they’re real. Just ask Science). United Way of Whatcom County fights for the financial stability of every person in our community, so rest assured, your donation will provide good feelings all around.</p>
       <a href="#"><button class="orange-bg">Donate Today</button></a>
