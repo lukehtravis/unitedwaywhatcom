@@ -3397,4 +3397,48 @@ form, .donation-form {
 .our-work-what-we-do .high-bottom-margin {
   margin-bottom: 130px; }
 
+.workplace-campaigns .banner {
+  background: url("/assets/img/party-people.jpg") no-repeat center center;
+  height: 680px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media only screen and (min-width: 1400px) {
+    .workplace-campaigns .banner {
+      max-width: 1400px;
+      margin: 0 auto; } }
+  @media only screen and (min-width: 515px) and (max-width: 900px) {
+    .workplace-campaigns .banner {
+      height: 500px;
+      background-image: url("/assets/img/oldladysmiletablet.jpg"); } }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    .workplace-campaigns .banner {
+      height: 400px;
+      background-image: none; } }
+  .workplace-campaigns .banner .headline {
+    padding-top: 20px; }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .workplace-campaigns .banner .headline {
+        text-align: left; } }
+    .workplace-campaigns .banner .headline .small-breadcrumb {
+      text-align: left; }
+      @media only screen and (min-width: 1px) and (max-width: 515px) {
+        .workplace-campaigns .banner .headline .small-breadcrumb {
+          margin-bottom: 25px; } }
+    .workplace-campaigns .banner .headline p {
+      color: white;
+      line-height: 1.3;
+      padding-top: 30px;
+      font-size: 18px; }
+      @media only screen and (min-width: 1px) and (max-width: 515px) {
+        .workplace-campaigns .banner .headline p {
+          padding-top: 25px;
+          margin: 0; } }
+    .workplace-campaigns .banner .headline button {
+      margin-top: 35px; }
+      @media only screen and (min-width: 1px) and (max-width: 515px) {
+        .workplace-campaigns .banner .headline button {
+          margin-top: 25px; } }
+
 /*# sourceMappingURL=main.css.map */

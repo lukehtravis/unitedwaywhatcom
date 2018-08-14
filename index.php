@@ -15,7 +15,7 @@
         <li><a href="/1.2-our-work.php">1.2 Our Work / How We Do It</a></li>
         <li><a href="/2.0-get-involved-give.php">2.0 Get Involved / Give</a></li>
         <li><a href="/2.1-get-involved-give-impact-calc.php">2.1 Get Involved / Give / Impact Calc</a></li>
-        <li>2.2 Get Involved / Give / Workplace Campaigns</li>
+        <li><a href="/2.2-get-involved-workplace-campaigns.php">2.2 Get Involved / Give / Workplace Campaigns</a></li>
         <li><a href="/2.3-get-involved-personal-donations.php">2.3 Get Involved / Give / Personal Donations</li>
         <li><a href="/2.4-get-involved-advocate.php">2.4 Get Involved / Advocate</li>
         <li><a href="/2.5-get-involved-volunteer.php">2.5 Get Involved / Volunteer</a></li>
