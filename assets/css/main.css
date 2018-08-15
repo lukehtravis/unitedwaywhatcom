@@ -440,6 +440,30 @@ template {
   src: url("/assets/css/_src/vendors/fonts/league/leaguegothic-italic-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/css/_src/vendors/fonts/league/leaguegothic-italic-webfont.woff") format("woff"), url("/assets/css/_src/vendors/fonts/league/leaguegothic-italic-webfont.ttf") format("truetype"), url("/assets/css/_src/vendors/fonts/league/leaguegothic-italic-webfont.svg#league_gothic_italicregular") format("svg");
   font-weight: normal;
   font-style: italic; }
+#donation-page .address-line input, #donation-page .address-line textarea {
+  padding: 10px;
+  border-color: #cccccc; }
+  #donation-page .address-line input.placeholder, #donation-page .address-line textarea.placeholder {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5); }
+  #donation-page .address-line input:-moz-placeholder, #donation-page .address-line textarea:-moz-placeholder {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5); }
+  #donation-page .address-line input::-moz-placeholder, #donation-page .address-line textarea::-moz-placeholder {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5); }
+  #donation-page .address-line input:-ms-input-placeholder, #donation-page .address-line textarea:-ms-input-placeholder {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5); }
+  #donation-page .address-line input::-webkit-input-placeholder, #donation-page .address-line textarea::-webkit-input-placeholder {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5); }
+
 /* Default CSS For Various Elements on the Site */
 html {
   font-size: 100%;
@@ -468,7 +492,7 @@ h1 {
 h2, h3, label {
   font-family: "Roboto", sans-serif; }
 
-p, button, li, a, input, span, select {
+p, button, li, a, input, textarea, span, select {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   line-height: 1.3; }
@@ -589,15 +613,13 @@ select::placeholder {
         font-size: 40px; } }
   .headline span.bland-header {
     text-transform: none;
-    font-weight: bold;
     float: none;
     padding: 0px;
     font-family: "Roboto", sans-serif;
     font-size: 60px; }
     @media only screen and (min-width: 1px) and (max-width: 515px) {
       .headline span.bland-header {
-        font-size: 30px;
-        white-space: initial; } }
+        font-size: 30px; } }
   @media only screen and (min-width: 901px) {
     .headline span.darkorange-bg {
       font-size: 62.5px; } }
@@ -683,49 +705,21 @@ select::placeholder {
   text-align: center; }
 
 .small-box {
-  border-radius: 4px;
-  padding: 25px; }
-  @media only screen and (min-width: 1px) and (max-width: 515px) {
-    .small-box img {
-      max-width: 100%; } }
+  border-radius: 4px; }
 
 .normal-body {
   background-color: white;
   padding-top: 100px; }
-  @media only screen and (min-width: 1400px) {
-    .normal-body {
-      max-width: 1400px;
-      margin: 0 auto; } }
-  @media only screen and (min-width: 1px) and (max-width: 515px) {
-    .normal-body {
-      padding-top: 30px; } }
   .normal-body .content-row {
     margin-left: 100px;
     margin-right: 100px;
     margin-bottom: 100px;
     display: flex;
     justify-content: space-between; }
-    @media only screen and (min-width: 1px) and (max-width: 900px) {
-      .normal-body .content-row {
-        flex-direction: column;
-        align-items: center;
-        margin-left: 20px;
-        margin-right: 20px; } }
-    @media only screen and (min-width: 1px) and (max-width: 515px) {
-      .normal-body .content-row {
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-bottom: 30px; } }
     .normal-body .content-row .large-side {
       width: 56%; }
-      @media only screen and (min-width: 1px) and (max-width: 900px) {
-        .normal-body .content-row .large-side {
-          width: 100%; } }
     .normal-body .content-row .small-side {
       width: 42%; }
-      @media only screen and (min-width: 1px) and (max-width: 900px) {
-        .normal-body .content-row .small-side {
-          width: 100%; } }
 
 input[type="checkbox"] {
   display: none; }
@@ -1599,431 +1593,277 @@ footer {
         margin-top: 37px;
         margin-bottom: 0; } }
 
-form, .donation-form {
-  width: 650px;
-  background-color: white;
-  margin: auto;
-  padding: 60px 75px; }
-  form [v-cloak], .donation-form [v-cloak] {
-    display: none; }
-  @media only screen and (min-width: 515px) and (max-width: 900px) {
-    form, .donation-form {
-      width: 450px;
-      padding: 60px 35px; } }
-  @media only screen and (min-width: 1px) and (max-width: 515px) {
-    form, .donation-form {
-      padding: 20px 10px;
-      width: 98%;
-      margin: 0px 1%; } }
-  form .donate-buttons, form .donate-timeframe, .donation-form .donate-buttons, .donation-form .donate-timeframe {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 16px; }
-    form .donate-buttons input:disabled, form .donate-buttons input[disabled],
-    form .donate-buttons .timeframe-btn:disabled,
-    form .donate-buttons .timeframe-btn[disabled], form .donate-timeframe input:disabled, form .donate-timeframe input[disabled],
-    form .donate-timeframe .timeframe-btn:disabled,
-    form .donate-timeframe .timeframe-btn[disabled], .donation-form .donate-buttons input:disabled, .donation-form .donate-buttons input[disabled],
-    .donation-form .donate-buttons .timeframe-btn:disabled,
-    .donation-form .donate-buttons .timeframe-btn[disabled], .donation-form .donate-timeframe input:disabled, .donation-form .donate-timeframe input[disabled],
-    .donation-form .donate-timeframe .timeframe-btn:disabled,
-    .donation-form .donate-timeframe .timeframe-btn[disabled] {
-      border-color: #ededed;
-      color: #bababa; }
-    form .donate-buttons input:hover, form .donate-buttons input.active,
-    form .donate-buttons .timeframe-btn:hover,
-    form .donate-buttons .timeframe-btn.active, form .donate-timeframe input:hover, form .donate-timeframe input.active,
-    form .donate-timeframe .timeframe-btn:hover,
-    form .donate-timeframe .timeframe-btn.active, .donation-form .donate-buttons input:hover, .donation-form .donate-buttons input.active,
-    .donation-form .donate-buttons .timeframe-btn:hover,
-    .donation-form .donate-buttons .timeframe-btn.active, .donation-form .donate-timeframe input:hover, .donation-form .donate-timeframe input.active,
-    .donation-form .donate-timeframe .timeframe-btn:hover,
-    .donation-form .donate-timeframe .timeframe-btn.active {
-      cursor: pointer;
-      background-color: #539ed0;
-      color: white;
-      transition: .3s ease; }
-      form .donate-buttons input:hover:disabled, form .donate-buttons input:hover[disabled], form .donate-buttons input.active:disabled, form .donate-buttons input.active[disabled],
-      form .donate-buttons .timeframe-btn:hover:disabled,
-      form .donate-buttons .timeframe-btn:hover[disabled],
-      form .donate-buttons .timeframe-btn.active:disabled,
-      form .donate-buttons .timeframe-btn.active[disabled], form .donate-timeframe input:hover:disabled, form .donate-timeframe input:hover[disabled], form .donate-timeframe input.active:disabled, form .donate-timeframe input.active[disabled],
-      form .donate-timeframe .timeframe-btn:hover:disabled,
-      form .donate-timeframe .timeframe-btn:hover[disabled],
-      form .donate-timeframe .timeframe-btn.active:disabled,
-      form .donate-timeframe .timeframe-btn.active[disabled], .donation-form .donate-buttons input:hover:disabled, .donation-form .donate-buttons input:hover[disabled], .donation-form .donate-buttons input.active:disabled, .donation-form .donate-buttons input.active[disabled],
-      .donation-form .donate-buttons .timeframe-btn:hover:disabled,
-      .donation-form .donate-buttons .timeframe-btn:hover[disabled],
-      .donation-form .donate-buttons .timeframe-btn.active:disabled,
-      .donation-form .donate-buttons .timeframe-btn.active[disabled], .donation-form .donate-timeframe input:hover:disabled, .donation-form .donate-timeframe input:hover[disabled], .donation-form .donate-timeframe input.active:disabled, .donation-form .donate-timeframe input.active[disabled],
-      .donation-form .donate-timeframe .timeframe-btn:hover:disabled,
-      .donation-form .donate-timeframe .timeframe-btn:hover[disabled],
-      .donation-form .donate-timeframe .timeframe-btn.active:disabled,
-      .donation-form .donate-timeframe .timeframe-btn.active[disabled] {
-        cursor: not-allowed;
-        background: white;
-        border-color: #ededed;
-        color: #bababa; }
-      form .donate-buttons input:hover.placeholder, form .donate-buttons input.active.placeholder,
-      form .donate-buttons .timeframe-btn:hover.placeholder,
-      form .donate-buttons .timeframe-btn.active.placeholder, form .donate-timeframe input:hover.placeholder, form .donate-timeframe input.active.placeholder,
-      form .donate-timeframe .timeframe-btn:hover.placeholder,
-      form .donate-timeframe .timeframe-btn.active.placeholder, .donation-form .donate-buttons input:hover.placeholder, .donation-form .donate-buttons input.active.placeholder,
-      .donation-form .donate-buttons .timeframe-btn:hover.placeholder,
-      .donation-form .donate-buttons .timeframe-btn.active.placeholder, .donation-form .donate-timeframe input:hover.placeholder, .donation-form .donate-timeframe input.active.placeholder,
-      .donation-form .donate-timeframe .timeframe-btn:hover.placeholder,
-      .donation-form .donate-timeframe .timeframe-btn.active.placeholder {
-        color: white !important; }
-      form .donate-buttons input:hover:-moz-placeholder, form .donate-buttons input.active:-moz-placeholder,
-      form .donate-buttons .timeframe-btn:hover:-moz-placeholder,
-      form .donate-buttons .timeframe-btn.active:-moz-placeholder, form .donate-timeframe input:hover:-moz-placeholder, form .donate-timeframe input.active:-moz-placeholder,
-      form .donate-timeframe .timeframe-btn:hover:-moz-placeholder,
-      form .donate-timeframe .timeframe-btn.active:-moz-placeholder, .donation-form .donate-buttons input:hover:-moz-placeholder, .donation-form .donate-buttons input.active:-moz-placeholder,
-      .donation-form .donate-buttons .timeframe-btn:hover:-moz-placeholder,
-      .donation-form .donate-buttons .timeframe-btn.active:-moz-placeholder, .donation-form .donate-timeframe input:hover:-moz-placeholder, .donation-form .donate-timeframe input.active:-moz-placeholder,
-      .donation-form .donate-timeframe .timeframe-btn:hover:-moz-placeholder,
-      .donation-form .donate-timeframe .timeframe-btn.active:-moz-placeholder {
-        color: white !important; }
-      form .donate-buttons input:hover::-moz-placeholder, form .donate-buttons input.active::-moz-placeholder,
-      form .donate-buttons .timeframe-btn:hover::-moz-placeholder,
-      form .donate-buttons .timeframe-btn.active::-moz-placeholder, form .donate-timeframe input:hover::-moz-placeholder, form .donate-timeframe input.active::-moz-placeholder,
-      form .donate-timeframe .timeframe-btn:hover::-moz-placeholder,
-      form .donate-timeframe .timeframe-btn.active::-moz-placeholder, .donation-form .donate-buttons input:hover::-moz-placeholder, .donation-form .donate-buttons input.active::-moz-placeholder,
-      .donation-form .donate-buttons .timeframe-btn:hover::-moz-placeholder,
-      .donation-form .donate-buttons .timeframe-btn.active::-moz-placeholder, .donation-form .donate-timeframe input:hover::-moz-placeholder, .donation-form .donate-timeframe input.active::-moz-placeholder,
-      .donation-form .donate-timeframe .timeframe-btn:hover::-moz-placeholder,
-      .donation-form .donate-timeframe .timeframe-btn.active::-moz-placeholder {
-        color: white !important; }
-      form .donate-buttons input:hover:-ms-input-placeholder, form .donate-buttons input.active:-ms-input-placeholder,
-      form .donate-buttons .timeframe-btn:hover:-ms-input-placeholder,
-      form .donate-buttons .timeframe-btn.active:-ms-input-placeholder, form .donate-timeframe input:hover:-ms-input-placeholder, form .donate-timeframe input.active:-ms-input-placeholder,
-      form .donate-timeframe .timeframe-btn:hover:-ms-input-placeholder,
-      form .donate-timeframe .timeframe-btn.active:-ms-input-placeholder, .donation-form .donate-buttons input:hover:-ms-input-placeholder, .donation-form .donate-buttons input.active:-ms-input-placeholder,
-      .donation-form .donate-buttons .timeframe-btn:hover:-ms-input-placeholder,
-      .donation-form .donate-buttons .timeframe-btn.active:-ms-input-placeholder, .donation-form .donate-timeframe input:hover:-ms-input-placeholder, .donation-form .donate-timeframe input.active:-ms-input-placeholder,
-      .donation-form .donate-timeframe .timeframe-btn:hover:-ms-input-placeholder,
-      .donation-form .donate-timeframe .timeframe-btn.active:-ms-input-placeholder {
-        color: white !important; }
-      form .donate-buttons input:hover::-webkit-input-placeholder, form .donate-buttons input.active::-webkit-input-placeholder,
-      form .donate-buttons .timeframe-btn:hover::-webkit-input-placeholder,
-      form .donate-buttons .timeframe-btn.active::-webkit-input-placeholder, form .donate-timeframe input:hover::-webkit-input-placeholder, form .donate-timeframe input.active::-webkit-input-placeholder,
-      form .donate-timeframe .timeframe-btn:hover::-webkit-input-placeholder,
-      form .donate-timeframe .timeframe-btn.active::-webkit-input-placeholder, .donation-form .donate-buttons input:hover::-webkit-input-placeholder, .donation-form .donate-buttons input.active::-webkit-input-placeholder,
-      .donation-form .donate-buttons .timeframe-btn:hover::-webkit-input-placeholder,
-      .donation-form .donate-buttons .timeframe-btn.active::-webkit-input-placeholder, .donation-form .donate-timeframe input:hover::-webkit-input-placeholder, .donation-form .donate-timeframe input.active::-webkit-input-placeholder,
-      .donation-form .donate-timeframe .timeframe-btn:hover::-webkit-input-placeholder,
-      .donation-form .donate-timeframe .timeframe-btn.active::-webkit-input-placeholder {
-        color: white !important; }
-    form .donate-buttons input.placeholder,
-    form .donate-buttons .timeframe-btn.placeholder, form .donate-timeframe input.placeholder,
-    form .donate-timeframe .timeframe-btn.placeholder, .donation-form .donate-buttons input.placeholder,
-    .donation-form .donate-buttons .timeframe-btn.placeholder, .donation-form .donate-timeframe input.placeholder,
-    .donation-form .donate-timeframe .timeframe-btn.placeholder {
-      color: black !important; }
-    form .donate-buttons input:-moz-placeholder,
-    form .donate-buttons .timeframe-btn:-moz-placeholder, form .donate-timeframe input:-moz-placeholder,
-    form .donate-timeframe .timeframe-btn:-moz-placeholder, .donation-form .donate-buttons input:-moz-placeholder,
-    .donation-form .donate-buttons .timeframe-btn:-moz-placeholder, .donation-form .donate-timeframe input:-moz-placeholder,
-    .donation-form .donate-timeframe .timeframe-btn:-moz-placeholder {
-      color: black !important; }
-    form .donate-buttons input::-moz-placeholder,
-    form .donate-buttons .timeframe-btn::-moz-placeholder, form .donate-timeframe input::-moz-placeholder,
-    form .donate-timeframe .timeframe-btn::-moz-placeholder, .donation-form .donate-buttons input::-moz-placeholder,
-    .donation-form .donate-buttons .timeframe-btn::-moz-placeholder, .donation-form .donate-timeframe input::-moz-placeholder,
-    .donation-form .donate-timeframe .timeframe-btn::-moz-placeholder {
-      color: black !important; }
-    form .donate-buttons input:-ms-input-placeholder,
-    form .donate-buttons .timeframe-btn:-ms-input-placeholder, form .donate-timeframe input:-ms-input-placeholder,
-    form .donate-timeframe .timeframe-btn:-ms-input-placeholder, .donation-form .donate-buttons input:-ms-input-placeholder,
-    .donation-form .donate-buttons .timeframe-btn:-ms-input-placeholder, .donation-form .donate-timeframe input:-ms-input-placeholder,
-    .donation-form .donate-timeframe .timeframe-btn:-ms-input-placeholder {
-      color: black !important; }
-    form .donate-buttons input::-webkit-input-placeholder,
-    form .donate-buttons .timeframe-btn::-webkit-input-placeholder, form .donate-timeframe input::-webkit-input-placeholder,
-    form .donate-timeframe .timeframe-btn::-webkit-input-placeholder, .donation-form .donate-buttons input::-webkit-input-placeholder,
-    .donation-form .donate-buttons .timeframe-btn::-webkit-input-placeholder, .donation-form .donate-timeframe input::-webkit-input-placeholder,
-    .donation-form .donate-timeframe .timeframe-btn::-webkit-input-placeholder {
-      color: black !important; }
-    form .donate-buttons .donate-button, form .donate-timeframe .donate-button, .donation-form .donate-buttons .donate-button, .donation-form .donate-timeframe .donate-button {
-      width: 32%;
-      margin-right: 1.5%;
-      margin-bottom: 10px; }
-      form .donate-buttons .donate-button input, form .donate-timeframe .donate-button input, .donation-form .donate-buttons .donate-button input, .donation-form .donate-timeframe .donate-button input {
-        font-size: 22px;
-        padding: 24px 0;
-        border: 1px solid #539ed0;
-        text-align: center; }
-      form .donate-buttons .donate-button input::placeholder, form .donate-timeframe .donate-button input::placeholder, .donation-form .donate-buttons .donate-button input::placeholder, .donation-form .donate-timeframe .donate-button input::placeholder {
-        color: black; }
-    form .donate-buttons .donate-button:nth-child(3n+3), form .donate-timeframe .donate-button:nth-child(3n+3), .donation-form .donate-buttons .donate-button:nth-child(3n+3), .donation-form .donate-timeframe .donate-button:nth-child(3n+3) {
-      margin-right: 0; }
-
-.donate-timeframe {
-  margin-bottom: 59px !important; }
-  .donate-timeframe > input,
-  .donate-timeframe > .timeframe-btn {
-    width: 49%;
-    padding: 12px 0;
-    text-align: center;
-    border: 1px solid #539ed0;
-    font-size: 17px;
-    background-color: white;
-    color: black;
-    font-weight: normal; }
-    .donate-timeframe > input:focus,
-    .donate-timeframe > .timeframe-btn:focus {
-      outline: 0 none; }
-
-.donate-timeframe > input::placeholder {
-  color: black; }
-
-.donate-timeframe > input:first-child {
-  margin-right: 2%; }
-
-.calculator {
-  padding: 45px 0 34px;
-  background-color: #ededed;
-  text-align: center;
-  border-radius: 4px; }
-  .calculator .leadin {
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-    color: #747474;
-    font-size: 20px;
-    font-style: italic; }
-    .calculator .leadin .donation-amount {
-      font-size: 20px; }
-  .calculator .calculator-results {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: stretch;
-    margin-top: 14px; }
-    @media only screen and (min-width: 1px) and (max-width: 515px) {
-      .calculator .calculator-results {
-        flex-direction: column;
-        margin-top: 0px; } }
-    .calculator .calculator-results .calculation {
-      flex: 0 0 33.33%;
-      padding: 0 10px 19px; }
-      .calculator .calculator-results .calculation:nth-child(even) {
-        position: relative;
-        border-left: 1px solid white;
-        border-right: 1px solid white; }
-        .calculator .calculator-results .calculation:nth-child(even):before, .calculator .calculator-results .calculation:nth-child(even):after {
-          background-color: #ededed;
-          color: #808080;
-          content: '- or -';
-          display: block;
-          width: 29px;
-          height: 23px;
-          white-space: nowrap;
-          overflow: visible;
-          position: absolute;
-          top: 0;
-          left: -14px;
-          padding: 26px 0 0;
-          text-align: center;
-          font-family: "Roboto", sans-serif;
-          font-size: 13px;
-          font-style: italic; }
-        .calculator .calculator-results .calculation:nth-child(even):after {
-          left: auto;
-          right: -14px; }
-      @media only screen and (min-width: 1px) and (max-width: 515px) {
-        .calculator .calculator-results .calculation {
-          flex-direction: row; } }
-      .calculator .calculator-results .calculation img {
-        display: block;
-        margin: 0 auto 0;
-        width: 100px; }
-        @media only screen and (min-width: 1px) and (max-width: 515px) {
-          .calculator .calculator-results .calculation img {
-            width: 45px; } }
-      .calculator .calculator-results .calculation .big-number {
-        margin: -1px 0 0;
-        font-family: "League Gothic";
-        font-size: 70px;
-        line-height: 1em;
-        max-width: 146px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis; }
-      .calculator .calculator-results .calculation .description {
-        padding: 0 5px 0;
-        margin: 6px 0 0;
-        font-family: "Roboto", sans-serif;
-        color: black;
-        font-size: 12px;
-        line-height: 1.2em; }
-        @media only screen and (min-width: 1px) and (max-width: 515px) {
-          .calculator .calculator-results .calculation .description {
-            width: 33%; } }
-
-.donations {
+#donation-page [v-cloak] {
+  display: none; }
+#donation-page .checkmark * {
+  display: inline;
+  margin: 30px 0px;
+  font-size: 15px; }
+#donation-page .checkmark input {
+  margin-right: 10px; }
+#donation-page .checkmark.no-bottom-margin input {
+  margin-bottom: 0px; }
+#donation-page .donations {
   background-color: #539ed0;
   padding-top: 80px;
   padding-bottom: 150px;
-  background: url("/assets/img/smilinggirl.jpg") no-repeat left bottom; }
-  @media only screen and (min-width: 1px) and (max-width: 900px) {
-    .donations {
-      background-image: none; } }
-  .donations form {
-    width: 650px;
-    background-color: white;
-    margin: auto;
-    padding: 60px 75px; }
-    @media only screen and (min-width: 515px) and (max-width: 900px) {
-      .donations form {
-        width: 450px;
-        padding: 60px 35px; } }
+  background: url("/assets/img/smilinggirl.jpg") no-repeat left 160px;
+  background-attachment: fixed; }
+#donation-page .donation-form {
+  position: relative;
+  width: 650px;
+  background-color: white;
+  margin: auto;
+  padding: 60px 75px 118px; }
+  #donation-page .donation-form:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    margin: -3px 0 0;
+    background: transparent url(/assets/img/saw-tooth.png) repeat-x left bottom;
+    background-size: 8px auto; }
+  #donation-page .donation-form:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    margin: 0 0 -3px;
+    background: transparent url(/assets/img/saw-tooth-bottom.png) repeat-x left top;
+    background-size: 8px auto; }
+  @media only screen and (min-width: 515px) and (max-width: 900px) {
+    #donation-page .donation-form {
+      width: 450px;
+      padding: 60px 35px; } }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    #donation-page .donation-form {
+      padding: 20px 10px;
+      width: 98%;
+      margin: 0px 1%; } }
+#donation-page h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  color: black;
+  margin: 0 0 25px;
+  padding: 0 0 0; }
+#donation-page #calculator-widget {
+  width: auto;
+  padding: 3px 0 0; }
+  #donation-page #calculator-widget .calculator {
+    min-height: 350px; }
+  #donation-page #calculator-widget .donate-timeframe {
+    margin-bottom: 47px !important; }
+#donation-page .disabled {
+  color: rgba(0, 0, 0, 0.5); }
+#donation-page .parenthetical {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 12px;
+  color: gray; }
+#donation-page .invalid-feedback {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1em;
+  color: #ff443b; }
+#donation-page .restriction {
+  margin-top: 8px;
+  margin-bottom: 14px; }
+#donation-page .address-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 15px; }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    #donation-page .address-line {
+      flex-direction: column;
+      align-items: flex-start; } }
+  #donation-page .address-line label {
+    min-width: 115px;
+    margin-right: 15px; }
     @media only screen and (min-width: 1px) and (max-width: 515px) {
-      .donations form {
-        padding: 20px 10px;
-        width: 98%;
-        margin: 0px 1%; } }
-    .donations form .donate-buttons, .donations form .donate-timeframe {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-bottom: 45px; }
-      .donations form .donate-buttons .donate-button, .donations form .donate-timeframe .donate-button {
-        width: 32%;
-        margin-right: 1.5%;
-        margin-bottom: 10px; }
-        .donations form .donate-buttons .donate-button input, .donations form .donate-timeframe .donate-button input {
-          padding: 30px 0;
-          border: 1px solid #539ed0;
-          text-align: center; }
-      .donations form .donate-buttons .donate-button:nth-child(3n+3), .donations form .donate-timeframe .donate-button:nth-child(3n+3) {
-        margin-right: 0; }
-  .donations .donate-timeframe > input {
-    width: 49%;
-    padding: 10px 0;
-    text-align: center;
-    border: 1px solid #539ed0; }
-  .donations .donate-timeframe > input:first-child {
-    margin-right: 2%; }
-  .donations .restriction {
-    margin-top: 8px;
-    margin-bottom: 20px; }
-  .donations .address-line {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    font-size: 15px; }
-    @media only screen and (min-width: 1px) and (max-width: 515px) {
-      .donations .address-line {
-        flex-direction: column;
-        align-items: flex-start; } }
-    .donations .address-line label {
-      min-width: 115px;
-      margin-right: 15px; }
-      @media only screen and (min-width: 1px) and (max-width: 515px) {
-        .donations .address-line label {
-          min-width: 0px;
-          margin-right: 0px;
-          margin-bottom: 5px; } }
-    .donations .address-line .email-sent {
-      width: 100%; }
-    .donations .address-line input, .donations .address-line textarea {
-      padding: 10px; }
-    .donations .address-line .state-zip > input {
+      #donation-page .address-line label {
+        min-width: 0px;
+        margin-right: 0px;
+        margin-bottom: 5px; } }
+  #donation-page .address-line .email-sent {
+    width: 100%; }
+  #donation-page .address-line .state-zip > input {
+    width: 60%; }
+  #donation-page .address-line .state-zip > input:last-of-type {
+    width: 38%;
+    margin-left: 2%; }
+  #donation-page .address-line .expiry-date {
+    display: flex; }
+    #donation-page .address-line .expiry-date > select {
+      width: 60px;
+      padding: 5px; }
+    #donation-page .address-line .expiry-date > select:last-of-type {
+      margin-left: 10px; }
+  #donation-page .address-line .name-entry > input {
+    width: 48%; }
+  #donation-page .address-line .name-entry > input:last-of-type {
+    margin-left: 2%; }
+  #donation-page .address-line.invalid input,
+  #donation-page .address-line input.invalid {
+    border-color: #ff443b; }
+  #donation-page .address-line.error {
+    align-items: flex-start;
+    margin-top: -28px;
+    margin-bottom: 11px; }
+    #donation-page .address-line.error .invalid-feedback.state {
       width: 60%; }
-    .donations .address-line .state-zip > input:last-of-type {
+    #donation-page .address-line.error .invalid-feedback.zip {
       width: 38%;
       margin-left: 2%; }
-    .donations .address-line .expiry-date {
-      display: flex; }
-      .donations .address-line .expiry-date > select {
-        width: 60px;
-        padding: 5px; }
-      .donations .address-line .expiry-date > select:last-of-type {
-        margin-left: 10px; }
-    .donations .address-line .name-entry > input {
+    #donation-page .address-line.error .invalid-feedback.fname {
       width: 48%; }
-    .donations .address-line .name-entry > input:last-of-type {
+    #donation-page .address-line.error .invalid-feedback.lname {
+      width: 48%;
       margin-left: 2%; }
-  .donations .address .address-line.amount input, .donations .payment-details .address-line.amount input {
-    width: 100px; }
-  .donations .address .address-line.amount span, .donations .payment-details .address-line.amount span {
-    font-size: 15px;
-    margin-left: 15px; }
-    @media only screen and (min-width: 1px) and (max-width: 515px) {
-      .donations .address .address-line.amount span, .donations .payment-details .address-line.amount span {
-        margin-top: 10px;
-        margin-left: 0px; } }
-  .donations .address .admin-fees, .donations .payment-details .admin-fees {
+  #donation-page .address-line.amount {
+    margin-bottom: 12px; }
+    #donation-page .address-line.amount.error {
+      margin-top: -10px;
+      margin-bottom: 11px; }
+  #donation-page .address-line.disclaimer {
+    margin: 0 0 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
-    margin-left: 130px;
-    padding-bottom: 40px;
     font-style: italic; }
-    @media only screen and (min-width: 1px) and (max-width: 515px) {
-      .donations .address .admin-fees, .donations .payment-details .admin-fees {
-        margin-left: 0px; } }
-    .donations .address .admin-fees a, .donations .payment-details .admin-fees a {
+    #donation-page .address-line.disclaimer a {
       font-size: 14px;
-      text-decoration: underline; }
-  .donations .contact-information {
-    padding: 35px 0 20px;
-    border-top: 1px solid #747474; }
-    .donations .contact-information > div.checkmark input.no-margin {
-      margin-top: 0px; }
-    .donations .contact-information .doner-name-box .radio-line {
-      margin-top: 15px;
-      display: flex;
-      align-items: center; }
-      .donations .contact-information .doner-name-box .radio-line input[type="text"] {
-        padding: 10px; }
-      .donations .contact-information .doner-name-box .radio-line > div {
-        width: 70%; }
-    .donations .contact-information .doner-name-box > input {
-      margin: 15px 0 30px;
-      padding: 10px; }
-  .donations .payment-details {
-    padding: 15px 0 30px;
-    border-top: 1px solid #747474;
-    border-bottom: 1px solid #747474;
-    margin-bottom: 40px; }
-    .donations .payment-details .h-2-check {
-      display: flex;
-      justify-content: space-between; }
-    .donations .payment-details h2 {
-      margin-bottom: 0px; }
-    .donations .payment-details p {
-      font-size: 15px;
-      font-style: italic; }
-  .donations .final-amount {
-    background-color: #ededed;
-    padding: 50px 140px;
-    text-align: center;
-    border-radius: 4px; }
-    @media only screen and (min-width: 515px) and (max-width: 900px) {
-      .donations .final-amount {
-        padding: 50px 70px; } }
-    @media only screen and (min-width: 1px) and (max-width: 515px) {
-      .donations .final-amount {
-        padding: 50px 45px; } }
-    .donations .final-amount .final-number {
-      font-size: 60px;
-      font-weight: bold; }
-  .donations .checkmark * {
-    display: inline;
-    margin: 30px 0px;
-    font-size: 15px; }
-  .donations .checkmark input {
-    margin-right: 10px; }
-  .donations .checkmark.no-bottom-margin input {
-    margin-bottom: 0px; }
-  .donations input[type="submit"] {
-    background-color: #ffb351;
-    width: 100%;
-    margin-top: 20px; }
-
-span.parenthetical {
+      color: #539ed0;
+      text-decoration: none; }
+      #donation-page .address-line.disclaimer a:hover {
+        text-decoration: underline; }
+#donation-page .address {
+  margin-bottom: 37px; }
+#donation-page .address .address-line.amount input, #donation-page .payment-details .address-line.amount input {
+  width: 100px; }
+#donation-page .address .address-line.amount span, #donation-page .payment-details .address-line.amount span {
+  font-size: 15px;
+  margin-left: 15px; }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    #donation-page .address .address-line.amount span, #donation-page .payment-details .address-line.amount span {
+      margin-top: 10px;
+      margin-left: 0px; } }
+#donation-page .address .admin-fees, #donation-page .payment-details .admin-fees {
   font-size: 14px;
-  color: #747474; }
+  margin-left: 130px;
+  padding-bottom: 40px;
+  font-style: italic; }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    #donation-page .address .admin-fees, #donation-page .payment-details .admin-fees {
+      margin-left: 0px; } }
+  #donation-page .address .admin-fees a, #donation-page .payment-details .admin-fees a {
+    color: #539ed0;
+    text-decoration: none; }
+    #donation-page .address .admin-fees a:hover, #donation-page .payment-details .admin-fees a:hover {
+      text-decoration: underline; }
+#donation-page .contact-information {
+  padding: 49px 0 32px;
+  border-top: 1px solid #999999; }
+  #donation-page .contact-information > div.checkmark input.no-margin {
+    margin-top: 0px; }
+  #donation-page .contact-information .email-sent .parenthetical {
+    margin: 5px 0 -18px;
+    display: block; }
+  #donation-page .contact-information label .parenthetical {
+    font-size: 15px; }
+  #donation-page .contact-information .checkmark * {
+    margin: 23px 0 3px; }
+  #donation-page .contact-information .checkmark input {
+    margin-right: 10px; }
+  #donation-page .contact-information #dedication-group {
+    margin: 35px 0 0; }
+    #donation-page .contact-information #dedication-group .message {
+      align-items: flex-start; }
+      #donation-page .contact-information #dedication-group .message label {
+        padding-top: 10px; }
+      #donation-page .contact-information #dedication-group .message textarea {
+        height: 98px; }
+  #donation-page .contact-information .doner-name-box .radio-line {
+    margin-top: 15px;
+    display: flex;
+    align-items: center; }
+    #donation-page .contact-information .doner-name-box .radio-line input[type="text"] {
+      padding: 10px; }
+    #donation-page .contact-information .doner-name-box .radio-line > div {
+      width: 70%; }
+  #donation-page .contact-information .doner-name-box > input {
+    margin: 15px 0 30px;
+    padding: 10px; }
+#donation-page .payment-details {
+  padding: 64px 0 44px;
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+  margin-bottom: 36px; }
+  #donation-page .payment-details .h-2-check {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 0 0; }
+    #donation-page .payment-details .h-2-check .checkmark * {
+      margin: 0;
+      font-style: normal; }
+  #donation-page .payment-details .mail-notice {
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 22px; }
+  #donation-page .payment-details #card-element {
+    outline: 1px solid #cccccc;
+    width: 100%;
+    min-height: 40px; }
+  #donation-page .payment-details .card-error-wrap {
+    margin: -29px 0 12px; }
+    #donation-page .payment-details .card-error-wrap .spacer {
+      display: inline-block;
+      width: 130px; }
+#donation-page .pay-fees label * {
+  margin: 0; }
+#donation-page .pay-fees input {
+  margin-right: 10px; }
+#donation-page .final-amount {
+  margin: 40px 0 0;
+  background-color: #ededed;
+  padding: 54px 140px 46px;
+  text-align: center;
+  border-radius: 4px; }
+  @media only screen and (min-width: 515px) and (max-width: 900px) {
+    #donation-page .final-amount {
+      padding: 50px 70px; } }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    #donation-page .final-amount {
+      padding: 50px 45px; } }
+  #donation-page .final-amount .lead {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    corlo: black;
+    margin: 0;
+    padding: 0; }
+  #donation-page .final-amount .final-number {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.2em; }
+#donation-page .submit-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 60px;
+  height: 60px;
+  width: 100%;
+  background-color: #ffb351;
+  padding: 0;
+  margin: 20px 0 0; }
+@media only screen and (min-width: 1px) and (max-width: 900px) {
+  #donation-page .donations {
+    background-image: none; } }
 
 #calculator-widget {
   width: 650px;
@@ -2275,270 +2115,8 @@ span.parenthetical {
         margin-top: 37px;
         margin-bottom: 0; } }
 
-form, .donation-form {
-  width: 650px;
-  background-color: white;
-  margin: auto;
-  padding: 60px 75px; }
-  form [v-cloak], .donation-form [v-cloak] {
-    display: none; }
-  @media only screen and (min-width: 515px) and (max-width: 900px) {
-    form, .donation-form {
-      width: 450px;
-      padding: 60px 35px; } }
-  @media only screen and (min-width: 1px) and (max-width: 515px) {
-    form, .donation-form {
-      padding: 20px 10px;
-      width: 98%;
-      margin: 0px 1%; } }
-  form .donate-buttons, form .donate-timeframe, .donation-form .donate-buttons, .donation-form .donate-timeframe {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 16px; }
-    form .donate-buttons input:disabled, form .donate-buttons input[disabled],
-    form .donate-buttons .timeframe-btn:disabled,
-    form .donate-buttons .timeframe-btn[disabled], form .donate-timeframe input:disabled, form .donate-timeframe input[disabled],
-    form .donate-timeframe .timeframe-btn:disabled,
-    form .donate-timeframe .timeframe-btn[disabled], .donation-form .donate-buttons input:disabled, .donation-form .donate-buttons input[disabled],
-    .donation-form .donate-buttons .timeframe-btn:disabled,
-    .donation-form .donate-buttons .timeframe-btn[disabled], .donation-form .donate-timeframe input:disabled, .donation-form .donate-timeframe input[disabled],
-    .donation-form .donate-timeframe .timeframe-btn:disabled,
-    .donation-form .donate-timeframe .timeframe-btn[disabled] {
-      border-color: #ededed;
-      color: #bababa; }
-    form .donate-buttons input:hover, form .donate-buttons input.active,
-    form .donate-buttons .timeframe-btn:hover,
-    form .donate-buttons .timeframe-btn.active, form .donate-timeframe input:hover, form .donate-timeframe input.active,
-    form .donate-timeframe .timeframe-btn:hover,
-    form .donate-timeframe .timeframe-btn.active, .donation-form .donate-buttons input:hover, .donation-form .donate-buttons input.active,
-    .donation-form .donate-buttons .timeframe-btn:hover,
-    .donation-form .donate-buttons .timeframe-btn.active, .donation-form .donate-timeframe input:hover, .donation-form .donate-timeframe input.active,
-    .donation-form .donate-timeframe .timeframe-btn:hover,
-    .donation-form .donate-timeframe .timeframe-btn.active {
-      cursor: pointer;
-      background-color: #539ed0;
-      color: white;
-      transition: .3s ease; }
-      form .donate-buttons input:hover:disabled, form .donate-buttons input:hover[disabled], form .donate-buttons input.active:disabled, form .donate-buttons input.active[disabled],
-      form .donate-buttons .timeframe-btn:hover:disabled,
-      form .donate-buttons .timeframe-btn:hover[disabled],
-      form .donate-buttons .timeframe-btn.active:disabled,
-      form .donate-buttons .timeframe-btn.active[disabled], form .donate-timeframe input:hover:disabled, form .donate-timeframe input:hover[disabled], form .donate-timeframe input.active:disabled, form .donate-timeframe input.active[disabled],
-      form .donate-timeframe .timeframe-btn:hover:disabled,
-      form .donate-timeframe .timeframe-btn:hover[disabled],
-      form .donate-timeframe .timeframe-btn.active:disabled,
-      form .donate-timeframe .timeframe-btn.active[disabled], .donation-form .donate-buttons input:hover:disabled, .donation-form .donate-buttons input:hover[disabled], .donation-form .donate-buttons input.active:disabled, .donation-form .donate-buttons input.active[disabled],
-      .donation-form .donate-buttons .timeframe-btn:hover:disabled,
-      .donation-form .donate-buttons .timeframe-btn:hover[disabled],
-      .donation-form .donate-buttons .timeframe-btn.active:disabled,
-      .donation-form .donate-buttons .timeframe-btn.active[disabled], .donation-form .donate-timeframe input:hover:disabled, .donation-form .donate-timeframe input:hover[disabled], .donation-form .donate-timeframe input.active:disabled, .donation-form .donate-timeframe input.active[disabled],
-      .donation-form .donate-timeframe .timeframe-btn:hover:disabled,
-      .donation-form .donate-timeframe .timeframe-btn:hover[disabled],
-      .donation-form .donate-timeframe .timeframe-btn.active:disabled,
-      .donation-form .donate-timeframe .timeframe-btn.active[disabled] {
-        cursor: not-allowed;
-        background: white;
-        border-color: #ededed;
-        color: #bababa; }
-      form .donate-buttons input:hover.placeholder, form .donate-buttons input.active.placeholder,
-      form .donate-buttons .timeframe-btn:hover.placeholder,
-      form .donate-buttons .timeframe-btn.active.placeholder, form .donate-timeframe input:hover.placeholder, form .donate-timeframe input.active.placeholder,
-      form .donate-timeframe .timeframe-btn:hover.placeholder,
-      form .donate-timeframe .timeframe-btn.active.placeholder, .donation-form .donate-buttons input:hover.placeholder, .donation-form .donate-buttons input.active.placeholder,
-      .donation-form .donate-buttons .timeframe-btn:hover.placeholder,
-      .donation-form .donate-buttons .timeframe-btn.active.placeholder, .donation-form .donate-timeframe input:hover.placeholder, .donation-form .donate-timeframe input.active.placeholder,
-      .donation-form .donate-timeframe .timeframe-btn:hover.placeholder,
-      .donation-form .donate-timeframe .timeframe-btn.active.placeholder {
-        color: white !important; }
-      form .donate-buttons input:hover:-moz-placeholder, form .donate-buttons input.active:-moz-placeholder,
-      form .donate-buttons .timeframe-btn:hover:-moz-placeholder,
-      form .donate-buttons .timeframe-btn.active:-moz-placeholder, form .donate-timeframe input:hover:-moz-placeholder, form .donate-timeframe input.active:-moz-placeholder,
-      form .donate-timeframe .timeframe-btn:hover:-moz-placeholder,
-      form .donate-timeframe .timeframe-btn.active:-moz-placeholder, .donation-form .donate-buttons input:hover:-moz-placeholder, .donation-form .donate-buttons input.active:-moz-placeholder,
-      .donation-form .donate-buttons .timeframe-btn:hover:-moz-placeholder,
-      .donation-form .donate-buttons .timeframe-btn.active:-moz-placeholder, .donation-form .donate-timeframe input:hover:-moz-placeholder, .donation-form .donate-timeframe input.active:-moz-placeholder,
-      .donation-form .donate-timeframe .timeframe-btn:hover:-moz-placeholder,
-      .donation-form .donate-timeframe .timeframe-btn.active:-moz-placeholder {
-        color: white !important; }
-      form .donate-buttons input:hover::-moz-placeholder, form .donate-buttons input.active::-moz-placeholder,
-      form .donate-buttons .timeframe-btn:hover::-moz-placeholder,
-      form .donate-buttons .timeframe-btn.active::-moz-placeholder, form .donate-timeframe input:hover::-moz-placeholder, form .donate-timeframe input.active::-moz-placeholder,
-      form .donate-timeframe .timeframe-btn:hover::-moz-placeholder,
-      form .donate-timeframe .timeframe-btn.active::-moz-placeholder, .donation-form .donate-buttons input:hover::-moz-placeholder, .donation-form .donate-buttons input.active::-moz-placeholder,
-      .donation-form .donate-buttons .timeframe-btn:hover::-moz-placeholder,
-      .donation-form .donate-buttons .timeframe-btn.active::-moz-placeholder, .donation-form .donate-timeframe input:hover::-moz-placeholder, .donation-form .donate-timeframe input.active::-moz-placeholder,
-      .donation-form .donate-timeframe .timeframe-btn:hover::-moz-placeholder,
-      .donation-form .donate-timeframe .timeframe-btn.active::-moz-placeholder {
-        color: white !important; }
-      form .donate-buttons input:hover:-ms-input-placeholder, form .donate-buttons input.active:-ms-input-placeholder,
-      form .donate-buttons .timeframe-btn:hover:-ms-input-placeholder,
-      form .donate-buttons .timeframe-btn.active:-ms-input-placeholder, form .donate-timeframe input:hover:-ms-input-placeholder, form .donate-timeframe input.active:-ms-input-placeholder,
-      form .donate-timeframe .timeframe-btn:hover:-ms-input-placeholder,
-      form .donate-timeframe .timeframe-btn.active:-ms-input-placeholder, .donation-form .donate-buttons input:hover:-ms-input-placeholder, .donation-form .donate-buttons input.active:-ms-input-placeholder,
-      .donation-form .donate-buttons .timeframe-btn:hover:-ms-input-placeholder,
-      .donation-form .donate-buttons .timeframe-btn.active:-ms-input-placeholder, .donation-form .donate-timeframe input:hover:-ms-input-placeholder, .donation-form .donate-timeframe input.active:-ms-input-placeholder,
-      .donation-form .donate-timeframe .timeframe-btn:hover:-ms-input-placeholder,
-      .donation-form .donate-timeframe .timeframe-btn.active:-ms-input-placeholder {
-        color: white !important; }
-      form .donate-buttons input:hover::-webkit-input-placeholder, form .donate-buttons input.active::-webkit-input-placeholder,
-      form .donate-buttons .timeframe-btn:hover::-webkit-input-placeholder,
-      form .donate-buttons .timeframe-btn.active::-webkit-input-placeholder, form .donate-timeframe input:hover::-webkit-input-placeholder, form .donate-timeframe input.active::-webkit-input-placeholder,
-      form .donate-timeframe .timeframe-btn:hover::-webkit-input-placeholder,
-      form .donate-timeframe .timeframe-btn.active::-webkit-input-placeholder, .donation-form .donate-buttons input:hover::-webkit-input-placeholder, .donation-form .donate-buttons input.active::-webkit-input-placeholder,
-      .donation-form .donate-buttons .timeframe-btn:hover::-webkit-input-placeholder,
-      .donation-form .donate-buttons .timeframe-btn.active::-webkit-input-placeholder, .donation-form .donate-timeframe input:hover::-webkit-input-placeholder, .donation-form .donate-timeframe input.active::-webkit-input-placeholder,
-      .donation-form .donate-timeframe .timeframe-btn:hover::-webkit-input-placeholder,
-      .donation-form .donate-timeframe .timeframe-btn.active::-webkit-input-placeholder {
-        color: white !important; }
-    form .donate-buttons input.placeholder,
-    form .donate-buttons .timeframe-btn.placeholder, form .donate-timeframe input.placeholder,
-    form .donate-timeframe .timeframe-btn.placeholder, .donation-form .donate-buttons input.placeholder,
-    .donation-form .donate-buttons .timeframe-btn.placeholder, .donation-form .donate-timeframe input.placeholder,
-    .donation-form .donate-timeframe .timeframe-btn.placeholder {
-      color: black !important; }
-    form .donate-buttons input:-moz-placeholder,
-    form .donate-buttons .timeframe-btn:-moz-placeholder, form .donate-timeframe input:-moz-placeholder,
-    form .donate-timeframe .timeframe-btn:-moz-placeholder, .donation-form .donate-buttons input:-moz-placeholder,
-    .donation-form .donate-buttons .timeframe-btn:-moz-placeholder, .donation-form .donate-timeframe input:-moz-placeholder,
-    .donation-form .donate-timeframe .timeframe-btn:-moz-placeholder {
-      color: black !important; }
-    form .donate-buttons input::-moz-placeholder,
-    form .donate-buttons .timeframe-btn::-moz-placeholder, form .donate-timeframe input::-moz-placeholder,
-    form .donate-timeframe .timeframe-btn::-moz-placeholder, .donation-form .donate-buttons input::-moz-placeholder,
-    .donation-form .donate-buttons .timeframe-btn::-moz-placeholder, .donation-form .donate-timeframe input::-moz-placeholder,
-    .donation-form .donate-timeframe .timeframe-btn::-moz-placeholder {
-      color: black !important; }
-    form .donate-buttons input:-ms-input-placeholder,
-    form .donate-buttons .timeframe-btn:-ms-input-placeholder, form .donate-timeframe input:-ms-input-placeholder,
-    form .donate-timeframe .timeframe-btn:-ms-input-placeholder, .donation-form .donate-buttons input:-ms-input-placeholder,
-    .donation-form .donate-buttons .timeframe-btn:-ms-input-placeholder, .donation-form .donate-timeframe input:-ms-input-placeholder,
-    .donation-form .donate-timeframe .timeframe-btn:-ms-input-placeholder {
-      color: black !important; }
-    form .donate-buttons input::-webkit-input-placeholder,
-    form .donate-buttons .timeframe-btn::-webkit-input-placeholder, form .donate-timeframe input::-webkit-input-placeholder,
-    form .donate-timeframe .timeframe-btn::-webkit-input-placeholder, .donation-form .donate-buttons input::-webkit-input-placeholder,
-    .donation-form .donate-buttons .timeframe-btn::-webkit-input-placeholder, .donation-form .donate-timeframe input::-webkit-input-placeholder,
-    .donation-form .donate-timeframe .timeframe-btn::-webkit-input-placeholder {
-      color: black !important; }
-    form .donate-buttons .donate-button, form .donate-timeframe .donate-button, .donation-form .donate-buttons .donate-button, .donation-form .donate-timeframe .donate-button {
-      width: 32%;
-      margin-right: 1.5%;
-      margin-bottom: 10px; }
-      form .donate-buttons .donate-button input, form .donate-timeframe .donate-button input, .donation-form .donate-buttons .donate-button input, .donation-form .donate-timeframe .donate-button input {
-        font-size: 22px;
-        padding: 24px 0;
-        border: 1px solid #539ed0;
-        text-align: center; }
-      form .donate-buttons .donate-button input::placeholder, form .donate-timeframe .donate-button input::placeholder, .donation-form .donate-buttons .donate-button input::placeholder, .donation-form .donate-timeframe .donate-button input::placeholder {
-        color: black; }
-    form .donate-buttons .donate-button:nth-child(3n+3), form .donate-timeframe .donate-button:nth-child(3n+3), .donation-form .donate-buttons .donate-button:nth-child(3n+3), .donation-form .donate-timeframe .donate-button:nth-child(3n+3) {
-      margin-right: 0; }
-
-.donate-timeframe {
-  margin-bottom: 59px !important; }
-  .donate-timeframe > input,
-  .donate-timeframe > .timeframe-btn {
-    width: 49%;
-    padding: 12px 0;
-    text-align: center;
-    border: 1px solid #539ed0;
-    font-size: 17px;
-    background-color: white;
-    color: black;
-    font-weight: normal; }
-    .donate-timeframe > input:focus,
-    .donate-timeframe > .timeframe-btn:focus {
-      outline: 0 none; }
-
-.donate-timeframe > input::placeholder {
-  color: black; }
-
-.donate-timeframe > input:first-child {
-  margin-right: 2%; }
-
-.calculator {
-  padding: 45px 0 34px;
-  background-color: #ededed;
-  text-align: center;
-  border-radius: 4px; }
-  .calculator .leadin {
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-    color: #747474;
-    font-size: 20px;
-    font-style: italic; }
-    .calculator .leadin .donation-amount {
-      font-size: 20px; }
-  .calculator .calculator-results {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: stretch;
-    margin-top: 14px; }
-    @media only screen and (min-width: 1px) and (max-width: 515px) {
-      .calculator .calculator-results {
-        flex-direction: column;
-        margin-top: 0px; } }
-    .calculator .calculator-results .calculation {
-      flex: 0 0 33.33%;
-      padding: 0 10px 19px; }
-      .calculator .calculator-results .calculation:nth-child(even) {
-        position: relative;
-        border-left: 1px solid white;
-        border-right: 1px solid white; }
-        .calculator .calculator-results .calculation:nth-child(even):before, .calculator .calculator-results .calculation:nth-child(even):after {
-          background-color: #ededed;
-          color: #808080;
-          content: '- or -';
-          display: block;
-          width: 29px;
-          height: 23px;
-          white-space: nowrap;
-          overflow: visible;
-          position: absolute;
-          top: 0;
-          left: -14px;
-          padding: 26px 0 0;
-          text-align: center;
-          font-family: "Roboto", sans-serif;
-          font-size: 13px;
-          font-style: italic; }
-        .calculator .calculator-results .calculation:nth-child(even):after {
-          left: auto;
-          right: -14px; }
-      @media only screen and (min-width: 1px) and (max-width: 515px) {
-        .calculator .calculator-results .calculation {
-          flex-direction: row; } }
-      .calculator .calculator-results .calculation img {
-        display: block;
-        margin: 0 auto 0;
-        width: 100px; }
-        @media only screen and (min-width: 1px) and (max-width: 515px) {
-          .calculator .calculator-results .calculation img {
-            width: 45px; } }
-      .calculator .calculator-results .calculation .big-number {
-        margin: -1px 0 0;
-        font-family: "League Gothic";
-        font-size: 70px;
-        line-height: 1em;
-        max-width: 146px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis; }
-      .calculator .calculator-results .calculation .description {
-        padding: 0 5px 0;
-        margin: 6px 0 0;
-        font-family: "Roboto", sans-serif;
-        color: black;
-        font-size: 12px;
-        line-height: 1.2em; }
-        @media only screen and (min-width: 1px) and (max-width: 515px) {
-          .calculator .calculator-results .calculation .description {
-            width: 33%; } }
-
 #impact-calc-page .get-involved-calc {
-  background: url("/assets/img/smilinggirl.jpg") no-repeat calc(50% + -290px) 26px;
+  background: url("/assets/img/smilinggirl.jpg") no-repeat left 26px;
   background-color: #539ed0;
   display: block;
   min-height: 500px;
@@ -2591,13 +2169,30 @@ form, .donation-form {
         #impact-calc-page .get-involved-calc .headline > span {
           font-size: 26px; } }
 #impact-calc-page #calculator-widget {
-  background-image: linear-gradient(135deg, #539ed0 50%, transparent 50%), linear-gradient(225deg, #539ed0 50%, transparent 50%), linear-gradient(45deg, #539ed0 50%, transparent 50%), linear-gradient(-45deg, #539ed0 50%, transparent 50%);
-  background-position: top left, top left, bottom left, bottom left;
-  background-size: 9px 9px;
-  background-repeat: repeat-x;
+  position: relative;
   margin: 0 0 110px;
   float: right;
   padding: 110px 75px 45px; }
+  #impact-calc-page #calculator-widget:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    margin: -3px 0 0;
+    background: transparent url(/assets/img/saw-tooth.png) repeat-x left bottom;
+    background-size: 8px auto; }
+  #impact-calc-page #calculator-widget:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    margin: 0 0 -3px;
+    background: transparent url(/assets/img/saw-tooth-bottom.png) repeat-x left top;
+    background-size: 8px auto; }
 @media only screen and (min-width: 1px) and (max-width: 900px) {
   #impact-calc-page .get-involved-calc {
     background-image: none; }
