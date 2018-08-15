@@ -2883,6 +2883,9 @@ footer {
       .bottom-cta .bottom-cta-button {
         width: auto; } }
 
+.get-help .small-box {
+  text-align: center; }
+
 .get-involved-personal-donations {
   padding-bottom: 0px; }
   .get-involved-personal-donations .banner {
