@@ -3397,6 +3397,51 @@ form, .donation-form {
 .our-work-what-we-do .high-bottom-margin {
   margin-bottom: 130px; }
 
+.ribbon {
+  width: 107%;
+  position: relative;
+  background: #ff4445;
+  color: #fff;
+  text-align: center;
+  padding: 1px 0;
+  /* Adjust to suit */
+  margin-left: -3.5%;
+  /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */ }
+
+.ribbon:before, .ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  border: 1.5em solid #ff4445;
+  z-index: -1; }
+
+.ribbon:before {
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent; }
+
+.ribbon:after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent; }
+
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #ff4445 transparent transparent transparent;
+  bottom: -1em; }
+
+.ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em; }
+
+.ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0; }
+
 .workplace-campaigns .banner {
   background: url("/assets/img/party-people.jpg") no-repeat center center;
   height: 680px;
@@ -3440,5 +3485,146 @@ form, .donation-form {
       @media only screen and (min-width: 1px) and (max-width: 515px) {
         .workplace-campaigns .banner .headline button {
           margin-top: 25px; } }
+.workplace-campaigns .normal-body .content-row .small-side {
+  width: 350px; }
+.workplace-campaigns .normal-body .content-row .small-side.stick-people {
+  text-align: center;
+  font-style: italic;
+  color: #4d4d4d; }
+  .workplace-campaigns .normal-body .content-row .small-side.stick-people p {
+    width: 205px;
+    margin: 0 auto; }
+.workplace-campaigns .normal-body .content-row .large-side {
+  width: 750px; }
+  .workplace-campaigns .normal-body .content-row .large-side .spaced-text {
+    margin-top: 50px; }
+  .workplace-campaigns .normal-body .content-row .large-side .percent-strip {
+    display: flex;
+    border-left: 1px solid #ededed;
+    margin-bottom: 60px; }
+    .workplace-campaigns .normal-body .content-row .large-side .percent-strip .percent-section {
+      border-right: 1px solid #ededed;
+      padding: 30px 20px;
+      text-align: center;
+      width: 25%; }
+      .workplace-campaigns .normal-body .content-row .large-side .percent-strip .percent-section .percent-number {
+        font-family: "League Gothic";
+        font-size: 60px;
+        color: #ffb351;
+        margin: 0;
+        line-height: 1; }
+      .workplace-campaigns .normal-body .content-row .large-side .percent-strip .percent-section p {
+        font-size: 14px; }
+  .workplace-campaigns .normal-body .content-row .large-side .sponsor-table {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 300px 200px 150px 150px; }
+    .workplace-campaigns .normal-body .content-row .large-side .sponsor-table .sponsor-level-column {
+      font-size: 25px;
+      border-top: 1px solid #ededed;
+      border-bottom: 1px solid #ededed;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 20px;
+      position: relative; }
+      .workplace-campaigns .normal-body .content-row .large-side .sponsor-table .sponsor-level-column p {
+        font-size: 25px;
+        margin-bottom: -10px; }
+      .workplace-campaigns .normal-body .content-row .large-side .sponsor-table .sponsor-level-column span {
+        font-size: 13px;
+        font-weight: normal; }
+      .workplace-campaigns .normal-body .content-row .large-side .sponsor-table .sponsor-level-column img {
+        margin-bottom: -35px; }
+      .workplace-campaigns .normal-body .content-row .large-side .sponsor-table .sponsor-level-column div.table-header {
+        position: absolute;
+        font-size: 10px;
+        text-transform: uppercase;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        top: -15px;
+        color: #747474; }
+    .workplace-campaigns .normal-body .content-row .large-side .sponsor-table .sponsor-name-column {
+      border-top: 1px solid #ededed;
+      border-bottom: 1px solid #ededed;
+      text-align: center;
+      padding-top: 65px;
+      position: relative; }
+      .workplace-campaigns .normal-body .content-row .large-side .sponsor-table .sponsor-name-column img {
+        display: block;
+        margin: 0 auto; }
+      .workplace-campaigns .normal-body .content-row .large-side .sponsor-table .sponsor-name-column a {
+        color: #539ed0; }
+      .workplace-campaigns .normal-body .content-row .large-side .sponsor-table .sponsor-name-column div.table-header {
+        position: absolute;
+        font-size: 10px;
+        text-transform: uppercase;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        top: -15px;
+        color: #747474; }
+    .workplace-campaigns .normal-body .content-row .large-side .sponsor-table .sponsor-level-column.largest {
+      padding-top: 100px; }
+    .workplace-campaigns .normal-body .content-row .large-side .sponsor-table .sponsor-name-column.largest {
+      padding-top: 25px; }
+    .workplace-campaigns .normal-body .content-row .large-side .sponsor-table .sponsor-level-column.larger {
+      padding-top: 50px; }
+    .workplace-campaigns .normal-body .content-row .large-side .sponsor-table .sponsor-name-column.larger {
+      padding-top: 40px; }
+  .workplace-campaigns .normal-body .content-row .large-side .lighterblue-bg {
+    background-color: rgba(83, 158, 208, 0.8); }
+  .workplace-campaigns .normal-body .content-row .large-side .lightestblue {
+    background-color: rgba(83, 158, 208, 0.6); }
+.workplace-campaigns .normal-body h3 {
+  font-size: 16px;
+  margin-bottom: -10px; }
+.workplace-campaigns .normal-body .asterisk-section p {
+  font-size: 12px;
+  color: #747474; }
+.workplace-campaigns .normal-body .special-margin-p {
+  margin-bottom: -10px; }
+.workplace-campaigns .normal-body .bordered-list {
+  border-top: 2px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  list-style: none;
+  padding-left: 0; }
+  .workplace-campaigns .normal-body .bordered-list li {
+    font-size: 15px;
+    border-bottom: 1px solid #ededed;
+    padding: 15px 0; }
+  .workplace-campaigns .normal-body .bordered-list li:before {
+    content: "\2714\0020";
+    font-family: "League Gothic";
+    color: #ffb351;
+    font-weight: bold;
+    margin-right: 5px; }
+.workplace-campaigns .normal-body .bordered-list.unchecked li {
+  font-size: 14px; }
+.workplace-campaigns .normal-body .bordered-list.unchecked li:before {
+  content: none; }
+.workplace-campaigns .award-box {
+  background-color: #ededed;
+  width: 48%;
+  padding-bottom: 65px; }
+  .workplace-campaigns .award-box .award-interior {
+    background: url("/assets/img/blue-medal.png") no-repeat center 40px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 3px 29px 72px -41px rgba(0, 0, 0, 0.32); }
+    .workplace-campaigns .award-box .award-interior > p:first-of-type {
+      text-align: left;
+      font-family: "League Gothic";
+      font-size: 43px;
+      margin-top: 35px; }
+    .workplace-campaigns .award-box .award-interior p.middle-paragraph {
+      margin-top: 40px; }
+    .workplace-campaigns .award-box .award-interior .white-box {
+      background-color: white;
+      padding-top: 35px;
+      padding-bottom: 25px;
+      margin-top: 45px; }
 
 /*# sourceMappingURL=main.css.map */

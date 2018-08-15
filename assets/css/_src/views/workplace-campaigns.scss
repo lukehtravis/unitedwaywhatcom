@@ -1,3 +1,4 @@
+@import "../components/ribbon";
 .workplace-campaigns {
   .banner {
     background: url('/assets/img/party-people.jpg') no-repeat center center;
@@ -43,6 +44,189 @@
         @include breakpoint(phoneonly) {
           margin-top: 25px;
         }
+      }
+    }
+  }
+  .normal-body {
+    .content-row {
+      .small-side {
+        width: 350px;
+      }
+      .small-side.stick-people {
+        text-align: center;
+        font-style: italic;
+        color: $color-mobile-header-menu-gray;
+        p {
+          width: 205px;
+          margin: 0 auto;
+        }
+      }
+      .large-side {
+        width: 750px;
+        .spaced-text {
+          margin-top: 50px;
+        }
+        .percent-strip {
+          display: flex;
+          border-left: 1px solid $color-lightgray;
+          margin-bottom: 60px;
+          .percent-section {
+            border-right: 1px solid $color-lightgray;
+            padding: 30px 20px;
+            text-align: center;
+            width: 25%;
+            .percent-number {
+              font-family: $league;
+              font-size: 60px;
+              color: $color-orange;
+              margin: 0;
+              line-height: 1;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+        .sponsor-table {
+          display: grid;
+          grid-template-columns: 25% 75%;
+          grid-template-rows: 300px 200px 150px 150px;
+          .sponsor-level-column {
+            font-size: 25px;
+            border-top: 1px solid $color-lightgray;
+            border-bottom: 1px solid $color-lightgray;
+            color: $color-white;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 20px;
+            position: relative;
+            p {
+              font-size: 25px;
+              margin-bottom: -10px;
+            }
+            span {
+              font-size: 13px;
+              font-weight: normal;
+            }
+            img {
+              margin-bottom: -35px;
+            }
+            div.table-header {
+              position: absolute;
+              font-size: 10px;
+              text-transform: uppercase;
+              @include centerer;
+              top: -15px;
+              color: $color-graytext-footer;
+            }
+          }
+          .sponsor-name-column {
+            border-top: 1px solid $color-lightgray;
+            border-bottom: 1px solid $color-lightgray;
+            text-align: center;
+            padding-top: 65px;
+            position: relative;
+            img {
+              display: block;
+              margin: 0 auto;
+            }
+            a  {
+              color: $color-lightblue;
+            }
+            div.table-header {
+              position: absolute;
+              font-size: 10px;
+              text-transform: uppercase;
+              @include centerer;
+              top: -15px;
+              color: $color-graytext-footer;
+            }
+          }
+          .sponsor-level-column.largest {
+            padding-top: 100px;
+          }
+          .sponsor-name-column.largest {
+            padding-top: 25px;
+          }
+          .sponsor-level-column.larger {
+            padding-top: 50px;
+          }
+          .sponsor-name-column.larger {
+            padding-top: 40px;
+          }
+        }
+        .lighterblue-bg {
+          background-color: rgba(83, 158, 208, .8);
+        }
+        .lightestblue {
+          background-color:rgba(83, 158, 208, .6);
+        }
+      }
+    }
+    h3 {
+      font-size: 16px;
+      margin-bottom: -10px;
+    }
+    .asterisk-section {
+      p {
+        font-size: 12px;
+        color: $color-graytext-footer;
+      }
+    }
+    .special-margin-p {
+      margin-bottom: -10px;
+    }
+    .bordered-list {
+      border-top: 2px solid $color-lightgray;
+      border-bottom: 1px solid $color-lightgray;
+      list-style: none;
+      padding-left: 0;
+      li {
+        font-size: 15px;
+        border-bottom: 1px solid $color-lightgray;
+        padding: 15px 0;
+      }
+      li:before {
+        content: "\2714\0020";
+        font-family: $league;
+        color: $color-orange;
+        font-weight: bold;
+        margin-right: 5px;
+      }
+    }
+    .bordered-list.unchecked {
+      li {
+        font-size: 14px;
+      }
+      li:before {
+        content: none;
+      }
+    }
+  }
+  .award-box {
+    background-color: $color-lightgray;
+    width: 48%;
+    padding-bottom: 65px;
+    .award-interior {
+      background: url('/assets/img/blue-medal.png') no-repeat center 40px;
+      text-align: center;
+      width: 80%;
+      margin: 0 auto;
+      box-shadow: 3px 29px 72px -41px rgba(0,0,0,0.32);
+      > p:first-of-type {
+        text-align: left;
+        font-family: $league;
+        font-size: 43px;
+        margin-top: 35px;
+      }
+      p.middle-paragraph {
+        margin-top: 40px;
+      }
+      .white-box {
+        background-color: $color-white;
+        padding-top: 35px;
+        padding-bottom: 25px;
+        margin-top: 45px;
       }
     }
   }
