@@ -1,7 +1,7 @@
 @import "../components/calculator";
 #impact-calc-page {
   .get-involved-calc {
-    background: url('/assets/img/smilinggirl.jpg') no-repeat calc(50% + -290px) 26px;
+    background: url('/assets/img/smilinggirl.jpg') no-repeat left /*calc(50% + -290px)*/ 26px;
     background-color: $color-lightblue;
     display:block;
     min-height:500px;

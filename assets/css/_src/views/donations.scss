@@ -1,18 +1,41 @@
 @import "../components/calculator";
 
-.donations {
-  background-color: $color-lightblue;
-  padding-top: 80px;
-  padding-bottom: 150px;
-  background: url('/assets/img/smilinggirl.jpg') no-repeat left bottom;
-  @include breakpoint(phonetablet) {
-    background-image: none;
+#donation-page {
+
+  [v-cloak] {
+    display: none;
   }
-  form {
+
+  .checkmark {
+    * {
+      display: inline;
+      margin: 30px 0px;
+      font-size: 15px;
+    }
+    input {
+      margin-right: 10px;
+    }
+  }
+  .checkmark.no-bottom-margin {
+    input {
+      margin-bottom: 0px;
+    }
+  }
+
+  .donations {
+    background-color: $color-lightblue;
+    padding-top: 80px;
+    padding-bottom: 150px;
+    background: url('/assets/img/smilinggirl.jpg') no-repeat left 160px;
+    background-attachment: fixed;
+  }
+
+  .donation-form {
+    @include saw-tooth-horizontal(9px,$color-lightblue);
     width: 650px;
     background-color: $color-white;
     margin: auto;
-    padding: 60px 75px;
+    padding: 60px 75px 118px;
     @include breakpoint(tabletonly) {
       width: 450px;
       padding: 60px 35px;
@@ -22,44 +45,54 @@
       width: 98%;
       margin: 0px 1%;
     }
-    .donate-buttons, .donate-timeframe {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-bottom: 45px;
-      .donate-button {
-        width: 32%;
-        margin-right: 1.5%;
-        margin-bottom: 10px;
-        input {
-          padding: 30px 0;
-          border: 1px solid $color-lightblue;
-          text-align: center;
-        }
-      }
-      .donate-button:nth-child(3n+3) {
-        margin-right: 0;
-      }
+  }
+
+  h2 {
+    font-family: $roboto;
+    font-size: 22px;
+    color:$color-black;
+    margin: 0 0 25px;
+    padding: 0 0 0;
+  }
+
+  #calculator-widget {
+    width:auto;
+    padding: 3px 0 0;
+    .calculator {
+      min-height: 350px;
+    }
+    .donate-timeframe {
+      margin-bottom: 47px !important;
     }
   }
-  .donate-timeframe > input {
-    width: 49%;
-    padding: 10px 0;
-    text-align: center;
-    border: 1px solid $color-lightblue;
+
+  .disabled {
+    color:rgba($color-black,0.5);
   }
-  .donate-timeframe > input:first-child {
-    margin-right: 2%;
+
+  .parenthetical {
+    font-family: $roboto;
+    font-style: italic;
+    font-size: 12px;
+    color: $color-gray4;
+  }
+
+  .invalid-feedback {
+    font-family: $roboto;
+    font-size: 14px;
+    line-height: 1em;
+    color: $color-red;
   }
 
   .restriction {
     margin-top: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
   }
+
   .address-line {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 15px;
     @include breakpoint(phoneonly) {
       flex-direction: column;
@@ -78,7 +111,7 @@
       width: 100%;
     }
     input, textarea {
-      padding: 10px;
+      @extend %standard-input;
     }
     .state-zip > input {
       width: 60%;
@@ -103,7 +136,60 @@
     .name-entry > input:last-of-type {
       margin-left: 2%;
     }
+
+    &.invalid input,
+    input.invalid {
+      border-color:$color-red;
+    }
+    &.error {
+      align-items: flex-start;
+      margin-top:-28px;
+      margin-bottom: 11px;
+      .invalid-feedback {
+        &.state {
+          width: 60%;
+        }
+        &.zip {
+          width: 38%;
+          margin-left: 2%;
+        }
+        &.fname {
+          width:48%;
+        }
+        &.lname {
+          width:48%;
+          margin-left:2%;
+        }
+      }
+    }
+    &.amount {
+      &.error {
+        margin-top:-10px;
+        margin-bottom: 11px;
+      }
+      margin-bottom:12px;
+    }
+    &.disclaimer {
+      margin:0 0 0;
+      padding:0;
+      font-family: $roboto;
+      font-size: 14px;
+      font-style: italic;
+      a {
+        &:hover {
+          text-decoration: underline;
+        }
+        font-size: 14px;
+        color: $color-lightblue;
+        text-decoration: none;
+      }
+    }
   }
+
+  .address {
+    margin-bottom:37px;
+  }
+
   .address, .payment-details {
     .address-line.amount {
       input {
@@ -127,16 +213,52 @@
         margin-left: 0px;
       }
       a {
-        font-size: 14px;
-        text-decoration: underline;
+        &:hover {
+          text-decoration: underline;
+        }
+        color: $color-lightblue;
+        text-decoration: none;
       }
     }
   }
+
   .contact-information {
-    padding: 35px 0 20px;
-    border-top: 1px solid $color-graytext-footer;
+
+    padding: 49px 0 32px;
+    border-top: 1px solid $color-gray3;
     > div.checkmark input.no-margin {
       margin-top: 0px;
+    }
+    .email-sent {
+      .parenthetical {
+        margin: 5px 0 -18px;
+        display: block;
+      }
+    }
+    label {
+      .parenthetical {
+        font-size:15px;
+      }
+    }
+    .checkmark {
+      * {
+        margin: 23px 0 3px;
+      }
+      input {
+        margin-right:10px;
+      }
+    }
+    #dedication-group {
+      margin: 35px 0 0;
+      .message {
+        align-items: flex-start;
+        label {
+          padding-top:10px;
+        }
+        textarea {
+          height:98px;
+        }
+      }
     }
     .doner-name-box {
       .radio-line {
@@ -156,26 +278,60 @@
       }
     }
   }
+
   .payment-details {
-    padding: 15px 0 30px;
-    border-top: 1px solid $color-graytext-footer;
-    border-bottom: 1px solid $color-graytext-footer;
-    margin-bottom: 40px;
+    padding: 64px 0 44px;
+    border-top: 1px solid $color-gray3;
+    border-bottom: 1px solid $color-gray3;
+    margin-bottom: 36px;
+
     .h-2-check {
       display: flex;
       justify-content: space-between;
+      align-items: baseline;
+      margin:0 0 0;
+      .checkmark {
+        * {
+          margin: 0;
+          font-style: normal;
+
+        }
+      }
     }
-    h2 {
-      margin-bottom: 0px;
-    }
-    p {
+    .mail-notice {
       font-size: 15px;
       font-style: italic;
+      margin-bottom:22px;
+    }
+    #card-element {
+      outline:1px solid $color-gray2;
+      width:100%;
+      min-height: 40px;
+    }
+    #card-errors {
+    }
+    .card-error-wrap {
+      margin: -29px 0 12px;
+      .spacer {
+        display: inline-block;
+        width: 130px;
+      }
     }
   }
+
+  .pay-fees {
+    label * {
+      margin: 0;
+    }
+    input {
+      margin-right:10px;
+    }
+  }
+
   .final-amount {
+    margin:40px 0 0;
     background-color: $color-lightgray;
-    padding: 50px 140px;
+    padding: 54px 140px 46px;
     text-align: center;
     border-radius: 4px;
     @include breakpoint(tabletonly) {
@@ -184,33 +340,39 @@
     @include breakpoint(phoneonly) {
       padding: 50px 45px;
     }
+    .lead {
+      font-family: $roboto;
+      font-weight: normal;
+      font-size: 15px;
+      corlo:$color-black;
+      margin:0;
+      padding:0;
+    }
     .final-number {
       font-size: 60px;
       font-weight: bold;
+      line-height: 1.2em;
     }
   }
-  .checkmark {
-    * {
-      display: inline;
-      margin: 30px 0px;
-      font-size: 15px;
-    }
-    input {
-      margin-right: 10px;
-    }
-  }
-  .checkmark.no-bottom-margin {
-    input {
-      margin-bottom: 0px;
-    }
-  }
-  input[type="submit"] {
-    background-color: $color-orange;
+
+  .submit-btn {
+    font-family: $roboto;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 60px;
+    height:60px;
     width: 100%;
-    margin-top: 20px;
+    background-color: $color-orange;
+    padding: 0;
+    margin: 20px 0 0;
   }
-}
-span.parenthetical {
-    font-size: 14px;
-    color: rgba(116, 116, 116, 1);
+
+
+  /////////
+  @include breakpoint(phonetablet) {
+    .donations {
+      background-image: none;
+    }
+  }
+
 }

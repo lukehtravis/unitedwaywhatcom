@@ -3,3 +3,14 @@
  */
 
 @import "variables";
+@import "mixins";
+
+%standard-input {
+  padding: 10px;
+  border-color:$color-gray2;
+  @include input-placeholder {
+    font-family: $roboto;
+    font-size: 15px;
+    color: rgba(0,0,0,0.5);
+  }
+}
