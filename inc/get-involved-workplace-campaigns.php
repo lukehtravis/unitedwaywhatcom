@@ -2,13 +2,13 @@
   <section class="banner">
     <div class="headline">
       <h1 class="small-breadcrumb">Give <span class="breadcrumb">/ Workplace Campaigns</span></h1>
-      <span class="bland-header">Build Your Brand On Giving</span>
+      <span class="bland-header">Build Your Brand On<br /> Giving</span>
       <p>Workplace giving has long been a highly valued tradition. It is one of the most simple and effective ways for employees to give back to their community. And, it is one of the most significant resources employers offer to address community needs.</p>
       <a href="#"><button class="orange-bg">Contact Us To Host a Campaign</button></a>
     </div>
   </section>
   <div class="normal-body">
-    <div class="content-row">
+    <div class="page-top">
       <h2>What is a workplace campaign?</h2>
     </div>
     <div class="content-row">
@@ -27,7 +27,7 @@
         </ul>
       </div>
     </div>
-    <div class="content-row">
+    <div class="content-row three-circles">
       <img src="/assets/img/desk-happy.jpg" />
       <img src="/assets/img/apron-united.jpg" />
       <img src="/assets/img/nice-glasses.jpg" />
@@ -159,7 +159,7 @@
       </div>
     </div>
     <div class="content-row">
-      <div>
+      <div class="halfsies">
         <h2>Loaned Executives</h2>
         <p>Our Loaned Executive Program provides a unique opportunity for the professional development of emerging leaders. Here’s how it works:</p>
         <p><b>Give something.</b> Lend us an employee who is an emerging leader within your company. The individual works half-time for us and half-time for you from mid-September through mid-November. You continue to furnish all of their wages.</p>
@@ -167,7 +167,7 @@
         <p><b>Get a little more.</b> As a loaned executive, your employee will be responsible for 15-25 accounts. Each of these accounts represents a business conducting a United Way workplace campaign. By way of your colleague, you’ll get your name out to dozens of businesses and be seen as a true philanthropic leader across our community.</p>
         <p><b>And even more.</b> We’ll issue you a $10,000 sponsorship credit for each loaned executive you provide. This means you’ll get all of the benefits we give to our Mt. Baker sponsors. Add in a cash sponsorship or an additional loaned executive to receive title sponsor perks as a Cascade sponsor.</p>
       </div>
-      <div>
+      <div class="halfsies">
         <img src="/assets/img/happy-volunteers.jpg" />
       </div>
     </div>

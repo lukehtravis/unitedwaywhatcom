@@ -25,6 +25,10 @@
       }
       .small-breadcrumb {
         text-align: left;
+        margin-bottom: 175px;
+        @include breakpoint(phonetablet) {
+          margin-bottom: 35px;
+        }
         @include breakpoint(phoneonly) {
           margin-bottom: 25px;
         }
@@ -48,9 +52,21 @@
     }
   }
   .normal-body {
+    .page-top {
+      margin-left: 100px;
+      @include breakpoint(phonetablet) {
+        @include mobilePageSideMargins;
+      }
+    }
     .content-row {
+      @include breakpoint(phonetablet) {
+        margin-bottom: 30px;
+      }
       .small-side {
         width: 350px;
+        @include breakpoint(phonetablet) {
+          width: 100%;
+        }
       }
       .small-side.stick-people {
         text-align: center;
@@ -63,6 +79,9 @@
       }
       .large-side {
         width: 750px;
+        @include breakpoint(phonetablet) {
+          width: 100%;
+        }
         .spaced-text {
           margin-top: 50px;
         }
@@ -70,11 +89,20 @@
           display: flex;
           border-left: 1px solid $color-lightgray;
           margin-bottom: 60px;
+          @include breakpoint(phoneonly) {
+            flex-direction: column;
+            border-left: 0px;
+          }
           .percent-section {
             border-right: 1px solid $color-lightgray;
             padding: 30px 20px;
             text-align: center;
             width: 25%;
+            @include breakpoint(phoneonly) {
+              width: 100%;
+              border-right: 0px;
+              border-bottom: 1px solid $color-lightgray;
+            }
             .percent-number {
               font-family: $league;
               font-size: 60px;
@@ -91,6 +119,16 @@
           display: grid;
           grid-template-columns: 25% 75%;
           grid-template-rows: 300px 200px 150px 150px;
+          @include breakpoint(phoneonly) {
+            grid-template-columns: 100%;
+            grid-template-rows: auto;
+            margin-top: 30px;
+          }
+          > .sponsor-name-column, > .sponsor-level-column {
+            @include breakpoint(phoneonly) {
+              padding: 20px 0 !important;
+            }
+          }
           .sponsor-level-column {
             font-size: 25px;
             border-top: 1px solid $color-lightgray;
@@ -103,6 +141,9 @@
             p {
               font-size: 25px;
               margin-bottom: -10px;
+              @include breakpoint(phoneonly) {
+                margin-top: 0px;
+              }
             }
             span {
               font-size: 13px;
@@ -110,6 +151,9 @@
             }
             img {
               margin-bottom: -35px;
+              @include breakpoint(phoneonly) {
+                display: none;
+              }
             }
             div.table-header {
               position: absolute;
@@ -118,6 +162,9 @@
               @include centerer;
               top: -15px;
               color: $color-graytext-footer;
+              @include breakpoint(phoneonly) {
+                display: none;
+              }
             }
           }
           .sponsor-name-column {
@@ -129,6 +176,7 @@
             img {
               display: block;
               margin: 0 auto;
+              max-width: 100%;
             }
             a  {
               color: $color-lightblue;
@@ -140,6 +188,9 @@
               @include centerer;
               top: -15px;
               color: $color-graytext-footer;
+              @include breakpoint(phoneonly) {
+                display: none;
+              }
             }
           }
           .sponsor-level-column.largest {
@@ -161,6 +212,11 @@
         .lightestblue {
           background-color:rgba(83, 158, 208, .6);
         }
+      }
+    }
+    .three-circles {
+      @include breakpoint(phonetablet) {
+        display: none;
       }
     }
     h3 {
@@ -203,9 +259,24 @@
       }
     }
   }
+  .halfsies {
+    width: 48%;
+    @include breakpoint(phonetablet) {
+      width: 100%;
+    }
+    img {
+      @include breakpoint(phonetablet) {
+        display: none;
+      }
+    }
+  }
   .award-box {
     background-color: $color-lightgray;
     width: 48%;
+    @include breakpoint(phonetablet) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
     padding-bottom: 65px;
     .award-interior {
       background: url('/assets/img/blue-medal.png') no-repeat center 40px;
@@ -213,20 +284,30 @@
       width: 80%;
       margin: 0 auto;
       box-shadow: 3px 29px 72px -41px rgba(0,0,0,0.32);
+      @include breakpoint(phonetablet) {
+        background-size: 75%;
+      }
       > p:first-of-type {
         text-align: left;
         font-family: $league;
         font-size: 43px;
         margin-top: 35px;
+        color: $color-graytext-footer;
       }
       p.middle-paragraph {
         margin-top: 40px;
+        font-size: 14px;
       }
       .white-box {
         background-color: $color-white;
         padding-top: 35px;
         padding-bottom: 25px;
         margin-top: 45px;
+        img {
+          @include breakpoint(phonetablet) {
+            max-width: 100%;
+          }
+        }
       }
     }
   }

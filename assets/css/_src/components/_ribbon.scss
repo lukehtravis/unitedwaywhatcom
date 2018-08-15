@@ -1,19 +1,18 @@
 .ribbon {
- width: 107%;
-
+ width: 111%;
  position: relative;
- background: rgb(255,68,69);
  color: #fff;
+ background-color: rgba(255,68,69, 0.85);
  text-align: center;
  padding: 1px 0; /* Adjust to suit */
- margin-left: -3.5%; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+ margin-left: -5.5%; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
 }
 .ribbon:before, .ribbon:after {
  content: "";
  position: absolute;
  display: block;
  bottom: -1em;
- border: 1.5em solid rgb(255,68,69);
+ background-color: rgba(255,68,69, 0.85);
  z-index: -1;
 }
 .ribbon:before {
@@ -31,8 +30,15 @@
  position: absolute;
  display: block;
  border-style: solid;
- border-color: rgb(255,68,69) transparent transparent transparent;
+ border-color: rgba(255,68,69, 0.85) transparent transparent transparent;
  bottom: -1em;
+}
+.ribbon .ribbon-content {
+  font-size: 25px;
+  font-weight: bold;
+  @include breakpoint(phonetablet) {
+    font-size: 20px;
+  }
 }
 .ribbon .ribbon-content:before {
  left: 0;
