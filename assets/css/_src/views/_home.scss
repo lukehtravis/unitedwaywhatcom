@@ -3,9 +3,6 @@
   // See site js for background img url
   background: no-repeat center center;
   height: 780px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   @include breakpoint(hugeness) {
     max-width: 1400px;
@@ -23,27 +20,41 @@
 }
 
 .box-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   clear: both;
   @include breakpoint(hugeness) {
     @include hugeness-container;
   }
   @include breakpoint(phonetablet) {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .box-link {
     padding: 100px 75px;
     width: 33.33%;
     text-align: center;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: 0.9s ease;
     transition: 0.9s ease;
     @include breakpoint(phoneonly) {
       padding: 100px 60px;
     }
     img {
-      align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
       margin-bottom: 40px;
     }
     a {
@@ -84,17 +95,33 @@
   .box-link.background-image {
     background:
     /* invisible graient necessary to keep image from moving on mouseleave */
+    -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(255, 255, 255, 0.0)),
+      to(rgba(255, 255, 255, 0.0))
+    ),
+    url(../../assets/img/womanbackground.png) no-repeat center center;
+    background:
+    /* invisible graient necessary to keep image from moving on mouseleave */
     linear-gradient(
       rgba(255, 255, 255, 0.0),
       rgba(255, 255, 255, 0.0)
     ),
     url(../../assets/img/womanbackground.png) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
   }
   .box-link.background-image:hover {
+    background:
+    /* top, transparent white, with gradient */
+    -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(255, 255, 255, 0.2)),
+      to(rgba(255, 255, 255, 0.1))
+    ),
+    /* bottom, image */
+    url(../../assets/img/womanbackground.png) no-repeat center center;
     background:
     /* top, transparent white, with gradient */
     linear-gradient(

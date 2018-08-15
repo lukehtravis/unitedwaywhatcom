@@ -1142,9 +1142,6 @@ footer {
 .banner.home {
   background: no-repeat center center;
   height: 780px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover; }
   @media only screen and (min-width: 1400px) {
     .banner.home {
@@ -1160,6 +1157,8 @@ footer {
     display: none; }
 
 .box-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   clear: both; }
   @media only screen and (min-width: 1400px) {
@@ -1168,19 +1167,31 @@ footer {
       margin: 0 auto; } }
   @media only screen and (min-width: 1px) and (max-width: 900px) {
     .box-links {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column; } }
   .box-links .box-link {
     padding: 100px 75px;
     width: 33.33%;
     text-align: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-transition: 0.9s ease;
     transition: 0.9s ease; }
     @media only screen and (min-width: 1px) and (max-width: 515px) {
       .box-links .box-link {
         padding: 100px 60px; } }
     .box-links .box-link img {
+      -ms-flex-item-align: center;
       align-self: center;
       margin-bottom: 40px; }
     .box-links .box-link a {
@@ -1211,12 +1222,11 @@ footer {
   .box-links .box-link.dark-blue:hover {
     background-color: rgba(0, 81, 145, 0.8); }
   .box-links .box-link.background-image {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0))), url(../../assets/img/womanbackground.png) no-repeat center center;
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(../../assets/img/womanbackground.png) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover; }
   .box-links .box-link.background-image:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.1))), url(../../assets/img/womanbackground.png) no-repeat center center;
     background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1)), url(../../assets/img/womanbackground.png) no-repeat center center;
     background-size: cover; }
 
