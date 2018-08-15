@@ -68,6 +68,7 @@
       flex-direction: column;
       align-items: center;
       width: 22%;
+      position: relative;
       @include breakpoint(tabletonly) {
         width: 48%;
         margin-top: 40px;
@@ -75,6 +76,16 @@
       @include breakpoint(phoneonly) {
         width: 100%;
         margin-top: 40px;
+      }
+      .arrow-right {
+        @include arrowRight($color-lightgray);
+        right: -25px;
+        top: 40px;
+        position: absolute;
+        display: initial;
+        @include breakpoint(phonetablet) {
+          display: none;
+        }
       }
     }
     .icon-column:nth-child(-n+3) {

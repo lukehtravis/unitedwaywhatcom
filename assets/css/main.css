@@ -2403,7 +2403,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 22%; }
+    width: 22%;
+    position: relative; }
     @media only screen and (min-width: 515px) and (max-width: 900px) {
       .body-overlap .icon-grid .icon-column {
         width: 48%;
@@ -2412,6 +2413,20 @@ footer {
       .body-overlap .icon-grid .icon-column {
         width: 100%;
         margin-top: 40px; } }
+    .body-overlap .icon-grid .icon-column .arrow-right {
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+      display: none;
+      transition: .7s ease;
+      border-left: 20px solid #ededed;
+      z-index: 2;
+      right: -25px;
+      top: 40px;
+      position: absolute;
+      display: initial; }
+      @media only screen and (min-width: 1px) and (max-width: 900px) {
+        .body-overlap .icon-grid .icon-column .arrow-right {
+          display: none; } }
   @media only screen and (min-width: 901px) {
     .body-overlap .icon-grid .icon-column:nth-child(-n+3) {
       margin-right: 4%; } }

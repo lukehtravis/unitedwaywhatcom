@@ -20,6 +20,7 @@
     </div>
     <div class="icon-grid">
       <div class="icon-column">
+        <div class="arrow-right"></div>
         <img src="/assets/img/Dollar.png" />
         <h3>Generous people donate money</h3>
         <p>Individuals donate directly to United Way  and volunteers help us raise money through our unique workplace giving campaigns. The money goes into our Community Impact Fund. Whatcom County is our home. We are all responsible for making it a better place to live.</p>
@@ -27,12 +28,14 @@
         <a href="#">Workplace Campaigns</a>
       </div>
       <div class="icon-column">
+        <div class="arrow-right"></div>
         <img src="/assets/img/Review.png" />
         <h3>Our comittee meets & reviews</h3>
         <p>Dozens of non-profit programs approach us with ideas for how they can help move the needle on poverty. Each year, our Fund Distribution Committee, made up of 30-50 volunteers, vets these programs. Our Community Impact Fund gets distributed to the combination of programs determined to best meet the needs of Whatcom County residents. Currently, we fund over 30 programs.</p>
         <a href="#">The Fund Distribution Committee</a>
       </div>
       <div class="icon-column">
+        <div class="arrow-right"></div>
         <img src="/assets/img/Send.png" />
         <h3>The money is sent out to non-profits</h3>
         <p>The money is distributed to hardworking non-profits that provide services to the community. Our funded programs are held accountable for the work they do. They provide outcomes on their results to us at least annually.</p>
