@@ -45,6 +45,24 @@
   z-index:2;
 }
 
+@mixin arrowDown($color) {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  display: none;
+  transition: .7s ease;
+  border-top: 20px solid $color;
+  z-index:2;
+}
+
+@mixin arrowRight($color) {
+  border-top: 20px solid transparent;
+  border-bottom: : 20px solid transparent;
+  display: none;
+  transition: .7s ease;
+  border-left: 20px solid $color;
+  z-index:2;
+}
+
 //Footer
 @mixin pageSideMargins {
   margin-left: 100px;

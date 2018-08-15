@@ -64,7 +64,9 @@
         <div class="lightgray-bg sidebar-top">
           <p class="bolder-text">YOUR IMPACT IN 2017</p>
           <p class="sidebar-text">individuals and families achieved safe, stable, and affordable housing + Donations from community-minded folks like you provided the following services to those in need last year:</p>
+          <div class="arrow-down"></div>
         </div>
+
         <div class="sidebar-number">
           <div>576</div>
           <p>individuals and families received support to recover from or prevent violence or abuse</p>

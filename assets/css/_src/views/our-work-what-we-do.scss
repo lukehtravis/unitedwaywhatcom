@@ -3,9 +3,6 @@
     // See site js for background img url
     background: url('/assets/img/yellowoldman.jpg') no-repeat center center;
     height: 780px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     background-color: $color-orange;
     @include breakpoint(hugeness) {
@@ -28,8 +25,12 @@
     .content-row {
       margin-left: 70px;
       margin-right: 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       @include breakpoint(tabletonly) {
         margin-left: 50px;
         margin-right: 50px;
@@ -56,6 +57,8 @@
           }
         }
         .dual-view {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
           @include breakpoint(phonetablet) {
             display: block;
@@ -115,6 +118,7 @@
           padding: 50px 47px;
           border-radius: 5px;
           text-align: center;
+          position: relative;
           img {
             width: 100%;
             margin-bottom: 35px;
@@ -135,6 +139,12 @@
         }
       }
     }
+  }
+  .arrow-down {
+    @include arrowDown($color-lightgray);
+    @include centerer;
+    display: initial;
+    bottom: -20px;
   }
   .low-bottom-margin {
     margin-bottom: 60px;
