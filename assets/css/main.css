@@ -1278,9 +1278,6 @@ footer {
   background: no-repeat center center;
   background-color: #539ed0;
   height: 1145px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover; }
   @media only screen and (min-width: 1400px) {
     .banner.get-involved {
@@ -1307,6 +1304,8 @@ footer {
     padding-top: 50px; } }
 
 .square-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 150px;
   margin-left: 100px;
@@ -1320,10 +1319,20 @@ footer {
     .square-links {
       margin-left: 20px;
       margin-right: 20px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column; } }
   .square-links .square {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
     background-color: white;
@@ -1332,6 +1341,7 @@ footer {
     padding: 25px 42px;
     margin-right: 20px;
     border-radius: 6px;
+    -webkit-transition: .7s ease;
     transition: .7s ease; }
     @media only screen and (min-width: 515px) and (max-width: 900px) {
       .square-links .square {
@@ -1344,6 +1354,7 @@ footer {
         margin-left: 0px;
         margin-bottom: 20px; } }
     .square-links .square img {
+      -ms-flex-item-align: center;
       align-self: center;
       margin-bottom: 40px; }
       @media only screen and (min-width: 515px) and (max-width: 900px) {
@@ -2574,9 +2585,6 @@ footer {
   .get-involved-advocate .banner {
     background: url("/assets/img/girlbullhorn.jpg") no-repeat center center;
     height: 881px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover; }
     @media only screen and (min-width: 515px) and (max-width: 900px) {
       .get-involved-advocate .banner {
@@ -2621,9 +2629,6 @@ footer {
 .get-involved-volunteer .banner {
   background: url("/assets/img/youngboy.jpg") no-repeat center center;
   height: 780px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover; }
   @media only screen and (min-width: 1400px) {
     .get-involved-volunteer .banner {
@@ -2658,9 +2663,14 @@ footer {
       display: inline-block;
       background-color: #ffb351; }
     .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex; }
       @media only screen and (min-width: 1px) and (max-width: 900px) {
         .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
           flex-direction: column; } }
       .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content > p {
         width: 48%;
@@ -2675,6 +2685,8 @@ footer {
           margin-bottom: 15px; }
           @media only screen and (min-width: 1px) and (max-width: 515px) {
             .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details .volunteer-detail {
+              display: -webkit-box;
+              display: -ms-flexbox;
               display: flex; } }
           .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content .volunteer-details .volunteer-detail span {
             width: 120px;
@@ -2697,9 +2709,6 @@ footer {
 .get-help-organizations .banner {
   background: url("/assets/img/bluewomancook.jpg") no-repeat center center;
   height: 780px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover; }
   @media only screen and (min-width: 515px) and (max-width: 900px) {
     .get-help-organizations .banner {
@@ -2734,6 +2743,8 @@ footer {
   width: 100%; }
   .get-help-organizations .request-table li {
     counter-increment: item;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     border-top: 2px solid #ededed; }
     @media only screen and (min-width: 1px) and (max-width: 900px) {
@@ -2777,9 +2788,6 @@ footer {
 .get-help .banner {
   background: url("/assets/img/manonstreet.jpg") no-repeat center center;
   height: 780px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover; }
   @media only screen and (min-width: 1400px) {
     .get-help .banner {
@@ -2800,12 +2808,19 @@ footer {
     font-size: 18px; }
 
 .bottom-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #ededed;
   padding: 65px 70px; }
   @media only screen and (min-width: 1px) and (max-width: 900px) {
     .bottom-cta {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
       text-align: center;
       padding: 35px 20px; } }

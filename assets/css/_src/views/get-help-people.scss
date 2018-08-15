@@ -2,9 +2,6 @@
   // See site js for background img url
   background: url('/assets/img/manonstreet.jpg') no-repeat center center;
   height: 780px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   @include breakpoint(hugeness) {
     @include hugeness-container;
@@ -28,12 +25,19 @@
   }
 }
 .bottom-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: $color-lightgray;
   padding: 65px 70px;
   @include breakpoint(phonetablet) {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
     padding: 35px 20px;
   }

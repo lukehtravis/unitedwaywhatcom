@@ -2,9 +2,6 @@
   // See site js for background img url
   background: url('/assets/img/bluewomancook.jpg') no-repeat center center;
   height: 780px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   @include breakpoint(tabletonly) {
     height:500px;
@@ -48,6 +45,8 @@
     width: 100%;
     li {
       counter-increment: item;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       border-top: 2px solid $color-lightgray;
       @include breakpoint(phonetablet) {

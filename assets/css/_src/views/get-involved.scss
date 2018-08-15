@@ -5,9 +5,6 @@
   background: no-repeat center center;
   background-color: $color-lightblue;
   height: 1145px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   @include breakpoint(hugeness) {
     @include hugeness-container;
@@ -37,6 +34,8 @@
 }
 
 .square-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 150px;
   @include pageSideMargins;
@@ -47,12 +46,22 @@
   }
   @include breakpoint(phoneonly) {
     @include mobilePageSideMargins;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .square {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
     background-color: $color-white;
     border: 1px solid $color-white;
@@ -60,6 +69,7 @@
     padding: 25px 42px;
     margin-right: 20px;
     border-radius: 6px;
+    -webkit-transition: .7s ease;
     transition: .7s ease;
     @include breakpoint(tabletonly) {
       padding: 20px 10px;
@@ -72,7 +82,8 @@
       margin-bottom: 20px;
     }
     img {
-      align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
       margin-bottom: 40px;
       @include breakpoint(tabletonly) {
         margin-bottom: 15px;
