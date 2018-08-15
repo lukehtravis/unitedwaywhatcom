@@ -25,6 +25,9 @@
   }
 }
 .get-help-organizations {
+  .small-box {
+    padding: 30px;
+  }
   .small-box.lowered {
     margin-top: 70px;
     @include breakpoint(phonetablet) {

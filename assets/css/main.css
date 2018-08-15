@@ -588,7 +588,7 @@ select::placeholder {
     text-transform: uppercase;
     float: left;
     clear: left;
-    line-height: 0.96;
+    line-height: 1.05;
     letter-spacing: 3px;
     white-space: nowrap;
     padding: 10px 25px 0px 25px; }
@@ -1170,7 +1170,8 @@ footer {
     .box-links {
       flex-direction: column; } }
   .box-links .box-link {
-    padding: 125px 75px;
+    padding: 100px 75px;
+    width: 33.33%;
     text-align: center;
     justify-content: flex-end;
     display: flex;
@@ -2704,6 +2705,8 @@ footer {
     color: white;
     font-size: 18px; }
 
+.get-help-organizations .small-box {
+  padding: 30px; }
 .get-help-organizations .small-box.lowered {
   margin-top: 70px; }
   @media only screen and (min-width: 1px) and (max-width: 900px) {
