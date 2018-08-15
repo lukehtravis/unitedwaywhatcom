@@ -4,7 +4,8 @@
  color: #fff;
  background-color: rgba(255,68,69, 0.85);
  text-align: center;
- padding: 1px 0; /* Adjust to suit */
+ padding-top: 3px;
+ padding-bottom: 3px;
  margin-left: -5.5%; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
 }
 .ribbon:before, .ribbon:after {
@@ -30,12 +31,17 @@
  position: absolute;
  display: block;
  border-style: solid;
- border-color: rgba(255,68,69, 0.85) transparent transparent transparent;
+ border-color: rgba(255,68,69, 1) transparent transparent transparent;
  bottom: -1em;
 }
 .ribbon .ribbon-content {
   font-size: 25px;
   font-weight: bold;
+  border-top: 1px solid rgba(255,255,255, 0.7);
+  border-bottom: 1px solid rgba(255,255,255, 0.7);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin: 0;
   @include breakpoint(phonetablet) {
     font-size: 20px;
   }

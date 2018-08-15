@@ -12,7 +12,7 @@
     }
     @include breakpoint(tabletonly) {
       height:500px;
-      background-image: url('/assets/img/oldladysmiletablet.jpg');
+      background-image: none;
     }
     @include breakpoint(phoneonly) {
       height:400px;
