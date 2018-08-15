@@ -710,12 +710,20 @@ select::placeholder {
 .normal-body {
   background-color: white;
   padding-top: 100px; }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    .normal-body {
+      padding-top: 30px; } }
   .normal-body .content-row {
     margin-left: 100px;
     margin-right: 100px;
     margin-bottom: 100px;
     display: flex;
     justify-content: space-between; }
+    @media only screen and (min-width: 1px) and (max-width: 900px) {
+      .normal-body .content-row {
+        margin-left: 20px;
+        margin-right: 20px;
+        flex-direction: column; } }
     .normal-body .content-row .large-side {
       width: 56%; }
     .normal-body .content-row .small-side {
