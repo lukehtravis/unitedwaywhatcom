@@ -3,9 +3,6 @@
   .banner {
     background: url('/assets/img/party-people.jpg') no-repeat center center;
     height: 680px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     @include breakpoint(hugeness) {
       @include hugeness-container;
@@ -86,11 +83,16 @@
           margin-top: 50px;
         }
         .percent-strip {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
           border-left: 1px solid $color-lightgray;
           margin-bottom: 60px;
           @include breakpoint(phoneonly) {
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
             border-left: 0px;
           }
           .percent-section {
@@ -283,7 +285,8 @@
       text-align: center;
       width: 80%;
       margin: 0 auto;
-      box-shadow: 3px 29px 72px -41px rgba(0,0,0,0.32);
+      -webkit-box-shadow: 3px 29px 72px -41px rgba(0,0,0,0.32);
+              box-shadow: 3px 29px 72px -41px rgba(0,0,0,0.32);
       @include breakpoint(phonetablet) {
         background-size: 75%;
       }

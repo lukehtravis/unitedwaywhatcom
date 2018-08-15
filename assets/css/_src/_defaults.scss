@@ -288,9 +288,15 @@ select::placeholder {
     }
     .large-side {
       width: 56%;
+      @include breakpoint(phonetablet) {
+        width: 100%;
+      }
     }
     .small-side {
       width: 42%;
+      @include breakpoint(phonetablet) {
+        width: 100%;
+      }
     }
   }
 }
