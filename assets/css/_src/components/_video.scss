@@ -10,8 +10,12 @@
     margin-left: 20px;
   }
   a {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-decoration: none;
     p {
       margin-left: 20px;
