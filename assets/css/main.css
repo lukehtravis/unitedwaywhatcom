@@ -2346,9 +2346,6 @@ footer {
 .banner.our-work {
   background: url("/assets/img/smilingwoman.jpg") no-repeat center center;
   height: 780px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   background-color: #ffb351; }
   @media only screen and (min-width: 1400px) {
@@ -2381,10 +2378,13 @@ footer {
   .body-overlap .top-text p {
     font-size: 18px; }
 .body-overlap .icon-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0 4%; }
   @media only screen and (min-width: 1px) and (max-width: 900px) {
     .body-overlap .icon-grid {
+      -ms-flex-wrap: wrap;
       flex-wrap: wrap; } }
   .body-overlap .icon-grid h3 {
     font-size: 26px;
@@ -2400,8 +2400,15 @@ footer {
     text-align: left;
     width: 100%; }
   .body-overlap .icon-grid .icon-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 22%;
     position: relative; }
@@ -2914,7 +2921,6 @@ footer {
           max-width: 100%; } }
     .get-involved-personal-donations .normal-body .content-row .small-box.old-photo p {
       margin: 0 auto;
-      width: 256px;
       line-height: 1.3; }
       @media only screen and (min-width: 1px) and (max-width: 515px) {
         .get-involved-personal-donations .normal-body .content-row .small-box.old-photo p {

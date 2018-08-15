@@ -4,9 +4,6 @@
   // See site js for background img url
   background: url('/assets/img/smilingwoman.jpg') no-repeat center center;
   height: 780px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   background-color: $color-orange;
   @include breakpoint(hugeness) {
@@ -42,10 +39,13 @@
     }
   }
   .icon-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0 4%;
     @include breakpoint(phonetablet) {
-      flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
     }
     h3 {
       font-size: 26px;
@@ -64,9 +64,16 @@
       width: 100%;
     }
     .icon-column {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       width: 22%;
       position: relative;
       @include breakpoint(tabletonly) {
