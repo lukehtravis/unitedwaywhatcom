@@ -136,6 +136,7 @@ select::placeholder {
     float: none;
     font-family: $roboto;
     padding-left: 0px;
+    font-family: $roboto-condensed;
   }
   span {
     @include headerText();
@@ -202,6 +203,7 @@ select::placeholder {
     padding: 0px;
     font-family: $roboto;
     font-size: 60px;
+    letter-spacing: 2px;
     font-weight: bold;
     @include breakpoint(phoneonly) {
       font-size: 30px;

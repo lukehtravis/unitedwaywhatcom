@@ -579,7 +579,8 @@ select::placeholder {
     font-size: inherit;
     float: none;
     font-family: "Roboto", sans-serif;
-    padding-left: 0px; }
+    padding-left: 0px;
+    font-family: "Roboto Condensed", "Roboto", sans-serif; }
   .headline span {
     margin: 0;
     font-size: 86px;
@@ -649,6 +650,7 @@ select::placeholder {
     padding: 0px;
     font-family: "Roboto", sans-serif;
     font-size: 60px;
+    letter-spacing: 2px;
     font-weight: bold; }
     @media only screen and (min-width: 1px) and (max-width: 515px) {
       .headline span.bland-header {
@@ -3039,10 +3041,6 @@ footer {
   height: 780px;
   background-size: cover;
   background-color: #ffb351; }
-  @media only screen and (min-width: 1400px) {
-    .our-work-what-we-do .banner {
-      max-width: 1400px;
-      margin: 0 auto; } }
   @media only screen and (min-width: 515px) and (max-width: 900px) {
     .our-work-what-we-do .banner {
       height: 500px;
