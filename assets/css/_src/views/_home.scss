@@ -24,6 +24,9 @@
   display: -ms-flexbox;
   display: flex;
   clear: both;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   @include breakpoint(hugeness) {
     @include hugeness-container;
   }

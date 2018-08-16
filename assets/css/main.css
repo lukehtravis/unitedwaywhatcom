@@ -1230,7 +1230,10 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  clear: both; }
+  clear: both;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
   @media only screen and (min-width: 1400px) {
     .box-links {
       max-width: 1400px;
@@ -2488,11 +2491,13 @@ footer {
   .body-overlap .icon-grid p {
     font-size: 15px;
     letter-spacing: 1px;
-    line-height: 1.2; }
+    line-height: 1.5;
+    letter-spacing: 0px; }
   .body-overlap .icon-grid a {
     margin-top: 10px;
     color: #539ed0;
     font-size: 15px;
+    letter-spacing: 0px;
     text-align: left;
     width: 100%; }
   .body-overlap .icon-grid .icon-column {
@@ -2506,7 +2511,7 @@ footer {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 22%;
+    width: 21%;
     position: relative; }
     @media only screen and (min-width: 515px) and (max-width: 900px) {
       .body-overlap .icon-grid .icon-column {
@@ -2532,7 +2537,7 @@ footer {
           display: none; } }
   @media only screen and (min-width: 901px) {
     .body-overlap .icon-grid .icon-column:nth-child(-n+3) {
-      margin-right: 4%; } }
+      margin-right: 5.33%; } }
   @media only screen and (min-width: 515px) and (max-width: 900px) {
     .body-overlap .icon-grid .icon-column:nth-child(odd) {
       margin-right: 4%; } }
@@ -3151,6 +3156,11 @@ footer {
       .our-work-what-we-do .body-overlap .content-row .small-side .sidebar-number p {
         width: 200px;
         margin: 0 auto; }
+.our-work-what-we-do .truncated-text {
+  margin-right: 3%; }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    .our-work-what-we-do .truncated-text {
+      margin-right: 0px; } }
 .our-work-what-we-do .arrow-down {
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;

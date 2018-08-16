@@ -140,6 +140,12 @@
       }
     }
   }
+  .truncated-text {
+    margin-right: 3%;
+    @include breakpoint(phonetablet) {
+      margin-right: 0px;
+    }
+  }
   .arrow-down {
     @include arrowDown($color-lightgray);
     @include centerer;

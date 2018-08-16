@@ -39,7 +39,7 @@
         </div>
         <div class="left-content-area mid-bottom-margin">
           <div class="dual-view">
-            <div>
+            <div class="truncated-text">
               <h2>Your money stays local.</h2>
               <p>When you donate to United Way of Whatcom County, your donation stays local. We work with area non-profit programs – we call them Partner Agencies –  to turn your money into valuable services that move individuals and families from poverty to possibility. We do this by convening idea-makers and action-takers. We help local non-profit workers, government officials, and everyday citizens get things done.</p>
               <a href="#"><button class="orange-bg mobile-button">See Where Your Money Goes</button></a>
