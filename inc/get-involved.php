@@ -18,9 +18,9 @@
     />
     <div class="headline">
       <h1>Give</h1>
-      <span class="black-bg">You decided to Join</span>
-      <span class="black-bg">Us in the fight.</span>
-      <span class="darkorange-bg">Thank You.</span>
+      <span class="black-bg long-top">You decided to Join</span>
+      <span class="black-bg short-middle">Us in the fight.</span>
+      <span class="darkorange-bg small-third">Thank You.</span>
     </div>
     <div class="square-links">
       <div class="square">

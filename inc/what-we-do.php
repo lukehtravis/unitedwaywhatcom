@@ -2,9 +2,9 @@
   <section class="banner">
     <div class="headline">
       <h1>What We Do</h1>
-      <span class="black-bg">Financial Stability</span>
-      <span class="black-bg">For Every PErson</span>
-      <span class="darkorange-bg">Live United<sup class="trademark">®</sup></span>
+      <span class="black-bg long-top">Financial Stability</span>
+      <span class="black-bg short-middle">For Every PErson</span>
+      <span class="darkorange-bg small-third">Live United<sup class="trademark">®</sup></span>
     </div>
   </section>
   <section class="body-overlap">

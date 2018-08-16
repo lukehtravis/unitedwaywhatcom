@@ -2,8 +2,8 @@
   <section class="banner our-work">
     <div class="headline">
       <h1>How We Do It</h1>
-      <span class="black-bg">We Do It For You</span>
-      <span class="black-bg">We Do It With You</span>
+      <span class="black-bg short-top">We Do It For You</span>
+      <span class="black-bg long-middle">We Do It With You</span>
     </div>
     <div class="video-section">
       <a href="#">

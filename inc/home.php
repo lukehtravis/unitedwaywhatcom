@@ -32,9 +32,9 @@
       src="/assets/img/womancook.jpg"
     />
     <div class="headline">
-      <span class="lightblue-bg">we have one life.</span>
-      <span class="lightblue-bg">to live better, we must</span>
-      <span class="orange-bg">live united.</span>
+      <span class="lightblue-bg short-top">we have one life.</span>
+      <span class="lightblue-bg long-middle">to live better, we must</span>
+      <span class="orange-bg big-third">live united.</span>
     </div>
     <div class="video-section">
       <a href="#">

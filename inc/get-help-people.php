@@ -2,8 +2,8 @@
   <section class="banner get-help">
     <div class="headline">
       <h1>How We Do It</h1>
-      <span class="lightblue-bg">Not Just Survive</span>
-      <span class="lightblue-bg">Thrive</span>
+      <span class="lightblue-bg long-top">Not Just Survive</span>
+      <span class="lightblue-bg short-middle">Thrive</span>
       <p>Beyond  funding our local Partner Agencies, we offer the following programs directly to people in need: </p>
     </div>
   </section>
