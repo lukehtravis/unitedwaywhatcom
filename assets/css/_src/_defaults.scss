@@ -152,7 +152,6 @@ select::placeholder {
   }
   span.small-headline {
     font-size: 62px;
-    padding-bottom: 5px;
     @include breakpoint(tabletonly) {
       font-size: 60px;
     }
@@ -160,25 +159,42 @@ select::placeholder {
       font-size: 40px;
     }
   }
-  span.long-top {
-    padding-bottom: 18px;
-    padding-top: 18px;
-  }
   span.short-top {
     padding-top: 18px;
     padding-bottom: 0px;
-  }
-  span.long-middle {
-    padding-top: 18px;
-    padding-bottom: 18px;
+    @include breakpoint(tabletonly) {
+      padding-top: 10px;
+      padding-bottom: 0px;
+    }
+    @include breakpoint(phoneonly) {
+      padding-top: 10px;
+      padding-bottom: 0px;
+    }
   }
   span.short-middle {
     padding-top: 0px;
-    padding-bottom: 15px;
+    padding-bottom: 18px;
+    @include breakpoint(tabletonly) {
+      padding-top: 0px;
+      padding-bottom: 7px;
+    }
+    @include breakpoint(phoneonly) {
+      padding-top: 0px;
+      padding-bottom: 7px;
+    }
   }
-  span.small-third, span.big-third {
+  span.long-top, span.long-middle, span.small-third, span.big-third {
     padding-top: 18px;
     padding-bottom: 18px;
+    @include breakpoint(tabletonly) {
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+    @include breakpoint(phoneonly) {
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+
   }
   span.bland-header {
     text-transform: none;

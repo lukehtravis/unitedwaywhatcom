@@ -603,29 +603,46 @@ select::placeholder {
         padding-left: 7px;
         padding-right: 7px; } }
   .headline span.small-headline {
-    font-size: 62px;
-    padding-bottom: 5px; }
+    font-size: 62px; }
     @media only screen and (min-width: 515px) and (max-width: 900px) {
       .headline span.small-headline {
         font-size: 60px; } }
     @media only screen and (min-width: 1px) and (max-width: 515px) {
       .headline span.small-headline {
         font-size: 40px; } }
-  .headline span.long-top {
-    padding-bottom: 18px;
-    padding-top: 18px; }
   .headline span.short-top {
     padding-top: 18px;
     padding-bottom: 0px; }
-  .headline span.long-middle {
-    padding-top: 18px;
-    padding-bottom: 18px; }
+    @media only screen and (min-width: 515px) and (max-width: 900px) {
+      .headline span.short-top {
+        padding-top: 10px;
+        padding-bottom: 0px; } }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .headline span.short-top {
+        padding-top: 10px;
+        padding-bottom: 0px; } }
   .headline span.short-middle {
     padding-top: 0px;
-    padding-bottom: 15px; }
-  .headline span.small-third, .headline span.big-third {
+    padding-bottom: 18px; }
+    @media only screen and (min-width: 515px) and (max-width: 900px) {
+      .headline span.short-middle {
+        padding-top: 0px;
+        padding-bottom: 7px; } }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .headline span.short-middle {
+        padding-top: 0px;
+        padding-bottom: 7px; } }
+  .headline span.long-top, .headline span.long-middle, .headline span.small-third, .headline span.big-third {
     padding-top: 18px;
     padding-bottom: 18px; }
+    @media only screen and (min-width: 515px) and (max-width: 900px) {
+      .headline span.long-top, .headline span.long-middle, .headline span.small-third, .headline span.big-third {
+        padding-top: 7px;
+        padding-bottom: 7px; } }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .headline span.long-top, .headline span.long-middle, .headline span.small-third, .headline span.big-third {
+        padding-top: 7px;
+        padding-bottom: 7px; } }
   .headline span.bland-header {
     text-transform: none;
     float: none;
