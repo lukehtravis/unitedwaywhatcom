@@ -6,9 +6,6 @@
   height: 780px;
   background-size: cover;
   background-color: $color-orange;
-  @include breakpoint(hugeness) {
-    @include hugeness-container;
-  }
   @include breakpoint(tabletonly) {
     height:500px;
     background-image:  url('/assets/img/smilingwomantablet.jpg');

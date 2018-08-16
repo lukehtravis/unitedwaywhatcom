@@ -2447,10 +2447,6 @@ footer {
   height: 780px;
   background-size: cover;
   background-color: #ffb351; }
-  @media only screen and (min-width: 1400px) {
-    .banner.our-work {
-      max-width: 1400px;
-      margin: 0 auto; } }
   @media only screen and (min-width: 515px) and (max-width: 900px) {
     .banner.our-work {
       height: 500px;
