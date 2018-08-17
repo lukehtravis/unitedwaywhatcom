@@ -653,6 +653,8 @@ select::placeholder {
       .headline span.long-top, .headline span.long-middle, .headline span.small-third, .headline span.big-third {
         padding-top: 7px;
         padding-bottom: 7px; } }
+  .headline span.big-third.unicolor {
+    padding-top: 0px; }
   .headline span.bland-header {
     text-transform: none;
     float: none;
@@ -2718,10 +2720,6 @@ footer {
   background: url("/assets/img/youngboy.jpg") no-repeat center center;
   height: 780px;
   background-size: cover; }
-  @media only screen and (min-width: 1400px) {
-    .get-involved-volunteer .banner {
-      max-width: 1400px;
-      margin: 0 auto; } }
   @media only screen and (min-width: 515px) and (max-width: 900px) {
     .get-involved-volunteer .banner {
       height: 500px;

@@ -4,7 +4,7 @@
       <h1>volunteer</h1>
       <span class="black-bg long-top">The Greatest gift</span>
       <span class="black-bg short-middle">You Can Give</span>
-      <span class="black-bg big-third">Is time</span>
+      <span class="black-bg big-third unicolor">Is time.</span>
     </div>
   </section>
   <section class="body-overlap">
