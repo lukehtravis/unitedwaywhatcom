@@ -2,7 +2,7 @@
   <section class="banner">
     <div class="headline">
       <h1 class="small-breadcrumb">Give <span class="breadcrumb">/ Workplace Campaigns</span></h1>
-      <span class="bland-header">Build Your Brand On<br /> Giving</span>
+      <span class="bland-header">Build Your Brand On<br /> Giving.</span>
       <p>Workplace giving has long been a highly valued tradition. It is one of the most simple and effective ways for employees to give back to their community. And, it is one of the most significant resources employers offer to address community needs.</p>
       <a href="#"><button class="orange-bg">Contact Us To Host a Campaign</button></a>
     </div>

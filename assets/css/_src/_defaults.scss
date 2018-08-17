@@ -303,9 +303,6 @@ select::placeholder {
 .normal-body {
   background-color: $color-white;
   padding-top: 100px;
-  @include breakpoint(hugeness) {
-    @include hugeness-container;
-  }
   @include breakpoint(phonetablet) {
     padding-top: 30px;
   }
@@ -314,6 +311,10 @@ select::placeholder {
     margin-bottom: 100px;
     display: flex;
     justify-content: space-between;
+    @include breakpoint(hugeness) {
+      @include hugeness-container;
+      margin-bottom: 50px;
+    }
     @include breakpoint(phonetablet) {
       @include mobilePageSideMargins;
       flex-direction: column;
