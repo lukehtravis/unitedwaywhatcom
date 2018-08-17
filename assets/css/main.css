@@ -2384,7 +2384,8 @@ footer {
     @media only screen and (min-width: 1400px) {
       .confirm-screen .address-box-container {
         max-width: 1400px;
-        margin: 0 auto; } }
+        margin: 0 auto;
+        padding-left: 0px; } }
     @media only screen and (min-width: 515px) and (max-width: 900px) {
       .confirm-screen .address-box-container {
         padding-left: 15px; } }
