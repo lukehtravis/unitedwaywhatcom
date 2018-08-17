@@ -19,6 +19,8 @@
 .body-overlap {
   @include breakpoint(hugeness) {
     @include hugeness-container;
+    margin-left: auto;
+    margin-right: auto;
   }
   .top-text {
     text-align: center;
