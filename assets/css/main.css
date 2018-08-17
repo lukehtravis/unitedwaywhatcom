@@ -2363,7 +2363,8 @@ footer {
       padding: 50px;
       padding: 30px; } }
   .confirm-screen .headline {
-    padding-top: 0px; }
+    padding-top: 0px;
+    padding-left: 100px; }
     @media only screen and (min-width: 1400px) {
       .confirm-screen .headline {
         max-width: 1400px;
@@ -2386,8 +2387,7 @@ footer {
     @media only screen and (min-width: 1400px) {
       .confirm-screen .address-box-container {
         max-width: 1400px;
-        margin: 0 auto;
-        padding-left: 0px; } }
+        margin: 0 auto; } }
     @media only screen and (min-width: 515px) and (max-width: 900px) {
       .confirm-screen .address-box-container {
         padding-left: 15px; } }
@@ -3267,7 +3267,8 @@ footer {
   @media only screen and (min-width: 1400px) {
     .workplace-campaigns .banner {
       max-width: 1400px;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      padding-left: 100px; } }
   @media only screen and (min-width: 515px) and (max-width: 900px) {
     .workplace-campaigns .banner {
       height: 500px;

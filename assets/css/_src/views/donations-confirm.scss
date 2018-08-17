@@ -11,6 +11,7 @@
   }
   .headline {
     padding-top: 0px;
+    padding-left: 100px;
     @include breakpoint(hugeness) {
       @include hugeness-container;
     }
@@ -35,7 +36,6 @@
     padding-left: 100px;
     @include breakpoint(hugeness) {
       @include hugeness-container;
-      padding-left: 0px;
     }
     @include breakpoint(tabletonly) {
       padding-left: 15px;
