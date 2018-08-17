@@ -3,22 +3,6 @@
   // See site js for background img url
   height: 780px;
   background-size: cover;
-  animation-duration: 1s;
-  transition-delay: 1s;
-  animation-name: fadein;
-  @keyframes fadein {
-    from {
-      background: no-repeat left left;
-    }
-
-    to {
-      background: no-repeat center center;
-    }
-  }
-  @include breakpoint(hugeness) {
-    max-width: 1400px;
-    margin: 0 auto;
-  }
   @include breakpoint(tabletonly) {
     height:500px;
   }
@@ -38,9 +22,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  @include breakpoint(hugeness) {
-    @include hugeness-container;
-  }
   @include breakpoint(phonetablet) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
