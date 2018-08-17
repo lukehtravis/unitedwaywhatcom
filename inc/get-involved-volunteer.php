@@ -1,7 +1,7 @@
 <div class="color-container lightblue-bg color-container-padding get-involved-volunteer">
   <section class="banner">
     <div class="headline">
-      <h1>volunteer</h1>
+      <h1>Volunteer</h1>
       <span class="black-bg long-top">The Greatest gift</span>
       <span class="black-bg short-middle">You Can Give</span>
       <span class="black-bg big-third unicolor">Is time.</span>

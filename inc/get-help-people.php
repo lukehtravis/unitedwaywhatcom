@@ -1,10 +1,10 @@
 <div class="color-container color-container-padding darkblue-bg get-help">
   <section class="banner get-help">
     <div class="headline">
-      <h1>How We Do It</h1>
-      <span class="lightblue-bg long-top">Not Just Survive</span>
-      <span class="lightblue-bg short-middle">Thrive</span>
-      <p>Beyond  funding our local Partner Agencies, we offer the following programs directly to people in need: </p>
+      <h1>Help For People</h1>
+      <span class="lightblue-bg long-top">Not Just Survive.</span>
+      <span class="lightblue-bg short-middle">Thrive.</span>
+      <p>Beyond  funding our local <a href="#">Partner Agencies</a>, we offer the following programs directly to people in need: </p>
     </div>
   </section>
   <section class="body-overlap">

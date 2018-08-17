@@ -3,9 +3,6 @@
   background: url('/assets/img/manonstreet.jpg') no-repeat center center;
   height: 780px;
   background-size: cover;
-  @include breakpoint(hugeness) {
-    @include hugeness-container;
-  }
   @include breakpoint(tabletonly) {
     height:500px;
     background-image:  url('/assets/img/manonstreettablet.jpg');
@@ -21,6 +18,10 @@
     p {
       color: $color-white;
       font-size: 18px;
+      a {
+        color: $color-orange;
+        font-size: 18px;
+      }
     }
   }
 }
