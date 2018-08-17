@@ -14,6 +14,12 @@
       /assets/img/timelinetablet.png 515w,
     "
   />
+  <picture class="timeline-big">
+    <source srcset="/assets/img/timeline-adjusted.jpg" media="(min-width: 1150px)" />
+    <source srcset="/assets/img/timeline.png" media="(min-width: 901px)" />
+    <source srcset="/assets/img/timeline.png" media="(min-width: 515px)" />
+    <img src="/assets/img/timeline.png" />
+  </picture>
   <img class="timeline-small" src="/assets/img/timelinemobile.png">
 </section>
 <section class="break-the-link lightblue-bg">

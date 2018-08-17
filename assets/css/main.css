@@ -1328,6 +1328,7 @@ footer {
   margin: 110px 0 90px; }
   .events h1 {
     font-size: 50px;
+    letter-spacing: 0px;
     margin-bottom: 50px;
     font-family: "Roboto", sans-serif;
     color: #005191;
