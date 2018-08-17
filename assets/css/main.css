@@ -489,6 +489,9 @@ h1 {
       margin-bottom: 10px;
       font-size: 15px; } }
 
+h2 {
+  font-size: 30px; }
+
 h2, h3, label {
   font-family: "Roboto", sans-serif; }
 
@@ -3199,6 +3202,9 @@ footer {
   margin-left: -5.5%;
   /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */ }
 
+.ribbon.orange-bg {
+  background-color: rgba(255, 179, 81, 0.85); }
+
 .ribbon:before, .ribbon:after {
   content: "";
   position: absolute;
@@ -3224,6 +3230,9 @@ footer {
   border-style: solid;
   border-color: #ff4445 transparent transparent transparent;
   bottom: -1em; }
+
+.ribbon.orange-bg .ribbon-content:before, .ribbon.orange-bg .ribbon-content:after {
+  border-color: #ffb351 transparent transparent transparent; }
 
 .ribbon .ribbon-content {
   font-size: 25px;
@@ -3303,7 +3312,7 @@ footer {
   .workplace-campaigns .normal-body .content-row {
     margin-bottom: 30px; } }
 .workplace-campaigns .normal-body .content-row .small-side {
-  width: 350px; }
+  width: 31%; }
   @media only screen and (min-width: 1px) and (max-width: 900px) {
     .workplace-campaigns .normal-body .content-row .small-side {
       width: 100%; } }
@@ -3313,9 +3322,10 @@ footer {
   color: #4d4d4d; }
   .workplace-campaigns .normal-body .content-row .small-side.stick-people p {
     width: 205px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-top: 20px; }
 .workplace-campaigns .normal-body .content-row .large-side {
-  width: 750px; }
+  width: 65%; }
   @media only screen and (min-width: 1px) and (max-width: 900px) {
     .workplace-campaigns .normal-body .content-row .large-side {
       width: 100%; } }
@@ -3435,9 +3445,17 @@ footer {
     background-color: rgba(83, 158, 208, 0.8); }
   .workplace-campaigns .normal-body .content-row .large-side .lightestblue {
     background-color: rgba(83, 158, 208, 0.6); }
+.workplace-campaigns .normal-body .photo-caption {
+  font-size: 14px; }
+.workplace-campaigns .normal-body a {
+  color: #539ed0; }
 @media only screen and (min-width: 1px) and (max-width: 900px) {
   .workplace-campaigns .normal-body .three-circles {
     display: none; } }
+.workplace-campaigns .normal-body .three-circles img {
+  width: 32%; }
+.workplace-campaigns .normal-body .three-circles img:nth-child(-n+2) {
+  margin-right: 2%; }
 .workplace-campaigns .normal-body h3 {
   font-size: 16px;
   margin-bottom: -10px; }
@@ -3504,7 +3522,8 @@ footer {
       background-color: white;
       padding-top: 35px;
       padding-bottom: 25px;
-      margin-top: 45px; }
+      margin-top: 45px;
+      min-height: 392px; }
       @media only screen and (min-width: 1px) and (max-width: 900px) {
         .workplace-campaigns .award-box .award-interior .white-box img {
           max-width: 100%; } }

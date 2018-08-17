@@ -63,7 +63,7 @@
         margin-bottom: 30px;
       }
       .small-side {
-        width: 350px;
+        width: 31%;
         @include breakpoint(phonetablet) {
           width: 100%;
         }
@@ -75,10 +75,11 @@
         p {
           width: 205px;
           margin: 0 auto;
+          margin-top: 20px;
         }
       }
       .large-side {
-        width: 750px;
+        width: 65%;
         @include breakpoint(phonetablet) {
           width: 100%;
         }
@@ -219,9 +220,21 @@
         }
       }
     }
+    .photo-caption {
+      font-size: 14px;
+    }
+    a {
+      color: $color-lightblue;
+    }
     .three-circles {
       @include breakpoint(phonetablet) {
         display: none;
+      }
+      img {
+        width: 32%;
+      }
+      img:nth-child(-n+2) {
+        margin-right: 2%;
       }
     }
     h3 {
@@ -309,6 +322,7 @@
         padding-top: 35px;
         padding-bottom: 25px;
         margin-top: 45px;
+        min-height: 392px;
         img {
           @include breakpoint(phonetablet) {
             max-width: 100%;

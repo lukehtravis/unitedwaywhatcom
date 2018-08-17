@@ -8,6 +8,9 @@
  padding-bottom: 3px;
  margin-left: -5.5%; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
 }
+.ribbon.orange-bg {
+ background-color: rgba(255, 179, 81, 0.85);
+}
 .ribbon:before, .ribbon:after {
  content: "";
  position: absolute;
@@ -33,6 +36,9 @@
  border-style: solid;
  border-color: rgba(255,68,69, 1) transparent transparent transparent;
  bottom: -1em;
+}
+.ribbon.orange-bg .ribbon-content:before, .ribbon.orange-bg .ribbon-content:after {
+ border-color: rgba(255, 179, 81, 1) transparent transparent transparent;
 }
 .ribbon .ribbon-content {
   font-size: 25px;

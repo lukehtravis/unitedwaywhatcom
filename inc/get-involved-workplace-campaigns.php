@@ -93,7 +93,7 @@
           <div class="ribbon">
             <p class="ribbon-content">Spirit of United Way Award</p>
           </div>
-          <p class="middle-paragraph">his award is given to businesses who are true champions of giving back. Their workplace campaigns show top-notch creativity, spirit, and engagement levels. They know how to raise the bar.</p>
+          <p class="middle-paragraph">This award is given to businesses who are true champions of giving back. Their workplace campaigns show top-notch creativity, spirit, and engagement levels. They know how to raise the bar.</p>
           <div class="white-box">
             <img src="/assets/img/company-logos.jpg" />
           </div>
@@ -102,12 +102,13 @@
       <div class="award-box">
         <div class="award-interior">
           <p>2017</p>
-          <div class="ribbon">
-            <p class="ribbon-content">Spirit of United Way Award</p>
+          <div class="ribbon orange-bg">
+            <p class="ribbon-content orange-bg">Coordinator of the Year</p>
           </div>
-          <p class="middle-paragraph">his award is given to businesses who are true champions of giving back. Their workplace campaigns show top-notch creativity, spirit, and engagement levels. They know how to raise the bar.</p>
+          <p class="middle-paragraph">This award honors workplace Employee Campaign Coordinators (ECC) who go the extra mile. Who cuff their sleeves and dive in. Those who model living United and inspire others to do so, too.</p>
           <div class="white-box">
             <img src="/assets/img/good-worker.jpg" />
+            <p class="photo-caption">Tammy Bengen, Ferndale School District</p>
           </div>
         </div>
       </div>
