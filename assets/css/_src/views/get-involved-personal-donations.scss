@@ -17,6 +17,11 @@
     }
     .headline {
       padding-top: 20px;
+      padding-left: 100px;
+      @include breakpoint(phonetablet) {
+        @include mobilePageSideMargins;
+        padding-left: 0px;
+      }
       @include breakpoint(phoneonly) {
         text-align: left;
       }

@@ -2945,7 +2945,13 @@ footer {
         height: 400px;
         background-image: none; } }
     .get-involved-personal-donations .banner .headline {
-      padding-top: 20px; }
+      padding-top: 20px;
+      padding-left: 100px; }
+      @media only screen and (min-width: 1px) and (max-width: 900px) {
+        .get-involved-personal-donations .banner .headline {
+          margin-left: 20px;
+          margin-right: 20px;
+          padding-left: 0px; } }
       @media only screen and (min-width: 1px) and (max-width: 515px) {
         .get-involved-personal-donations .banner .headline {
           text-align: left; } }
