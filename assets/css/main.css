@@ -650,7 +650,7 @@ select::placeholder {
     padding: 0px;
     font-family: "Roboto", sans-serif;
     font-size: 60px;
-    letter-spacing: 2px;
+    letter-spacing: 0px;
     font-weight: bold; }
     @media only screen and (min-width: 1px) and (max-width: 515px) {
       .headline span.bland-header {
@@ -1212,9 +1212,16 @@ footer {
           display: none; } }
 
 .banner.home {
-  background: no-repeat center center;
   height: 780px;
-  background-size: cover; }
+  background-size: cover;
+  animation-duration: 1s;
+  transition-delay: 1s;
+  animation-name: fadein; }
+@keyframes fadein {
+  from {
+    background: no-repeat left left; }
+  to {
+    background: no-repeat center center; } }
   @media only screen and (min-width: 1400px) {
     .banner.home {
       max-width: 1400px;
@@ -2564,10 +2571,6 @@ footer {
   background: url("/assets/img/hands.jpg") no-repeat right bottom;
   background-color: #ffb351;
   height: 680px; }
-  @media only screen and (min-width: 1400px) {
-    .meet-the-johnsons {
-      max-width: 1400px;
-      margin: 0 auto; } }
   .meet-the-johnsons .headline {
     padding-top: 20px;
     width: 45%; }
@@ -3071,7 +3074,8 @@ footer {
       margin-left: 20px;
       margin-right: 20px; } }
   .our-work-what-we-do .body-overlap .content-row h2 {
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    line-height: 1.22; }
   .our-work-what-we-do .body-overlap .content-row img {
     max-width: 100%; }
   .our-work-what-we-do .body-overlap .content-row .large-side {

@@ -2,9 +2,6 @@
   background: url('/assets/img/hands.jpg') no-repeat right bottom;
   background-color: $color-orange;
   height: 680px;
-  @include breakpoint(hugeness) {
-    @include hugeness-container;
-  }
   .headline {
     padding-top: 20px;
     width: 45%;

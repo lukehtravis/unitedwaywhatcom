@@ -1,9 +1,20 @@
 @import "../components/video";
 .banner.home {
   // See site js for background img url
-  background: no-repeat center center;
   height: 780px;
   background-size: cover;
+  animation-duration: 1s;
+  transition-delay: 1s;
+  animation-name: fadein;
+  @keyframes fadein {
+    from {
+      background: no-repeat left left;
+    }
+
+    to {
+      background: no-repeat center center;
+    }
+  }
   @include breakpoint(hugeness) {
     max-width: 1400px;
     margin: 0 auto;
