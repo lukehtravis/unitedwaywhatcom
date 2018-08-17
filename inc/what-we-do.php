@@ -46,7 +46,7 @@
             </div>
             <img src="/assets/img/washington-map.jpg" class="circle-photo" />
           </div>
-          <a href="#"><button class="orange-bg hide-me">See Where Your Money Goes</button></a>
+          <a href="#"><button class="orange-bg hide-me low-margin">See Where Your Money Goes</button></a>
         </div>
         <div class="left-content-area high-bottom-margin">
           <h2>We vet non-profits and allocate funds for you.</h2>
