@@ -113,6 +113,12 @@ select::placeholder {
 .headline {
   padding-top: 100px;
   padding-left: 100px;
+  @include breakpoint(hugeness) {
+    width: 100% !important;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 0px;
+  }
   @include breakpoint(tabletonly) {
     padding-top: 60px;
     padding-left: 60px;

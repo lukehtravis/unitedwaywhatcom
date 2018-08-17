@@ -558,6 +558,12 @@ select::placeholder {
 .headline {
   padding-top: 100px;
   padding-left: 100px; }
+  @media only screen and (min-width: 1400px) {
+    .headline {
+      width: 100% !important;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding-left: 0px; } }
   @media only screen and (min-width: 515px) and (max-width: 900px) {
     .headline {
       padding-top: 60px;
@@ -1187,6 +1193,10 @@ footer {
   margin: 50px 100px;
   margin-top: 50px;
   margin-left: 100px; }
+  @media only screen and (min-width: 1400px) {
+    .video-section {
+      max-width: 1400px;
+      margin: 0 auto; } }
   @media only screen and (min-width: 515px) and (max-width: 900px) {
     .video-section {
       margin-left: 60px; } }
@@ -2428,6 +2438,10 @@ footer {
   margin: 50px 100px;
   margin-top: 50px;
   margin-left: 100px; }
+  @media only screen and (min-width: 1400px) {
+    .video-section {
+      max-width: 1400px;
+      margin: 0 auto; } }
   @media only screen and (min-width: 515px) and (max-width: 900px) {
     .video-section {
       margin-left: 60px; } }
