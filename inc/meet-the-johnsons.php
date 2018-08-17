@@ -7,18 +7,11 @@
   </div>
 </div>
 <section class="johnsons-timeline">
-  <img class="timeline-big"
-    srcset="
-      /assets/img/timeline-adjusted.jpg 1400w,
-      /assets/img/timeline.png 901w,
-      /assets/img/timelinetablet.png 515w,
-    "
-  />
   <picture class="timeline-big">
-    <source srcset="/assets/img/timeline-adjusted.jpg" media="(min-width: 1150px)" />
-    <source srcset="/assets/img/timeline.png" media="(min-width: 901px)" />
-    <source srcset="/assets/img/timeline.png" media="(min-width: 515px)" />
-    <img src="/assets/img/timeline.png" />
+    <source srcset="/assets/img/timeline.jpg" media="(min-width: 1150px)" />
+    <source srcset="/assets/img/timeline-adjusted.jpg" media="(min-width: 901px)" />
+    <source srcset="/assets/img/timelinetablet.jpg" media="(min-width: 515px)" />
+    <img src="/assets/img/timeline-adjusted.jpg" />
   </picture>
   <img class="timeline-small" src="/assets/img/timelinemobile.png">
 </section>

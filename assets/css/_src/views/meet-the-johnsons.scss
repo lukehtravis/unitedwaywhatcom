@@ -40,6 +40,9 @@
     @include breakpoint(hugeness) {
       width: 1400px;
     }
+    @include breakpoint(tabletonly) {
+      max-width: 100%;
+    }
     @include breakpoint(phoneonly) {
       display: none;
     }
