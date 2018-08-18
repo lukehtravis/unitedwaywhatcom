@@ -3,7 +3,7 @@
     <div class="headline">
       <h1>Help For Organizations</h1>
       <span class="lightblue-bg short-top">We're In</span>
-      <span class="lightblue-bg long-middle">Thris Together</span>
+      <span class="lightblue-bg long-middle">This Together.</span>
       <span class="orange-bg small-headline small-third">Live United</span>
     </div>
   </section>
