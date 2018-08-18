@@ -3267,8 +3267,7 @@ footer {
   @media only screen and (min-width: 1400px) {
     .workplace-campaigns .banner {
       max-width: 1400px;
-      margin: 0 auto;
-      padding-left: 100px; } }
+      margin: 0 auto; } }
   @media only screen and (min-width: 515px) and (max-width: 900px) {
     .workplace-campaigns .banner {
       height: 500px;
@@ -3278,7 +3277,8 @@ footer {
       height: 400px;
       background-image: none; } }
   .workplace-campaigns .banner .headline {
-    padding-top: 20px; }
+    padding-top: 20px;
+    padding-left: 75px; }
     @media only screen and (min-width: 1px) and (max-width: 515px) {
       .workplace-campaigns .banner .headline {
         text-align: left; } }
@@ -3306,7 +3306,8 @@ footer {
         .workplace-campaigns .banner .headline button {
           margin-top: 25px; } }
 .workplace-campaigns .normal-body .page-top {
-  margin-left: 100px; }
+  padding-top: 100px;
+  padding-left: 75px; }
   @media only screen and (min-width: 1400px) {
     .workplace-campaigns .normal-body .page-top {
       max-width: 1400px;
@@ -3315,6 +3316,9 @@ footer {
     .workplace-campaigns .normal-body .page-top {
       margin-left: 20px;
       margin-right: 20px; } }
+@media only screen and (min-width: 1400px) {
+  .workplace-campaigns .normal-body .content-row {
+    padding-left: 75px; } }
 @media only screen and (min-width: 1px) and (max-width: 900px) {
   .workplace-campaigns .normal-body .content-row {
     margin-bottom: 30px; } }
@@ -3460,7 +3464,8 @@ footer {
   .workplace-campaigns .normal-body .three-circles {
     display: none; } }
 .workplace-campaigns .normal-body .three-circles img {
-  width: 32%; }
+  width: 32%;
+  max-width: 368px; }
 .workplace-campaigns .normal-body .three-circles img:nth-child(-n+2) {
   margin-right: 2%; }
 .workplace-campaigns .normal-body h3 {
