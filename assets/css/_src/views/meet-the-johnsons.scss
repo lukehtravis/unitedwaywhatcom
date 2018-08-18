@@ -5,6 +5,9 @@
   .headline {
     padding-top: 20px;
     width: 45%;
+    @include breakpoint(hugeness) {
+      padding-left: 115px;
+    }
     p {
       font-size: 18px;
       color: $color-white;

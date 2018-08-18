@@ -2581,6 +2581,9 @@ footer {
   .meet-the-johnsons .headline {
     padding-top: 20px;
     width: 45%; }
+    @media only screen and (min-width: 1400px) {
+      .meet-the-johnsons .headline {
+        padding-left: 115px; } }
     .meet-the-johnsons .headline p {
       font-size: 18px;
       color: white;
