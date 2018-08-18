@@ -17,7 +17,6 @@
     }
     .headline {
       padding-top: 20px;
-      padding-left: 75px;
       @include breakpoint(phoneonly) {
         text-align: left;
       }
@@ -51,18 +50,18 @@
   }
   .normal-body {
     .page-top {
-      padding-top: 100px;
-      padding-left: 75px;
+      padding-left: 100px;
       @include breakpoint(hugeness) {
         @include hugeness-container;
       }
       @include breakpoint(phonetablet) {
         @include mobilePageSideMargins;
+        padding-left: 0px;
       }
     }
     .content-row {
       @include breakpoint(hugeness) {
-        padding-left: 75px;
+        padding-left: 100px;
       }
       @include breakpoint(phonetablet) {
         margin-bottom: 30px;

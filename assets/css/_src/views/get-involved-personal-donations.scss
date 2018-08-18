@@ -76,6 +76,9 @@
   }
   .normal-body {
     .content-row {
+      @include breakpoint(hugeness) {
+        padding-left: 100px;
+      }
       .large-side {
         button {
           margin-top: 50px;
