@@ -25,6 +25,16 @@
   .small-box {
     padding: 30px;
   }
+  ul {
+    list-style: none;
+    padding-left: 8px;
+    li::before {
+      content: "\2022";
+      font-size: 16px;
+      margin-left: -8px;
+      margin-right: 5px;
+    }
+  }
   .small-box.lowered {
     margin-top: 70px;
     @include breakpoint(phonetablet) {
@@ -49,6 +59,7 @@
       display: -ms-flexbox;
       display: flex;
       border-top: 2px solid $color-lightgray;
+      min-height: 172px;
       @include breakpoint(phonetablet) {
         display: inherit;
       }
@@ -90,6 +101,18 @@
         margin-right: 15px;
         float: left;
       }
+    }
+  }
+  .large-padding-top {
+    padding-top: 40px;
+    @include breakpoint(phonetablet) {
+      padding-top: 10px;
+    }
+  }
+  .large-margin-top {
+    margin-top: 60px;
+    @include breakpoint(phonetablet) {
+      margin-top: 10px;
     }
   }
   .body-section img {

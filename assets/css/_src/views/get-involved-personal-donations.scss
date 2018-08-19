@@ -88,6 +88,9 @@
         text-transform: uppercase;
         font-size: 16px;
       }
+      a {
+        color: $color-lightblue;
+      }
       .leadership-details-table {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -117,6 +120,7 @@
             padding-bottom: 8px;
             list-style: none;
             padding-left: 0px;
+            min-height: 208px;
             li {
               font-size: 15px;
               padding: 8px 0;
@@ -124,7 +128,8 @@
           }
         }
         .table-column.table-column-2 ul {
-          padding: 34px 0px 8px;
+          padding: 38px 0px 8px;
+          min-height: 208px;
         }
       }
       .small-box.old-photo {
@@ -152,6 +157,9 @@
           }
         }
       }
+    }
+    .content-row:last-of-type {
+      margin-bottom: 20px;
     }
   }
   .small-text-graybox {

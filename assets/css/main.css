@@ -2824,6 +2824,14 @@ footer {
 
 .get-help-organizations .small-box {
   padding: 30px; }
+.get-help-organizations ul {
+  list-style: none;
+  padding-left: 8px; }
+  .get-help-organizations ul li::before {
+    content: "\2022";
+    font-size: 16px;
+    margin-left: -8px;
+    margin-right: 5px; }
 .get-help-organizations .small-box.lowered {
   margin-top: 70px; }
   @media only screen and (min-width: 1px) and (max-width: 900px) {
@@ -2844,7 +2852,8 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border-top: 2px solid #ededed; }
+    border-top: 2px solid #ededed;
+    min-height: 172px; }
     @media only screen and (min-width: 1px) and (max-width: 900px) {
       .get-help-organizations .request-table li {
         display: inherit; } }
@@ -2880,6 +2889,16 @@ footer {
       .get-help-organizations .request-table li:before {
         margin-right: 15px;
         float: left; } }
+.get-help-organizations .large-padding-top {
+  padding-top: 40px; }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    .get-help-organizations .large-padding-top {
+      padding-top: 10px; } }
+.get-help-organizations .large-margin-top {
+  margin-top: 60px; }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    .get-help-organizations .large-margin-top {
+      margin-top: 10px; } }
 .get-help-organizations .body-section img {
   margin-top: 30px; }
 
@@ -3015,6 +3034,8 @@ footer {
   .get-involved-personal-donations .normal-body .content-row h3 {
     text-transform: uppercase;
     font-size: 16px; }
+  .get-involved-personal-donations .normal-body .content-row a {
+    color: #539ed0; }
   .get-involved-personal-donations .normal-body .content-row .leadership-details-table {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3040,12 +3061,14 @@ footer {
         margin: 0px;
         padding-bottom: 8px;
         list-style: none;
-        padding-left: 0px; }
+        padding-left: 0px;
+        min-height: 208px; }
         .get-involved-personal-donations .normal-body .content-row .leadership-details-table .table-column ul li {
           font-size: 15px;
           padding: 8px 0; }
     .get-involved-personal-donations .normal-body .content-row .leadership-details-table .table-column.table-column-2 ul {
-      padding: 34px 0px 8px; }
+      padding: 38px 0px 8px;
+      min-height: 208px; }
   .get-involved-personal-donations .normal-body .content-row .small-box.old-photo {
     margin-top: 25px;
     text-align: center;
@@ -3067,6 +3090,8 @@ footer {
       @media only screen and (min-width: 1px) and (max-width: 515px) {
         .get-involved-personal-donations .normal-body .content-row .small-box.old-photo p {
           max-width: 100%; } }
+  .get-involved-personal-donations .normal-body .content-row:last-of-type {
+    margin-bottom: 20px; }
   .get-involved-personal-donations .small-text-graybox {
     font-size: 13px; }
 

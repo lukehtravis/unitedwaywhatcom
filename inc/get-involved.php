@@ -31,12 +31,12 @@
       <div class="square">
         <img src="assets/img/stickpeople.png" />
         <a href="#"><span>Workplace Campaigns</span></a>
-        <p>She used our funded services to get back on her feet. Now she’s paying it forward. See how Sheena broke the cycle.</p>
+        <p>Learn how to build your brand, simplify corporate giving, and boost team morale by hosting a campaign.</p>
       </div>
       <div class="square">
         <img src="assets/img/heartcash.png" />
         <a href="#"><span>Personal Donations</span></a>
-        <p>She used our funded services to get back on her feet. Now she’s paying it forward. See how Sheena broke the cycle.</p>
+        <p>Make a one-time donation, recurring gift, or leave a legacy. Every gift matters.</p>
       </div>
     </div>
   </section>

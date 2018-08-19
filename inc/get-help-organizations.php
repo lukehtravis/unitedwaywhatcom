@@ -15,7 +15,7 @@
         <a href="#"><button class="orange-bg">See Our 2018 Partner Agencies</button></a>
       </div>
       <div class="body-section small-box lightgray-bg lowered">
-        <h3>Standards For Eligibility</h3>
+        <h3>STANDARDS FOR ELEGIBILITY</h3>
         <ul>
           <li>Tax exempt, nonprofit organization in Whatcom County</li>
           <li>Uses evidence-based practices that affect community metrics</li>
@@ -92,13 +92,13 @@
         </li>
       </ol>
     </div>
-    <div class="column-half">
+    <div class="column-half large-padding-top">
       <div class="body-section">
-        <h2>Emergency Food And Shelter Programs</h2>
+        <h2>Emergency food and shelter programs.</h2>
         <p>We want long-term solutions for our community. But emergencies happen. We’re grateful for the $100,000+ in federal funds Whatcom County receives annually to supplement local emergency food and shelter programs. We serve as the fiscal agent for these funds and work with local government and non-profit organizations to determine allocations to local programs.</p>
         <p>Grant applications are accepted and reviewed annually.</p>
-        <div class="small-box lightgray-bg">
-          <h3>Standards For Elegibility</h3>
+        <div class="small-box lightgray-bg large-margin-top">
+          <h3>STANDARDS FOR ELEGIBILITY</h3>
           <ul>
             <li>Tax exempt, nonprofit organization in Whatcom County</li>
             <li>Eligible to reveive federal funds
@@ -108,11 +108,11 @@
             <li>Sound financial management</li>
             <li>Demonstrated ability to deliver emergency food and/or shelter</li>
           </ul>
-          <h3>Materials For Applicants</h3>
+          <h3>MATERIAL FOR APPLICANTS</h3>
           <a href="#">Stuff</a>
           <a href="#">Stuff</a>
           <a href="#">Stuff</a>
-          <h3>Additional EFSP Resources</h3>
+          <h3>ADDITIONAL EFSP RESOURCES</h3>
           <a href="#">Stuff</a>
           <a href="#">Stuff</a>
           <a href="#">Stuff</a>
