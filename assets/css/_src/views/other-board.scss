@@ -1,0 +1,73 @@
+.board-container {
+  @include pageSideMargins;
+  margin-right: 0px;
+  position: relative;
+  @include breakpoint(hugeness) {
+    @include hugeness-container;
+  }
+  @include breakpoint(phonetablet) {
+    @include mobilePageSideMargins;
+  }
+  > img {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    max-width: 48%;
+    @include breakpoint(phonetablet) {
+      position: initial;
+      width: auto;
+      max-width: 100%;
+      padding-top: 50px;
+    }
+  }
+  .board {
+    width: 49%;
+    @include breakpoint(hugeness) {
+      margin-left: 50px;
+      width: 600px;
+    }
+    @include breakpoint(phonetablet) {
+      width: 100%;
+    }
+    .board-intro {
+      h1 {
+        font-size: 50px;
+        padding-top: 115px;
+        margin-bottom: 35px;
+        color: $color-darkblue;
+        font-family: $roboto;
+        text-transform: none;
+        @include breakpoint(phonetablet) {
+          padding-top: 50px;
+        }
+      }
+      p {
+        margin: 0px;
+      }
+    }
+    .board-box {
+      margin-top: 65px;
+      padding: 45px;
+      background-color: $color-lightgray;
+      border-radius: 4px;
+      margin-bottom: 130px;
+      @include breakpoint(phoneonly) {
+        padding: 45px 20px;
+      }
+      .board-row {
+        .board-name {
+          font-weight: bold;
+        }
+        .board-title {
+          font-style: italic;
+        }
+        span, p {
+          font-size: 14px;
+        }
+        p {
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+}

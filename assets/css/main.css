@@ -3694,4 +3694,67 @@ footer {
     padding-bottom: 0px;
     border-bottom: 0px; }
 
+.board-container {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-right: 0px;
+  position: relative; }
+  @media only screen and (min-width: 1400px) {
+    .board-container {
+      max-width: 1400px;
+      margin: 0 auto; } }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    .board-container {
+      margin-left: 20px;
+      margin-right: 20px; } }
+  .board-container > img {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    max-width: 48%; }
+    @media only screen and (min-width: 1px) and (max-width: 900px) {
+      .board-container > img {
+        position: initial;
+        width: auto;
+        max-width: 100%;
+        padding-top: 50px; } }
+  .board-container .board {
+    width: 49%; }
+    @media only screen and (min-width: 1400px) {
+      .board-container .board {
+        margin-left: 50px;
+        width: 600px; } }
+    @media only screen and (min-width: 1px) and (max-width: 900px) {
+      .board-container .board {
+        width: 100%; } }
+    .board-container .board .board-intro h1 {
+      font-size: 50px;
+      padding-top: 115px;
+      margin-bottom: 35px;
+      color: #005191;
+      font-family: "Roboto", sans-serif;
+      text-transform: none; }
+      @media only screen and (min-width: 1px) and (max-width: 900px) {
+        .board-container .board .board-intro h1 {
+          padding-top: 50px; } }
+    .board-container .board .board-intro p {
+      margin: 0px; }
+    .board-container .board .board-box {
+      margin-top: 65px;
+      padding: 45px;
+      background-color: #ededed;
+      border-radius: 4px;
+      margin-bottom: 130px; }
+      @media only screen and (min-width: 1px) and (max-width: 515px) {
+        .board-container .board .board-box {
+          padding: 45px 20px; } }
+      .board-container .board .board-box .board-row .board-name {
+        font-weight: bold; }
+      .board-container .board .board-box .board-row .board-title {
+        font-style: italic; }
+      .board-container .board .board-box .board-row span, .board-container .board .board-box .board-row p {
+        font-size: 14px; }
+      .board-container .board .board-box .board-row p {
+        margin-top: 0px; }
+
 /*# sourceMappingURL=main.css.map */
