@@ -1,0 +1,84 @@
+.staff-container {
+  @include breakpoint(tabletonly) {
+    margin-left: 40px;
+  }
+}
+.staff {
+  @include breakpoint(hugeness) {
+    @include hugeness-container;
+    width: 1200px;
+  }
+  h1 {
+    font-size: 50px;
+    margin-top: 115px;
+    margin-bottom: 55px;
+    color: $color-darkblue;
+    font-family: $roboto;
+    text-transform: none;
+  }
+  .staff-box {
+    padding: 45px;
+    background-color: $color-lightgray;
+    border-radius: 4px;
+    margin-bottom: 130px;
+    @include breakpoint(phoneonly) {
+      padding: 45px 20px;
+    }
+    .staff-row {
+      padding-bottom: 35px;
+      border-bottom: 2px solid $color-gray3;
+      display: flex;
+      margin-top: 35px;
+      @include breakpoint(phonetablet) {
+        flex-direction: column;
+        align-items: center;
+      }
+      > img {
+        @include breakpoint(phonetablet) {
+          margin-bottom: 30px;
+        }
+      }
+      .text-chunk {
+        margin-left: 25px;
+        margin-top: 15px;
+        .staff-details {
+          margin-bottom: 50px;
+          h2  {
+            display: inline;
+            @include breakpoint(phoneonly) {
+              display: block;
+              margin-bottom: 15px;
+            }
+          }
+          .mail-link {
+            display: inline;
+            @include breakpoint(phoneonly) {
+              display: block;
+            }
+            img {
+              margin-left: 12px;
+              @include breakpoint(phonetablet) {
+                margin-left: 0px;
+              }
+            }
+            a {
+              font-size: 14px;
+              color: $color-lightblue;
+              margin-left: 5px;
+            }
+          }
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+    .staff-row:first-of-type {
+      margin-top: 0px;
+    }
+    .staff-row:last-of-type {
+      padding-bottom: 0px;
+      border-bottom: 0px;
+    }
+  }
+}

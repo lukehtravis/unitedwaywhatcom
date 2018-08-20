@@ -24,7 +24,7 @@
         <li><a href="/4.0-donate.php">4.0 Donate</a></li>
         <li><a href="/4.1-donate-complete.php">4.1 Donate / Complete</a></li>
         <li><a href="/5.0-other-events.php">5.0 Other / Events</a></li>
-        <li>5.1 Other / Staff</li>
+        <li><a href="/5.1-other-staff.php">5.1 Other / Staff</a></li>
         <li>5.2 Other / Board</li>
         <li>5.3 Other / Fund Distribution Committee</li>
         <li>5.4 Other / Partner Agencies</li>

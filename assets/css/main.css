@@ -1440,12 +1440,14 @@ footer {
         margin-right: 0px;
         margin-left: 0px;
         margin-bottom: 20px; } }
-    .square-links .square img {
+    .square-links .square .square-links:last-of
+    img {
       -ms-flex-item-align: center;
       align-self: center;
       margin-bottom: 40px; }
       @media only screen and (min-width: 515px) and (max-width: 900px) {
-        .square-links .square img {
+        .square-links .square .square-links:last-of
+        img {
           margin-bottom: 15px; } }
     .square-links .square a span {
       font-family: "Roboto", sans-serif;
@@ -3622,5 +3624,74 @@ footer {
       @media only screen and (min-width: 1px) and (max-width: 900px) {
         .workplace-campaigns .award-box .award-interior .white-box img {
           max-width: 100%; } }
+
+@media only screen and (min-width: 515px) and (max-width: 900px) {
+  .staff-container {
+    margin-left: 40px; } }
+
+@media only screen and (min-width: 1400px) {
+  .staff {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 1200px; } }
+.staff h1 {
+  font-size: 50px;
+  margin-top: 115px;
+  margin-bottom: 55px;
+  color: #005191;
+  font-family: "Roboto", sans-serif;
+  text-transform: none; }
+.staff .staff-box {
+  padding: 45px;
+  background-color: #ededed;
+  border-radius: 4px;
+  margin-bottom: 130px; }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    .staff .staff-box {
+      padding: 45px 20px; } }
+  .staff .staff-box .staff-row {
+    padding-bottom: 35px;
+    border-bottom: 2px solid #999999;
+    display: flex;
+    margin-top: 35px; }
+    @media only screen and (min-width: 1px) and (max-width: 900px) {
+      .staff .staff-box .staff-row {
+        flex-direction: column;
+        align-items: center; } }
+    @media only screen and (min-width: 1px) and (max-width: 900px) {
+      .staff .staff-box .staff-row > img {
+        margin-bottom: 30px; } }
+    .staff .staff-box .staff-row .text-chunk {
+      margin-left: 25px;
+      margin-top: 15px; }
+      .staff .staff-box .staff-row .text-chunk .staff-details {
+        margin-bottom: 50px; }
+        .staff .staff-box .staff-row .text-chunk .staff-details h2 {
+          display: inline; }
+          @media only screen and (min-width: 1px) and (max-width: 515px) {
+            .staff .staff-box .staff-row .text-chunk .staff-details h2 {
+              display: block;
+              margin-bottom: 15px; } }
+        .staff .staff-box .staff-row .text-chunk .staff-details .mail-link {
+          display: inline; }
+          @media only screen and (min-width: 1px) and (max-width: 515px) {
+            .staff .staff-box .staff-row .text-chunk .staff-details .mail-link {
+              display: block; } }
+          .staff .staff-box .staff-row .text-chunk .staff-details .mail-link img {
+            margin-left: 12px; }
+            @media only screen and (min-width: 1px) and (max-width: 900px) {
+              .staff .staff-box .staff-row .text-chunk .staff-details .mail-link img {
+                margin-left: 0px; } }
+          .staff .staff-box .staff-row .text-chunk .staff-details .mail-link a {
+            font-size: 14px;
+            color: #539ed0;
+            margin-left: 5px; }
+        .staff .staff-box .staff-row .text-chunk .staff-details span {
+          display: block; }
+  .staff .staff-box .staff-row:first-of-type {
+    margin-top: 0px; }
+  .staff .staff-box .staff-row:last-of-type {
+    padding-bottom: 0px;
+    border-bottom: 0px; }
 
 /*# sourceMappingURL=main.css.map */
