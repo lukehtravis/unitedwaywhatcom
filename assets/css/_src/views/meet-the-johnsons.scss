@@ -44,7 +44,9 @@
   }
   .timeline-big {
     @include breakpoint(hugeness) {
-      width: 1400px;
+      display: block;
+      width: 1164px;
+      margin: 0 auto;
     }
     @include breakpoint(tabletonly) {
       max-width: 100%;

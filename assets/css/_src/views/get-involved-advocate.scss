@@ -20,7 +20,11 @@
     p {
       color: $color-white;
       font-size: 18px;
-      letter-spacing: 1px;
+      letter-spacing: 0;
+      a {
+        font-size: 18px;
+        text-decoration:underline;
+      }
     }
     > div {
       margin-top: 40px;
@@ -45,6 +49,10 @@
     p {
       color: $color-white;
       font-size: 18px;
+      a {
+        font-size:18px;
+        text-decoration:underline;
+      }
     }
     button {
       margin-top: 20px;

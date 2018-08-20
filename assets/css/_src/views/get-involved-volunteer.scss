@@ -23,8 +23,12 @@
     .volunteer-row {
       border-top: 2px solid $color-lightgray;
       padding-bottom: 95px;
+      @include breakpoint(phonetablet) {
+        border: 0 none;
+        padding-bottom: 70px;
+      }
       @include breakpoint(phoneonly) {
-        padding-bottom: 30px;
+        padding-bottom: 70px;
       }
       > span {
         color: $color-white;
@@ -33,6 +37,9 @@
         padding: 14px;
         display: inline-block;
         background-color: $color-orange;
+        @include breakpoint(phonetablet) {
+          width: 100%;
+        }
       }
       .volunteer-content {
         display: -webkit-box;

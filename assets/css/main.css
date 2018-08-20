@@ -1223,7 +1223,7 @@ footer {
       font-size: 36px;
       font-family: "League Gothic";
       text-transform: uppercase;
-      color: black; }
+      color: white; }
       @media only screen and (min-width: 1px) and (max-width: 515px) {
         .video-section a p {
           display: none; } }
@@ -2244,7 +2244,7 @@ footer {
         margin-bottom: 0; } }
 
 #impact-calc-page .get-involved-calc {
-  background: url("/assets/img/smilinggirl.jpg") no-repeat left 26px;
+  background: url("/assets/img/smilinggirl.jpg") no-repeat left bottom;
   background-color: #539ed0;
   display: block;
   min-height: 500px;
@@ -2279,6 +2279,8 @@ footer {
         font-weight: bold;
         font-size: 14px; }
     #impact-calc-page .get-involved-calc .headline > span {
+      padding-left: 0;
+      padding-top: 0;
       white-space: normal;
       display: block;
       margin: 217px 0 0;
@@ -2288,8 +2290,6 @@ footer {
       text-transform: none;
       letter-spacing: 0;
       line-height: 1em; }
-      #impact-calc-page .get-involved-calc .headline > span br {
-        display: none; }
       @media only screen and (min-width: 515px) and (max-width: 900px) {
         #impact-calc-page .get-involved-calc .headline > span {
           font-size: 50px; } }
@@ -2457,7 +2457,7 @@ footer {
       font-size: 36px;
       font-family: "League Gothic";
       text-transform: uppercase;
-      color: black; }
+      color: white; }
       @media only screen and (min-width: 1px) and (max-width: 515px) {
         .video-section a p {
           display: none; } }
@@ -2624,7 +2624,9 @@ footer {
       margin: 0 auto; } }
   @media only screen and (min-width: 1400px) {
     .johnsons-timeline .timeline-big {
-      width: 1400px; } }
+      display: block;
+      width: 1164px;
+      margin: 0 auto; } }
   @media only screen and (min-width: 515px) and (max-width: 900px) {
     .johnsons-timeline .timeline-big {
       max-width: 100%; } }
@@ -2703,7 +2705,10 @@ footer {
   .get-involved-advocate .headline p {
     color: white;
     font-size: 18px;
-    letter-spacing: 1px; }
+    letter-spacing: 0; }
+    .get-involved-advocate .headline p a {
+      font-size: 18px;
+      text-decoration: underline; }
   .get-involved-advocate .headline > div {
     margin-top: 40px;
     margin-bottom: 60px;
@@ -2724,6 +2729,9 @@ footer {
     .get-involved-advocate .headline-text-group-mobile p {
       color: white;
       font-size: 18px; }
+      .get-involved-advocate .headline-text-group-mobile p a {
+        font-size: 18px;
+        text-decoration: underline; }
     .get-involved-advocate .headline-text-group-mobile button {
       margin-top: 20px;
       margin-bottom: 30px; }
@@ -2750,9 +2758,13 @@ footer {
   .get-involved-volunteer .volunteer-section .volunteer-row {
     border-top: 2px solid #ededed;
     padding-bottom: 95px; }
+    @media only screen and (min-width: 1px) and (max-width: 900px) {
+      .get-involved-volunteer .volunteer-section .volunteer-row {
+        border: 0 none;
+        padding-bottom: 70px; } }
     @media only screen and (min-width: 1px) and (max-width: 515px) {
       .get-involved-volunteer .volunteer-section .volunteer-row {
-        padding-bottom: 30px; } }
+        padding-bottom: 70px; } }
     .get-involved-volunteer .volunteer-section .volunteer-row > span {
       color: white;
       font-size: 20px;
@@ -2760,6 +2772,9 @@ footer {
       padding: 14px;
       display: inline-block;
       background-color: #ffb351; }
+      @media only screen and (min-width: 1px) and (max-width: 900px) {
+        .get-involved-volunteer .volunteer-section .volunteer-row > span {
+          width: 100%; } }
     .get-involved-volunteer .volunteer-section .volunteer-row .volunteer-content {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2827,11 +2842,13 @@ footer {
 .get-help-organizations ul {
   list-style: none;
   padding-left: 8px; }
-  .get-help-organizations ul li::before {
-    content: "\2022";
-    font-size: 16px;
-    margin-left: -8px;
-    margin-right: 5px; }
+  .get-help-organizations ul li {
+    font-size: 15px; }
+    .get-help-organizations ul li::before {
+      content: "\2022";
+      font-size: 16px;
+      margin-left: -8px;
+      margin-right: 5px; }
 .get-help-organizations .small-box.lowered {
   margin-top: 70px; }
   @media only screen and (min-width: 1px) and (max-width: 900px) {
@@ -2957,6 +2974,10 @@ footer {
 .get-help h3 {
   font-size: 24px; }
 
+#fw_counter_body {
+  margin: 0 auto;
+  height: 378px !important; }
+
 .get-involved-personal-donations {
   padding-bottom: 0px; }
   .get-involved-personal-donations .banner {
@@ -3034,6 +3055,8 @@ footer {
   .get-involved-personal-donations .normal-body .content-row h3 {
     text-transform: uppercase;
     font-size: 16px; }
+    .get-involved-personal-donations .normal-body .content-row h3.leadership-title {
+      margin-top: 50px; }
   .get-involved-personal-donations .normal-body .content-row a {
     color: #539ed0; }
   .get-involved-personal-donations .normal-body .content-row .leadership-details-table {
@@ -3043,6 +3066,7 @@ footer {
     .get-involved-personal-donations .normal-body .content-row .leadership-details-table .table-column {
       width: 50%; }
       .get-involved-personal-donations .normal-body .content-row .leadership-details-table .table-column h4 {
+        font-family: "Roboto", sans-serif;
         border-top: 2px solid #ededed;
         padding: 8px 0;
         margin: 0px; }
@@ -3080,7 +3104,8 @@ footer {
       margin-top: 12px;
       margin-bottom: 20px; }
     .get-involved-personal-donations .normal-body .content-row .small-box.old-photo img {
-      width: 256px; }
+      max-width: 256px;
+      width: 100%; }
       @media only screen and (min-width: 1px) and (max-width: 515px) {
         .get-involved-personal-donations .normal-body .content-row .small-box.old-photo img {
           max-width: 100%; } }
@@ -3094,6 +3119,18 @@ footer {
     margin-bottom: 20px; }
   .get-involved-personal-donations .small-text-graybox {
     font-size: 13px; }
+  .get-involved-personal-donations .small-side.callout {
+    width: 32%; }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    .get-involved-personal-donations .small-side.callout {
+      width: 100%; } }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    .get-involved-personal-donations .giving-photo {
+      display: block;
+      margin: 0 auto; } }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    .get-involved-personal-donations .giving-photo {
+      width: 100%; } }
 
 .our-work-what-we-do .banner {
   background: url("/assets/img/yellowoldman.jpg") no-repeat center center;
@@ -3155,6 +3192,7 @@ footer {
       .our-work-what-we-do .body-overlap .content-row .large-side .dual-view .circle-photo {
         margin: 0 auto;
         width: 274px;
+        height: 274px;
         display: block; }
     .our-work-what-we-do .body-overlap .content-row .large-side button {
       margin-top: 40px; }
@@ -3355,6 +3393,8 @@ footer {
       margin-left: 20px;
       margin-right: 20px;
       padding-left: 0px; } }
+.workplace-campaigns .normal-body .content-row.sponsors {
+  margin-top: 100px; }
 @media only screen and (min-width: 1400px) {
   .workplace-campaigns .normal-body .content-row {
     padding-left: 100px; } }
@@ -3449,6 +3489,7 @@ footer {
             display: none; } }
       .workplace-campaigns .normal-body .content-row .large-side .sponsor-table .sponsor-level-column div.table-header {
         position: absolute;
+        font-family: "Roboto", sans-serif;
         font-size: 10px;
         text-transform: uppercase;
         position: absolute;
@@ -3473,7 +3514,9 @@ footer {
         color: #539ed0; }
       .workplace-campaigns .normal-body .content-row .large-side .sponsor-table .sponsor-name-column div.table-header {
         position: absolute;
+        font-family: "Roboto", sans-serif;
         font-size: 10px;
+        font-weight: bold;
         text-transform: uppercase;
         position: absolute;
         left: 50%;
