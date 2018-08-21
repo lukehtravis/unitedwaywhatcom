@@ -3771,6 +3771,9 @@ footer {
   margin-bottom: 90px; }
 .fdc .headline-left {
   width: 64%; }
+  @media only screen and (min-width: 1400px) {
+    .fdc .headline-left {
+      width: 650px; } }
   @media only screen and (min-width: 1px) and (max-width: 900px) {
     .fdc .headline-left {
       width: 100%;
@@ -3778,6 +3781,10 @@ footer {
 .fdc .headline-right {
   width: 30.5%;
   margin-left: 5%; }
+  @media only screen and (min-width: 1400px) {
+    .fdc .headline-right {
+      width: 350px;
+      margin-left: 120px; } }
   @media only screen and (min-width: 1px) and (max-width: 900px) {
     .fdc .headline-right {
       width: 100%;
@@ -3792,6 +3799,7 @@ footer {
   font-size: 50px;
   margin-top: 115px;
   margin-bottom: 55px;
+  letter-spacing: 0px;
   color: #005191;
   font-family: "Roboto", sans-serif;
   text-transform: none; }
