@@ -3979,11 +3979,9 @@ footer {
   .financials .financials-box ul {
     list-style: none;
     padding-left: 8px; }
-    .financials .financials-box ul li {
-      font-size: 14px; }
     .financials .financials-box ul li::before {
       content: "\2022";
-      font-size: 14px;
+      font-size: 15px;
       margin-left: -8px;
       margin-right: 5px; }
   .financials .financials-box p {
