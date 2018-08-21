@@ -3757,4 +3757,81 @@ footer {
       .board-container .board .board-box .board-row p {
         margin-top: 0px; }
 
+@media only screen and (min-width: 515px) and (max-width: 900px) {
+  .fdc-container {
+    margin-left: 40px; } }
+
+@media only screen and (min-width: 1400px) {
+  .fdc {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 1200px; } }
+.fdc > * {
+  display: inline-block;
+  margin-bottom: 90px; }
+.fdc .headline-left {
+  width: 64%; }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    .fdc .headline-left {
+      width: 100%;
+      margin-bottom: 30px; } }
+.fdc .headline-right {
+  width: 30.5%;
+  margin-left: 5%; }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    .fdc .headline-right {
+      width: 100%;
+      margin: 0; } }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    .fdc .headline-right img {
+      width: 348px;
+      margin: 0 auto 30px;
+      display: block;
+      max-width: 100%; } }
+.fdc h1 {
+  font-size: 50px;
+  margin-top: 115px;
+  margin-bottom: 55px;
+  color: #005191;
+  font-family: "Roboto", sans-serif;
+  text-transform: none; }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    .fdc h1 {
+      margin-top: 60px; } }
+.fdc .fdc-box {
+  padding: 45px;
+  background-color: #ededed;
+  border-radius: 4px;
+  margin-bottom: 130px;
+  width: 100%; }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    .fdc .fdc-box {
+      padding: 45px 20px; } }
+  .fdc .fdc-box h2 {
+    margin-bottom: 65px; }
+  .fdc .fdc-box .fdc-table {
+    display: flex;
+    justify-content: space-between; }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .fdc .fdc-box .fdc-table {
+        flex-direction: column; } }
+    .fdc .fdc-box .fdc-table .fdc-column {
+      width: 22%; }
+      @media only screen and (min-width: 1px) and (max-width: 515px) {
+        .fdc .fdc-box .fdc-table .fdc-column {
+          width: 100%; } }
+      .fdc .fdc-box .fdc-table .fdc-column .red-text {
+        font-size: 16px;
+        color: red;
+        margin-bottom: 20px;
+        margin-top: 0px; }
+      .fdc .fdc-box .fdc-table .fdc-column .fdc-name {
+        font-weight: bold; }
+      .fdc .fdc-box .fdc-table .fdc-column .fdc-title {
+        font-style: italic; }
+      .fdc .fdc-box .fdc-table .fdc-column span, .fdc .fdc-box .fdc-table .fdc-column p {
+        font-size: 14px; }
+      .fdc .fdc-box .fdc-table .fdc-column p {
+        margin-top: 0px; }
+
 /*# sourceMappingURL=main.css.map */

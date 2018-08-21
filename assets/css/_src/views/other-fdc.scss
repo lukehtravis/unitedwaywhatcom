@@ -1,0 +1,93 @@
+.fdc-container {
+  @include breakpoint(tabletonly) {
+    margin-left: 40px;
+  }
+}
+.fdc {
+  @include breakpoint(hugeness) {
+    @include hugeness-container;
+    width: 1200px;
+  }
+  > * {
+    display: inline-block;
+    margin-bottom: 90px;
+  }
+  .headline-left {
+    width: 64%;
+    @include breakpoint(phonetablet) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+  .headline-right {
+    width: 30.5%;
+    margin-left: 5%;
+    @include breakpoint(phonetablet) {
+      width: 100%;
+      margin: 0;
+    }
+    img {
+      @include breakpoint(phonetablet) {
+        width: 348px;
+        margin: 0 auto 30px;
+        display: block;
+        max-width: 100%;
+      }
+    }
+  }
+  h1 {
+    font-size: 50px;
+    margin-top: 115px;
+    margin-bottom: 55px;
+    color: $color-darkblue;
+    font-family: $roboto;
+    text-transform: none;
+    @include breakpoint(phonetablet) {
+      margin-top: 60px;
+    }
+  }
+  .fdc-box {
+    padding: 45px;
+    background-color: $color-lightgray;
+    border-radius: 4px;
+    margin-bottom: 130px;
+    width: 100%;
+    @include breakpoint(phoneonly) {
+      padding: 45px 20px;
+    }
+    h2 {
+      margin-bottom: 65px;
+    }
+    .fdc-table {
+      display: flex;
+      justify-content: space-between;
+      @include breakpoint(phoneonly) {
+        flex-direction: column;
+      }
+      .fdc-column {
+        width: 22%;
+        @include breakpoint(phoneonly) {
+          width: 100%;
+        }
+        .red-text {
+          font-size: 16px;
+          color: red;
+          margin-bottom: 20px;
+          margin-top: 0px;
+        }
+        .fdc-name {
+          font-weight: bold;
+        }
+        .fdc-title {
+          font-style: italic;
+        }
+        span, p {
+          font-size: 14px;
+        }
+        p {
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+}
