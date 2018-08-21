@@ -3913,6 +3913,10 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px; }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .partner-agencies .partner-agencies-box .partner-agencies-table .partner-agencies-row {
+        flex-direction: column;
+        align-items: center; } }
   .partner-agencies .partner-agencies-box .partner-agencies-table .partner-agencies-column {
     width: 24%; }
     @media only screen and (min-width: 1px) and (max-width: 515px) {
@@ -3926,8 +3930,15 @@ footer {
       margin: 0; }
   .partner-agencies .partner-agencies-box .partner-agencies-column:nth-of-type(2), .partner-agencies .partner-agencies-box .partner-agencies-column:nth-of-type(3) {
     width: 30%; }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .partner-agencies .partner-agencies-box .partner-agencies-column:nth-of-type(2), .partner-agencies .partner-agencies-box .partner-agencies-column:nth-of-type(3) {
+        width: 100%; } }
   .partner-agencies .partner-agencies-box .partner-agencies-column:nth-of-type(4) {
     text-align: right;
     width: 8%; }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .partner-agencies .partner-agencies-box .partner-agencies-column:nth-of-type(4) {
+        width: 100%;
+        text-align: left; } }
 
 /*# sourceMappingURL=main.css.map */
