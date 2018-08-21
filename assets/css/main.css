@@ -4000,4 +4000,51 @@ footer {
   .financials .financials-box .financials-box-section.no-top-padding {
     padding-top: 0px; }
 
+@media only screen and (min-width: 515px) and (max-width: 900px) {
+  .faq-container {
+    margin-left: 40px; } }
+
+@media only screen and (min-width: 1400px) {
+  .faq {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 1200px; } }
+.faq h1 {
+  font-size: 50px;
+  margin-top: 115px;
+  margin-bottom: 35px;
+  letter-spacing: 0px;
+  color: #005191;
+  font-family: "Roboto", sans-serif;
+  text-transform: none; }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    .faq h1 {
+      margin-top: 60px; } }
+.faq .faq-box {
+  padding: 45px 45px 20px;
+  background-color: #ededed;
+  border-radius: 4px;
+  margin-bottom: 130px;
+  width: 100%; }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    .faq .faq-box {
+      padding: 45px 20px; } }
+  .faq .faq-box h2 {
+    margin-bottom: 25px;
+    margin-top: 0px; }
+  .faq .faq-box span {
+    margin-bottom: 0px;
+    font-weight: bold; }
+  .faq .faq-box p {
+    margin-top: 0px; }
+  .faq .faq-box a {
+    color: #539ed0; }
+  .faq .faq-box .faq-box-section {
+    padding: 42px 0 30px;
+    border-bottom: 2px solid #cccccc; }
+  .faq .faq-box .faq-box-section.no-border {
+    border-bottom: 0px; }
+  .faq .faq-box .faq-box-section.no-top-padding {
+    padding-top: 0px; }
+
 /*# sourceMappingURL=main.css.map */

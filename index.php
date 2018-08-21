@@ -30,7 +30,7 @@
         <li><a href="/5.4-other-partner-agencies.php">5.4 Other / Partner Agencies</a></li>
         <li><a href="/5.5-other-financials.php">5.5 Other / Financials</a></li>
         <li>5.6 Other / Job Openings</li>
-        <li>5.7 Other / FAQs</li>
+        <li><a href="/5.7-other-faq.php">5.7 Other / FAQs</a></li>
         <li>6.0 Blog (Listing)</li>
         <li>6.1 Blog / Post</li>
         <li>7.0 Logged In / Board Members Page</li>
