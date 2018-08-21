@@ -28,7 +28,7 @@
         <li><a href="/5.2-other-board.php">5.2 Other / Board</a></li>
         <li><a href="/5.3-other-fdc.php">5.3 Other / Fund Distribution Committee</a></li>
         <li><a href="/5.4-other-partner-agencies.php">5.4 Other / Partner Agencies</a></li>
-        <li>5.5 Other / Financials</li>
+        <li><a href="/5.5-other-financials.php">5.5 Other / Financials</a></li>
         <li>5.6 Other / Job Openings</li>
         <li>5.7 Other / FAQs</li>
         <li>6.0 Blog (Listing)</li>
