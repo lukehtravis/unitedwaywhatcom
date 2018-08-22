@@ -112,7 +112,7 @@
   }
 }
 
-@mixin saw-tooth-horizontal($width: 12px, $bg: #fff) {
+@mixin saw-tooth-horizontal {
   // 16 x 5
   position: relative;
   &:before {
@@ -135,6 +135,21 @@
     height:3px;
     margin: 0 0 -3px;
     background: transparent url(/assets/img/saw-tooth-bottom.png) repeat-x left top;
+    background-size: 8px auto;
+  }
+}
+@mixin saw-tooth-horizontal-gray-top {
+  // 16 x 5
+  position: relative;
+  &:before {
+    content: '';
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    height:3px;
+    margin: -3px 0 0;
+    background: transparent url(/assets/img/saw-tooth-gray.png) repeat-x left bottom;
     background-size: 8px auto;
   }
 }

@@ -1,21 +1,117 @@
 @import "../components/calculator";
 
 #donation-page {
+  &.processing {
+    &:before {
+      content: '';
+      display: block;
+      position: fixed;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      z-index: 100;
+      background-color: rgba(255,255,255,0.4);
+    }
+  }
+  &.workplace {
+    header {
+      background-color: $color-white;
+      //padding: 0;
+      height:133px;
+      .header-container {
+        position: relative;
+      }
+      .workplace-logo {
+        position: absolute;
+        top: -28px;
+        right: 18px;
+        height: 106px;
+      }
+    }
+    .donations {
+      padding-top: 82px;
+      background: url('/assets/img/hands.png') no-repeat right top;
+      background-attachment: fixed;
+    }
+    .donation-form {
+      &:before {
+        content: none;
+        background-image:none;
+      }
+    }
+    .workplace-intro {
+      @include saw-tooth-horizontal-gray-top;
+      background: $color-lightgray2;
+      width: 650px;
+      margin: auto;
+      padding: 61px 75px 64px;
+      h1 {
+        text-align: center;
+        font-family: $roboto;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 1.2em;
+        text-transform: none;
+        letter-spacing: 0;
+        margin-bottom:15px;
+      }
+      .copy {
+        text-align: center;
+        font-family: $roboto;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        text-transform: none;
+        letter-spacing: 0;
+      }
+      .video-preview {
+        &:hover {
+          cursor:pointer;
+        }
+        width: 311px;
+        height: 174px;
+        margin: 64px auto 0;
+        background: transparent url(/assets/img/workplace-video-preview.jpg) no-repeat center;
+      }
+    }
+    #calculator-widget {
+      .donate-timeframe {
+        .timeframe-btn {
+          width:32%;
+        }
+      }
+    }
+  }
 
   [v-cloak] {
     display: none;
   }
 
+  .notification {
+    margin: -30px 0 26px;
+  }
+
   .checkmark {
-    * {
-      display: inline;
+    label {
+      display: block;
+      position: relative;
+      padding: 0 0 0 25px;
       margin: 30px 0px;
       font-size: 15px;
-    }
-    input {
-      margin-right: 10px;
+      input {
+        display: block;
+        font-size: 15px;
+        height: 15px;
+        width: 15px;
+        position: absolute;
+        top:0;
+        left:0;
+        margin: 0 0 0 !important;
     }
   }
+  }
+
   .checkmark.no-bottom-margin {
     input {
       margin-bottom: 0px;
@@ -26,25 +122,16 @@
     background-color: $color-lightblue;
     padding-top: 80px;
     padding-bottom: 150px;
-    background: url('/assets/img/smilinggirl.jpg') no-repeat left 160px;
+    background: url('/assets/img/smilinggirl.jpg') no-repeat left bottom;
     background-attachment: fixed;
   }
 
   .donation-form {
-    @include saw-tooth-horizontal(9px,$color-lightblue);
+    @include saw-tooth-horizontal;
     width: 650px;
     background-color: $color-white;
     margin: auto;
     padding: 60px 75px 118px;
-    @include breakpoint(tabletonly) {
-      width: 450px;
-      padding: 60px 35px;
-    }
-    @include breakpoint(phoneonly) {
-      padding: 20px 10px;
-      width: 98%;
-      margin: 0px 1%;
-    }
   }
 
   h2 {
@@ -84,6 +171,7 @@
     color: $color-red;
   }
 
+
   .restriction {
     margin-top: 8px;
     margin-bottom: 14px;
@@ -94,18 +182,9 @@
     align-items: center;
     margin-bottom: 30px;
     font-size: 15px;
-    @include breakpoint(phoneonly) {
-      flex-direction: column;
-      align-items: flex-start;
-    }
     label {
       min-width: 115px;
       margin-right: 15px;
-      @include breakpoint(phoneonly) {
-        min-width: 0px;
-        margin-right: 0px;
-        margin-bottom: 5px;
-      }
     }
     .email-sent {
       width: 100%;
@@ -131,7 +210,7 @@
       }
     }
     .name-entry > input {
-      width: 48%;
+      width: 49%;
     }
     .name-entry > input:last-of-type {
       margin-left: 2%;
@@ -154,10 +233,10 @@
           margin-left: 2%;
         }
         &.fname {
-          width:48%;
+          width:49%;
         }
         &.lname {
-          width:48%;
+          width:49%;
           margin-left:2%;
         }
       }
@@ -184,6 +263,9 @@
         text-decoration: none;
       }
     }
+    &.recognize {
+      margin:16px 0 15px;
+    }
   }
 
   .address {
@@ -198,10 +280,6 @@
       span {
         font-size: 15px;
         margin-left: 15px;
-        @include breakpoint(phoneonly) {
-          margin-top: 10px;
-          margin-left: 0px;
-        }
       }
     }
     .admin-fees {
@@ -209,9 +287,6 @@
       margin-left: 130px;
       padding-bottom: 40px;
       font-style: italic;
-      @include breakpoint(phoneonly) {
-        margin-left: 0px;
-      }
       a {
         &:hover {
           text-decoration: underline;
@@ -303,15 +378,25 @@
       font-style: italic;
       margin-bottom:22px;
     }
+
+    // https://stripe.com/docs/stripe-js/reference#element-options
+    .stripe-base {
+      @extend %standard-input;
+      font-family: $roboto;
+      color: $color-black;
+      font-size: 16px;
+      font-weight: normal;
+    }
     #card-element {
-      outline:1px solid $color-gray2;
-      width:100%;
+      border-radius: 4px;
+      border:1px solid $color-gray2;
+      width: calc(100% - 2px);
       min-height: 40px;
     }
     #card-errors {
     }
     .card-error-wrap {
-      margin: -29px 0 12px;
+      margin: -30px 0 12px;
       .spacer {
         display: inline-block;
         width: 130px;
@@ -331,20 +416,14 @@
   .final-amount {
     margin:40px 0 0;
     background-color: $color-lightgray;
-    padding: 54px 140px 46px;
+    padding: 54px 20px 46px;
     text-align: center;
     border-radius: 4px;
-    @include breakpoint(tabletonly) {
-      padding: 50px 70px;
-    }
-    @include breakpoint(phoneonly) {
-      padding: 50px 45px;
-    }
     .lead {
       font-family: $roboto;
       font-weight: normal;
       font-size: 15px;
-      corlo:$color-black;
+      color:$color-black;
       margin:0;
       padding:0;
     }
@@ -367,12 +446,163 @@
     margin: 20px 0 0;
   }
 
-
-  /////////
-  @include breakpoint(phonetablet) {
-    .donations {
-      background-image: none;
+  @include breakpoint(tabletonly) {
+    .donation-form {
+      width: 450px;
+      padding: 60px 35px;
+    }
+    .final-amount {
+      padding: 50px 70px;
     }
   }
 
+  @include breakpoint(phonetablet) {
+    &.workplace {
+      header {
+        padding-top:27px;
+        height:72px;
+        .logo-container > span {
+          font-size:13px;
+          line-height: 1.2em;
+        }
+        .workplace-logo {
+          top: -20px;
+          right: -4px;
+          height: 60px;
+        }
+      }
+      .donations {
+        padding-top:50px;
+        background-image: none;
+      }
+      .workplace-intro {
+        width: 450px;
+        padding: 61px 35px 57px;
+        h1 {
+          font-size: 22px;
+        }
+        .video-preview {
+          margin: 32px auto 0;
+        }
+      }
+    }
+
+    .restriction {
+      margin-top: 50px;
+      margin-bottom: 35px;
+    }
+    .donations {
+      padding-top:50px;
+      padding-bottom:97px;
+      background-image: none;
+    }
+    .payment-details {
+      .h-2-check {
+        display: block;
+        h2 {
+          margin-bottom: 18px;
+        }
+        .checkmark {
+          margin-bottom:26px;
+        }
+      }
+    }
+  }
+
+  @include breakpoint(phoneonly) {
+    &.workplace {
+      .workplace-intro {
+        width: auto;
+        padding: 61px 15px 57px;
+        margin: 0 15px;
+        .video-preview {
+          width:100%;
+        }
+      }
+    }
+
+    .donation-form {
+      padding: 52px 15px 72px;
+      width: auto;
+      margin: 0 15px;
+    }
+    h2 {
+      margin-bottom: 38px;
+    }
+    #calculator-widget {
+      .donate-buttons {
+        margin-bottom:10px;
+      }
+      .donate-timeframe {
+        margin-bottom: 58px !important;
+      }
+    }
+    .address-line {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 7px;
+      label {
+        min-width: 0;
+        margin-right: 0;
+        margin-bottom: 5px;
+      }
+      &.amount {
+        display: block;
+        label {
+          display: block;
+        }
+        #nonprofit-amount-input {
+          display: inline;
+        }
+        .amount-sidetext {
+          display: inline;
+          padding:0 0 0 10px;
+        }
+      }
+      &.disclaimer {
+        display: block;
+      }
+      &.error {
+        flex-direction: row;
+        margin-top: -5px;
+        margin-bottom: 5px;
+      }
+    }
+    .address, .payment-details {
+      .address-line.amount {
+        span {
+          margin-top: 10px;
+          margin-left: 0;
+        }
+      }
+      .admin-fees {
+        margin-left: 0px;
+      }
+    }
+    .contact-information {
+      .email-sent {
+        .parenthetical {
+          margin-bottom:0;
+        }
+      }
+      padding-top: 38px;
+    }
+    .payment-details {
+      padding: 29px 0 29px;
+      .mail-notice {
+        margin-bottom: 10px;
+      }
+      .card-error-wrap {
+        padding:0 0 0 4px;
+        margin: -7px 0 11px;
+        .spacer {
+          display: none;
+        }
+      }
+    }
+    .final-amount {
+      margin-top: 47px;
+      padding: 50px 45px;
+    }
+  }
 }

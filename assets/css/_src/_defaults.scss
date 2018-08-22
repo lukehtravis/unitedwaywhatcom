@@ -69,6 +69,19 @@ button, input[type="submit"] {
   border: none;
   font-weight: bold;
   cursor: pointer;
+  &.orange-bg {
+    background-color: $color-orange2;
+    &:hover {
+      transition: background-color .3s ease;
+      background-color: $color-orange;
+    }
+  }
+  &.darkblue-bg {
+    &:hover {
+      transition: background-color .3s ease;
+      background-color: darken( $color-darkblue,10%);
+    }
+  }
 }
 
 input[type="text"], textarea, select {
@@ -154,7 +167,7 @@ select::placeholder {
       padding-right: 10px;
     }
     @include breakpoint(phoneonly) {
-      font-size: 40px;
+      font-size: 39px;
       padding-left: 7px;
       padding-right: 7px;
     }

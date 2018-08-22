@@ -3,6 +3,7 @@
   // See site js for background img url
   height: 780px;
   background-size: cover;
+  transition: background-image 1.5s;
   @include breakpoint(tabletonly) {
     height:500px;
   }
@@ -11,6 +12,9 @@
   }
   > img {
     display: none;
+  }
+  .video-link {
+    color:$color-black;
   }
 }
 
@@ -34,7 +38,7 @@
     text-align: center;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-start;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -42,8 +46,11 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-transition: 0.9s ease;
-    transition: 0.9s ease;
+    //-webkit-transition: 0.9s ease;
+    //transition: 0.9s ease;
+    @include breakpoint(phonetablet) {
+      width: 100%;
+    }
     @include breakpoint(phoneonly) {
       padding: 100px 60px;
     }
@@ -54,16 +61,16 @@
     }
     a {
       text-decoration: none;
-      span {
-        font-family: $league;
-        font-size: 42px;
-        text-transform: uppercase;
-        color: $color-white;
-        text-decoration: none;
-        letter-spacing: 1.4px;
-        @include breakpoint(phoneonly) {
-          font-size: 34px;
-        }
+    }
+    .box-title {
+      font-family: $league;
+      font-size: 42px;
+      text-transform: uppercase;
+      color: $color-white;
+      text-decoration: none;
+      letter-spacing: 1.4px;
+      @include breakpoint(phoneonly) {
+        font-size: 34px;
       }
     }
     p {
@@ -74,57 +81,76 @@
         font-size: 14px;
       }
     }
+    &.box-story {
+      img {
+        margin-bottom: 40px;
+      }
+    }
+    &.box-calc {
+      img {
+        margin-bottom: 43px;
+      }
+    }
+    &.box-partner {
+      img {
+        margin-bottom: 56px;
+      }
+    }
   }
-  .box-link.light-blue {
-    background-color: $color-lightblue
-  }
-  .box-link.light-blue:hover {
-    background-color: rgba(83, 158, 208, 0.8);
-  }
-  .box-link.dark-blue {
-    background-color: $color-darkblue;
-  }
-  .box-link.dark-blue:hover {
-    background-color: rgba(0, 81, 145, 0.8);
-  }
-  .box-link.background-image {
-    background:
-    /* invisible graient necessary to keep image from moving on mouseleave */
-    -webkit-gradient(
-      linear,
-      left top, left bottom,
-      from(rgba(255, 255, 255, 0.0)),
-      to(rgba(255, 255, 255, 0.0))
-    ),
-    url(../../assets/img/womanbackground.png) no-repeat center center;
-    background:
-    /* invisible graient necessary to keep image from moving on mouseleave */
-    linear-gradient(
-      rgba(255, 255, 255, 0.0),
-      rgba(255, 255, 255, 0.0)
-    ),
-    url(../../assets/img/womanbackground.png) no-repeat center center;
-    background-size: cover;
-  }
-  .box-link.background-image:hover {
-    background:
-    /* top, transparent white, with gradient */
-    -webkit-gradient(
-      linear,
-      left top, left bottom,
-      from(rgba(255, 255, 255, 0.2)),
-      to(rgba(255, 255, 255, 0.1))
-    ),
-    /* bottom, image */
-    url(../../assets/img/womanbackground.png) no-repeat center center;
-    background:
-    /* top, transparent white, with gradient */
-    linear-gradient(
-      rgba(255, 255, 255, 0.2),
-      rgba(255, 255, 255, 0.1)
-    ),
-    /* bottom, image */
-    url(../../assets/img/womanbackground.png) no-repeat center center;
-    background-size: cover;
+  .box-link {
+    display: block;
+    outline:0 none;
+    &.light-blue {
+      background-color: $color-lightblue
+    }
+    &.light-blue:hover {
+      background-color: rgba(83, 158, 208, 0.8);
+    }
+    &.dark-blue {
+      background-color: $color-darkblue;
+    }
+    &.dark-blue:hover {
+      background-color: rgba(0, 81, 145, 0.8);
+    }
+    &.background-image {
+      background:
+              /* invisible graient necessary to keep image from moving on mouseleave */
+              -webkit-gradient(
+                              linear,
+                              left top, left bottom,
+                              from(rgba(255, 255, 255, 0.0)),
+                              to(rgba(255, 255, 255, 0.0))
+              ),
+              url(../../assets/img/womanbackground.png) no-repeat center center;
+      background:
+              /* invisible graient necessary to keep image from moving on mouseleave */
+              linear-gradient(
+                              rgba(255, 255, 255, 0.0),
+                              rgba(255, 255, 255, 0.0)
+              ),
+              url(../../assets/img/womanbackground.png) no-repeat center center;
+      background-size: cover;
+    }
+    &.background-image:hover {
+      background:
+              /* top, transparent white, with gradient */
+              -webkit-gradient(
+                              linear,
+                              left top, left bottom,
+                              from(rgba(255, 255, 255, 0.2)),
+                              to(rgba(255, 255, 255, 0.1))
+              ),
+                /* bottom, image */
+              url(../../assets/img/womanbackground.png) no-repeat center center;
+      background:
+              /* top, transparent white, with gradient */
+              linear-gradient(
+                              rgba(255, 255, 255, 0.2),
+                              rgba(255, 255, 255, 0.1)
+              ),
+                /* bottom, image */
+              url(../../assets/img/womanbackground.png) no-repeat center center;
+      background-size: cover;
+    }
   }
 }
