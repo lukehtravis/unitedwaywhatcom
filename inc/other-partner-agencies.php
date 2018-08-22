@@ -45,10 +45,10 @@
             <a href="#">Bellingham Public Schools</a>
           </div>
           <div class="partner-agencies-column">
-            <p>Foundation</p>
+            <p>Expanded-Day Programming at Alderwood & Cordata</p>
           </div>
           <div class="partner-agencies-column">
-            <p>Expanded-Day Programming at Alderwood & Cordata	Breaking the Cycle</p>
+            <p>	Breaking the Cycle</p>
           </div>
           <div class="partner-agencies-column">
             <p>$25,000</p>
@@ -56,13 +56,13 @@
         </div>
         <div class="partner-agencies-row">
           <div class="partner-agencies-column">
-            <a href="#">Bellingham Public</a>
+            <a href="#">Bellingham Public Schools</a>
           </div>
           <div class="partner-agencies-column">
-            <p>Foundation</p>
+            <p>GRADS Program</p>
           </div>
           <div class="partner-agencies-column">
-            <p>Schools GRADS Program	Education</p>
+            <p>Education</p>
           </div>
           <div class="partner-agencies-column">
             <p>$28,091</p>

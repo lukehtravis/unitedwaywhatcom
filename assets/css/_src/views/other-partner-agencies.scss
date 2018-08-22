@@ -81,7 +81,7 @@
         }
       }
       .partner-agencies-column {
-        width: 24%;
+        width: 26%;
         @include breakpoint(phoneonly) {
           width: 100%;
         }
@@ -97,7 +97,13 @@
       }
     }
     .partner-agencies-column:nth-of-type(2), .partner-agencies-column:nth-of-type(3) {
-      width: 30%;
+      width: 41%;
+      @include breakpoint(phoneonly) {
+        width: 100%;
+      }
+    }
+    .partner-agencies-column:nth-of-type(3) {
+      width: 19%;
       @include breakpoint(phoneonly) {
         width: 100%;
       }

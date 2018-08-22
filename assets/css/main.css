@@ -3918,7 +3918,7 @@ footer {
         flex-direction: column;
         align-items: center; } }
   .partner-agencies .partner-agencies-box .partner-agencies-table .partner-agencies-column {
-    width: 24%; }
+    width: 26%; }
     @media only screen and (min-width: 1px) and (max-width: 515px) {
       .partner-agencies .partner-agencies-box .partner-agencies-table .partner-agencies-column {
         width: 100%; } }
@@ -3929,9 +3929,14 @@ footer {
     .partner-agencies .partner-agencies-box .partner-agencies-table .partner-agencies-column p {
       margin: 0; }
   .partner-agencies .partner-agencies-box .partner-agencies-column:nth-of-type(2), .partner-agencies .partner-agencies-box .partner-agencies-column:nth-of-type(3) {
-    width: 30%; }
+    width: 41%; }
     @media only screen and (min-width: 1px) and (max-width: 515px) {
       .partner-agencies .partner-agencies-box .partner-agencies-column:nth-of-type(2), .partner-agencies .partner-agencies-box .partner-agencies-column:nth-of-type(3) {
+        width: 100%; } }
+  .partner-agencies .partner-agencies-box .partner-agencies-column:nth-of-type(3) {
+    width: 19%; }
+    @media only screen and (min-width: 1px) and (max-width: 515px) {
+      .partner-agencies .partner-agencies-box .partner-agencies-column:nth-of-type(3) {
         width: 100%; } }
   .partner-agencies .partner-agencies-box .partner-agencies-column:nth-of-type(4) {
     text-align: right;
