@@ -4103,6 +4103,83 @@ footer {
     padding-top: 0px; }
 
 @media only screen and (min-width: 515px) and (max-width: 900px) {
+  .campaign-tools-container {
+    margin-left: 40px; } }
+
+@media only screen and (min-width: 1400px) {
+  .campaign-tools {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 1200px; } }
+.campaign-tools .flex-title {
+  display: flex;
+  justify-content: space-between; }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    .campaign-tools .flex-title {
+      flex-direction: column;
+      align-items: center;
+      justify-content: initial; } }
+.campaign-tools .headline-left {
+  width: 55%;
+  margin-bottom: 50px; }
+  @media only screen and (min-width: 1400px) {
+    .campaign-tools .headline-left {
+      width: 595px; } }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    .campaign-tools .headline-left {
+      width: 100%;
+      margin-bottom: 30px; } }
+  .campaign-tools .headline-left a {
+    color: #539ed0; }
+  .campaign-tools .headline-left button {
+    padding-left: 25px;
+    padding-right: 25px; }
+  .campaign-tools .headline-left p {
+    margin-bottom: 30px; }
+.campaign-tools .headline-right {
+  align-self: flex-end;
+  margin-top: 50px; }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    .campaign-tools .headline-right {
+      width: 100%;
+      margin: 0;
+      margin-top: 35px;
+      align-self: center; }
+      .campaign-tools .headline-right img {
+        max-width: 100%; } }
+.campaign-tools h1 {
+  font-size: 50px;
+  margin-top: 110px;
+  margin-bottom: 25px;
+  letter-spacing: 0px;
+  color: #005191;
+  font-family: "Roboto", sans-serif;
+  text-transform: none; }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    .campaign-tools h1 {
+      margin-top: 60px; } }
+.campaign-tools .campaign-tools-box {
+  padding: 45px;
+  background-color: #ededed;
+  border-radius: 4px;
+  margin-bottom: 130px;
+  width: 100%;
+  margin-top: -3px; }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    .campaign-tools .campaign-tools-box {
+      padding: 45px 20px; } }
+  .campaign-tools .campaign-tools-box h2 {
+    margin-bottom: 65px; }
+  .campaign-tools .campaign-tools-box .campaign-tools-section {
+    margin-bottom: 60px; }
+    .campaign-tools .campaign-tools-box .campaign-tools-section h2 {
+      margin-bottom: 30px; }
+    .campaign-tools .campaign-tools-box .campaign-tools-section p {
+      margin-top: 0px; }
+    .campaign-tools .campaign-tools-box .campaign-tools-section a {
+      color: #539ed0; }
+
+@media only screen and (min-width: 515px) and (max-width: 900px) {
   .blog-container {
     margin-left: 40px; } }
 
