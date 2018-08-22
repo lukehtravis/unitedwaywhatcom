@@ -103,14 +103,14 @@
       }
     }
     .partner-agencies-column:nth-of-type(3) {
-      width: 19%;
+      width: 15%;
       @include breakpoint(phoneonly) {
         width: 100%;
       }
     }
     .partner-agencies-column:nth-of-type(4) {
       text-align: right;
-      width: 8%;
+      width: 5%;
       @include breakpoint(phoneonly) {
         width: 100%;
         text-align: left;
