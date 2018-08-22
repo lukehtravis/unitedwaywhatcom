@@ -4507,9 +4507,11 @@ footer {
     .campaign-tools .campaign-tools-box .campaign-tools-section h2 {
       margin-bottom: 30px; }
     .campaign-tools .campaign-tools-box .campaign-tools-section p {
-      margin-top: 0px; }
+      margin-top: 0px;
+      margin-bottom: 5px; }
     .campaign-tools .campaign-tools-box .campaign-tools-section a {
-      color: #539ed0; }
+      color: #539ed0;
+      font-size: 14px; }
 
 @media only screen and (min-width: 515px) and (max-width: 900px) {
   .blog-container {
