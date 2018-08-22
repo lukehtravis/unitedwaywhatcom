@@ -1,12 +1,37 @@
-.color-container.get-involved {
+#giving-page {
+  background-color: $color-lightblue;
+}
+.color-container.banner-get-involved {
   padding-bottom: 0px;
 }
-.banner.get-involved {
-  background: no-repeat right center;
-  background-color: $color-lightblue;
-  height: 1145px;
-  background-size: cover;
+.banner-get-involved {
+  position: relative;
+  overflow: hidden;
+  &.frame2 {
+    &:before {
+      background-image: url(/assets/img/getinvolvednohat.png);
+      transition: background-image 1s;
+    }
+  }
+  &:before {
+    content:'';
+    display: block;
+    position: absolute;
+    top: -47px;
+    right: -79px;
+    width: 1136px;
+    height: 1169px;
+    background: transparent url(/assets/img/getinvolved.png) no-repeat center;
+    z-index: -1;
+    transition: background-image 1s;
+    @media only screen and (max-width : 1070px) {
+      right: -247px;
+    }
+  }
+
+
   @include breakpoint(hugeness) {
+    overflow: visible;
     @include hugeness-container;
   }
   @include breakpoint(tabletonly) {
@@ -14,9 +39,25 @@
     height: 800px;
   }
   @include breakpoint(phoneonly) {
-    background-color: $color-lightblue;
-    background-image: none;
     height: auto;
+    &.frame2 {
+      &:before {
+        background-image: url(/assets/img/getinvolved.png);
+        transition: background-image 1s;
+      }
+    }
+    &:before {
+      background-size: 360px auto;
+      background-position: calc(50% + 40px) 120px;
+
+      width: 100vw;
+      height: 100vh;
+
+
+      top:0;
+      right:unset;
+      left:0;
+    }
   }
   > img {
     display: none;
@@ -30,6 +71,7 @@
   @include breakpoint(tabletonly) {
     padding-top: 40px;
     padding-left: 10px;
+    overflow:hidden;
   }
   @include breakpoint(phoneonly) {
     padding-top: 50px;
@@ -41,6 +83,7 @@
   display: -ms-flexbox;
   display: flex;
   margin-top: 150px;
+  margin-bottom:75px;
   @include pageSideMargins;
   @include breakpoint(tabletonly) {
     margin-top: 90px;
@@ -54,13 +97,29 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+
   .square {
+    &:hover {
+      background-color: rgba($color-lightblue,0.85);
+      color:$color-white;
+      a span,
+      .square-title {
+        color:$color-white;
+      }
+      p {
+        color: $color-white;
+      }
+      @include breakpoint(phoneonly) {
+        background-color: $color-lightblue;
+      }
+    }
+    width:33.33%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -69,7 +128,7 @@
     background-color: $color-white;
     border: 1px solid $color-white;
     color: $color-black;
-    padding: 25px 42px;
+    padding: 75px 42px 45px;
     margin-right: 20px;
     border-radius: 6px;
     -webkit-transition: .7s ease;
@@ -79,12 +138,12 @@
       margin-right: 10px;
     }
     @include breakpoint(phoneonly) {
+      width:100%;
       background-color: transparent;
       margin-right: 0px;
       margin-left: 0px;
       margin-bottom: 20px;
     }
-    .square-links:last-of
     img {
       -ms-flex-item-align: center;
           align-self: center;
@@ -93,17 +152,16 @@
         margin-bottom: 15px;
       }
     }
-    a {
-      span {
-        font-family: $roboto;
-        color: $color-lightblue;
-        font-size: 28px;
-        @include breakpoint(tabletonly) {
-          font-size: 18px;
-        }
-        @include breakpoint(phoneonly) {
-          font-weight: bold;
-        }
+    a span,
+    .square-title {
+      font-family: $roboto;
+      color: $color-lightblue;
+      font-size: 28px;
+      @include breakpoint(tabletonly) {
+        font-size: 18px;
+      }
+      @include breakpoint(phoneonly) {
+        font-weight: bold;
       }
     }
     p {
@@ -115,16 +173,5 @@
     background-color: $color-white;
     padding: 65px 20px 40px;
   }
-  }
-  .square:hover {
-    background-color: transparent;
-    a {
-      span {
-        color: $color-white;
-      }
-    }
-    p {
-      color: $color-white;
-    }
   }
 }

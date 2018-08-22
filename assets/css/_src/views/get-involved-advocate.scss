@@ -1,16 +1,26 @@
+#advocate-page {
+  background: $color-lightblue url(/assets/img/girlbullhorn.png) no-repeat calc(50% + 255px) 204px;
+
+  @include breakpoint(tabletonly) {
+    background-size: auto 500px;
+    background-position: calc(100% + 40px) 180px;
+  }
+  @include breakpoint(phoneonly) {
+    background-size: auto 500px;
+    background-position: calc(50% + 10px) 140px;
+  }
+}
+
 .get-involved-advocate {
   padding-bottom: 0px;
   .banner {
-    background: url('/assets/img/girlbullhorn.jpg') no-repeat center center;
-    height: 881px;
-    background-size: cover;
+    height: 860px;
     @include breakpoint(tabletonly) {
-      height:750px;
-      background-image: url('/assets/img/girlbullhorntablet.jpg');
+      height:auto;
+      min-height:750px;
     }
     @include breakpoint(phoneonly) {
-      height:300px;
-      background-image: url('/assets/img/girlbullhornphone.jpg');
+      height:525px;
     }
     @include breakpoint(hugeness) {
       @include hugeness-container;
@@ -37,6 +47,16 @@
     a {
       @include breakpoint(phoneonly) {
         display: none;
+      }
+    }
+    @include breakpoint(tabletonly) {
+      padding-bottom:50px;
+      p:first-of-type {
+        max-width: unset;
+      }
+      .headline-text-group {
+        margin-top:450px;
+        max-width: unset;
       }
     }
   }

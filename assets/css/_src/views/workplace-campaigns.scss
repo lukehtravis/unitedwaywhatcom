@@ -1,19 +1,100 @@
 @import "../components/ribbon";
+#workplace-campaigns-page {
+  background: $color-lightblue url(/assets/img/party-people.png) no-repeat calc(50% + 212px) 135px;
+  @include breakpoint(phonetablet) {
+    background-image: none;
+  }
+  .banner {
+//     position: relative;
+  }
+}
+
+#workplace-campaigns-tools-btn {
+  display: block;
+  position: absolute;
+  top: 163px;
+  right: 0;
+  background-color: $color-darkorange;
+  color: $color-white;
+  font-family: $league;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding: 14px 29px 14px 14px;
+  line-height: 1em;
+  overflow: visible;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom:0;
+    left:-20px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 0 solid transparent;
+    border-bottom: 37px solid $color-darkorange;
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top:0;
+    left:-20px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 0 solid transparent;
+    border-top: 37px solid $color-darkorange;
+  }
+  @include breakpoint(phonetablet) {
+    font-size: 15px;
+    padding: 9px 17px 9px 9px;
+    &:before {
+      left:-12px;
+      border-left: 13px solid transparent;
+      border-bottom: 25px solid $color-darkorange;
+    }
+    &:after {
+      left:-12px;
+      border-left: 13px solid transparent;
+      border-top: 25px solid $color-darkorange;
+    }
+  }
+  @include breakpoint(phoneonly) {
+  }
+}
 .workplace-campaigns {
   .banner {
-    background: url('/assets/img/party-people.jpg') no-repeat center center;
     height: 680px;
-    background-size: cover;
     @include breakpoint(hugeness) {
       @include hugeness-container;
     }
     @include breakpoint(tabletonly) {
+      .bland-header {
+        white-space: normal;
+        line-height: 1em;
+        br {
+          display: none;
+        }
+        display: inline-block;
+        margin-top:26px;
+      }
       height:500px;
-      background-image: none;
     }
     @include breakpoint(phoneonly) {
-      height:400px;
-      background-image: none;
+      .bland-header {
+        white-space: normal;
+        line-height: 1em;
+        br {
+          //display: none;
+        }
+        display: inline-block;
+        margin-top:40px;
+      }
+      height:auto;
+      padding-bottom:50px;
     }
     .headline {
       padding-top: 20px;
@@ -242,6 +323,7 @@
       }
       img {
         width: 32%;
+        height:32%;
         max-width: 368px;
       }
       img:nth-child(-n+2) {
@@ -294,6 +376,11 @@
       width: 100%;
     }
     img {
+      &.happy-volunteers-img {
+        max-width: 524px;
+        width:100%;
+        height: auto;
+      }
       @include breakpoint(phonetablet) {
         display: none;
       }

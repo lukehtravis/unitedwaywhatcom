@@ -11,9 +11,9 @@ $(document).ready(function(){
   // Shows hamburger menu on click desktop
   $('.menu-hamburger').on('click', function(){
     if ($('.logo').is(":hidden")) {
-      $('.secondary-menu-mobile, .arrow-up').slideToggle();
+      $('.secondary-menu-mobile, .arrow-up').slideToggle(100);
     } else {
-      $(this).find('.secondary-menu, .arrow-up').slideToggle();
+      $(this).find('.secondary-menu, .arrow-up').slideToggle(100);
     }
   })
 
@@ -36,7 +36,14 @@ $(document).ready(function(){
 
   var photos = $(".banner.home>img, .banner.get-involved>img").toArray();
 
-  window.setInterval(changePhoto, 6000);
+
+  var waitInt = typeof window.bannerWaitInt !== 'undefined'?window.bannerWaitInt:6000;
+  var stop = typeof window.bannerStop !== 'undefined'?window.bannerStop:false;
+  if (stop) {
+      window.setTimeout(changePhoto, waitInt);
+  }else {
+      window.setInterval(changePhoto, waitInt);
+  }
 
   function changePhoto() {
     photos.push(photos.shift());

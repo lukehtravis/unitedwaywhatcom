@@ -21,7 +21,7 @@
       @include mobilePageSideMargins;
     }
     .volunteer-row {
-      border-top: 2px solid $color-lightgray;
+      border-top: 1px solid #d6d6d6;
       padding-bottom: 95px;
       @include breakpoint(phonetablet) {
         border: 0 none;
@@ -36,7 +36,7 @@
         font-weight: bold;
         padding: 14px;
         display: inline-block;
-        background-color: $color-orange;
+        background-color: $color-darkorange;
         @include breakpoint(phonetablet) {
           width: 100%;
         }

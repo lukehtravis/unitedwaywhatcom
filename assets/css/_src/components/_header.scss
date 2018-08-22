@@ -3,7 +3,7 @@ header {
   background-color: $color-lightgray;
   padding: 40px 25px 0px 40px;
   @include breakpoint(phonetablet) {
-    padding: 30px 20px 0px 20px;
+    padding: 26px 17px 0;
   }
 }
 
@@ -24,6 +24,7 @@ header {
   }
   @include breakpoint(hugeness) {
     @include hugeness-container;
+    max-width: 1335px;
   }
 }
 
@@ -38,24 +39,26 @@ header {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding-bottom: 35px;
-}
+  padding-bottom: 33px;
+  margin-left: 1px;
 
-.logo {
-  @include breakpoint(phonetablet) {
-    display: none;
+  .logo {
+    @include breakpoint(phonetablet) {
+      display: none;
+    }
   }
-}
 
-.logo-container > span {
-  margin-left: 20px;
-  color: $color-darkblue;
-  font-family: $roboto;
-  font-weight: bold;
-  white-space: nowrap;
-  @include breakpoint(phoneonly) {
-    margin-right: 20px;
-    margin-left: 0px;
+  > span {
+    margin-left: 18px;
+    color: $color-darkblue;
+    font-family: $roboto;
+    font-weight: bold;
+    white-space: nowrap;
+    line-height: 1.3em;
+    @include breakpoint(phoneonly) {
+      margin-left: 0;
+      font-size: 13px;
+    }
   }
 }
 
@@ -76,24 +79,34 @@ header {
             justify-content: center;
     color: $color-lightblue;
     font-weight: bold;
+    padding-right:15%;
+    @media only screen and (max-width : 1050px) {
+      padding-right:0;
+    }
+
     > li {
+      white-space: nowrap;
       cursor: pointer;
       position: relative;
-      padding-bottom: 35px;
+      padding-bottom: 31px;
       -webkit-transition: $nav-trans-speed ease;
       transition: $nav-trans-speed ease;
       > span {
+        white-space: nowrap;
         font-size: $text-default + 2px;
       }
       > div {
         @include arrowUp($color-white);
         @include centerer;
-        top: 35px;
+        top: 43px;
         z-index: 2 !important;
       }
     }
     > li:nth-child(2) {
-      margin: 0px 40px;
+      margin: 0 42px;
+      @media only screen and (max-width : 1050px) {
+        margin: 0 20px;
+      }
     }
     > li:hover {
       color: $color-darkblue;
@@ -103,27 +116,27 @@ header {
 
 .level-2 {
   display: none; // keeps hover box hidden till user clicks
-  padding: 10px 0;
+  padding: 20px 0;
   width: 180px;
   text-align: center;
   background-color: $color-white;
-  top: 55px;
+  top: 58px;
   @include centerer;
   -webkit-box-shadow: 4px 4px 6px -2px rgba(0,0,0,.2);
   box-shadow: 4px 4px 6px -2px rgba(0,0,0,.2);
   -webkit-box-shadow: 1px 2px 4px 0px rgba(0,0,0,.2);
   box-shadow: 1px 2px 4px 0px rgba(0,0,0,.2);
-  -webkit-transition: $nav-trans-speed ease;
-  transition: $nav-trans-speed ease;
   a {
     font-size: $text-default - 1px;
     font-weight: initial;
     text-decoration: none;
     li {
-      padding: 15px 0px;
-      -webkit-transition: $nav-trans-speed ease;
-      transition: $nav-trans-speed ease;
+      line-height:1em;
+      padding: 10px 0px;
       color: $color-graytext-footer;
+      background-color: $color-white;
+      transition: background-color .3s ease, color .3s ease;
+      -webkit-transition: background-color .3s ease, color .3s ease;
     }
     li:hover {
       background-color: $color-lightgray;
@@ -139,49 +152,83 @@ header {
 }
 
 .menu-right {
+  -ms-flex-item-align: start;
+  -webkit-align-self: flex-start;
+  -moz-align-self: flex-start;
+  align-self: flex-start;
+
   justify-self: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 20px;
-}
-
-.menu-right button  {
-  padding: 13px 35px;
-  border-radius: 5px;
-  background-color: $color-lightblue;
-  font-size: 14px;
-  color: $color-white;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  border: none;
-  cursor: pointer;
-  -webkit-transition: $nav-trans-speed ease;
-  transition: $nav-trans-speed ease;
-  font-weight: normal;
-  @include breakpoint(phoneonly) {
-    padding: 10px 20px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top:27px;
+  @include breakpoint(phonetablet) {
+    padding-top:0;
   }
-}
 
-.menu-right button:hover {
-  background-color: $color-darkblue;
-}
+  button  {
+    &:hover {
+      background-color: $color-lightblue2;
+    }
+    outline:0 none;
+    padding: 0;
+    text-align: center;
+    width:132px;
+    height:43px;
+    line-height: 43px;
+    overflow: hidden;
 
-.menu-right > .menu-hamburger {
-  margin-left: 20px;
-  position: relative;
-  cursor: pointer;
-  .arrow-up {
-    @include centerer;
-    @include arrowUp($color-gray);
-    top: 35px;
+    border-radius: 5px;
+    background-color: $color-lightblue;
+    color: $color-white;
+
+    font-family: $roboto-condensed;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+
+    border: none;
+    cursor: pointer;
+    -webkit-transition: background-color .3s ease;
+    transition: background-color .3s ease;
+
     @include breakpoint(phonetablet) {
-      @include arrowUp($color-mobile-header-menu-gray);
-      top: 45px;
+      width: 95px;
+      height: 31px;
+      line-height: 31px;
+      font-size: 11px;
+      //letter-spacing: 0.2em;
+    }
+
+    @include breakpoint(phoneonly) {
+      //padding: 10px 20px;
+    }
+  }
+
+
+  > .menu-hamburger {
+    margin: 11px 0 0 24px;
+    position: relative;
+    cursor: pointer;
+    > img {
+      width: 21px;
+      height: 21px;
+    }
+    .arrow-up {
+      @include centerer;
+      @include arrowUp($color-gray);
+      top: 35px;
+      @include breakpoint(phonetablet) {
+        @include arrowUp($color-mobile-header-menu-gray);
+        top: 45px;
+      }
+    }
+    @include breakpoint(phonetablet) {
+      margin: 5px 0 0 20px;
     }
   }
 }
@@ -192,7 +239,7 @@ header {
   min-width: 260px;
   position: absolute;
   right: -25px;
-  top: 53px;
+  top: 55px;
   @include menuUl;
   padding: 10px 0 10px;
   z-index:1;
@@ -257,6 +304,12 @@ header {
   ul.mobile-menu-bottom {
     padding: 30px 30px 15px 30px;
     background-color: $color-gray;
+    .divider {
+      height:0;
+      border-top: 1px solid $color-graytext-footer;
+      padding: 0 0 10px;
+      margin:10px auto 0;
+    }
     a {
       color: $color-white;
       text-decoration: none;
@@ -266,12 +319,12 @@ header {
         margin-bottom: 15px;
       }
     }
-    a:nth-of-type(5n+0) li {
-      border-bottom: 1px solid $color-lightgray;
-      padding-bottom: 15px;
-    }
-    a:nth-of-type(6n+0) li {
-      padding-top: 7px;
-    }
+    //a:nth-of-type(5n+0) li {
+    //  border-bottom: 1px solid $color-lightgray;
+    //  padding-bottom: 15px;
+    //}
+    //a:nth-of-type(6n+0) li {
+    //  padding-top: 7px;
+    //}
   }
 }
