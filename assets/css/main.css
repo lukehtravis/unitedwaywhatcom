@@ -1092,23 +1092,12 @@ footer {
   background-color: #262626; }
 
 .footer-container {
-  margin-left: 100px;
-  margin-right: 100px;
-  padding-top: 90px; }
-  @media only screen and (min-width: 1px) and (max-width: 515px) {
-    .footer-container {
-      margin-left: 20px;
-      margin-right: 20px; } }
-  @media only screen and (min-width: 515px) and (max-width: 900px) {
-    .footer-container {
-      text-align: center; } }
+  max-width: 1246px;
+  margin: 0 auto;
+  padding: 90px 20px 60px; }
   @media only screen and (min-width: 1px) and (max-width: 900px) {
     .footer-container {
-      padding-top: 60px; } }
-  @media only screen and (min-width: 1400px) {
-    .footer-container {
-      max-width: 1400px;
-      margin: 0 auto; } }
+      padding: 58px 28px 60px; } }
 
 .top-footer {
   display: -webkit-box;
@@ -1133,7 +1122,7 @@ footer {
   font-weight: bold; }
 @media only screen and (min-width: 1px) and (max-width: 900px) {
   .footer-title {
-    margin-bottom: 60px; } }
+    margin-bottom: 32px; } }
 
 .footer-contact {
   display: -webkit-box;
@@ -1142,9 +1131,13 @@ footer {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  margin: 6px 0 0 0;
+  width: 348px; }
   .footer-contact > div {
-    margin-bottom: 25px; }
+    margin-bottom: 12px; }
+    .footer-contact > div:last-child {
+      margin-bottom: 0; }
   .footer-contact a {
     text-decoration: none; }
     .footer-contact a span {
@@ -1159,18 +1152,18 @@ footer {
     margin-bottom: 30px; }
 
 .bottom-footer {
+  margin: 0 0 0 3px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  height: 280px; }
+  display: flex; }
   @media only screen and (min-width: 1px) and (max-width: 900px) {
     .bottom-footer {
-      height: 200px; } }
+      margin: 30px 0 0; } }
 
 .footer-menus {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  width: 75%; }
+  grid-template-columns: repeat(3, 23.8%) 1fr;
+  width: calc(100% - 348px); }
   @media only screen and (min-width: 1px) and (max-width: 900px) {
     .footer-menus {
       display: none; } }
@@ -1180,14 +1173,17 @@ footer {
   padding-left: 20px; }
   .footer-menu-container h3 {
     color: #747474;
-    font-size: 17px; }
+    font-size: 17px;
+    line-height: 1em;
+    margin: 15px 0; }
   .footer-menu-container li {
     color: white;
     font-size: 14px; }
   .footer-menu-container .footer-menu {
     list-style: none;
     padding-left: 0px;
-    margin: 0; }
+    margin: 0;
+    margin: 23px 0 0; }
     .footer-menu-container .footer-menu.other li {
       margin-bottom: 5px; }
       .footer-menu-container .footer-menu.other li a {
@@ -1205,22 +1201,23 @@ footer {
     .footer-menu-container .footer-menu > li ul {
       list-style: none;
       padding-left: 0px;
-      margin-top: 5px;
+      margin-top: 1px;
       margin-bottom: 10px; }
       .footer-menu-container .footer-menu > li ul li {
-        margin-left: 15px;
-        margin-bottom: 5px; }
+        margin-left: 23px;
+        margin-bottom: 1px; }
       .footer-menu-container .footer-menu > li ul li::before {
         content: "-";
         margin-left: -15px; }
       .footer-menu-container .footer-menu > li ul li a {
+        line-height: 1.2em;
         font-weight: normal; }
   @media only screen and (min-width: 1px) and (max-width: 900px) {
     .footer-menu-container {
       display: none; } }
 
 .footer-credits {
-  width: 25%;
+  width: 284px;
   -ms-flex-item-align: end;
   align-self: flex-end; }
   .footer-credits p, .footer-credits a {
@@ -1228,6 +1225,17 @@ footer {
   .footer-credits p {
     color: #747474;
     line-height: 1.5; }
+  .footer-credits .address p {
+    line-height: 22px; }
+  .footer-credits .address a {
+    color: #539ed0; }
+  .footer-credits .copyright {
+    margin-top: 18px; }
+    .footer-credits .copyright p {
+      line-height: 1em;
+      font-size: 11px;
+      white-space: nowrap;
+      margin: 0; }
   @media only screen and (min-width: 1px) and (max-width: 900px) {
     .footer-credits {
       width: 100%; } }
