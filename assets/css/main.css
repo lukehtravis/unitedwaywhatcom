@@ -4045,4 +4045,56 @@ footer {
   .faq .faq-box .faq-box-section.no-top-padding {
     padding-top: 0px; }
 
+@media only screen and (min-width: 515px) and (max-width: 900px) {
+  .jobs-container {
+    margin-left: 40px; } }
+
+@media only screen and (min-width: 1400px) {
+  .jobs {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 1200px; } }
+.jobs h1 {
+  font-size: 50px;
+  margin-top: 115px;
+  margin-bottom: 35px;
+  letter-spacing: 0px;
+  color: #005191;
+  font-family: "Roboto", sans-serif;
+  text-transform: none; }
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    .jobs h1 {
+      margin-top: 60px; } }
+.jobs .jobs-box {
+  padding: 45px 45px 20px;
+  background-color: #ededed;
+  border-radius: 4px;
+  margin-bottom: 130px;
+  width: 100%; }
+  @media only screen and (min-width: 1px) and (max-width: 515px) {
+    .jobs .jobs-box {
+      padding: 45px 20px; } }
+  .jobs .jobs-box h2 {
+    margin-bottom: 25px;
+    margin-top: 0px; }
+  .jobs .jobs-box span {
+    margin-bottom: 0px;
+    font-weight: bold; }
+  .jobs .jobs-box p {
+    margin-top: 0px; }
+  .jobs .jobs-box a {
+    color: #539ed0;
+    display: inline-block;
+    margin-bottom: 40px; }
+  .jobs .jobs-box button {
+    padding: 12px 27px;
+    margin-top: 30px; }
+  .jobs .jobs-box .jobs-box-section {
+    padding: 42px 0px 0px;
+    border-bottom: 2px solid #cccccc; }
+  .jobs .jobs-box .jobs-box-section.no-border {
+    border-bottom: 0px; }
+  .jobs .jobs-box .jobs-box-section.no-top-padding {
+    padding-top: 0px; }
+
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,63 @@
+.jobs-container {
+  @include breakpoint(tabletonly) {
+    margin-left: 40px;
+  }
+}
+.jobs {
+  @include breakpoint(hugeness) {
+    @include hugeness-container;
+    width: 1200px;
+  }
+  h1 {
+    font-size: 50px;
+    margin-top: 115px;
+    margin-bottom: 35px;
+    letter-spacing: 0px;
+    color: $color-darkblue;
+    font-family: $roboto;
+    text-transform: none;
+    @include breakpoint(phonetablet) {
+      margin-top: 60px;
+    }
+  }
+  .jobs-box {
+    padding: 45px 45px 20px;
+    background-color: $color-lightgray;
+    border-radius: 4px;
+    margin-bottom: 130px;
+    width: 100%;
+    @include breakpoint(phoneonly) {
+      padding: 45px 20px;
+    }
+    h2 {
+      margin-bottom: 25px;
+      margin-top:0px;
+    }
+    span {
+      margin-bottom: 0px;
+      font-weight: bold;
+    }
+    p {
+      margin-top: 0px;
+    }
+    a {
+      color: $color-lightblue;
+      display: inline-block;
+      margin-bottom: 40px;
+    }
+    button {
+      padding: 12px 27px;
+      margin-top: 30px;
+    }
+    .jobs-box-section {
+      padding: 42px 0px 0px;
+      border-bottom: 2px solid $color-gray2;
+    }
+    .jobs-box-section.no-border {
+      border-bottom: 0px;
+    }
+    .jobs-box-section.no-top-padding {
+      padding-top: 0px;
+    }
+  }
+}
