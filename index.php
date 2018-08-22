@@ -31,8 +31,9 @@
         <li><a href="/5.5-other-financials.php">5.5 Other / Financials</a></li>
         <li><a href="/5.6-other-jobs.php">5.6 Other / Job Openings</a></li>
         <li><a href="/5.7-other-faq.php">5.7 Other / FAQs</a></li>
-        <li>6.0 Blog (Listing)</li>
-        <li>6.1 Blog / Post</li>
+        <li><a href="/5.8-other-campaign-tools.php">5.8 Other / Campaign Tools</a></li>
+        <li><a href="/6.0-blog-list.php">6.0 Blog (Listing)</a></li>
+        <li><a href="/6.1-blog-post.php">6.1 Blog / Post</a></li>
         <li>7.0 Logged In / Board Members Page</li>
         <li>7.1 Logged In / Volunteers Page</li>
         <li><a href="/_oops.php">Oops</a></li>
