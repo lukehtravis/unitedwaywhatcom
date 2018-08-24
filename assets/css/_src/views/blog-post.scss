@@ -1,0 +1,49 @@
+.blog-container {
+  @include breakpoint(tabletonly) {
+    margin-left: 40px;
+  }
+}
+.blog {
+  @include breakpoint(hugeness) {
+    @include hugeness-container;
+    width: 1200px;
+  }
+  img {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    @include breakpoint(phoneonly) {
+      max-width: 100%;
+    }
+  }
+  a {
+    color: $color-lightblue;
+  }
+  .back-to-list {
+    margin-top: 70px;
+    margin-bottom: 15px;
+    display: inline-block;
+    font-size: 14px;
+  }
+  .blog-box {
+    padding: 45px 45px 45px;
+    background-color: $color-lightgray;
+    border-radius: 4px;
+    margin-bottom: 130px;
+    width: 100%;
+    @include breakpoint(phoneonly) {
+      padding: 45px 20px;
+    }
+    h2 {
+      margin: 0px;
+      font-size: 22px;
+    }
+    span {
+      margin-bottom: 0px;
+      font-weight: bold;
+    }
+    p {
+      margin-top: 0px;
+      font-size: 14px;
+    }
+  }
+}
