@@ -6,6 +6,9 @@
   background-color: $color-white;
   margin: auto;
   padding: 60px 75px;
+  .preset-donation {
+    caret-color: transparent;
+  }
   .donate-buttons, .donate-timeframe {
     display: flex;
     flex-wrap: wrap;
@@ -81,6 +84,14 @@
   .donate-timeframe > input:first-child {
     margin-right: 2%;
   }
+  .pay-period-text {
+    margin: -15px auto 30px;
+    font-family: $roboto;
+    font-size: 12px;
+    color:$color-gray4;
+    text-align: center;
+  }
+
   .calculator {
     padding: 45px 0 34px;
     background-color: $color-lightgray;

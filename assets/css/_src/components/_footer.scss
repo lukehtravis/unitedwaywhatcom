@@ -82,6 +82,16 @@ footer {
     color: $color-white;
     margin-bottom: 30px;
   }
+  .contact {
+    &.facebook {
+      a {
+        float:left;
+      }
+      img {
+        margin: 5px 0 -5px;
+      }
+    }
+  }
 }
 
 .bottom-footer {
